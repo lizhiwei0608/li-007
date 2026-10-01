@@ -1,7 +1,9 @@
 name: Update Subscriptions
 
 on:
-  workflow_dispatch:  # 仅保留手动触发按钮
+  workflow_dispatch:  # 手动触发按钮
+  schedule:
+    - cron: '0 */6 * * *'  # 每 6 小时自动更新一次 (UTC)  
 
 jobs:
   build:
@@ -21,6 +23,7 @@ jobs:
           cache: 'pip'
           cache-dependency-path: scripts/requirements.txt
 
+          
       - name: Install Dependencies
         run: |
           pip install -r scripts/requirements.txt
