@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇵🇭 菲律宾 (Philippines) 01 - xiaohe",
+      "tag": "🇵🇭 菲律宾 (Philippines) 01 - li007",
       "server": "149.104.109.252",
       "server_port": 8882,
       "method": "aes-256-gcm",
@@ -16,14 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇭 菲律宾 (Philippines) 01 - xiaohe"
+        "🇵🇭 菲律宾 (Philippines) 01 - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇭 菲律宾 (Philippines) 01 - xiaohe"
+        "🇵🇭 菲律宾 (Philippines) 01 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

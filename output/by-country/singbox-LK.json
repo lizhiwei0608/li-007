@@ -5,7 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe",
+      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - li007",
+      "server": "free.sahanwickramasinghe.me",
+      "server_port": 80,
+      "uuid": "684f9a2e-4f96-497f-bfd9-ff1e34637952",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "free.sahanwickramasinghe.me"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 02 - li007",
       "server": "51.75.67.209",
       "server_port": 443,
       "uuid": "3d08ed67-5a47-42d3-a948-ebc7d2eb21f7",
@@ -20,33 +34,20 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe",
-      "server": "free.sahanwickramasinghe.me",
-      "server_port": 80,
-      "uuid": "684f9a2e-4f96-497f-bfd9-ff1e34637952",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "free.sahanwickramasinghe.me"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - li007",
+        "🇱🇰 斯里兰卡 (Sri Lanka) 02 - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaohe",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - li007",
+        "🇱🇰 斯里兰卡 (Sri Lanka) 02 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

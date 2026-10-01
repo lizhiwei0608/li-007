@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇶🇦 卡塔尔 (Qatar) 01 - xiaohe",
+      "tag": "🇶🇦 卡塔尔 (Qatar) 01 - li007",
       "server": "34.18.31.5",
       "server_port": 443,
       "uuid": "bd82d5e7-4395-40e1-b34e-2974eb0c8555",
@@ -28,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇶🇦 卡塔尔 (Qatar) 01 - xiaohe"
+        "🇶🇦 卡塔尔 (Qatar) 01 - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇶🇦 卡塔尔 (Qatar) 01 - xiaohe"
+        "🇶🇦 卡塔尔 (Qatar) 01 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
