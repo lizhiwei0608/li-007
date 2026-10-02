@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - li007
+  server: 45.149.114.171
+  port: 777
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - li007
   server: 194.76.154.31
   port: 40443
   udp: true
@@ -16,7 +23,7 @@ proxies:
     short-id: a8ae
   servername: deepl.com
   client-fingerprint: chrome
-- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - li007
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - li007
   server: cdn.bulkavpn.top
   port: 443
   udp: true
@@ -28,20 +35,20 @@ proxies:
     public-key: bQZcMViJWXus9rMSTOa-ZAaUJC0mIlPx7XmzrLp8GQU
     short-id: 94f32cfc
   servername: cdn.bulkavpn.top
-  client-fingerprint: chrome
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - li007
-  server: 5.253.42.159
-  port: 443
+  client-fingerprint: random
+- name: 🇨🇾 塞浦路斯 (Cyprus) 04 - li007
+  server: 5.253.28.224
+  port: 40443
   udp: true
   type: vless
-  uuid: 914f3806-07a1-4158-9624-e183de065a38
+  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: erUEmyU1QK8y2corQh9bOjk0oHl2Mo6Z9WgoyKg_rC0
-    short-id: c1e3d5d4
-  servername: india.letsconnectpoint.com
-  client-fingerprint: firefox
+    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
+    short-id: 68a8
+  servername: deepl.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,6 +57,7 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - li007
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - li007
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - li007
+  - 🇨🇾 塞浦路斯 (Cyprus) 04 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,5 +66,6 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - li007
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - li007
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - li007
+  - 🇨🇾 塞浦路斯 (Cyprus) 04 - li007
 rules:
 - MATCH,PROXIES
