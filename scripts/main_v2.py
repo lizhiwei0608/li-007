@@ -74,14 +74,19 @@ COUNTRY_DIR = os.path.join(OUTPUT_DIR, "by-country")
 RESIDENTIAL_COUNTRY_DIR = os.path.join(OUTPUT_DIR, "residential-by-country")
 
 # ★ proxio 免费代理池 (HTTP/SOCKS 并入测活; CC BY 4.0, 署名 proxio.io)
-#    每天换一批链接: 国家固定为用户指定的五国, 每天 150 个链接与往日不同.
-#    实现: 每国按 reliability 排序后, 按北京时间日期取 30 个的滑动窗口 (取尽后回绕);
-#    某国配额不足 (如 JP 池子本身很小) 时从 US 池顺延补足到 150.
+#    每天换一批链接: 国家固定为用户指定的十五国, 每天 256 个链接与往日不同.
+#    实现: 每国按 reliability 排序后, 按北京时间日期取滑动窗口 (每国每天 17 个,
+#    256 = 15×17 + 1, 余数与配额缺口统一由 US 池补足); 步长 = 各国当日配额,
+#    保证次日窗口不重叠, 取尽后回绕.
+#    某国池子本身不足 17 个 (如 JP 仅约 15 个) 时按实际取, 缺口同样由 US 补足.
 #    同一天内 4 次运行用同一批; 池子本身 20 分钟一更新.
 PROXIO_POOL_URL = "https://raw.githubusercontent.com/proxio-io/proxy-list/main/all.json"
-PROXIO_COUNTRIES = ["US", "KR", "JP", "TH", "SG"]  # 固定五国, 保序
-PROXIO_DAILY_TOTAL = 150
-PROXIO_PER_COUNTRY = PROXIO_DAILY_TOTAL // len(PROXIO_COUNTRIES)  # 30
+# 固定十五国, 保序: 前五国为用户最初指定, 后十国按池量从大到小 (CN/RU 未纳入)
+PROXIO_COUNTRIES = ["US", "KR", "JP", "TH", "SG",
+                    "ID", "IN", "PH", "DE", "BR",
+                    "BD", "VN", "AR", "CO", "MX"]
+PROXIO_DAILY_TOTAL = 256
+PROXIO_PER_COUNTRY = PROXIO_DAILY_TOTAL // len(PROXIO_COUNTRIES)  # 17
 PROXIO_EPOCH = "2026-10-03"  # 起点: 当天为第 0 天
 PROXIO_TZ = timezone(timedelta(hours=8))  # 按北京时间日期切天
 
@@ -1111,7 +1116,7 @@ def fetch_proxio_pool() -> list:
             items.append((uri, outbound, ip, port, proto))
 
     total_src = sum(len(b) for b in buckets.values())
-    print(f"[+] proxio 池: 五国去重 {total_src} → 第 {day} 天批次 {len(items)} 候选 "
+    print(f"[+] proxio 池: 十五国去重 {total_src} → 第 {day} 天批次 {len(items)} 候选 "
           f"(配额 { {c: quotas[c] for c in PROXIO_COUNTRIES} })")
     return items
 
