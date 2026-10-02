@@ -17,6 +17,29 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 02 - li007
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇮🇳 印度 (India) 03 - li007
+  server: 139.84.176.185
+  port: 443
+  udp: true
+  type: vless
+  uuid: d90087c3-54f5-4283-a13f-615260c8b0c7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: hTweFDvbSucrGERtiiwDfoqD3vo_Z9cuaqboff3FTXQ
+  servername: googleapis.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 04 - li007
   server: 148.113.5.44
   port: 443
   udp: true
@@ -29,17 +52,6 @@ proxies:
     short-id: 221873918e0bb74d
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 03 - li007
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,6 +60,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - li007
   - 🇮🇳 印度 (India) 02 - li007
   - 🇮🇳 印度 (India) 03 - li007
+  - 🇮🇳 印度 (India) 04 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,5 +69,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - li007
   - 🇮🇳 印度 (India) 02 - li007
   - 🇮🇳 印度 (India) 03 - li007
+  - 🇮🇳 印度 (India) 04 - li007
 rules:
 - MATCH,PROXIES

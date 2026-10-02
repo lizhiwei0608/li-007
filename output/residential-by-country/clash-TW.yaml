@@ -20,7 +20,7 @@ proxies:
   port: 52300
   udp: true
   type: vmess
-  uuid: 6e571484-4166-4699-8f58-b34a1823691f
+  uuid: 6E571484-4166-4699-8F58-B34A1823691F
   alterId: 0
   cipher: auto
   network: ws

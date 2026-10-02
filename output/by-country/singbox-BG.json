@@ -4,8 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - li007",
+      "server": "108.165.152.30",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime61.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - li007",
       "server": "213.183.63.60",
       "server_port": 9028,
       "method": "aes-256-cfb",
@@ -13,7 +27,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - li007",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - li007",
+      "server": "213.183.63.60",
+      "server_port": 9061,
+      "method": "aes-256-cfb",
+      "password": "4R3hUfZ2FHhDmNcP"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - li007",
       "server": "213.183.63.60",
       "server_port": 9030,
       "method": "aes-256-cfb",
@@ -21,7 +43,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - li007",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - li007",
       "server": "213.183.63.60",
       "server_port": 9064,
       "method": "aes-256-cfb",
@@ -29,39 +51,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - li007",
-      "server": "213.183.63.60",
-      "server_port": 9085,
-      "method": "aes-256-cfb",
-      "password": "9ej82EKe2gq7gLAM"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - li007",
-      "server": "213.183.63.60",
-      "server_port": 9098,
-      "method": "aes-256-cfb",
-      "password": "aLpQtfEZe445QyHk"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - li007",
-      "server": "213.183.63.60",
-      "server_port": 9066,
-      "method": "aes-256-cfb",
-      "password": "2KUaE2a8NWTvuCZ3"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - li007",
-      "server": "213.183.63.60",
-      "server_port": 9049,
-      "method": "aes-256-cfb",
-      "password": "PRBf4BS2HvJqtWxY"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - li007",
       "server": "213.183.63.60",
       "server_port": 9054,
       "method": "aes-256-cfb",
@@ -69,11 +59,27 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - li007",
+      "server": "213.183.63.60",
+      "server_port": 9085,
+      "method": "aes-256-cfb",
+      "password": "9ej82EKe2gq7gLAM"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - li007",
+      "server": "213.183.63.60",
+      "server_port": 9098,
+      "method": "aes-256-cfb",
+      "password": "aLpQtfEZe445QyHk"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 09 - li007",
       "server": "213.183.63.60",
-      "server_port": 9061,
+      "server_port": 9049,
       "method": "aes-256-cfb",
-      "password": "4R3hUfZ2FHhDmNcP"
+      "password": "PRBf4BS2HvJqtWxY"
     },
     {
       "type": "vless",
@@ -118,6 +124,14 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 12 - li007",
+      "server": "213.183.63.60",
+      "server_port": 9066,
+      "method": "aes-256-cfb",
+      "password": "2KUaE2a8NWTvuCZ3"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -132,7 +146,8 @@
         "🇧🇬 保加利亚 (Bulgaria) 08 - li007",
         "🇧🇬 保加利亚 (Bulgaria) 09 - li007",
         "🇧🇬 保加利亚 (Bulgaria) 10 - li007",
-        "🇧🇬 保加利亚 (Bulgaria) 11 - li007"
+        "🇧🇬 保加利亚 (Bulgaria) 11 - li007",
+        "🇧🇬 保加利亚 (Bulgaria) 12 - li007"
       ]
     },
     {
@@ -149,7 +164,8 @@
         "🇧🇬 保加利亚 (Bulgaria) 08 - li007",
         "🇧🇬 保加利亚 (Bulgaria) 09 - li007",
         "🇧🇬 保加利亚 (Bulgaria) 10 - li007",
-        "🇧🇬 保加利亚 (Bulgaria) 11 - li007"
+        "🇧🇬 保加利亚 (Bulgaria) 11 - li007",
+        "🇧🇬 保加利亚 (Bulgaria) 12 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
