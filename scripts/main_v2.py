@@ -73,6 +73,12 @@ OUTPUT_DIR = "output"
 COUNTRY_DIR = os.path.join(OUTPUT_DIR, "by-country")
 RESIDENTIAL_COUNTRY_DIR = os.path.join(OUTPUT_DIR, "residential-by-country")
 
+# ★ proxio 免费代理池 (美/韩/日/泰/新 五国 HTTP/SOCKS 并入测活; CC BY 4.0, 署名 proxio.io)
+#    池子每 20 分钟更新, 每轮取各国 reliability 最高的 N 个, 随 6 小时流水线自动换血
+PROXIO_POOL_URL = "https://raw.githubusercontent.com/proxio-io/proxy-list/main/all.json"
+PROXIO_COUNTRIES = {"US", "KR", "JP", "TH", "SG"}
+PROXIO_PER_COUNTRY_CAP = 300
+
 SINGBOX_VERSION = "v1.14.0"
 WORKDIR = os.path.dirname(os.path.abspath(__file__))          # scripts/
 BASEDIR = os.path.dirname(WORKDIR)                              # repo root
@@ -1009,6 +1015,70 @@ def fetch_raw_nodes() -> list:
     return list(nodes)
 
 
+def fetch_proxio_pool() -> list:
+    """proxio-io/proxy-list 免费池 → 五国 HTTP/SOCKS 候选.
+
+    直构 sing-box outbound (type http/socks), 不走 URI 解析; 返回与主流程同构的
+    (uri, outbound, server, port, proto) 列表, 后续端口预检/sing-box 测活/
+    家宽分类/导出全流程自动接管. 协议优先级 SOCKS5 > HTTP > SOCKS4.
+    """
+    items = []
+    try:
+        r = http_get(PROXIO_POOL_URL, timeout=60)
+        proxies = (r.json().get("proxies") or [])
+    except Exception as e:
+        print(f"[!] proxio 池拉取失败: {str(e)[:80]}")
+        return items
+
+    buckets = {}
+    for e in proxies:
+        try:
+            cc = str(e.get("code") or "").upper()
+            if cc not in PROXIO_COUNTRIES:
+                continue
+            ip = str(e.get("ip") or "").strip()
+            port = int(e.get("port") or 0)
+            if not ip or not (0 < port < 65536):
+                continue
+            protos = [str(x).upper() for x in (e.get("protocols") or [])]
+            if "SOCKS5" in protos:
+                outbound = {"type": "socks", "server": ip, "server_port": port, "version": "5"}
+                proto, uri = "socks", f"socks5://{ip}:{port}"
+            elif any(k in protos for k in ("HTTP", "HTTPS", "CONNECT25", "CONNECT80")):
+                outbound = {"type": "http", "server": ip, "server_port": port}
+                proto, uri = "http", f"http://{ip}:{port}"
+            elif "SOCKS4" in protos:
+                outbound = {"type": "socks", "server": ip, "server_port": port, "version": "4"}
+                proto, uri = "socks", f"socks4://{ip}:{port}"
+            else:
+                continue
+            rel = e.get("reliability") or 0
+            try:
+                rel = float(rel)
+            except Exception:
+                rel = 0
+            lat = e.get("latency_s")
+            try:
+                lat = float(lat)
+            except Exception:
+                lat = 99.0
+            key = (ip, port, proto)
+            b = buckets.setdefault(cc, {})
+            # 同 ip:port:proto 只留 reliability 最高的一条
+            if key not in b or rel > b[key][0]:
+                b[key] = (rel, lat, uri, outbound, ip, port, proto)
+        except Exception:
+            continue
+
+    for cc, b in buckets.items():
+        ranked = sorted(b.values(), key=lambda v: (-v[0], v[1]))[:PROXIO_PER_COUNTRY_CAP]
+        for rel, lat, uri, outbound, ip, port, proto in ranked:
+            items.append((uri, outbound, ip, port, proto))
+    total_src = sum(len(b) for b in buckets.values())
+    print(f"[+] proxio 池: 五国去重 {total_src} → 取各国 top{PROXIO_PER_COUNTRY_CAP} 共 {len(items)} 候选")
+    return items
+
+
 # ═══════════════════════════════════════════N═══════════════════════
 # 阶段 A: 端口预检 (削减死节点, 避免后面浪费 sing-box 全流程)
 # ═══════════════════════════════════════════N═══════════════════════
@@ -1737,6 +1807,16 @@ def outbound_to_clash(node: dict, name: str) -> dict:
         tls = node.get("tls") or {}
         proxy["sni"] = tls.get("server_name") or server
         proxy["skip-cert-verify"] = bool(tls.get("insecure"))
+    elif t == "http":
+        # proxio 池并入的 HTTP 代理
+        proxy["type"] = "http"
+        proxy.pop("udp", None)  # Clash http 类型无 udp 字段
+    elif t == "socks":
+        # proxio 池并入的 SOCKS 代理; Clash 无 socks4, 仅 sing-box/v2ray 保留
+        if str(node.get("version", "5")) == "5":
+            proxy["type"] = "socks5"
+        else:
+            return None
     else:
         return None
     return proxy
@@ -1755,6 +1835,13 @@ def outbound_to_v2ray_link(node: dict, name: str) -> str:
     server = node["server"]
     tls = node.get("tls") or {}
     transport = node.get("transport") or {}
+
+    # proxio 池并入的普通 HTTP/SOCKS 代理 (v2rayN 可直接导入)
+    if t == "http":
+        return f"http://{server}:{port}#{urllib.parse.quote(name)}"
+    if t == "socks":
+        scheme = "socks5" if str(node.get("version", "5")) == "5" else "socks"
+        return f"{scheme}://{server}:{port}#{urllib.parse.quote(name)}"
 
     if t == "vmess":
         ttype = transport.get("type", "tcp")
@@ -2466,6 +2553,15 @@ def main():
         if BLACKLIST_NAME_HINTS.search(urllib.parse.unquote(uri.split("#", 1)[-1] if "#" in uri else "")):
             continue
         candidates.append((uri, outbound, server, port, proto))
+
+    # 2.4 ★ proxio 免费池 (美/韩/日/泰/新 HTTP/SOCKS) 并入候选 — 同走 6 小时测活+家宽筛选
+    try:
+        proxio_items = fetch_proxio_pool()
+        if proxio_items:
+            candidates.extend(proxio_items)
+            print(f"[*] 并入 proxio 候选 {len(proxio_items)} → 候选总数 {len(candidates)}")
+    except Exception as e:
+        print(f"[!] proxio 并入失败 (不影响主流程): {str(e)[:80]}")
 
     # 2.5 ★ 测前强去重 (凭据指纹去重: 同 凭据+目标+协议 只测一次, 结果回填全部重复节点)
     #     key = (server, port, proto, 凭据指纹): 凭据不同 → 服务端校验结果可能不同, 不可合并
