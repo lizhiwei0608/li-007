@@ -37,7 +37,7 @@ import subprocess
 import ipaddress
 import urllib.parse
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 try:
@@ -73,11 +73,32 @@ OUTPUT_DIR = "output"
 COUNTRY_DIR = os.path.join(OUTPUT_DIR, "by-country")
 RESIDENTIAL_COUNTRY_DIR = os.path.join(OUTPUT_DIR, "residential-by-country")
 
-# ★ proxio 免费代理池 (美/韩/日/泰/新 五国 HTTP/SOCKS 并入测活; CC BY 4.0, 署名 proxio.io)
-#    池子每 20 分钟更新, 每轮取各国 reliability 最高的 N 个, 随 6 小时流水线自动换血
+# ★ proxio 免费代理池 (HTTP/SOCKS 并入测活; CC BY 4.0, 署名 proxio.io)
+#    每天换一批: 按北京时间日期轮换国家组 (30 天一轮), 每批共 150 个 (组内每国 30),
+#    随 6 小时流水线自动换血 (同一天内 4 次运行用同一批国家, 池子本身 20 分钟一更新)
 PROXIO_POOL_URL = "https://raw.githubusercontent.com/proxio-io/proxy-list/main/all.json"
-PROXIO_COUNTRIES = {"US", "KR", "JP", "TH", "SG"}
-PROXIO_PER_COUNTRY_CAP = 300
+PROXIO_ROTATION_GROUPS = [
+    ["US", "KR", "JP", "TH", "SG"],  # 第 1 组: 用户最初指定的五国
+    ["ID", "DE", "BR", "VN", "PH"],
+    ["IN", "RU", "MX", "AR", "CO"],
+    ["GB", "FR", "NL", "ES", "PL"],
+    ["HK", "TR", "AE", "ZA", "UA"],
+    ["EG", "CA", "SE", "IT", "MY"],
+]
+PROXIO_DAILY_TOTAL = 150
+# 轮换起点: 按北京时间 (UTC+8) 日期切天, 2026-10-03 当天为第 1 组 (用户最初指定的五国),
+# 之后每天顺延, 30 天一轮
+PROXIO_ROTATION_EPOCH = "2026-10-03"
+PROXIO_ROTATION_TZ = timezone(timedelta(hours=8))
+
+
+def _proxio_today_group():
+    """按北京时间日期轮换国家组; 返回 (国家列表, 组序号). 同一天内多次运行结果一致."""
+    n = len(PROXIO_ROTATION_GROUPS)
+    epoch = datetime.strptime(PROXIO_ROTATION_EPOCH, "%Y-%m-%d").date()
+    today = datetime.now(PROXIO_ROTATION_TZ).date()
+    idx = (today - epoch).days % n
+    return PROXIO_ROTATION_GROUPS[idx], idx
 
 SINGBOX_VERSION = "v1.14.0"
 WORKDIR = os.path.dirname(os.path.abspath(__file__))          # scripts/
@@ -1016,13 +1037,17 @@ def fetch_raw_nodes() -> list:
 
 
 def fetch_proxio_pool() -> list:
-    """proxio-io/proxy-list 免费池 → 五国 HTTP/SOCKS 候选.
+    """proxio-io/proxy-list 免费池 → 当日轮换组 HTTP/SOCKS 候选.
 
     直构 sing-box outbound (type http/socks), 不走 URI 解析; 返回与主流程同构的
     (uri, outbound, server, port, proto) 列表, 后续端口预检/sing-box 测活/
     家宽分类/导出全流程自动接管. 协议优先级 SOCKS5 > HTTP > SOCKS4.
+    每天一批: 当日国家组内每国取 reliability 最高的配额个, 全天 4 次运行同批.
     """
     items = []
+    today_cc, grp_idx = _proxio_today_group()
+    today_set = set(today_cc)
+    per_cc = max(1, PROXIO_DAILY_TOTAL // len(today_cc))
     try:
         r = http_get(PROXIO_POOL_URL, timeout=60)
         proxies = (r.json().get("proxies") or [])
@@ -1034,7 +1059,7 @@ def fetch_proxio_pool() -> list:
     for e in proxies:
         try:
             cc = str(e.get("code") or "").upper()
-            if cc not in PROXIO_COUNTRIES:
+            if cc not in today_set:
                 continue
             ip = str(e.get("ip") or "").strip()
             port = int(e.get("port") or 0)
@@ -1070,12 +1095,13 @@ def fetch_proxio_pool() -> list:
         except Exception:
             continue
 
-    for cc, b in buckets.items():
-        ranked = sorted(b.values(), key=lambda v: (-v[0], v[1]))[:PROXIO_PER_COUNTRY_CAP]
+    for cc in today_cc:  # 按组内顺序, 保序
+        b = buckets.get(cc, {})
+        ranked = sorted(b.values(), key=lambda v: (-v[0], v[1]))[:per_cc]
         for rel, lat, uri, outbound, ip, port, proto in ranked:
             items.append((uri, outbound, ip, port, proto))
     total_src = sum(len(b) for b in buckets.values())
-    print(f"[+] proxio 池: 五国去重 {total_src} → 取各国 top{PROXIO_PER_COUNTRY_CAP} 共 {len(items)} 候选")
+    print(f"[+] proxio 池: 当日第 {grp_idx + 1} 组 {today_cc} 去重 {total_src} → 每国 top{per_cc} 共 {len(items)} 候选")
     return items
 
 
@@ -2554,7 +2580,7 @@ def main():
             continue
         candidates.append((uri, outbound, server, port, proto))
 
-    # 2.4 ★ proxio 免费池 (美/韩/日/泰/新 HTTP/SOCKS) 并入候选 — 同走 6 小时测活+家宽筛选
+    # 2.4 ★ proxio 免费池 (按日轮换国家组, 每批 150 个 HTTP/SOCKS) 并入候选 — 同走 6 小时测活+家宽筛选
     try:
         proxio_items = fetch_proxio_pool()
         if proxio_items:
