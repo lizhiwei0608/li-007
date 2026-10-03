@@ -15,7 +15,7 @@
        + cloudflare trace tls=VERIFIED → MITM/劫持节点识别
   3. 分类与导出:
      - 国家: 出口 IP ip-api.com 批量(45req/min 免费) → MaxMind GeoLite2 兜底
-     - 属性: hosting=true/CDN网段/IDC ASN → 机房 | mobile=true → 移动家宽单跳版: {len(sh_proxies)}
+     - 属性: hosting=true/CDN网段/IDC ASN → 机房 | mobile=true → 移动
             | 运营商白名单+rDNS → 家宽
      - 去重: 出口IP+端口 唯一化, 家宽区严格防同IP刷屏
 """
