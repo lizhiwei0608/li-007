@@ -6,34 +6,12 @@ log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - li007
   server: 185.135.86.175
-  port: 9068
+  port: 9033
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
+  password: UTJA57ypk2XKQpnm
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - li007
-  server: 185.135.86.175
-  port: 9082
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 45xgMgm386pjWjTx
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - li007
-  server: 185.135.86.175
-  port: 9007
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: kSPmvwdFzGMMW5pY
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - li007
-  server: 91.240.86.70
-  port: 24443
-  udp: true
-  type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-  skip-cert-verify: true
-- name: 🇱🇻 拉脱维亚 (Latvia) 05 - li007
   server: 195.123.213.28
   port: 443
   udp: true
@@ -45,9 +23,22 @@ proxies:
     public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
     short-id: 5c256336e3b673fa
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 06 - li007
-  server: lv.monkora.org
+  client-fingerprint: ios
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - li007
+  server: 185.28.47.28
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8f6e49e6-7f03-4f10-9da9-1716158d80ed
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wHTq_owme8N6237B37GhneBcNJQtzRdIFouRkSscgnQ
+    short-id: 40fac5d64bc6a540
+  servername: latinki.pumpkinpie.study
+  client-fingerprint: firefox
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - li007
+  server: 85.159.228.223
   port: 443
   udp: true
   type: vless
@@ -56,8 +47,16 @@ proxies:
   reality-opts:
     public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
   servername: example.org
-  client-fingerprint: firefox
-- name: 🇱🇻 拉脱维亚 (Latvia) 07 - li007
+  client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 05 - li007
+  server: 91.240.86.70
+  port: 24443
+  udp: true
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: hy.quattro-tech.ru
+  skip-cert-verify: true
+- name: 🇱🇻 拉脱维亚 (Latvia) 06 - li007
   server: 138.124.180.137
   port: 443
   udp: true
@@ -81,7 +80,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 04 - li007
   - 🇱🇻 拉脱维亚 (Latvia) 05 - li007
   - 🇱🇻 拉脱维亚 (Latvia) 06 - li007
-  - 🇱🇻 拉脱维亚 (Latvia) 07 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -93,6 +91,5 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 04 - li007
   - 🇱🇻 拉脱维亚 (Latvia) 05 - li007
   - 🇱🇻 拉脱维亚 (Latvia) 06 - li007
-  - 🇱🇻 拉脱维亚 (Latvia) 07 - li007
 rules:
 - MATCH,PROXIES

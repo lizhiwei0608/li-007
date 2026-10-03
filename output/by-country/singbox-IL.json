@@ -66,26 +66,13 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇮🇱 以色列 (Israel) 04 - li007",
-      "server": "129.159.156.109",
-      "server_port": 50160,
-      "password": "f25f19f29ce3fb53a35bf1b35b452a43",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇱 以色列 (Israel) 01 - li007",
         "🇮🇱 以色列 (Israel) 02 - li007",
-        "🇮🇱 以色列 (Israel) 03 - li007",
-        "🇮🇱 以色列 (Israel) 04 - li007"
+        "🇮🇱 以色列 (Israel) 03 - li007"
       ]
     },
     {
@@ -94,8 +81,7 @@
       "outbounds": [
         "🇮🇱 以色列 (Israel) 01 - li007",
         "🇮🇱 以色列 (Israel) 02 - li007",
-        "🇮🇱 以色列 (Israel) 03 - li007",
-        "🇮🇱 以色列 (Israel) 04 - li007"
+        "🇮🇱 以色列 (Israel) 03 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
