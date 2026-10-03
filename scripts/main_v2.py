@@ -15,7 +15,7 @@
        + cloudflare trace tls=VERIFIED → MITM/劫持节点识别
   3. 分类与导出:
      - 国家: 出口 IP ip-api.com 批量(45req/min 免费) → MaxMind GeoLite2 兜底
-     - 属性: hosting=true/CDN网段/IDC ASN → 机房 | mobile=true → 移动
+     - 属性: hosting=true/CDN网段/IDC ASN → 机房 | mobile=true → 移动家宽单跳版: {len(sh_proxies)}
             | 运营商白名单+rDNS → 家宽
      - 去重: 出口IP+端口 唯一化, 家宽区严格防同IP刷屏
 """
@@ -2272,6 +2272,16 @@ def export_all(unique_nodes, residential, residential_singlehop, non_residential
                 os.remove(pp)
     print(f"[+] 家宽单跳版: {len(sh_proxies)} 节点 (residential-singlehop-*)")
 
+    # 2.6) 家宽全量版 (双跳 + 单跳合并去重, 一个订阅搞定所有住宅 IP)
+    all_res_links, _seen = [], set()
+    for lk in res_links + sh_links:
+        if lk and lk not in _seen:
+            _seen.add(lk)
+            all_res_links.append(lk)
+    with open(os.path.join(OUTPUT_DIR, "residential-all.txt"), "w", encoding="utf-8") as f:
+        f.write(base64.b64encode("\n".join(all_res_links).encode()).decode())
+    print(f"[+] 家宽全量版: {len(all_res_links)} 节点 (residential-all.txt)")
+
     # 3) 按国家 - 普通区
     shutil.rmtree(COUNTRY_DIR, ignore_errors=True)
     os.makedirs(COUNTRY_DIR, exist_ok=True)
@@ -2386,6 +2396,7 @@ def update_readme(total_count, res_count, sh_count=0):
 
     res_table = table_rows(res_counts, "residential-by-country")
     normal_table = table_rows(normal_counts, "by-country")
+    all_res_count = count_file(os.path.join(OUTPUT_DIR, "residential-all.txt"))
 
     readme = f"""# 🚀 免费节点自动测活订阅池 (含真实家宽/住宅IP甄选)
 
@@ -2420,6 +2431,14 @@ def update_readme(total_count, res_count, sh_count=0):
 | 🚀 **Clash (YAML 格式)** | `{sh_count}` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/residential-singlehop-clash.yaml) | [官方 Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/residential-singlehop-clash.yaml) |
 | ⚡ **V2RayN (Base64 格式)** | `{sh_count}` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/residential-singlehop.txt) | [官方 Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/residential-singlehop.txt) |
 | 📦 **sing-box (JSON 格式)** | `{sh_count}` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/residential-singlehop-singbox.json) | [官方 Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/residential-singlehop-singbox.json) |
+
+### 🏠 家宽全量版 (双跳+单跳合并，一个订阅搞定)
+
+> 双跳住宅与单跳住宅去重合并，v2rayN 只需导入下面这一个订阅，每次流水线更新后点"更新订阅"即自动获取最新住宅节点。
+
+| 客户端 / 格式类型 | 节点总数 | 免翻 CDN 订阅直链 (国内直连) | 官方原生 Raw 直链 (开启代理) |
+| :--- | :---: | :--- | :--- |
+| ⚡ **V2RayN (Base64 格式)** | `{all_res_count}` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/residential-all.txt) | [官方 Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/residential-all.txt) |
 
 ---
 
