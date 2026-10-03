@@ -67,6 +67,12 @@ SOURCE_URLS = [
     "https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/base64.txt",
     "https://raw.githubusercontent.com/PuddinCat/BestClash/main/proxies.yaml",
     "https://raw.githubusercontent.com/twj0/subseek/refs/heads/master/data/sub_github.txt",
+    # 2026-10-03 新增: 4 个验证过的免费源 (morpheus 每日实测拨号后发布; snsub 59 个实测最快;
+    # matin hysteria2 专源; sylphnet 每 15 分钟更新)
+    "https://raw.githubusercontent.com/morpheusadam/v2ray-config/main/subs/bundles/lite.txt",
+    "https://raw.githubusercontent.com/3000S-HTTP/sNSub/main/output/best59_base64.txt",
+    "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/hysteria2.txt",
+    "https://raw.githubusercontent.com/ProblemTheCode/SylphNet-public/refs/heads/main/sub/sub.txt",
 ]
 
 OUTPUT_DIR = "output"
