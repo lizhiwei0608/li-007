@@ -73,30 +73,6 @@ OUTPUT_DIR = "output"
 COUNTRY_DIR = os.path.join(OUTPUT_DIR, "by-country")
 RESIDENTIAL_COUNTRY_DIR = os.path.join(OUTPUT_DIR, "residential-by-country")
 
-# ★ proxio 免费代理池 (HTTP/SOCKS 并入测活; CC BY 4.0, 署名 proxio.io)
-#    每天换一批链接: 国家固定为用户指定的十五国, 每天 256 个链接与往日不同.
-#    实现: 每国按 reliability 排序后, 按北京时间日期取滑动窗口 (每国每天 17 个,
-#    256 = 15×17 + 1, 余数与配额缺口统一由 US 池补足); 步长 = 各国当日配额,
-#    保证次日窗口不重叠, 取尽后回绕.
-#    某国池子本身不足 17 个 (如 JP 仅约 15 个) 时按实际取, 缺口同样由 US 补足.
-#    同一天内 4 次运行用同一批; 池子本身 20 分钟一更新.
-PROXIO_POOL_URL = "https://raw.githubusercontent.com/proxio-io/proxy-list/main/all.json"
-# 固定十五国, 保序: 前五国为用户最初指定, 后十国按池量从大到小 (CN/RU 未纳入)
-PROXIO_COUNTRIES = ["US", "KR", "JP", "TH", "SG",
-                    "ID", "IN", "PH", "DE", "BR",
-                    "BD", "VN", "AR", "CO", "MX"]
-PROXIO_DAILY_TOTAL = 256
-PROXIO_PER_COUNTRY = PROXIO_DAILY_TOTAL // len(PROXIO_COUNTRIES)  # 17
-PROXIO_EPOCH = "2026-10-03"  # 起点: 当天为第 0 天
-PROXIO_TZ = timezone(timedelta(hours=8))  # 按北京时间日期切天
-
-
-def _proxio_day_index():
-    """从起点算起的天数 (北京时间); 同一天内多次运行结果一致."""
-    epoch = datetime.strptime(PROXIO_EPOCH, "%Y-%m-%d").date()
-    today = datetime.now(PROXIO_TZ).date()
-    return (today - epoch).days
-
 SINGBOX_VERSION = "v1.14.0"
 WORKDIR = os.path.dirname(os.path.abspath(__file__))          # scripts/
 BASEDIR = os.path.dirname(WORKDIR)                              # repo root
@@ -1033,94 +1009,6 @@ def fetch_raw_nodes() -> list:
     return list(nodes)
 
 
-def fetch_proxio_pool() -> list:
-    """proxio-io/proxy-list 免费池 → 当日轮换组 HTTP/SOCKS 候选.
-
-    直构 sing-box outbound (type http/socks), 不走 URI 解析; 返回与主流程同构的
-    (uri, outbound, server, port, proto) 列表, 后续端口预检/sing-box 测活/
-    家宽分类/导出全流程自动接管. 协议优先级 SOCKS5 > HTTP > SOCKS4.
-    每天一批: 当日国家组内每国取 reliability 最高的配额个, 全天 4 次运行同批.
-    """
-    items = []
-    day = _proxio_day_index()
-    today_set = set(PROXIO_COUNTRIES)
-    try:
-        r = http_get(PROXIO_POOL_URL, timeout=60)
-        proxies = (r.json().get("proxies") or [])
-    except Exception as e:
-        print(f"[!] proxio 池拉取失败: {str(e)[:80]}")
-        return items
-
-    buckets = {}
-    for e in proxies:
-        try:
-            cc = str(e.get("code") or "").upper()
-            if cc not in today_set:
-                continue
-            ip = str(e.get("ip") or "").strip()
-            port = int(e.get("port") or 0)
-            if not ip or not (0 < port < 65536):
-                continue
-            protos = [str(x).upper() for x in (e.get("protocols") or [])]
-            if "SOCKS5" in protos:
-                outbound = {"type": "socks", "server": ip, "server_port": port, "version": "5"}
-                proto, uri = "socks", f"socks5://{ip}:{port}"
-            elif any(k in protos for k in ("HTTP", "HTTPS", "CONNECT25", "CONNECT80")):
-                outbound = {"type": "http", "server": ip, "server_port": port}
-                proto, uri = "http", f"http://{ip}:{port}"
-            elif "SOCKS4" in protos:
-                outbound = {"type": "socks", "server": ip, "server_port": port, "version": "4"}
-                proto, uri = "socks", f"socks4://{ip}:{port}"
-            else:
-                continue
-            rel = e.get("reliability") or 0
-            try:
-                rel = float(rel)
-            except Exception:
-                rel = 0
-            lat = e.get("latency_s")
-            try:
-                lat = float(lat)
-            except Exception:
-                lat = 99.0
-            key = (ip, port, proto)
-            b = buckets.setdefault(cc, {})
-            # 同 ip:port:proto 只留 reliability 最高的一条
-            if key not in b or rel > b[key][0]:
-                b[key] = (rel, lat, uri, outbound, ip, port, proto)
-        except Exception:
-            continue
-
-    picked_keys = set()
-    # 先算各国配额: 每国 30, 不足 30 的按实际; 缺口由 US 补足 (US 池最大).
-    # 步长 = 各国当日配额 → 每天窗口无缝衔接, 与次日不重叠 (取尽后回绕).
-    avail = {cc: len(buckets.get(cc, {})) for cc in PROXIO_COUNTRIES}
-    quotas = {cc: min(PROXIO_PER_COUNTRY, avail[cc]) for cc in PROXIO_COUNTRIES}
-    shortfall = PROXIO_DAILY_TOTAL - sum(quotas.values())
-    if shortfall > 0 and avail.get("US", 0) > quotas["US"]:
-        quotas["US"] = min(avail["US"], quotas["US"] + shortfall)
-
-    for cc in PROXIO_COUNTRIES:  # 保序
-        ranked = sorted(buckets.get(cc, {}).values(), key=lambda v: (-v[0], v[1]))
-        n, q = len(ranked), quotas[cc]
-        if n == 0 or q == 0:
-            continue
-        # 当日滑动窗口: 步长 = 配额, 每天取新的 q 个链接, 取尽后回绕
-        start = (day * q) % n
-        for i in range(q):
-            rel, lat, uri, outbound, ip, port, proto = ranked[(start + i) % n]
-            key = (ip, port, proto)
-            if key in picked_keys:
-                continue
-            picked_keys.add(key)
-            items.append((uri, outbound, ip, port, proto))
-
-    total_src = sum(len(b) for b in buckets.values())
-    print(f"[+] proxio 池: 十五国去重 {total_src} → 第 {day} 天批次 {len(items)} 候选 "
-          f"(配额 { {c: quotas[c] for c in PROXIO_COUNTRIES} })")
-    return items
-
-
 # ═══════════════════════════════════════════N═══════════════════════
 # 阶段 A: 端口预检 (削减死节点, 避免后面浪费 sing-box 全流程)
 # ═══════════════════════════════════════════N═══════════════════════
@@ -1850,11 +1738,11 @@ def outbound_to_clash(node: dict, name: str) -> dict:
         proxy["sni"] = tls.get("server_name") or server
         proxy["skip-cert-verify"] = bool(tls.get("insecure"))
     elif t == "http":
-        # proxio 池并入的 HTTP 代理
+        # 普通 HTTP 代理
         proxy["type"] = "http"
         proxy.pop("udp", None)  # Clash http 类型无 udp 字段
     elif t == "socks":
-        # proxio 池并入的 SOCKS 代理; Clash 无 socks4, 仅 sing-box/v2ray 保留
+        # 普通 SOCKS 代理; Clash 无 socks4, 仅 sing-box/v2ray 保留
         if str(node.get("version", "5")) == "5":
             proxy["type"] = "socks5"
         else:
@@ -1878,7 +1766,7 @@ def outbound_to_v2ray_link(node: dict, name: str) -> str:
     tls = node.get("tls") or {}
     transport = node.get("transport") or {}
 
-    # proxio 池并入的普通 HTTP/SOCKS 代理 (v2rayN 可直接导入)
+    # 普通 HTTP/SOCKS 代理 (v2rayN 可直接导入)
     if t == "http":
         return f"http://{server}:{port}#{urllib.parse.quote(name)}"
     if t == "socks":
@@ -2595,15 +2483,6 @@ def main():
         if BLACKLIST_NAME_HINTS.search(urllib.parse.unquote(uri.split("#", 1)[-1] if "#" in uri else "")):
             continue
         candidates.append((uri, outbound, server, port, proto))
-
-    # 2.4 ★ proxio 免费池 (五国固定, 每日换一批 150 个不同链接) 并入候选 — 同走 6 小时测活+家宽筛选
-    try:
-        proxio_items = fetch_proxio_pool()
-        if proxio_items:
-            candidates.extend(proxio_items)
-            print(f"[*] 并入 proxio 候选 {len(proxio_items)} → 候选总数 {len(candidates)}")
-    except Exception as e:
-        print(f"[!] proxio 并入失败 (不影响主流程): {str(e)[:80]}")
 
     # 2.5 ★ 测前强去重 (凭据指纹去重: 同 凭据+目标+协议 只测一次, 结果回填全部重复节点)
     #     key = (server, port, proto, 凭据指纹): 凭据不同 → 服务端校验结果可能不同, 不可合并
