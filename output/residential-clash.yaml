@@ -4,30 +4,16 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - li007
-  server: 178.83.46.216
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
-  server: sbgfgov.vip24.wogacnmnagfwgov.com
-  port: 11224
-  udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 03 (家宽) - li007
-  server: s3.huhiuh.space
-  port: 18642
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - li007
+  server: 70527201-tmm5c0-tubliy-1la7v.hk3.hyhuawei.com
+  port: 443
   udp: true
   type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: www.bing.com
+  password: 460749c2-bcef-11ee-89fc-f23c913c8d2b
+  sni: 70527201-tmm5c0-tubliy-1la7v.hk3.hyhuawei.com
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007
-  server: 118.167.235.241
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
+  server: hinet1.2yly.com
   port: 24215
   udp: true
   type: vless
@@ -36,24 +22,38 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: random
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - li007
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇸🇬 新加坡 (Singapore) 04 (家宽) - li007
+  server: s3.huhiuh.space
+  port: 18642
+  udp: true
+  type: hysteria2
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: www.bing.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - li007
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - li007
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
-  - 🇸🇬 新加坡 (Singapore) 03 (家宽) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - li007
+  - 🇸🇬 新加坡 (Singapore) 04 (家宽) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - li007
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - li007
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
-  - 🇸🇬 新加坡 (Singapore) 03 (家宽) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - li007
+  - 🇸🇬 新加坡 (Singapore) 04 (家宽) - li007
 rules:
 - MATCH,PROXIES
