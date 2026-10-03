@@ -2149,11 +2149,17 @@ def classify_and_export(test_results: list):
         if r.get("_chain_failed"):
             chain_failed_raws.add(r.get("raw"))
     residential = []
+    residential_singlehop = []  # ★ 真住宅IP但双跳失败 → 单跳版专区 (单跳直连可用)
     res_seen_ip = set()
+    sh_seen_ip = set()
     for n in unique_nodes:
         if n["net_type"] in ("residential", "mobile") and n["confidence"] >= 60:
             if n.get("raw") in chain_failed_raws:
-                n["net_type"] = "datacenter"
+                # 双跳失败: 退出双跳家宽专区, 但 IP 仍是真住宅 → 单跳版 (浅拷贝保留住宅身份用于命名)
+                if n["exit_ip"] and n["exit_ip"] not in sh_seen_ip:
+                    sh_seen_ip.add(n["exit_ip"])
+                    residential_singlehop.append(dict(n))
+                n["net_type"] = "datacenter"  # 普通区内保持原有降级归类 (行为不变)
                 n["confidence"] = 70
                 continue
             if n["exit_ip"] and n["exit_ip"] not in res_seen_ip:
@@ -2163,6 +2169,7 @@ def classify_and_export(test_results: list):
     before_total = len(unique_nodes)
     unique_nodes = [n for n in unique_nodes if not (0 <= n.get("fraud_score", -1) >= 90)]
     residential = [n for n in residential if not (0 <= n.get("fraud_score", -1) >= 90)]
+    residential_singlehop = [n for n in residential_singlehop if not (0 <= n.get("fraud_score", -1) >= 90)]
     if len(unique_nodes) < before_total:
         print(f"[*] 极高危节点 (fraud≥90) 剔除: {before_total - len(unique_nodes)} 个")
 
@@ -2177,7 +2184,7 @@ def classify_and_export(test_results: list):
     #    保留在总订阅/国家订阅里 (直连场景仍可用), 只是退出家宽专区
 
     # 重建 outbound (测活阶段的 outbound 已验证可用); 剥离测试专用字段 (detour 等绝不入订阅)
-    for n in unique_nodes:
+    for n in unique_nodes + residential_singlehop:
         parsed = parse_node_uri(n["raw"])
         if parsed:
             ob = parsed[0]
@@ -2186,7 +2193,7 @@ def classify_and_export(test_results: list):
         else:
             n["outbound"] = None
 
-    return unique_nodes, residential, non_residential
+    return unique_nodes, residential, residential_singlehop, non_residential
 
 
 def make_node_name(item, idx, force_residential=False):
@@ -2203,7 +2210,7 @@ def make_node_name(item, idx, force_residential=False):
     return f"{flag} {cname} {idx:02d}{tag}{risk_tag} - li007"
 
 
-def export_all(unique_nodes, residential, non_residential):
+def export_all(unique_nodes, residential, residential_singlehop, non_residential):
     ensure_directories()
 
     def build_group(nodes_list, force_res=False):
@@ -2240,6 +2247,31 @@ def export_all(unique_nodes, residential, non_residential):
             if os.path.exists(p):
                 os.remove(p)
 
+    # 2.5) 家宽单跳版 (真住宅IP, 双跳失败, 单跳直连可用; 节点名带 ·单跳 后缀)
+    sh_links, sh_proxies, sh_sb = [], [], []
+    for idx, item in enumerate(residential_singlehop, start=1):
+        name = make_node_name(item, idx, force_residential=True)
+        name = name.replace(" (家宽)", " (家宽·单跳)").replace(" (移动家宽)", " (移动家宽·单跳)")
+        ob = item["outbound"]
+        if not ob:
+            continue
+        sh_links.append(outbound_to_v2ray_link(ob, name))
+        cp = outbound_to_clash(ob, name)
+        if cp:
+            sh_proxies.append(cp)
+        sh_sb.append(outbound_to_singbox(ob, name))
+    with open(os.path.join(OUTPUT_DIR, "residential-singlehop.txt"), "w", encoding="utf-8") as f:
+        f.write(base64.b64encode("\n".join(sh_links).encode()).decode())
+    if sh_proxies:
+        export_clash_yaml(sh_proxies, os.path.join(OUTPUT_DIR, "residential-singlehop-clash.yaml"))
+        export_singbox_json(sh_sb, os.path.join(OUTPUT_DIR, "residential-singlehop-singbox.json"))
+    else:
+        for fn in ("residential-singlehop-clash.yaml", "residential-singlehop-singbox.json"):
+            pp = os.path.join(OUTPUT_DIR, fn)
+            if os.path.exists(pp):
+                os.remove(pp)
+    print(f"[+] 家宽单跳版: {len(sh_proxies)} 节点 (residential-singlehop-*)")
+
     # 3) 按国家 - 普通区
     shutil.rmtree(COUNTRY_DIR, ignore_errors=True)
     os.makedirs(COUNTRY_DIR, exist_ok=True)
@@ -2266,8 +2298,8 @@ def export_all(unique_nodes, residential, non_residential):
         export_clash_yaml(p, os.path.join(RESIDENTIAL_COUNTRY_DIR, f"clash-{cc}.yaml"))
         export_singbox_json(s, os.path.join(RESIDENTIAL_COUNTRY_DIR, f"singbox-{cc}.json"))
 
-    print(f"[*] 导出完毕: 全量 {len(all_links)} | 家宽 {len(res_links)}")
-    return len(all_links), len(res_links)
+    print(f"[*] 导出完毕: 全量 {len(all_links)} | 家宽 {len(res_links)} | 家宽单跳 {len(sh_links)}")
+    return len(all_links), len(res_links), len(sh_links)
 
 
 def export_clash_yaml(clash_proxies, filepath):
@@ -2309,7 +2341,7 @@ def export_singbox_json(sb_nodes, filepath):
 # README 生成
 # ═══════════════════════════════════════════N═══════════════════════
 
-def update_readme(total_count, res_count):
+def update_readme(total_count, res_count, sh_count=0):
     repo_name = os.environ.get("GITHUB_REPOSITORY", "hezhanleiok/freesub").strip()
     cache_bust = ""
     # 私有化部署 Worker 脚本里的仓库参数 (默认值兜底)
@@ -2380,6 +2412,14 @@ def update_readme(total_count, res_count):
 | 家宽地区 | 节点数 | V2RayN 专属订阅 | Clash 专属订阅 | sing-box 专属订阅 |
 | :--- | :---: | :---: | :---: | :---: |
 {res_table}
+
+### 🏠➡️ 家宽单跳版 (真住宅 IP, 双跳链式失败, 单跳直连可用)
+
+| 客户端 / 格式类型 | 节点总数 | 免翻 CDN 订阅直链 (国内直连) | 官方原生 Raw 直链 (开启代理) |
+| :--- | :---: | :--- | :--- |
+| 🚀 **Clash (YAML 格式)** | `{sh_count}` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/residential-singlehop-clash.yaml) | [官方 Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/residential-singlehop-clash.yaml) |
+| ⚡ **V2RayN (Base64 格式)** | `{sh_count}` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/residential-singlehop.txt) | [官方 Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/residential-singlehop.txt) |
+| 📦 **sing-box (JSON 格式)** | `{sh_count}` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/residential-singlehop-singbox.json) | [官方 Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/residential-singlehop-singbox.json) |
 
 ---
 
@@ -2580,18 +2620,18 @@ def main():
     if not test_results:
         print("[!] 全部节点测活失败 — 保留上次 output, 不覆盖订阅文件")
         return
-    unique_nodes, residential, non_residential = classify_and_export(test_results)
+    unique_nodes, residential, residential_singlehop, non_residential = classify_and_export(test_results)
     if not unique_nodes:
         print("[!] 分类后无存活节点 — 保留上次 output")
         return
-    total, res = export_all(unique_nodes, residential, non_residential)
-    update_readme(total, res)
+    total, res, sh = export_all(unique_nodes, residential, residential_singlehop, non_residential)
+    update_readme(total, res, sh)
 
 
     # 统计报告
     elapsed = time.time() - t_start
     print("\n===== 运行报告 =====")
-    print(f"总耗时: {elapsed:.0f}s | 抓取 {len(raw_nodes)} → 解析成功 {len(candidates)} → 真活 {len(test_results)} → 去重后 {len(unique_nodes)} → 家宽 {len(residential)}")
+    print(f"总耗时: {elapsed:.0f}s | 抓取 {len(raw_nodes)} → 解析成功 {len(candidates)} → 真活 {len(test_results)} → 去重后 {len(unique_nodes)} → 家宽 {len(residential)} (单跳版 {len(residential_singlehop)})")
     by_type = {}
     for n in unique_nodes:
         by_type[n["net_type"]] = by_type.get(n["net_type"], 0) + 1
