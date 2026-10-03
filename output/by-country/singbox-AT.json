@@ -23,7 +23,7 @@
         "server_name": "at.quattro-tech.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -33,30 +33,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 03 - li007",
-      "server": "31.77.227.6",
-      "server_port": 52006,
-      "uuid": "bc659d88-a1e0-076c-a49a-7b51b26a7a7f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "bigdick.gamegrow.ru",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇹 奥地利 (Austria) 01 - li007",
-        "🇦🇹 奥地利 (Austria) 02 - li007",
-        "🇦🇹 奥地利 (Austria) 03 - li007"
+        "🇦🇹 奥地利 (Austria) 02 - li007"
       ]
     },
     {
@@ -64,8 +46,7 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01 - li007",
-        "🇦🇹 奥地利 (Austria) 02 - li007",
-        "🇦🇹 奥地利 (Austria) 03 - li007"
+        "🇦🇹 奥地利 (Austria) 02 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

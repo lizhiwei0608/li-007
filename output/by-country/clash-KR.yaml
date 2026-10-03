@@ -13,39 +13,14 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 02 - li007
-  server: 211.178.105.134
-  port: 6123
+  server: 152.70.237.123
+  port: 2053
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
+  type: hysteria2
+  password: maintell
+  sni: bing.com
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 03 - li007
-  server: 3.39.4.109
-  port: 18967
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: qq
-- name: 🇰🇷 韩国 (South Korea) 04 - li007
-  server: 3.39.4.109
-  port: 13672
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 05 - li007
   server: 132.226.226.189
   port: 50160
   udp: true
@@ -53,6 +28,27 @@ proxies:
   password: 1671a252e2a97dc2bda4e515475931da
   sni: www.bing.com
   skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 04 - li007
+  server: 131.186.19.174
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 7302ad33229de166d393cd56143a1e4c
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 05 - li007
+  server: icn-a-02.auuas.com
+  port: 1891
+  udp: true
+  type: vless
+  uuid: 81c4547b-e5d8-4af8-baf0-91c5c0c05a9b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 2olNWILpuviXx_Nr30JZc5tpt3MgtWda7jLGwAOxPxY
+    short-id: 8378f267
+  servername: www.npmjs.com
+  client-fingerprint: edge
 - name: 🇰🇷 韩国 (South Korea) 06 - li007
   server: 132.145.80.230
   port: 80
@@ -67,35 +63,19 @@ proxies:
     headers:
       Host: kr02.a0a.xyz
 - name: 🇰🇷 韩国 (South Korea) 07 - li007
-  server: 152.67.200.82
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: t.me
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08 - li007
-  server: 152.70.237.123
-  port: 2053
-  udp: true
-  type: hysteria2
-  password: maintell
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 09 - li007
-  server: icn-a-02.auuas.com
-  port: 1891
+  server: 3.39.4.109
+  port: 13672
   udp: true
   type: vless
-  uuid: 81c4547b-e5d8-4af8-baf0-91c5c0c05a9b
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 2olNWILpuviXx_Nr30JZc5tpt3MgtWda7jLGwAOxPxY
-    short-id: 8378f267
-  servername: www.npmjs.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 10 - li007
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: edge
+- name: 🇰🇷 韩国 (South Korea) 08 - li007
   server: vpn-kr-002.fastervpn.world
   port: 443
   udp: true
@@ -103,15 +83,7 @@ proxies:
   password: H7mP2xY9kJ4nQ9wR5tF6vB3z
   sni: vpn-kr-002.fastervpn.world
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 11 - li007
-  server: 131.186.19.174
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 7302ad33229de166d393cd56143a1e4c
-  sni: google.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 12 - li007
+- name: 🇰🇷 韩国 (South Korea) 09 - li007
   server: 151.245.106.49
   port: 2053
   udp: true
@@ -123,7 +95,15 @@ proxies:
     short-id: 429499c03d4cc8a0
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 13 - li007
+- name: 🇰🇷 韩国 (South Korea) 10 - li007
+  server: 152.67.200.82
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: 152.67.200.82
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 11 - li007
   server: 154.90.62.70
   port: 56127
   udp: true
@@ -131,19 +111,19 @@ proxies:
   password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
   sni: 154.90.62.70
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 15 - li007
-  server: 47.80.14.8
-  port: 443
+- name: 🇰🇷 韩国 (South Korea) 12 - li007
+  server: 3.39.4.109
+  port: 18967
   udp: true
   type: vless
-  uuid: 581cb8c3-dadb-4e10-a18b-5e79bfe7bd93
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: OBIHAXdhfYJ0PWsZjy3QYPRjTfMQlvjmBsTf1CT671w
-    short-id: 71110d3f7ef57760
-  servername: www.samsung.com
-  client-fingerprint: qq
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -161,8 +141,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 10 - li007
   - 🇰🇷 韩国 (South Korea) 11 - li007
   - 🇰🇷 韩国 (South Korea) 12 - li007
-  - 🇰🇷 韩国 (South Korea) 13 - li007
-  - 🇰🇷 韩国 (South Korea) 15 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -180,7 +158,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 10 - li007
   - 🇰🇷 韩国 (South Korea) 11 - li007
   - 🇰🇷 韩国 (South Korea) 12 - li007
-  - 🇰🇷 韩国 (South Korea) 13 - li007
-  - 🇰🇷 韩国 (South Korea) 15 - li007
 rules:
 - MATCH,PROXIES

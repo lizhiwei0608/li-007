@@ -15,7 +15,7 @@
         "server_name": "nvidia.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -25,37 +25,8 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - li007",
-      "server": "bale.xv98.ir",
-      "server_port": 5051,
-      "method": "chacha20-ietf-poly1305",
-      "password": "68mL2QkZEBlxWa3hcslGDw"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - li007",
-      "server": "78.135.73.47",
-      "server_port": 443,
-      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.datadoghq.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
-          "short_id": "f46cd3ea3d1eb72d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - li007",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -74,24 +45,29 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - li007",
-      "server": "me17.msjia8844.site",
-      "server_port": 7443,
-      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - li007",
+      "server": "78.135.73.47",
+      "server_port": 443,
+      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "me17.msjia8844.site",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
+        "server_name": "www.datadoghq.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
+          "short_id": "f46cd3ea3d1eb72d"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 - li007",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - li007",
       "server": "176.96.131.251",
       "server_port": 1280,
       "uuid": "c0e8fb58-a60f-4c15-9444-4e7c109797a8",
@@ -99,6 +75,14 @@
         "type": "ws",
         "path": "/"
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - li007",
+      "server": "bale.xv98.ir",
+      "server_port": 5051,
+      "method": "chacha20-ietf-poly1305",
+      "password": "68mL2QkZEBlxWa3hcslGDw"
     },
     {
       "type": "selector",
@@ -109,8 +93,7 @@
         "🇹🇷 土耳其 (Turkey) 02 - li007",
         "🇹🇷 土耳其 (Turkey) 03 - li007",
         "🇹🇷 土耳其 (Turkey) 04 - li007",
-        "🇹🇷 土耳其 (Turkey) 05 - li007",
-        "🇹🇷 土耳其 (Turkey) 06 - li007"
+        "🇹🇷 土耳其 (Turkey) 05 - li007"
       ]
     },
     {
@@ -121,8 +104,7 @@
         "🇹🇷 土耳其 (Turkey) 02 - li007",
         "🇹🇷 土耳其 (Turkey) 03 - li007",
         "🇹🇷 土耳其 (Turkey) 04 - li007",
-        "🇹🇷 土耳其 (Turkey) 05 - li007",
-        "🇹🇷 土耳其 (Turkey) 06 - li007"
+        "🇹🇷 土耳其 (Turkey) 05 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
