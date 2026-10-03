@@ -1,0 +1,103 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007",
+      "server": "aac08668-tmm5c0-tw661e-1isea.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "d6abdbda-fe9d-11ec-bb74-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "aac08668-tmm5c0-tw661e-1isea.hk3.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007",
+      "server": "59c70bb8-tmm5c0-txfm0f-1qxa1.nw4.hyhuawei.com",
+      "server_port": 443,
+      "password": "f609abb4-ed17-11ee-9fa2-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "59c70bb8-tmm5c0-txfm0f-1qxa1.nw4.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 (移动家宽·单跳) - li007",
+      "server": "me17.msjia8844.site",
+      "server_port": 7443,
+      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
+      "tls": {
+        "enabled": true,
+        "server_name": "me17.msjia8844.site",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽·单跳) - li007",
+      "server": "zfd-hkv2.kunlun01dns.com",
+      "server_port": 16112,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 05 (家宽·单跳) - li007",
+      "server": "155.117.19.17",
+      "server_port": 443,
+      "password": "5fa748137b6d822308eea4611f474ad5",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "a39ca173b57ac7021b08bf3e3de9f1f6"
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007",
+        "🇹🇷 土耳其 (Turkey) 03 (移动家宽·单跳) - li007",
+        "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽·单跳) - li007",
+        "🇺🇸 美国 (United States) 05 (家宽·单跳) - li007"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007",
+        "🇹🇷 土耳其 (Turkey) 03 (移动家宽·单跳) - li007",
+        "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽·单跳) - li007",
+        "🇺🇸 美国 (United States) 05 (家宽·单跳) - li007"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
