@@ -5,20 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇶 AQ 01 - li007
-  server: 2.27.26.132
-  port: 444
+  server: 2.27.26.128
+  port: 443
   udp: true
   type: vless
-  uuid: 141bbdef-a341-4846-aec7-9d6531ff8790
+  uuid: 8710a337-f504-4b75-8989-224cfd803b2d
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: dEhIR-YkvqguXB5_P3LMuyNYM82lMHQsSGhhtkmvE0k
-    short-id: d7abeb515312dc2f
-  servername: apple.com
-  client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-service-name: apple.com
+    public-key: HKkU-5UanGjWdmX8E-EGulXMk1BnidkFsVveyyOlTg8
+    short-id: 90f9d05bf95cb335
+  servername: aq-1.global-cdn.org
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

@@ -6,25 +6,22 @@
     {
       "type": "vless",
       "tag": "🇦🇶 AQ 01 - li007",
-      "server": "2.27.26.132",
-      "server_port": 444,
-      "uuid": "141bbdef-a341-4846-aec7-9d6531ff8790",
+      "server": "2.27.26.128",
+      "server_port": 443,
+      "uuid": "8710a337-f504-4b75-8989-224cfd803b2d",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "apple.com",
+        "server_name": "aq-1.global-cdn.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "dEhIR-YkvqguXB5_P3LMuyNYM82lMHQsSGhhtkmvE0k",
-          "short_id": "d7abeb515312dc2f"
+          "public_key": "HKkU-5UanGjWdmX8E-EGulXMk1BnidkFsVveyyOlTg8",
+          "short_id": "90f9d05bf95cb335"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "apple.com"
       }
     },
     {

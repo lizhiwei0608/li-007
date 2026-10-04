@@ -5,22 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇩🇰 丹麦 (Denmark) 01 - li007",
-      "server": "81.17.159.115",
-      "server_port": 443,
-      "uuid": "d3179449-2988-40ec-b08f-dcfe6e66ba63",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇦🇿 阿塞拜疆 (Azerbaijan) 01 - li007",
+      "server": "az.xelnivo.ir",
+      "server_port": 45642,
+      "uuid": "688fcedc-c730-47fb-9fc0-b5962a38788e",
       "tls": {
         "enabled": true,
-        "server_name": "dk88.sonicsonic.icu",
+        "server_name": "play.google.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU",
-          "short_id": ""
+          "public_key": "rlWw1txOKfyTIegqGc5YUQo1CxqZEXBPeQZppA6H014",
+          "short_id": "8f798d413a5dbf01"
         }
       }
     },
@@ -29,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇰 丹麦 (Denmark) 01 - li007"
+        "🇦🇿 阿塞拜疆 (Azerbaijan) 01 - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇰 丹麦 (Denmark) 01 - li007"
+        "🇦🇿 阿塞拜疆 (Azerbaijan) 01 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
