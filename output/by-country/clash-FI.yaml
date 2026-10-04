@@ -5,19 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - li007
-  server: 131.123.13.93
+  server: 185.103.110.68
+  port: 18283
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+- name: 🇫🇮 芬兰 (Finland) 02 - li007
+  server: 144.31.212.253
   port: 443
   udp: true
-  type: vless
-  uuid: 55ccbeb5-0bf4-4e4d-afcb-23c038e73e00
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: rj3rvl7AGOd0NOPrX6h2c1auXGnCBJTPMDeT86AMvBA
-    short-id: 29455a3a790acbd0
-  servername: 1mcfn.67resserv67.info
-  client-fingerprint: safari
-- name: 🇫🇮 芬兰 (Finland) 02 - li007
+  type: hysteria2
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  sni: vps155-edge.kermemehori.ru
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 03 - li007
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -28,20 +30,7 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
     short-id: d368b94e275ab080
   servername: www.google.com
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 03 - li007
-  server: 185.166.154.111
-  port: 443
-  udp: true
-  type: vless
-  uuid: 91d734be-a3d0-4d50-83ab-74cf7b6966fa
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: bQZcMViJWXus9rMSTOa-ZAaUJC0mIlPx7XmzrLp8GQU
-    short-id: 94f32cfc
-  servername: cdn.bulkavpn.top
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 04 - li007
   server: 151.241.137.132
   port: 443
@@ -55,18 +44,13 @@ proxies:
   servername: finland.ali-bard.online
   client-fingerprint: safari
 - name: 🇫🇮 芬兰 (Finland) 05 - li007
-  server: 144.31.27.215
-  port: 43000
+  server: 78.17.209.108
+  port: 8443
   udp: true
-  type: vless
-  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
-    short-id: 568d87a47271344e
-  servername: 144.31.27.215
-  client-fingerprint: edge
+  type: hysteria2
+  password: d402d4c0b8354a90b70bb2566dce9a08
+  sni: i.wareznet.ru
+  skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 06 - li007
   server: 65.108.3.59
   port: 443
@@ -79,22 +63,33 @@ proxies:
     public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
     short-id: 90ec9bba2019
   servername: web.eitaa.com
-  client-fingerprint: chrome
+  client-fingerprint: ''
 - name: 🇫🇮 芬兰 (Finland) 07 - li007
-  server: 144.31.212.253
+  server: 131.123.13.93
   port: 443
   udp: true
-  type: hysteria2
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
-  sni: vps155-edge.kermemehori.ru
-  skip-cert-verify: true
+  type: vless
+  uuid: 55ccbeb5-0bf4-4e4d-afcb-23c038e73e00
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: rj3rvl7AGOd0NOPrX6h2c1auXGnCBJTPMDeT86AMvBA
+    short-id: 29455a3a790acbd0
+  servername: 1mcfn.67resserv67.info
+  client-fingerprint: safari
 - name: 🇫🇮 芬兰 (Finland) 08 - li007
-  server: 185.103.110.68
-  port: 18283
+  server: 177.3.214.52
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  type: vless
+  uuid: 27407f1d-fe61-469b-a5a9-0aef7ee7476d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 6bQ-L8tEd3guits_RHgfkXXArmnkB2GxFx23BgWC63c
+    short-id: da4d87fa
+  servername: uehr.pashalloh.org
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select

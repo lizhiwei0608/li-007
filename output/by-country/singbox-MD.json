@@ -5,25 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇦 沙特 (Saudi Arabia) 01 - li007",
-      "server": "81.208.170.142",
-      "server_port": 1500,
-      "uuid": "e332f028-d343-5b44-8016-b3130f39e133",
+      "tag": "🇲🇩 摩尔多瓦 (Moldova) 01 - li007",
+      "server": "89.35.14.43",
+      "server_port": 443,
+      "uuid": "6d257a71-6d98-42d2-983a-34363b6dedcd",
       "tls": {
         "enabled": true,
-        "server_name": "www.ebay.com",
+        "server_name": "md7.mediacorp.fyi",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE",
-          "short_id": "775eb6408888248e"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
-        "type": "grpc"
+        "type": "grpc",
+        "service_name": "mobile.api.Event"
       }
     },
     {
@@ -31,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇦 沙特 (Saudi Arabia) 01 - li007"
+        "🇲🇩 摩尔多瓦 (Moldova) 01 - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇦 沙特 (Saudi Arabia) 01 - li007"
+        "🇲🇩 摩尔多瓦 (Moldova) 01 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
