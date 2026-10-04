@@ -23,9 +23,9 @@ proxies:
   reality-opts:
     public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
   servername: aws.amazon.com
-  client-fingerprint: ios
+  client-fingerprint: firefox
 - name: 🇮🇩 印尼 (Indonesia) 03 - li007
-  server: 103.30.76.65
+  server: 103.30.76.197
   port: 31094
   udp: true
   type: vless
@@ -38,19 +38,6 @@ proxies:
   servername: www.lamer.com.sg
   client-fingerprint: firefox
 - name: 🇮🇩 印尼 (Indonesia) 04 - li007
-  server: funagfr.alixxplay.com
-  port: 61847
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: BTVKTYNHnuv3850vXEU15GVgfp5S0Dz20jueg-FSgAQ
-    short-id: c761f990d786f2
-  servername: www.lamer.com.sg
-  client-fingerprint: chrome
-- name: 🇮🇩 印尼 (Indonesia) 05 - li007
   server: 103.172.197.3
   port: 16006
   udp: true
@@ -71,7 +58,6 @@ proxy-groups:
   - 🇮🇩 印尼 (Indonesia) 02 - li007
   - 🇮🇩 印尼 (Indonesia) 03 - li007
   - 🇮🇩 印尼 (Indonesia) 04 - li007
-  - 🇮🇩 印尼 (Indonesia) 05 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -81,6 +67,5 @@ proxy-groups:
   - 🇮🇩 印尼 (Indonesia) 02 - li007
   - 🇮🇩 印尼 (Indonesia) 03 - li007
   - 🇮🇩 印尼 (Indonesia) 04 - li007
-  - 🇮🇩 印尼 (Indonesia) 05 - li007
 rules:
 - MATCH,PROXIES

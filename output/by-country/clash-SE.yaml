@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - li007
-  server: 132.243.231.4
-  port: 443
-  udp: true
-  type: vless
-  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM
-    short-id: 5efa80b939612291
-  servername: d3-se1.cloud-cdn.xyz
-  client-fingerprint: random
-- name: 🇸🇪 瑞典 (Sweden) 02 - li007
   server: 132.243.231.12
   port: 443
   udp: true
@@ -29,36 +16,33 @@ proxies:
     public-key: zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM
     short-id: 5efa80b939612291
   servername: d3-se1.cloud-cdn.xyz
-  client-fingerprint: edge
-- name: 🇸🇪 瑞典 (Sweden) 03 - li007
-  server: 31.207.7.74
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 02 - li007
+  server: 143.246.196.207
   port: 443
   udp: true
   type: vless
-  uuid: 2412bd96-925b-43f2-81d1-0ed4f0793699
+  uuid: ac0c2945-b758-11f1-8181-54db13ea7d40
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: RDL0RVmgFM3fdqXRSHBF2A53YF9TPFu2aeJQhMTaY3s
-    short-id: 457ae5b8bef4d1b3
-  servername: pkg.go.dev
-  client-fingerprint: safari
-- name: 🇸🇪 瑞典 (Sweden) 04 - li007
-  server: 94.143.231.146
+    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
+  servername: www.blocket.se
+  client-fingerprint: random
+- name: 🇸🇪 瑞典 (Sweden) 03 - li007
+  server: 132.243.231.4
   port: 443
   udp: true
   type: vless
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  flow: xtls-rprx-vision
   tls: true
-  servername: sub.merky.top
-  skip-cert-verify: false
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇸🇪 瑞典 (Sweden) 05 - li007
+  reality-opts:
+    public-key: zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM
+    short-id: 5efa80b939612291
+  servername: d3-se1.cloud-cdn.xyz
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 04 - li007
   server: 62.60.159.81
   port: 2053
   udp: true
@@ -73,20 +57,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
-- name: 🇸🇪 瑞典 (Sweden) 06 - li007
-  server: swed4.o4ka-internet.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8f6e49e6-7f03-4f10-9da9-1716158d80ed
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
-    short-id: 5629431325884ff0
-  servername: swed4.o4ka-internet.com
-  client-fingerprint: random
-- name: 🇸🇪 瑞典 (Sweden) 07 - li007
+- name: 🇸🇪 瑞典 (Sweden) 05 - li007
   server: psf-2.weedly.top
   port: 80
   udp: true
@@ -107,8 +78,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - li007
   - 🇸🇪 瑞典 (Sweden) 04 - li007
   - 🇸🇪 瑞典 (Sweden) 05 - li007
-  - 🇸🇪 瑞典 (Sweden) 06 - li007
-  - 🇸🇪 瑞典 (Sweden) 07 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -119,7 +88,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - li007
   - 🇸🇪 瑞典 (Sweden) 04 - li007
   - 🇸🇪 瑞典 (Sweden) 05 - li007
-  - 🇸🇪 瑞典 (Sweden) 06 - li007
-  - 🇸🇪 瑞典 (Sweden) 07 - li007
 rules:
 - MATCH,PROXIES

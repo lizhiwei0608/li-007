@@ -5,29 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007
-  server: f60ef7cf-tmm5c0-trdynx-1rk9y.hk3.hyhuawei.com
+  server: 007618a8-tmm5c0-tvvhcz-tl32.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 88f6e3c4-1d01-11ef-812c-f23c91cfbbc9
-  sni: f60ef7cf-tmm5c0-trdynx-1rk9y.hk3.hyhuawei.com
+  password: 5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b
+  sni: 007618a8-tmm5c0-tvvhcz-tl32.hk3.hyhuawei.com
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007
-  server: 2219f493-tmm5c0-tpftcp-13x18.nw4.hyhuawei.com
+  server: 19a7f8ba-tmm5c0-tqgocx-1plv4.nw4.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: e4499a62-0cfe-11eb-ad8c-f23c9164ca5d
-  sni: 2219f493-tmm5c0-tpftcp-13x18.nw4.hyhuawei.com
+  password: 28213b50-7ed5-11ee-add6-f23c91369f2d
+  sni: 19a7f8ba-tmm5c0-tqgocx-1plv4.nw4.hyhuawei.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽·单跳) - li007
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16112
-  udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,7 +27,6 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007
-  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽·单跳) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,6 +34,5 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007
-  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽·单跳) - li007
 rules:
 - MATCH,PROXIES
