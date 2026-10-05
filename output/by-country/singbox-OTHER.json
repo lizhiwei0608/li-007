@@ -6,40 +6,73 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - li007",
-      "server": "pew.dianawmoon.dpdns.org",
-      "server_port": 443,
-      "uuid": "a2c57a6c-dacb-44d1-9055-fb42d4c888a5",
-      "tls": {
-        "enabled": true,
-        "server_name": "pew.dianawmoon.dpdns.org",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
+      "server": "188.114.97.6",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
-        "type": "httpupgrade",
-        "path": "/27729/dianahtupgd",
-        "host": "pew.dianawmoon.dpdns.org"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 02 - li007",
+      "server": "188.114.97.6",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 03 - li007",
+      "server": "188.114.97.6",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 04 - li007",
+      "server": "188.114.97.6",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - li007"
+        "🌐 其他地区 (Other) 01 - li007",
+        "🌐 其他地区 (Other) 02 - li007",
+        "🌐 其他地区 (Other) 03 - li007",
+        "🌐 其他地区 (Other) 04 - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - li007"
+        "🌐 其他地区 (Other) 01 - li007",
+        "🌐 其他地区 (Other) 02 - li007",
+        "🌐 其他地区 (Other) 03 - li007",
+        "🌐 其他地区 (Other) 04 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
