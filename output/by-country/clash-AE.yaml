@@ -5,44 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - li007
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: vless
-  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
-  tls: true
-  servername: novantunnel.tech
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /Novan-AE9
-    headers:
-      Host: novantunnel.tech
-- name: 🇦🇪 阿联酋 (UAE) 02 - li007
   server: 130.49.161.70
   port: 443
   udp: true
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 - li007
-  server: 122.8.45.4
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 2d24e797-ec6c-0808-dd31-9cd22b5dfdc7
-  tls: true
-  reality-opts:
-    public-key: WtLZK1KyhSpI3K-R4M3sLAHWPOgGPMgkL6RneL0OfCY
-  servername: download.nvidia.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇦🇪 阿联酋 (UAE) 04 - li007
+- name: 🇦🇪 阿联酋 (UAE) 02 - li007
   server: uae.unixzone.us
   port: 22573
   udp: true
@@ -51,7 +23,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇦🇪 阿联酋 (UAE) 05 - li007
+- name: 🇦🇪 阿联酋 (UAE) 03 - li007
   server: 146.70.102.82
   port: 443
   udp: true
@@ -63,7 +35,7 @@ proxies:
     public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
     short-id: 002fb4ec7b3088cc
   servername: www.datadoghq.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,8 +44,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - li007
   - 🇦🇪 阿联酋 (UAE) 02 - li007
   - 🇦🇪 阿联酋 (UAE) 03 - li007
-  - 🇦🇪 阿联酋 (UAE) 04 - li007
-  - 🇦🇪 阿联酋 (UAE) 05 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -82,7 +52,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - li007
   - 🇦🇪 阿联酋 (UAE) 02 - li007
   - 🇦🇪 阿联酋 (UAE) 03 - li007
-  - 🇦🇪 阿联酋 (UAE) 04 - li007
-  - 🇦🇪 阿联酋 (UAE) 05 - li007
 rules:
 - MATCH,PROXIES

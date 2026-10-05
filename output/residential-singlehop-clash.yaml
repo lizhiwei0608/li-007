@@ -4,31 +4,42 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 日本 (Japan) 01 (家宽·单跳) - li007
-  server: 188.245.191.19
-  port: 2040
+- name: 🇺🇸 美国 (United States) 01 (家宽·单跳) - li007
+  server: 155.117.19.17
+  port: 443
   udp: true
-  type: vless
-  uuid: bdd897a6-57f2-4311-835f-0b6c5ac5a1a2
-  tls: true
-  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristifp=chrome
-    headers:
-      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽·单跳) - li007
+  server: tw3.dexlos.com
+  port: 8080
+  udp: true
+  type: tuic
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: tw3.dexlos.com
+  skip-cert-verify: true
+  congestion-controller: bbr
+  udp-relay-mode: native
+  alpn:
+  - h3
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 日本 (Japan) 01 (家宽·单跳) - li007
+  - 🇺🇸 美国 (United States) 01 (家宽·单跳) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽·单跳) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 (Japan) 01 (家宽·单跳) - li007
+  - 🇺🇸 美国 (United States) 01 (家宽·单跳) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽·单跳) - li007
 rules:
 - MATCH,PROXIES

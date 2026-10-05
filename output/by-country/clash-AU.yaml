@@ -5,61 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - li007
-  server: 208.103.161.5
+  server: vpn-au-001.fastervpn.world
   port: 443
   udp: true
-  type: vless
-  uuid: d042a74a-c305-4eec-a89f-39a348022c92
-  tls: true
-  servername: dry-butterfly-8eb9.tmpgnacio83.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: dry-butterfly-8eb9.tmpgnacio83.workers.dev
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-au-001.fastervpn.world
+  skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 02 - li007
-  server: 104.18.155.229
-  port: 443
-  udp: true
-  type: vless
-  uuid: 42026ed0-7d74-4585-8e46-0fe6aa4d665a
-  tls: true
-  servername: www.genflix.co.id.r3xxe.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /au-do
-    headers:
-      Host: www.genflix.co.id.r3xxe.eu.cc
-- name: 🇦🇺 澳大利亚 (Australia) 03 - li007
-  server: 34.87.229.148
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
-  tls: true
-  reality-opts:
-    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
-    short-id: 8a7d5e0248cdb1b1
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 04 - li007
-  server: 51.161.204.244
-  port: 443
-  udp: true
-  type: vless
-  uuid: 36e89875-9c53-482b-bc41-d3890e9da176
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
-    short-id: 0ad08b47f498efd2
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇦🇺 澳大利亚 (Australia) 05 - li007
   server: 137.23.3.238
   port: 20000
   udp: true
@@ -70,28 +23,8 @@ proxies:
   obfs: salamander
   obfs-password: b42d90fa667942aebc734d60
   ports: 20000-30000,20000-20000
-- name: 🇦🇺 澳大利亚 (Australia) 06 - li007
-  server: vpn-au-001.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-au-001.fastervpn.world
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 07 - li007
-  server: 34.40.217.165
-  port: 443
-  udp: true
-  type: vless
-  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
-  tls: true
-  reality-opts:
-    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
-    short-id: d725f0dd8cce210f
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 08 - li007
-  server: 103.30.76.65
+- name: 🇦🇺 澳大利亚 (Australia) 03 - li007
+  server: apinbxs.zalolink.com
   port: 39518
   udp: true
   type: vless
@@ -102,7 +35,7 @@ proxies:
     public-key: DQDN2w0aoQnx-T3qF1fQnA2-stCUzVbBwmayI1smO0g
     short-id: 4600771a0d0d50
   servername: www.tesla.com
-  client-fingerprint: firefox
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -111,11 +44,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - li007
   - 🇦🇺 澳大利亚 (Australia) 02 - li007
   - 🇦🇺 澳大利亚 (Australia) 03 - li007
-  - 🇦🇺 澳大利亚 (Australia) 04 - li007
-  - 🇦🇺 澳大利亚 (Australia) 05 - li007
-  - 🇦🇺 澳大利亚 (Australia) 06 - li007
-  - 🇦🇺 澳大利亚 (Australia) 07 - li007
-  - 🇦🇺 澳大利亚 (Australia) 08 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -124,10 +52,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - li007
   - 🇦🇺 澳大利亚 (Australia) 02 - li007
   - 🇦🇺 澳大利亚 (Australia) 03 - li007
-  - 🇦🇺 澳大利亚 (Australia) 04 - li007
-  - 🇦🇺 澳大利亚 (Australia) 05 - li007
-  - 🇦🇺 澳大利亚 (Australia) 06 - li007
-  - 🇦🇺 澳大利亚 (Australia) 07 - li007
-  - 🇦🇺 澳大利亚 (Australia) 08 - li007
 rules:
 - MATCH,PROXIES

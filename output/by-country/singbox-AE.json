@@ -4,34 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 01 - li007",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "uuid": "ee556a4f-d9f6-44de-af02-42c51659416a",
-      "tls": {
-        "enabled": true,
-        "server_name": "novantunnel.tech",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/Novan-AE9",
-        "headers": {
-          "Host": "novantunnel.tech"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - li007",
+      "tag": "🇦🇪 阿联酋 (UAE) 01 - li007",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
       "tls": {
         "enabled": true,
         "server_name": "hy2.aspidnet.xyz",
-        "insecure": true
+        "insecure": false
       },
       "obfs": {
         "type": "salamander",
@@ -40,31 +21,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - li007",
-      "server": "122.8.45.4",
-      "server_port": 8443,
-      "uuid": "2d24e797-ec6c-0808-dd31-9cd22b5dfdc7",
-      "tls": {
-        "enabled": true,
-        "server_name": "download.nvidia.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "WtLZK1KyhSpI3K-R4M3sLAHWPOgGPMgkL6RneL0OfCY",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - li007",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - li007",
       "server": "uae.unixzone.us",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
@@ -74,7 +31,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - li007",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - li007",
       "server": "146.70.102.82",
       "server_port": 443,
       "uuid": "31fd2fde-ca69-450e-8c03-eaad819b06b9",
@@ -84,7 +41,7 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -100,9 +57,7 @@
         "auto",
         "🇦🇪 阿联酋 (UAE) 01 - li007",
         "🇦🇪 阿联酋 (UAE) 02 - li007",
-        "🇦🇪 阿联酋 (UAE) 03 - li007",
-        "🇦🇪 阿联酋 (UAE) 04 - li007",
-        "🇦🇪 阿联酋 (UAE) 05 - li007"
+        "🇦🇪 阿联酋 (UAE) 03 - li007"
       ]
     },
     {
@@ -111,9 +66,7 @@
       "outbounds": [
         "🇦🇪 阿联酋 (UAE) 01 - li007",
         "🇦🇪 阿联酋 (UAE) 02 - li007",
-        "🇦🇪 阿联酋 (UAE) 03 - li007",
-        "🇦🇪 阿联酋 (UAE) 04 - li007",
-        "🇦🇪 阿联酋 (UAE) 05 - li007"
+        "🇦🇪 阿联酋 (UAE) 03 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
