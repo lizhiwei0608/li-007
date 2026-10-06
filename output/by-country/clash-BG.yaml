@@ -6,40 +6,81 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - li007
   server: 213.183.63.60
-  port: 9085
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9ej82EKe2gq7gLAM
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - li007
-  server: 213.183.63.60
-  port: 9066
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 2KUaE2a8NWTvuCZ3
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - li007
-  server: 213.183.63.60
-  port: 9054
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: VcFuyXvND2yQWSFY
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - li007
-  server: 213.183.63.60
   port: 9030
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: GeregetR8cvQHzYr
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - li007
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - li007
   server: 213.183.63.60
   port: 9098
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: aLpQtfEZe445QyHk
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - li007
+  server: 213.183.63.60
+  port: 9049
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: PRBf4BS2HvJqtWxY
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - li007
+  server: 213.183.63.60
+  port: 9054
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: VcFuyXvND2yQWSFY
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - li007
+  server: 213.183.63.60
+  port: 9085
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9ej82EKe2gq7gLAM
 - name: 🇧🇬 保加利亚 (Bulgaria) 06 - li007
+  server: 87.120.216.137
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2b781b4a-5942-48e0-a7f3-5a07b7b488c1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
+    short-id: 15bcc0a77c3cacdf
+  servername: de-root.sworkingvpn.com
+  client-fingerprint: firefox
+- name: 🇧🇬 保加利亚 (Bulgaria) 07 - li007
+  server: 213.183.63.60
+  port: 9066
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 2KUaE2a8NWTvuCZ3
+- name: 🇧🇬 保加利亚 (Bulgaria) 08 - li007
+  server: 213.183.63.60
+  port: 9064
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: cp8pRSUAyLhTfVWH
+- name: 🇧🇬 保加利亚 (Bulgaria) 09 - li007
+  server: 5.35.46.168
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /glasspanel/guest000_0_5de14443985f/
+    headers:
+      Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
+- name: 🇧🇬 保加利亚 (Bulgaria) 10 - li007
   server: 136.175.82.85
   port: 18775
   udp: true
@@ -63,6 +104,10 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 04 - li007
   - 🇧🇬 保加利亚 (Bulgaria) 05 - li007
   - 🇧🇬 保加利亚 (Bulgaria) 06 - li007
+  - 🇧🇬 保加利亚 (Bulgaria) 07 - li007
+  - 🇧🇬 保加利亚 (Bulgaria) 08 - li007
+  - 🇧🇬 保加利亚 (Bulgaria) 09 - li007
+  - 🇧🇬 保加利亚 (Bulgaria) 10 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,5 +119,9 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 04 - li007
   - 🇧🇬 保加利亚 (Bulgaria) 05 - li007
   - 🇧🇬 保加利亚 (Bulgaria) 06 - li007
+  - 🇧🇬 保加利亚 (Bulgaria) 07 - li007
+  - 🇧🇬 保加利亚 (Bulgaria) 08 - li007
+  - 🇧🇬 保加利亚 (Bulgaria) 09 - li007
+  - 🇧🇬 保加利亚 (Bulgaria) 10 - li007
 rules:
 - MATCH,PROXIES

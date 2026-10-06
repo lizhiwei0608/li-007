@@ -15,7 +15,7 @@
         "server_name": "nvidia.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -35,7 +35,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -47,28 +47,17 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 03 - li007",
-      "server": "78.135.73.47",
-      "server_port": 443,
-      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.datadoghq.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
-          "short_id": "f46cd3ea3d1eb72d"
-        }
+      "server": "cookie.wookshop.ir",
+      "server_port": 43233,
+      "uuid": "568bcbbc-7a90-4164-8b5d-1c0bbeccfa38",
+      "transport": {
+        "type": "ws"
       }
     },
     {
       "type": "trojan",
       "tag": "🇹🇷 土耳其 (Turkey) 04 - li007",
-      "server": "172.67.176.3",
+      "server": "104.21.48.18",
       "server_port": 2053,
       "password": "e309e031-991e-4656-9934-44d10deb8fd8",
       "tls": {
