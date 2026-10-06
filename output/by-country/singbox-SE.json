@@ -4,19 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - li007",
-      "server": "77.110.96.201",
-      "server_port": 36264,
-      "password": "Telegram-vpnjey",
+      "server": "132.243.231.12",
+      "server_port": 443,
+      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "se.vpnjey2.dpdns.org",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "Telegram@vpnjey"
+        "server_name": "d3-se1.cloud-cdn.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM",
+          "short_id": "5efa80b939612291"
+        }
       }
     },
     {
@@ -31,7 +36,7 @@
         "server_name": "d3-se1.cloud-cdn.xyz",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -51,7 +56,7 @@
         "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -73,11 +78,39 @@
       "tls": {
         "enabled": true,
         "server_name": "sub.merky.top",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
         "path": "/merky-connect/de6/"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - li007",
+      "server": "211.20.156.191",
+      "server_port": 28120,
+      "password": "i99Cef",
+      "tls": {
+        "enabled": true,
+        "server_name": "download.windowsupdate.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - li007",
+      "server": "193.233.217.17",
+      "server_port": 5443,
+      "password": "QFO6ZOwTxjvD8ITXouHLh_Rrp-QC3rXnZRTnShz_GcJPRsPXQ4QV456o1TN6ISbN",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.70.34.209.12.nip.io",
+        "insecure": false
       }
     },
     {
@@ -88,7 +121,9 @@
         "🇸🇪 瑞典 (Sweden) 01 - li007",
         "🇸🇪 瑞典 (Sweden) 02 - li007",
         "🇸🇪 瑞典 (Sweden) 03 - li007",
-        "🇸🇪 瑞典 (Sweden) 04 - li007"
+        "🇸🇪 瑞典 (Sweden) 04 - li007",
+        "🇸🇪 瑞典 (Sweden) 05 - li007",
+        "🇸🇪 瑞典 (Sweden) 06 - li007"
       ]
     },
     {
@@ -98,7 +133,9 @@
         "🇸🇪 瑞典 (Sweden) 01 - li007",
         "🇸🇪 瑞典 (Sweden) 02 - li007",
         "🇸🇪 瑞典 (Sweden) 03 - li007",
-        "🇸🇪 瑞典 (Sweden) 04 - li007"
+        "🇸🇪 瑞典 (Sweden) 04 - li007",
+        "🇸🇪 瑞典 (Sweden) 05 - li007",
+        "🇸🇪 瑞典 (Sweden) 06 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
