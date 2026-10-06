@@ -4,26 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - li007
-  server: 51.75.67.209
-  port: 80
+- name: 🌐 其他地区 (Other) 01 - li007
+  server: ccs2g.pai50288.uk
+  port: 443
   udp: true
   type: vless
-  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  tls: true
+  servername: ccs2g.pai50288.uk
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
+    path: /pai50288
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - li007
+  - 🌐 其他地区 (Other) 01 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - li007
+  - 🌐 其他地区 (Other) 01 - li007
 rules:
 - MATCH,PROXIES

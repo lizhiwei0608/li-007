@@ -6,39 +6,7 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - li007",
-      "server": "194.61.31.126",
-      "server_port": 2053,
-      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
-          "short_id": "9980e0609b0d3891"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 02 - li007",
-      "server": "34.131.228.210",
-      "server_port": 443,
-      "password": "M7v%w11Se*",
-      "tls": {
-        "enabled": true,
-        "server_name": "hyfuuf6.wsone.icu",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 - li007",
-      "server": "65.20.80.141",
+      "server": "139.84.177.239",
       "server_port": 443,
       "uuid": "d90087c3-54f5-4283-a13f-615260c8b0c7",
       "flow": "xtls-rprx-vision",
@@ -47,7 +15,7 @@
         "server_name": "googleapis.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -57,15 +25,14 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 04 - li007",
-      "server": "211.20.156.191",
-      "server_port": 28163,
-      "password": "i99Cef",
-      "tls": {
-        "enabled": true,
-        "server_name": "ctldl.windowsupdate.com",
-        "insecure": true
+      "type": "vmess",
+      "tag": "🇮🇳 印度 (India) 02 - li007",
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "transport": {
+        "type": "ws"
       }
     },
     {
@@ -74,9 +41,7 @@
       "outbounds": [
         "auto",
         "🇮🇳 印度 (India) 01 - li007",
-        "🇮🇳 印度 (India) 02 - li007",
-        "🇮🇳 印度 (India) 03 - li007",
-        "🇮🇳 印度 (India) 04 - li007"
+        "🇮🇳 印度 (India) 02 - li007"
       ]
     },
     {
@@ -84,9 +49,7 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇳 印度 (India) 01 - li007",
-        "🇮🇳 印度 (India) 02 - li007",
-        "🇮🇳 印度 (India) 03 - li007",
-        "🇮🇳 印度 (India) 04 - li007"
+        "🇮🇳 印度 (India) 02 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
