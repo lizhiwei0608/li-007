@@ -4,52 +4,35 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽·单跳) - li007
-  server: sbgfgov.vip23.wogacnmnagfwgov.com
-  port: 11223
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007
+  server: 116.49.85.111
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 6ddb6a68-d5f5-ca30-3943-cf0c9876d50c
+  sni: 9358b4b1-tmveo0-u6l8xy-g43g.hk3.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽·单跳) - li007
+  server: sbgfgov.vip24.wogacnmnagfwgov.com
+  port: 11224
   udp: true
   type: vmess
   uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
   alterId: 2
   cipher: auto
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽·单跳) - li007
-  server: tw3.dexlos.com
-  port: 8080
-  udp: true
-  type: tuic
-  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
-  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
-  sni: tw3.dexlos.com
-  skip-cert-verify: true
-  congestion-controller: bbr
-  udp-relay-mode: native
-  alpn:
-  - h3
-- name: 🇺🇸 美国 (United States) 03 (家宽·单跳) - li007
-  server: 155.117.19.17
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽·单跳) - li007
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽·单跳) - li007
-  - 🇺🇸 美国 (United States) 03 (家宽·单跳) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽·单跳) - li007
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽·单跳) - li007
-  - 🇺🇸 美国 (United States) 03 (家宽·单跳) - li007
 rules:
 - MATCH,PROXIES
