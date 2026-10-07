@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - li007",
-      "server": "132.243.231.12",
+      "server": "132.243.231.4",
       "server_port": 443,
       "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
       "flow": "xtls-rprx-vision",
@@ -27,7 +27,7 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - li007",
-      "server": "132.243.231.4",
+      "server": "132.243.231.12",
       "server_port": 443,
       "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
       "flow": "xtls-rprx-vision",
@@ -56,7 +56,7 @@
         "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -78,34 +78,11 @@
       "tls": {
         "enabled": true,
         "server_name": "sub.merky.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/merky-connect/de6/",
-        "headers": {
-          "Host": "sub.merky.top"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - li007",
-      "server": "77.110.96.201",
-      "server_port": 36264,
-      "password": "Telegram-vpnjey",
-      "tls": {
-        "enabled": true,
-        "server_name": "se.vpnjey2.dpdns.org",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "Telegram@vpnjey"
+        "path": "/merky-connect/de6/"
       }
     },
     {
@@ -116,8 +93,7 @@
         "🇸🇪 瑞典 (Sweden) 01 - li007",
         "🇸🇪 瑞典 (Sweden) 02 - li007",
         "🇸🇪 瑞典 (Sweden) 03 - li007",
-        "🇸🇪 瑞典 (Sweden) 04 - li007",
-        "🇸🇪 瑞典 (Sweden) 05 - li007"
+        "🇸🇪 瑞典 (Sweden) 04 - li007"
       ]
     },
     {
@@ -127,8 +103,7 @@
         "🇸🇪 瑞典 (Sweden) 01 - li007",
         "🇸🇪 瑞典 (Sweden) 02 - li007",
         "🇸🇪 瑞典 (Sweden) 03 - li007",
-        "🇸🇪 瑞典 (Sweden) 04 - li007",
-        "🇸🇪 瑞典 (Sweden) 05 - li007"
+        "🇸🇪 瑞典 (Sweden) 04 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

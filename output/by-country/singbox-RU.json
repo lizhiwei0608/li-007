@@ -46,16 +46,70 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇷🇺 俄罗斯 (Russia) 03 - li007",
+      "server": "91.196.32.163",
+      "server_port": 443,
+      "password": "mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj",
+      "tls": {
+        "enabled": true,
+        "server_name": "91.196.32.163",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - li007",
+      "server": "194.87.68.140",
+      "server_port": 10771,
+      "method": "aes-256-gcm",
+      "password": "81a20429165df87e"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - li007",
+      "server": "194.87.196.13",
+      "server_port": 10550,
+      "method": "aes-256-gcm",
+      "password": "4938e975724d0ed1"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - li007",
       "server": "194.38.11.86",
       "server_port": 65443,
       "method": "aes-256-cfb",
       "password": "7eadc6dbe2ae"
     },
     {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07 - li007",
+      "server": "104.21.94.230",
+      "server_port": 443,
+      "uuid": "de78c0b1-c5c8-412a-bd92-430d1f2e2642",
+      "tls": {
+        "enabled": true,
+        "server_name": "frosty-pond-7436.shhabbyat914.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/NmrU9ImDG7jA7oFEem ",
+        "headers": {
+          "Host": "frosty-pond-7436.shhabbyat914.workers.dev"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - li007",
+      "tag": "🇷🇺 俄罗斯 (Russia) 08 - li007",
       "server": "130.49.189.158",
       "server_port": 43558,
       "method": "chacha20-ietf-poly1305",
@@ -63,7 +117,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - li007",
+      "tag": "🇷🇺 俄罗斯 (Russia) 09 - li007",
       "server": "103.88.243.142",
       "server_port": 11592,
       "password": "41edb44c8e",
@@ -75,7 +129,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - li007",
+      "tag": "🇷🇺 俄罗斯 (Russia) 10 - li007",
       "server": "81.177.215.175",
       "server_port": 443,
       "uuid": "1c5ed2e1-56da-41ab-9a78-159d9892ec17",
@@ -85,7 +139,7 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -96,7 +150,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 07 - li007",
+      "tag": "🇷🇺 俄罗斯 (Russia) 11 - li007",
+      "server": "du-rov.secureservice.top",
+      "server_port": 8443,
+      "uuid": "c53ea5e9-ed8b-4990-805d-7f1d6451426c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "du-rov.secureservice.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI",
+          "short_id": "3cbc3d737fb9c4af"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 12 - li007",
       "server": "45.12.75.242",
       "server_port": 26424,
       "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
@@ -115,6 +190,56 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 13 - li007",
+      "server": "5.42.99.64",
+      "server_port": 8443,
+      "uuid": "c53ea5e9-ed8b-4990-805d-7f1d6451426c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "du-rov.secureservice.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI",
+          "short_id": "3cbc3d737fb9c4af"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 14 - li007",
+      "server": "5.42.99.64",
+      "server_port": 8443,
+      "uuid": "c53ea5e9-ed8b-4990-805d-7f1d6451426c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "du-rov.secureservice.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI",
+          "short_id": "3cbc3d737fb9c4af"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 15 - li007",
+      "server": "176.32.39.52",
+      "server_port": 10550,
+      "method": "aes-256-gcm",
+      "password": "8ad9d72a5571df86"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -125,7 +250,15 @@
         "🇷🇺 俄罗斯 (Russia) 04 - li007",
         "🇷🇺 俄罗斯 (Russia) 05 - li007",
         "🇷🇺 俄罗斯 (Russia) 06 - li007",
-        "🇷🇺 俄罗斯 (Russia) 07 - li007"
+        "🇷🇺 俄罗斯 (Russia) 07 - li007",
+        "🇷🇺 俄罗斯 (Russia) 08 - li007",
+        "🇷🇺 俄罗斯 (Russia) 09 - li007",
+        "🇷🇺 俄罗斯 (Russia) 10 - li007",
+        "🇷🇺 俄罗斯 (Russia) 11 - li007",
+        "🇷🇺 俄罗斯 (Russia) 12 - li007",
+        "🇷🇺 俄罗斯 (Russia) 13 - li007",
+        "🇷🇺 俄罗斯 (Russia) 14 - li007",
+        "🇷🇺 俄罗斯 (Russia) 15 - li007"
       ]
     },
     {
@@ -138,7 +271,15 @@
         "🇷🇺 俄罗斯 (Russia) 04 - li007",
         "🇷🇺 俄罗斯 (Russia) 05 - li007",
         "🇷🇺 俄罗斯 (Russia) 06 - li007",
-        "🇷🇺 俄罗斯 (Russia) 07 - li007"
+        "🇷🇺 俄罗斯 (Russia) 07 - li007",
+        "🇷🇺 俄罗斯 (Russia) 08 - li007",
+        "🇷🇺 俄罗斯 (Russia) 09 - li007",
+        "🇷🇺 俄罗斯 (Russia) 10 - li007",
+        "🇷🇺 俄罗斯 (Russia) 11 - li007",
+        "🇷🇺 俄罗斯 (Russia) 12 - li007",
+        "🇷🇺 俄罗斯 (Russia) 13 - li007",
+        "🇷🇺 俄罗斯 (Russia) 14 - li007",
+        "🇷🇺 俄罗斯 (Russia) 15 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

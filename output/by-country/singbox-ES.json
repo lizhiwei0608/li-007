@@ -4,8 +4,44 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 01 - li007",
+      "server": "5.188.181.201",
+      "server_port": 9054,
+      "method": "aes-256-cfb",
+      "password": "VcFuyXvND2yQWSFY"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 02 - li007",
+      "server": "212.227.235.66",
+      "server_port": 2053,
+      "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk",
+          "short_id": "29e8dcd2b37aaa7f"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - li007",
+      "server": "140.174.184.5",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "qItG8SueYQcP"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇪🇸 西班牙 (Spain) 04 - li007",
       "server": "185.174.137.172",
       "server_port": 8446,
       "password": "e9dc02d400b67c727aca1620",
@@ -16,16 +52,20 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 02 - li007",
-      "server": "140.174.184.5",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "qItG8SueYQcP"
+      "type": "hysteria2",
+      "tag": "🇪🇸 西班牙 (Spain) 05 - li007",
+      "server": "xby.mangshe.xyz",
+      "server_port": 2060,
+      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
+      "tls": {
+        "enabled": true,
+        "server_name": "xby.mangshe.xyz",
+        "insecure": true
+      }
     },
     {
       "type": "vmess",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - li007",
+      "tag": "🇪🇸 西班牙 (Spain) 06 - li007",
       "server": "85.90.217.42",
       "server_port": 22324,
       "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
@@ -33,7 +73,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 04 - li007",
+      "tag": "🇪🇸 西班牙 (Spain) 07 - li007",
       "server": "108.181.121.226",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
@@ -41,47 +81,44 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 05 - li007",
-      "server": "212.227.235.66",
-      "server_port": 2053,
-      "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk",
-          "short_id": "29e8dcd2b37aaa7f"
+      "tag": "🇪🇸 西班牙 (Spain) 08 - li007",
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "uuid": "d6828805-5608-44d7-a44b-976d4c3ac2d0",
+      "transport": {
+        "type": "ws",
+        "path": "/vl/5ibXbgAYxWzwbOtkXJWUtvKMKOYjh?ed",
+        "headers": {
+          "Host": "0lg3u92i0exn577l3mc637ycba3.sfgsfgsfgfsgsf-4630.workers.dev"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 06 - li007",
-      "server": "193.238.154.5",
+      "tag": "🇪🇸 西班牙 (Spain) 09 - li007",
+      "server": "188.114.97.6",
       "server_port": 443,
-      "uuid": "e0b9fb0f-1bbd-478b-9580-c2294778338b",
+      "uuid": "1c9daf90-3950-44ac-b06f-4cf9aec63170",
       "tls": {
         "enabled": true,
-        "server_name": "assets-es.pleiades.codes",
+        "server_name": "FrEe.SeRVEr14peekCoNfIG.WoRKErS.dEV",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "cdn.v1.AssetService"
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiQmFCblN3SmhXYTB3RzVoIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OjExOjY0OjpdIiwiWzJhMDI6ODk4OjE0Njo2NDo6XSIsIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=",
+        "headers": {
+          "Host": "free.server14peekconfig.workers.dev"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 07 - li007",
+      "tag": "🇪🇸 西班牙 (Spain) 10 - li007",
       "server": "es4.h1cloud.net",
       "server_port": 25047,
       "uuid": "55a2940a-ae07-40b4-ab32-4d3e0617731f",
@@ -101,7 +138,69 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 08 - li007",
+      "tag": "🇪🇸 西班牙 (Spain) 11 - li007",
+      "server": "assets-es.pleiades.codes",
+      "server_port": 443,
+      "uuid": "e0b9fb0f-1bbd-478b-9580-c2294778338b",
+      "tls": {
+        "enabled": true,
+        "server_name": "assets-es.pleiades.codes",
+        "insecure": false
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "cdn.v1.AssetService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 12 - li007",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "uuid": "d6828805-5608-44d7-a44b-976d4c3ac2d0",
+      "tls": {
+        "enabled": true,
+        "server_name": "0lg3u92i0exn577l3mc637ycba3.sfgsfgsfgfsgsf-4630.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/5ibXbgAYxWzwbOtkXJWUtvKMKOYjh?ed",
+        "headers": {
+          "Host": "0lg3u92i0exn577l3mc637ycba3.sfgsfgsfgfsgsf-4630.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 13 - li007",
+      "server": "172.67.66.169",
+      "server_port": 443,
+      "uuid": "87c467e9-f0af-4b03-8fbd-65fd375d3a26",
+      "tls": {
+        "enabled": true,
+        "server_name": "pmpmppm.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "pmpmppm.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 14 - li007",
       "server": "46.28.71.247",
       "server_port": 443,
       "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
@@ -111,12 +210,35 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
           "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
           "short_id": "0dfc23fe80778c00"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 15 - li007",
+      "server": "172.67.167.179",
+      "server_port": 443,
+      "uuid": "a8b1d666-d3ba-4b17-90c4-ba7514c74f78",
+      "tls": {
+        "enabled": true,
+        "server_name": "xstack.mahanfixe.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/xiron",
+        "headers": {
+          "Host": "xstack.mahanfixe.workers.dev"
         }
       }
     },
@@ -132,7 +254,14 @@
         "🇪🇸 西班牙 (Spain) 05 - li007",
         "🇪🇸 西班牙 (Spain) 06 - li007",
         "🇪🇸 西班牙 (Spain) 07 - li007",
-        "🇪🇸 西班牙 (Spain) 08 - li007"
+        "🇪🇸 西班牙 (Spain) 08 - li007",
+        "🇪🇸 西班牙 (Spain) 09 - li007",
+        "🇪🇸 西班牙 (Spain) 10 - li007",
+        "🇪🇸 西班牙 (Spain) 11 - li007",
+        "🇪🇸 西班牙 (Spain) 12 - li007",
+        "🇪🇸 西班牙 (Spain) 13 - li007",
+        "🇪🇸 西班牙 (Spain) 14 - li007",
+        "🇪🇸 西班牙 (Spain) 15 - li007"
       ]
     },
     {
@@ -146,7 +275,14 @@
         "🇪🇸 西班牙 (Spain) 05 - li007",
         "🇪🇸 西班牙 (Spain) 06 - li007",
         "🇪🇸 西班牙 (Spain) 07 - li007",
-        "🇪🇸 西班牙 (Spain) 08 - li007"
+        "🇪🇸 西班牙 (Spain) 08 - li007",
+        "🇪🇸 西班牙 (Spain) 09 - li007",
+        "🇪🇸 西班牙 (Spain) 10 - li007",
+        "🇪🇸 西班牙 (Spain) 11 - li007",
+        "🇪🇸 西班牙 (Spain) 12 - li007",
+        "🇪🇸 西班牙 (Spain) 13 - li007",
+        "🇪🇸 西班牙 (Spain) 14 - li007",
+        "🇪🇸 西班牙 (Spain) 15 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
