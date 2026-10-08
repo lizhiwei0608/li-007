@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 01 - li007",
-      "server": "211.178.105.134",
-      "server_port": 6123,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
       "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 02 - li007",
+      "tag": "🇰🇷 韩国 (South Korea) 01 - li007",
       "server": "140.238.2.250",
       "server_port": 443,
       "uuid": "41a7089a-040b-4538-8b8d-010902405bde",
@@ -21,27 +13,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 03 - li007",
-      "server": "43.201.100.203",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "optimum-snapper.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 04 - li007",
-      "server": "141.164.45.187",
-      "server_port": 9101,
-      "method": "aes-256-gcm",
-      "password": "e4FCWrgpkji3QY"
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 05 - li007",
+      "tag": "🇰🇷 韩国 (South Korea) 02 - li007",
       "server": "43.203.172.96",
       "server_port": 443,
       "password": "UX82473651",
@@ -53,14 +25,54 @@
     },
     {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 06 - li007",
-      "server": "3.39.225.215",
+      "tag": "🇰🇷 韩国 (South Korea) 03 - li007",
+      "server": "3.35.168.225",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "kind-stork.rooster465.autos",
+        "server_name": "noted-cougar.rooster465.autos",
         "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 04 - li007",
+      "server": "43.201.100.203",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "optimum-snapper.rooster465.autos",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 05 - li007",
+      "server": "3.38.115.120",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ9wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-kr-002.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇰🇷 韩国 (South Korea) 06 - li007",
+      "server": "132.145.80.230",
+      "server_port": 80,
+      "uuid": "5155860e-d07d-46c3-9128-3afbd84626c7",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/cctv13.m3u8"
       }
     },
     {
@@ -71,20 +83,20 @@
       "password": "1671a252e2a97dc2bda4e515475931da",
       "tls": {
         "enabled": true,
-        "server_name": "132.226.226.189",
+        "server_name": "www.bing.com",
         "insecure": true
       }
     },
     {
-      "type": "trojan",
+      "type": "hysteria2",
       "tag": "🇰🇷 韩国 (South Korea) 08 - li007",
-      "server": "3.34.131.153",
-      "server_port": 443,
-      "password": "UX82473651",
+      "server": "131.186.19.174",
+      "server_port": 50160,
+      "password": "7302ad33229de166d393cd56143a1e4c",
       "tls": {
         "enabled": true,
-        "server_name": "pretty-rat.rooster465.autos",
-        "insecure": false
+        "server_name": "www.bing.com",
+        "insecure": true
       }
     },
     {
@@ -103,39 +115,6 @@
       "type": "vless",
       "tag": "🇰🇷 韩国 (South Korea) 10 - li007",
       "server": "3.39.4.109",
-      "server_port": 18967,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 11 - li007",
-      "server": "3.35.168.225",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "noted-cougar.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 12 - li007",
-      "server": "3.39.4.109",
       "server_port": 13672,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
       "flow": "xtls-rprx-vision",
@@ -144,7 +123,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -155,32 +134,44 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 13 - li007",
-      "server": "131.186.19.174",
-      "server_port": 50160,
-      "password": "7302ad33229de166d393cd56143a1e4c",
+      "tag": "🇰🇷 韩国 (South Korea) 11 - li007",
+      "server": "vpn-kr-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ9wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "css.rbxcdn.com",
+        "server_name": "vpn-kr-002.fastervpn.world",
         "insecure": true
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 14 - li007",
-      "server": "132.145.80.230",
-      "server_port": 80,
-      "uuid": "5155860e-d07d-46c3-9128-3afbd84626c7",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/cctv13.m3u8"
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 12 - li007",
+      "server": "152.67.200.82",
+      "server_port": 50160,
+      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
+      "tls": {
+        "enabled": true,
+        "server_name": "152-67-200-82.liao.kdns.fr",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 13 - li007",
+      "server": "152.69.231.175",
+      "server_port": 50160,
+      "password": "1beb216e3f60aea9555dae60d219a5ca",
+      "tls": {
+        "enabled": true,
+        "server_name": "152-69-231-175.liao.kdns.fr",
+        "insecure": false
       }
     },
     {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 15 - li007",
-      "server": "delicate-buck.rooster465.autos",
+      "tag": "🇰🇷 韩国 (South Korea) 14 - li007",
+      "server": "52.78.203.191",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
@@ -190,27 +181,48 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 16 - li007",
-      "server": "152.67.200.82",
-      "server_port": 50160,
-      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 15 - li007",
+      "server": "3.39.4.109",
+      "server_port": 18967,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "152.67.200.82",
-        "insecure": true
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 16 - li007",
+      "server": "3.34.131.153",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "pretty-rat.rooster465.autos",
+        "insecure": false
       }
     },
     {
       "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 17 - li007",
-      "server": "3.35.207.188",
-      "server_port": 443,
-      "password": "UX82473651",
+      "server": "154.90.62.70",
+      "server_port": 56127,
+      "password": "p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B",
       "tls": {
         "enabled": true,
-        "server_name": "main-fawn.rooster465.autos",
-        "insecure": false
+        "server_name": "154.90.62.70",
+        "insecure": true
       }
     },
     {
@@ -236,19 +248,7 @@
     {
       "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 19 - li007",
-      "server": "154.90.62.70",
-      "server_port": 56127,
-      "password": "p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B",
-      "tls": {
-        "enabled": true,
-        "server_name": "154.90.62.70",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 20 - li007",
-      "server": "3.35.217.113",
+      "server": "amazing-peacock.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
@@ -258,29 +258,9 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 21 - li007",
-      "server": "vpn-kr-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ9wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-kr-002.fastervpn.world",
-        "insecure": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 22 - li007",
-      "server": "141.164.45.187",
-      "server_port": 2376,
-      "method": "aes-256-gcm",
-      "password": "faBAoD54k87UJG7"
-    },
-    {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 23 - li007",
-      "server": "engaging-toucan.rooster465.autos",
+      "tag": "🇰🇷 韩国 (South Korea) 20 - li007",
+      "server": "13.125.69.162",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
@@ -290,13 +270,67 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 21 - li007",
+      "server": "main-fawn.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "main-fawn.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 22 - li007",
+      "server": "3.39.225.215",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "kind-stork.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 24 - li007",
+      "tag": "🇰🇷 韩国 (South Korea) 23 - li007",
       "server": "goldcnmltyljgfwgov.vip64.wogcnmnnagfwgov.com",
       "server_port": 11264,
       "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
       "security": "auto",
       "alter_id": 2
+    },
+    {
+      "type": "vmess",
+      "tag": "🇰🇷 韩国 (South Korea) 24 - li007",
+      "server": "silversbgfgov.vip40.wogbcnmnagfwgov.com",
+      "server_port": 11240,
+      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
+      "security": "auto",
+      "alter_id": 2
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 25 - li007",
+      "server": "47.80.19.173",
+      "server_port": 2053,
+      "uuid": "319d5ffb-57e8-4bbd-ac0c-5d55d0c253de",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms",
+          "short_id": "3c4041d3"
+        }
+      }
     },
     {
       "type": "selector",
@@ -326,7 +360,8 @@
         "🇰🇷 韩国 (South Korea) 21 - li007",
         "🇰🇷 韩国 (South Korea) 22 - li007",
         "🇰🇷 韩国 (South Korea) 23 - li007",
-        "🇰🇷 韩国 (South Korea) 24 - li007"
+        "🇰🇷 韩国 (South Korea) 24 - li007",
+        "🇰🇷 韩国 (South Korea) 25 - li007"
       ]
     },
     {
@@ -356,7 +391,8 @@
         "🇰🇷 韩国 (South Korea) 21 - li007",
         "🇰🇷 韩国 (South Korea) 22 - li007",
         "🇰🇷 韩国 (South Korea) 23 - li007",
-        "🇰🇷 韩国 (South Korea) 24 - li007"
+        "🇰🇷 韩国 (South Korea) 24 - li007",
+        "🇰🇷 韩国 (South Korea) 25 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

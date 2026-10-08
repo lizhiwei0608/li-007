@@ -4,20 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇲🇽 墨西哥 (Mexico) 01 - li007",
-      "server": "45.134.9.133",
-      "server_port": 8443,
-      "uuid": "a6d20e79-d326-42c1-bc20-f4cecc6dc42d",
-      "tls": {
-        "enabled": true,
-        "server_name": "ul-mexico1.09vpn.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vless/"
-      }
+      "server": "147.78.1.141",
+      "server_port": 16672,
+      "method": "aes-128-gcm",
+      "password": "67c57ae584eecd70396fcd7ca7521130"
     },
     {
       "type": "selector",
