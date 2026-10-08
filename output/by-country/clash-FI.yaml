@@ -5,15 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - li007
-  server: 185.103.110.66
-  port: 18280
+  server: 185.103.110.68
+  port: 18283
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
 - name: 🇫🇮 芬兰 (Finland) 02 - li007
-  server: 185.103.110.68
-  port: 18283
+  server: 185.103.110.66
+  port: 18280
   udp: true
   type: ss
   cipher: aes-128-gcm
@@ -25,8 +25,21 @@ proxies:
   type: hysteria2
   password: cf83b611-6cba-4535-adcb-8da06c6a9146
   sni: vps155-edge.kermemehori.ru
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 04 - li007
+  server: 144.31.27.215
+  port: 43000
+  udp: true
+  type: vless
+  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
+    short-id: 568d87a47271344e
+  servername: 144.31.27.215
+  client-fingerprint: edge
+- name: 🇫🇮 芬兰 (Finland) 05 - li007
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -37,15 +50,7 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
     short-id: d368b94e275ab080
   servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 05 - li007
-  server: 87.251.17.11
-  port: 9443
-  udp: true
-  type: hysteria2
-  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
-  sni: onecloudstream.com
-  skip-cert-verify: true
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 06 - li007
   server: 151.241.137.132
   port: 443
@@ -59,30 +64,6 @@ proxies:
   servername: finland.ali-bard.online
   client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 07 - li007
-  server: psf-3.weedly.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: b0fae3b7-02de-4002-b8ca-b7159fe33841
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: machinemag.ir
-- name: 🇫🇮 芬兰 (Finland) 08 - li007
-  server: 144.31.27.215
-  port: 43000
-  udp: true
-  type: vless
-  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
-    short-id: 568d87a47271344e
-  servername: 144.31.27.215
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 09 - li007
   server: van2.ragnarok-it.xyz
   port: 8446
   udp: true
@@ -95,7 +76,7 @@ proxies:
     short-id: 7bac4b112d30d1
   servername: amd.com
   client-fingerprint: edge
-- name: 🇫🇮 芬兰 (Finland) 10 - li007
+- name: 🇫🇮 芬兰 (Finland) 08 - li007
   server: 65.108.3.59
   port: 443
   udp: true
@@ -107,7 +88,14 @@ proxies:
     public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
     short-id: 90ec9bba2019
   servername: web.eitaa.com
-  client-fingerprint: random
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 09 - li007
+  server: 45.149.114.171
+  port: 777
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
 proxy-groups:
 - name: PROXIES
   type: select
@@ -122,7 +110,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 07 - li007
   - 🇫🇮 芬兰 (Finland) 08 - li007
   - 🇫🇮 芬兰 (Finland) 09 - li007
-  - 🇫🇮 芬兰 (Finland) 10 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -137,6 +124,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 07 - li007
   - 🇫🇮 芬兰 (Finland) 08 - li007
   - 🇫🇮 芬兰 (Finland) 09 - li007
-  - 🇫🇮 芬兰 (Finland) 10 - li007
 rules:
 - MATCH,PROXIES
