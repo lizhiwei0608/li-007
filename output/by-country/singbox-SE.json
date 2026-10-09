@@ -14,7 +14,7 @@
         "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -28,8 +28,29 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - li007",
+      "server": "swidenlanzerotte.live",
+      "server_port": 443,
+      "uuid": "56de13ac-086e-4789-8e1e-1bf2bd90216b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "swidenlanzerotte.live",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - li007",
       "server": "77.110.96.201",
       "server_port": 36264,
       "password": "Telegram-vpnjey",
@@ -41,27 +62,6 @@
       "obfs": {
         "type": "salamander",
         "password": "Telegram@vpnjey"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - li007",
-      "server": "31.207.7.74",
-      "server_port": 443,
-      "uuid": "2412bd96-925b-43f2-81d1-0ed4f0793699",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pkg.go.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "RDL0RVmgFM3fdqXRSHBF2A53YF9TPFu2aeJQhMTaY3s",
-          "short_id": "457ae5b8bef4d1b3"
-        }
       }
     },
     {

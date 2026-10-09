@@ -5,22 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇵🇹 葡萄牙 (Portugal) 01 - li007",
-      "server": "31.129.22.141",
+      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - li007",
+      "server": "45.158.185.172",
       "server_port": 443,
-      "uuid": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
-      "flow": "xtls-rprx-vision",
+      "uuid": "698b212d-ca12-4794-8256-252a6e1b4533",
       "tls": {
         "enabled": true,
-        "server_name": "pt-root.sworkingvpn.com",
+        "server_name": "z5n1.vpnpolar.online",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
-          "short_id": "15bcc0a77c3cacdf"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/beeline",
+        "headers": {
+          "Host": "z5n1.vpnpolar.online"
         }
       }
     },
@@ -29,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇹 葡萄牙 (Portugal) 01 - li007"
+        "🇺🇦 乌克兰 (Ukraine) 01 - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇹 葡萄牙 (Portugal) 01 - li007"
+        "🇺🇦 乌克兰 (Ukraine) 01 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
