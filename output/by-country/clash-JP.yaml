@@ -12,33 +12,26 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 02 - li007
-  server: 149.22.87.204
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 03 - li007
   server: 149.22.87.240
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 04 - li007
-  server: jp032007.ssgreen.org
+- name: 🇯🇵 日本 (Japan) 03 - li007
+  server: 149.22.87.204
   port: 443
   udp: true
-  type: vmess
-  uuid: 33387c30-5f6e-4e72-941b-0c1b599a80dc
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: jp032007.ssgreen.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /wes
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 04 - li007
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
 - name: 🇯🇵 日本 (Japan) 05 - li007
   server: 45.32.52.173
   port: 8886
@@ -48,30 +41,6 @@ proxies:
   sni: 45.32.52.173
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 06 - li007
-  server: internal-krill.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: internal-krill.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 07 - li007
-  server: 45.32.10.7
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 96ab5cd282733fd4c312a61f972f330a
-  sni: vp3.yysyy.online
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 08 - li007
-  server: normal-macaque.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: normal-macaque.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 09 - li007
   server: 154.31.114.248
   port: 50159
   udp: true
@@ -84,23 +53,31 @@ proxies:
     short-id: 091e1c5db8451757
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 10 - li007
-  server: 158.101.148.79
-  port: 5443
-  udp: true
-  type: hysteria2
-  password: my_super_password_123
-  sni: open.2ml.bid
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 11 - li007
-  server: equipped-stingray.rooster465.autos
+- name: 🇯🇵 日本 (Japan) 07 - li007
+  server: 52.194.251.232
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: equipped-stingray.rooster465.autos
+  sni: optimal-penguin.rooster465.autos
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 12 - li007
+- name: 🇯🇵 日本 (Japan) 08 - li007
+  server: 45.32.10.7
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 96ab5cd282733fd4c312a61f972f330a
+  sni: vp3.yysyy.online
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 09 - li007
+  server: 13.231.247.130
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: concrete-aardvark.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 10 - li007
   server: legible-ram.rooster465.autos
   port: 443
   udp: true
@@ -108,15 +85,76 @@ proxies:
   password: UX82473651
   sni: legible-ram.rooster465.autos
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 13 - li007
+- name: 🇯🇵 日本 (Japan) 11 - li007
+  server: 13.230.76.132
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: equipped-stingray.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 12 - li007
   server: amazed-mako.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: amazed-mako.rooster465.autos
-  skip-cert-verify: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 13 - li007
+  server: stable-python.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: stable-python.rooster465.autos
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 14 - li007
+  server: 8.211.175.236
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 15 - li007
+  server: 13.230.139.12
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: brief-glider.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 16 - li007
+  server: 138.3.208.26
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: 'off'
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 17 - li007
+  server: normal-macaque.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: normal-macaque.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 18 - li007
+  server: 103.75.118.228
+  port: 11452
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: edge
+- name: 🇯🇵 日本 (Japan) 19 - li007
   server: warm-krill.rooster465.autos
   port: 443
   udp: true
@@ -124,7 +162,83 @@ proxies:
   password: UX82473651
   sni: warm-krill.rooster465.autos
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 15 - li007
+- name: 🇯🇵 日本 (Japan) 20 - li007
+  server: obliging-louse.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: obliging-louse.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 21 - li007
+  server: 43.207.89.91
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: organic-caribou.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 22 - li007
+  server: jpga01.xyy123.bid
+  port: 443
+  udp: true
+  type: vless
+  uuid: 05453546-201f-4e8d-97ae-fd70da0e951f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AgTktefiMM58y7f-KFgEtmVti_YJbd0GPSkxNeJ0RH4
+    short-id: cfffc6b65acb2ad3
+  servername: shop.business.amazon.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 23 - li007
+  server: winning-marten.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: winning-marten.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 24 - li007
+  server: 168.138.43.75
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: jp01.a0a.xyz
+- name: 🇯🇵 日本 (Japan) 25 - li007
+  server: 103.75.118.228
+  port: 12683
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇯🇵 日本 (Japan) 26 - li007
+  server: 153.121.36.102
+  port: 443
+  udp: true
+  type: vless
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
+  servername: www.amazon.com
+  client-fingerprint: random
+- name: 🇯🇵 日本 (Japan) 27 - li007
   server: jumpernode.online
   port: 443
   udp: true
@@ -137,44 +251,7 @@ proxies:
     short-id: 6d962e8d8a0dce
   servername: amazon.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 16 - li007
-  server: 158.101.148.79
-  port: 443
-  udp: true
-  type: hysteria2
-  password: my_super_password_123
-  sni: open.2ml.bid
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 17 - li007
-  server: stable-python.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: stable-python.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 18 - li007
-  server: open.2ml.cc.cd
-  port: 5443
-  udp: true
-  type: hysteria2
-  password: my_super_password_123
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 19 - li007
-  server: jpga01.jumpernode.site
-  port: 443
-  udp: true
-  type: vless
-  uuid: 05453546-201f-4e8d-97ae-fd70da0e951f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AgTktefiMM58y7f-KFgEtmVti_YJbd0GPSkxNeJ0RH4
-    short-id: c8e49965
-  servername: amzn.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 20 - li007
+- name: 🇯🇵 日本 (Japan) 28 - li007
   server: live-stallion.rooster465.autos
   port: 443
   udp: true
@@ -182,36 +259,38 @@ proxies:
   password: UX82473651
   sni: live-stallion.rooster465.autos
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 21 - li007
-  server: evolving-platypus.rooster465.autos
+- name: 🇯🇵 日本 (Japan) 29 - li007
+  server: open.2ml.bid
+  port: 443
+  udp: true
+  type: hysteria2
+  password: my_super_password_123
+  sni: open.2ml.bid
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 30 - li007
+  server: 84.247.155.196
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 31 - li007
+  server: 176.34.5.100
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: evolving-platypus.rooster465.autos
+  sni: assuring-skink.rooster465.autos
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 22 - li007
-  server: 3.114.220.22
-  port: 18007
+- name: 🇯🇵 日本 (Japan) 32 - li007
+  server: 54.249.36.167
+  port: 443
   udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 23 - li007
-  server: 138.3.208.26
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 24 - li007
+  type: trojan
+  password: UX82473651
+  sni: comic-poodle.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 33 - li007
   server: 142.91.106.31
   port: 43000
   udp: true
@@ -223,33 +302,26 @@ proxies:
     public-key: onJvbzSx_vZUyycafvPuhsiSQsr9tw4zotyVMSWCvm4
     short-id: 8d66106f
   servername: 142.91.106.31
-  client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 25 - li007
-  server: 84.247.155.196
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 26 - li007
-  server: 43.207.198.39
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 34 - li007
+  server: 52.192.45.137
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: fancy-javelin.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 27 - li007
-  server: optimal-penguin.rooster465.autos
+  sni: promoted-rattler.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 35 - li007
+  server: 54.199.66.128
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: optimal-penguin.rooster465.autos
+  sni: integral-rodent.rooster465.autos
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 28 - li007
+- name: 🇯🇵 日本 (Japan) 36 - li007
   server: 3.114.220.22
-  port: 19645
+  port: 18007
   udp: true
   type: vless
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
@@ -260,135 +332,7 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 29 - li007
-  server: 54.65.177.190
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: winning-marten.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 30 - li007
-  server: 13.230.91.226
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: musical-terrier.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 31 - li007
-  server: 54.250.237.143
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: accurate-frog.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 32 - li007
-  server: vpn-hk-004.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-hk-004.fastervpn.world
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 33 - li007
-  server: 176.34.5.100
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: assuring-skink.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 34 - li007
-  server: 104.16.111.202
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 35 - li007
-  server: 43.207.89.91
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: organic-caribou.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 36 - li007
-  server: 54.249.36.167
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: comic-poodle.rooster465.autos
-  skip-cert-verify: false
 - name: 🇯🇵 日本 (Japan) 37 - li007
-  server: 207.148.97.59
-  port: 443
-  udp: true
-  type: vless
-  uuid: d90087c3-54f5-4283-a13f-615260c8b0c7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: hTweFDvbSucrGERtiiwDfoqD3vo_Z9cuaqboff3FTXQ
-  servername: googleapis.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 38 - li007
-  server: 188.245.191.19
-  port: 2040
-  udp: true
-  type: vless
-  uuid: a42ba501-2628-40ab-87ad-cf77adc46f67
-  tls: true
-  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-- name: 🇯🇵 日本 (Japan) 39 - li007
-  server: prime-corgi.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: prime-corgi.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 40 - li007
-  server: 52.192.45.137
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: promoted-rattler.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 41 - li007
-  server: 84.247.155.196
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 42 - li007
-  server: 3.112.245.255
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: dynamic-imp.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 43 - li007
   server: 18.183.215.124
   port: 28573
   udp: true
@@ -400,22 +344,24 @@ proxies:
     public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
     short-id: 03653bc03be10c97
   servername: www.sony.com
-  client-fingerprint: safari
-- name: 🇯🇵 日本 (Japan) 44 - li007
-  server: jp032005.ssgreen.org
+  client-fingerprint: qq
+- name: 🇯🇵 日本 (Japan) 38 - li007
+  server: fancy-javelin.rooster465.autos
   port: 443
   udp: true
-  type: vmess
-  uuid: 1e2bb223-450c-4b89-95d5-11269115affa
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: jp032005.ssgreen.org
+  type: trojan
+  password: UX82473651
+  sni: fancy-javelin.rooster465.autos
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /wes
-- name: 🇯🇵 日本 (Japan) 45 - li007
+- name: 🇯🇵 日本 (Japan) 39 - li007
+  server: prime-corgi.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: prime-corgi.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 40 - li007
   server: 3.114.220.22
   port: 10583
   udp: true
@@ -427,98 +373,110 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 46 - li007
-  server: 185.220.68.226
-  port: 20205
+  client-fingerprint: edge
+- name: 🇯🇵 日本 (Japan) 41 - li007
+  server: 138.2.21.246
+  port: 5443
   udp: true
-  type: vless
-  uuid: 282733b7-3cd4-4fa3-b6bd-beff60052f31
-  tls: true
-  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-- name: 🇯🇵 日本 (Japan) 47 - li007
-  server: obliging-louse.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: obliging-louse.rooster465.autos
+  type: hysteria2
+  password: my_super_password_123
+  sni: 138.2.21.246
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 48 - li007
-  server: 54.199.66.128
+- name: 🇯🇵 日本 (Japan) 42 - li007
+  server: rb.mangshe.xyz
+  port: 2060
+  udp: true
+  type: hysteria2
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 43 - li007
+  server: musical-terrier.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: integral-rodent.rooster465.autos
+  sni: musical-terrier.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 44 - li007
+  server: 158.101.148.79
+  port: 5443
+  udp: true
+  type: hysteria2
+  password: my_super_password_123
+  sni: open.2ml.bid
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 49 - li007
-  server: 153.121.36.102
-  port: 443
+- name: 🇯🇵 日本 (Japan) 45 - li007
+  server: 3.114.220.22
+  port: 19645
   udp: true
   type: vless
-  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-    short-id: 1a
-  servername: www.amazon.com
-  client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 50 - li007
-  server: concrete-aardvark.rooster465.autos
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇯🇵 日本 (Japan) 46 - li007
+  server: 54.250.237.143
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: concrete-aardvark.rooster465.autos
+  sni: accurate-frog.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 47 - li007
+  server: 52.192.217.187
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: evolving-platypus.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 48 - li007
+  server: vpn-hk-004.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-hk-004.fastervpn.world
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 49 - li007
+  server: dynamic-imp.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: dynamic-imp.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 50 - li007
+  server: 209.248.32.116
+  port: 28106
+  udp: true
+  type: trojan
+  password: HOrViv
+  sni: download.windowsupdate.com
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 51 - li007
-  server: 142.91.101.39
-  port: 627
+  server: sbgfgov.vip7.wogacnmnagfwgov.com
+  port: 11207
   udp: true
-  type: vless
-  uuid: 3f87daa8-3af8-40a0-b655-127911e008dc
-  tls: true
-  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
 - name: 🇯🇵 日本 (Japan) 52 - li007
-  server: brief-glider.rooster465.autos
-  port: 443
+  server: sbgfgov.vip18.wogacnmnagfwgov.com
+  port: 11218
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: brief-glider.rooster465.autos
-  skip-cert-verify: false
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
 - name: 🇯🇵 日本 (Japan) 53 - li007
-  server: 54.238.153.132
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: obliging-louse.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 54 - li007
-  server: 137.220.221.179
-  port: 443
-  udp: true
-  type: vless
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- name: 🇯🇵 日本 (Japan) 55 - li007
-  server: cdn.sfacg.uk
+  server: or3.sfacg.uk
   port: 2083
   udp: true
   type: vmess
@@ -526,37 +484,67 @@ proxies:
   alterId: 0
   cipher: auto
   tls: true
-  servername: or3.sfacg.uk
+  servername: cdn.sfacg.uk
   skip-cert-verify: false
   network: ws
   ws-opts:
     path: /or3
+- name: 🇯🇵 日本 (Japan) 54 - li007
+  server: 103.39.79.77
+  port: 41563
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: HrcXRHtsitc_AVlN-_8fZuRgaP-Mqa_9JJotI9OnkVc
+    short-id: 25c79e5856c7
+  servername: iosapps.itunes.apple.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 55 - li007
+  server: 104.16.10.56
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tyxyws
     headers:
-      Host: or3.sfacg.uk
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 56 - li007
-  server: silversbgfgov.vip30.wogbcnmnagfwgov.com
-  port: 11230
+  server: goldcnmltyljgfwgov.vip57.wogcnmnnagfwgov.com
+  port: 11257
   udp: true
   type: vmess
   uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
   alterId: 2
   cipher: auto
 - name: 🇯🇵 日本 (Japan) 57 - li007
-  server: 162.159.130.234
-  port: 2083
+  server: goldcnmltyljgfwgov.vip62.wogcnmnnagfwgov.com
+  port: 11262
   udp: true
   type: vmess
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
   cipher: auto
+- name: 🇯🇵 日本 (Japan) 58 - li007
+  server: 207.148.97.59
+  port: 443
+  udp: true
+  type: vless
+  uuid: d90087c3-54f5-4283-a13f-615260c8b0c7
+  flow: xtls-rprx-vision
   tls: true
-  servername: or3.sfacg.uk
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or3.sfacg.uk
+  reality-opts:
+    public-key: hTweFDvbSucrGERtiiwDfoqD3vo_Z9cuaqboff3FTXQ
+  servername: googleapis.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -619,6 +607,7 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 55 - li007
   - 🇯🇵 日本 (Japan) 56 - li007
   - 🇯🇵 日本 (Japan) 57 - li007
+  - 🇯🇵 日本 (Japan) 58 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -681,5 +670,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 55 - li007
   - 🇯🇵 日本 (Japan) 56 - li007
   - 🇯🇵 日本 (Japan) 57 - li007
+  - 🇯🇵 日本 (Japan) 58 - li007
 rules:
 - MATCH,PROXIES

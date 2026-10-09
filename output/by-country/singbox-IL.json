@@ -15,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -25,24 +25,15 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇮🇱 以色列 (Israel) 02 - li007",
-      "server": "85.209.158.187",
-      "server_port": 443,
-      "uuid": "ab9929fd-ab22-48e3-8723-480733c0eca9",
-      "flow": "xtls-rprx-vision",
+      "server": "129.159.156.109",
+      "server_port": 50160,
+      "password": "f25f19f29ce3fb53a35bf1b35b452a43",
       "tls": {
         "enabled": true,
-        "server_name": "isr.vpnskyline.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4aN0Mr6AENm6-K7mokUioB8xe99zKP4UDHnzHtWEvBU",
-          "short_id": "eb1a94ed"
-        }
+        "server_name": "www.bing.com",
+        "insecure": true
       }
     },
     {
