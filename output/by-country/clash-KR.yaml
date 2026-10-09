@@ -13,44 +13,114 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 02 - li007
-  server: 141.164.45.187
-  port: 6697
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-- name: 🇰🇷 韩国 (South Korea) 03 - li007
   server: 211.178.105.134
   port: 6123
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
-- name: 🇰🇷 韩国 (South Korea) 04 - li007
-  server: 3.39.225.215
-  port: 443
+- name: 🇰🇷 韩国 (South Korea) 03 - li007
+  server: 152.70.237.123
+  port: 2053
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: kind-stork.rooster465.autos
+  type: hysteria2
+  password: maintell
+  sni: 152.70.237.123
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 05 - li007
+- name: 🇰🇷 韩国 (South Korea) 04 - li007
   server: 43.201.100.203
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: optimum-snapper.rooster465.autos
-  skip-cert-verify: false
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 05 - li007
+  server: central-jawfish.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: central-jawfish.rooster465.autos
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 06 - li007
+  server: working-tomcat.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: working-tomcat.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 07 - li007
+  server: 132.226.226.189
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 1671a252e2a97dc2bda4e515475931da
+  sni: 132.226.226.189
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 08 - li007
+  server: 3.38.115.120
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
+  sni: vpn-kr-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 09 - li007
+  server: 3.34.95.215
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
+  sni: vpn-kr-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 10 - li007
+  server: 13.124.119.204
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
+  sni: vpn-kr-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 11 - li007
+  server: 152.67.200.82
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 12 - li007
+  server: 54.180.231.160
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
+  sni: vpn-kr-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 13 - li007
   server: 3.34.131.153
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: pretty-rat.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 07 - li007
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 14 - li007
+  server: 132.145.80.230
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: kr02.a0a.xyz
+- name: 🇰🇷 韩国 (South Korea) 15 - li007
   server: 3.39.4.109
   port: 13672
   udp: true
@@ -62,79 +132,29 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 08 - li007
-  server: 152.67.200.82
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: 152-67-200-82.liao.kdns.fr
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 09 - li007
-  server: 152.70.237.123
-  port: 2053
-  udp: true
-  type: hysteria2
-  password: maintell
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 10 - li007
-  server: 132.226.226.189
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1671a252e2a97dc2bda4e515475931da
-  sni: 132.226.226.189
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 11 - li007
-  server: 54.180.231.160
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: vpn-kr-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 12 - li007
-  server: 3.38.115.120
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: vpn-kr-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 13 - li007
-  server: 141.164.45.187
-  port: 8888
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇰🇷 韩国 (South Korea) 14 - li007
-  server: 13.124.119.204
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: vpn-kr-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 15 - li007
-  server: 3.34.95.215
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: vpn-kr-002.fastervpn.world
-  skip-cert-verify: true
+  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 16 - li007
-  server: 152.69.231.175
-  port: 50160
+  server: full-egret.rooster465.autos
+  port: 443
   udp: true
-  type: hysteria2
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152-69-231-175.liao.kdns.fr
-  skip-cert-verify: false
+  type: trojan
+  password: UX82473651
+  sni: full-egret.rooster465.autos
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 17 - li007
+  server: 3.39.4.109
+  port: 18967
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 18 - li007
   server: 64.176.231.183
   port: 443
   udp: true
@@ -147,15 +167,23 @@ proxies:
     short-id: ca193e889d958f81
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 18 - li007
-  server: 52.78.203.191
+- name: 🇰🇷 韩国 (South Korea) 19 - li007
+  server: 152.69.231.175
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  sni: 152-69-231-175.liao.kdns.fr
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 20 - li007
+  server: 3.35.168.225
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: delicate-buck.rooster465.autos
+  sni: noted-cougar.rooster465.autos
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 19 - li007
+- name: 🇰🇷 韩国 (South Korea) 21 - li007
   server: vpn-kr-002.fastervpn.world
   port: 443
   udp: true
@@ -163,20 +191,15 @@ proxies:
   password: H7mP2xY9kJ4nQ9wR5tF6vB3z
   sni: vpn-kr-002.fastervpn.world
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 20 - li007
-  server: 3.39.4.109
-  port: 18967
+- name: 🇰🇷 韩国 (South Korea) 22 - li007
+  server: kind-stork.rooster465.autos
+  port: 443
   udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 21 - li007
+  type: trojan
+  password: UX82473651
+  sni: kind-stork.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 23 - li007
   server: 151.245.106.49
   port: 2053
   udp: true
@@ -188,15 +211,7 @@ proxies:
     short-id: 429499c03d4cc8a0
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 22 - li007
-  server: 13.125.69.162
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: engaging-toucan.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 23 - li007
+- name: 🇰🇷 韩国 (South Korea) 24 - li007
   server: 154.90.62.70
   port: 56127
   udp: true
@@ -204,22 +219,16 @@ proxies:
   password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
   sni: 154.90.62.70
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 24 - li007
-  server: 141.164.45.187
-  port: 8091
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
 - name: 🇰🇷 韩国 (South Korea) 25 - li007
-  server: 141.164.45.187
-  port: 2376
+  server: 52.78.203.191
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
+  type: trojan
+  password: UX82473651
+  sni: delicate-buck.rooster465.autos
+  skip-cert-verify: false
 - name: 🇰🇷 韩国 (South Korea) 26 - li007
-  server: 3.35.207.188
+  server: main-fawn.rooster465.autos
   port: 443
   udp: true
   type: trojan
@@ -227,41 +236,42 @@ proxies:
   sni: main-fawn.rooster465.autos
   skip-cert-verify: false
 - name: 🇰🇷 韩国 (South Korea) 27 - li007
-  server: 3.35.168.225
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: noted-cougar.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 28 - li007
-  server: silversbgfgov.vip40.wogbcnmnagfwgov.com
-  port: 11240
+  server: goldcnmltyljgfwgov.vip64.wogcnmnnagfwgov.com
+  port: 11264
   udp: true
   type: vmess
   uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
   alterId: 2
   cipher: auto
+- name: 🇰🇷 韩国 (South Korea) 28 - li007
+  server: 3.35.207.188
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: main-fawn.rooster465.autos
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 29 - li007
-  server: icn-a-01.auuas.com
-  port: 1891
+  server: 13.125.69.162
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: engaging-toucan.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 30 - li007
+  server: 47.80.19.173
+  port: 2053
   udp: true
   type: vless
-  uuid: 81c4547b-e5d8-4af8-baf0-91c5c0c05a9b
+  uuid: 319d5ffb-57e8-4bbd-ac0c-5d55d0c253de
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: mKvw6P0pTdasFPgyT3d_rHJSJfA-aaCxV8krGByqQS0
-    short-id: 8378f267
-  servername: www.npmjs.com
-  client-fingerprint: safari
-- name: 🇰🇷 韩国 (South Korea) 30 - li007
-  server: 141.164.45.187
-  port: 5498
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
+    public-key: DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms
+    short-id: 3c4041d3
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
