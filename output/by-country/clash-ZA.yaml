@@ -22,7 +22,26 @@ proxies:
     public-key: dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4
     short-id: 5ced03e42cc31aab
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
+- name: 🇿🇦 南非 (South Africa) 03 - li007
+  server: 34.35.186.228
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8d65c8a7-4876-4556-bb6a-feccfb46ee81
+  tls: true
+  reality-opts:
+    public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
+    short-id: 89b3a20484eb43ec
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇿🇦 南非 (South Africa) 04 - li007
+  server: 102.37.156.224
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: aduB9HGxQHjA2SBMRjkHX6
 proxy-groups:
 - name: PROXIES
   type: select
@@ -30,6 +49,8 @@ proxy-groups:
   - AUTO
   - 🇿🇦 南非 (South Africa) 01 - li007
   - 🇿🇦 南非 (South Africa) 02 - li007
+  - 🇿🇦 南非 (South Africa) 03 - li007
+  - 🇿🇦 南非 (South Africa) 04 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -37,5 +58,7 @@ proxy-groups:
   proxies:
   - 🇿🇦 南非 (South Africa) 01 - li007
   - 🇿🇦 南非 (South Africa) 02 - li007
+  - 🇿🇦 南非 (South Africa) 03 - li007
+  - 🇿🇦 南非 (South Africa) 04 - li007
 rules:
 - MATCH,PROXIES

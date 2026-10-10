@@ -6,28 +6,6 @@ log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - li007
   server: 94.183.170.135
-  port: 443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - li007
-  server: 185.252.177.216
-  port: 443
-  udp: true
-  type: vless
-  uuid: 616c7b3b-41f4-4038-88c6-d6fedd0ae4a7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs
-    short-id: 9ea74b83f4993ca9
-  servername: est-1.ardesnode.ru
-  client-fingerprint: random
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - li007
-  server: 94.183.170.135
   port: 8443
   udp: true
   type: vless
@@ -35,7 +13,26 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - li007
+  server: 94.183.170.135
+  port: 443
+  udp: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: estproxy4.lockdwn.com
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - li007
+  server: 109.206.241.10
+  port: 449
+  udp: true
+  type: trojan
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: 109.206.241.10
+  skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - li007
   server: 194.26.141.148
   port: 8443
@@ -48,19 +45,33 @@ proxies:
   network: ws
   ws-opts:
     path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: fdghyt.com
 - name: 🇪🇪 爱沙尼亚 (Estonia) 05 - li007
-  server: 185.93.33.17
-  port: 9443
+  server: est-1.ardesnode.ru
+  port: 443
   udp: true
   type: vless
-  uuid: 596bea4f-a61b-4ad9-86a1-717066a67192
+  uuid: 616c7b3b-41f4-4038-88c6-d6fedd0ae4a7
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 8h8t5eBWL9oERK7xWHQLFJE5j6sZdgNDQAs3EGnNbho
-    short-id: 2f49bccf11150ef2
-  servername: jobs.vkimages.io
-  client-fingerprint: firefox
+    public-key: PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs
+    short-id: 9ea74b83f4993ca9
+  servername: est-1.ardesnode.ru
+  client-fingerprint: random
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - li007
+  server: ee.h1cloud.net
+  port: 25895
+  udp: true
+  type: vless
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  tls: true
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+    short-id: a73f0410d728c823
+  servername: www.samsung.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -71,6 +82,7 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - li007
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - li007
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - li007
+  - 🇪🇪 爱沙尼亚 (Estonia) 06 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -81,5 +93,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - li007
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - li007
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - li007
+  - 🇪🇪 爱沙尼亚 (Estonia) 06 - li007
 rules:
 - MATCH,PROXIES

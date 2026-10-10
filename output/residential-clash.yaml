@@ -4,28 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - li007
-  server: 42.200.173.5
-  port: 443
-  udp: true
-  type: vless
-  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-    short-id: 1a
-  servername: s3.ap-east-1.amazonaws.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
-  server: p141.panda001.net
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - li007
+  server: 218.237.185.234
   port: 4652
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
+  server: sbgfgov.vip24.wogacnmnagfwgov.com
+  port: 11224
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
-  server: 61.230.162.88
+  server: hinet1.2yly.com
   port: 24215
   udp: true
   type: vless
@@ -34,8 +29,18 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 04 (家宽) - li007
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - li007
+  server: me17.msjia8844.site
+  port: 7443
+  udp: true
+  type: hysteria2
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+- name: 🇸🇬 新加坡 (Singapore) 05 (家宽) - li007
   server: s3.huhiuh.space
   port: 18642
   udp: true
@@ -43,23 +48,33 @@ proxies:
   password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
   sni: s3.huhiuh.space
   skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - li007
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - li007
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
-  - 🇸🇬 新加坡 (Singapore) 04 (家宽) - li007
+  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - li007
+  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - li007
+  - 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - li007
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
-  - 🇸🇬 新加坡 (Singapore) 04 (家宽) - li007
+  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - li007
+  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - li007
+  - 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - li007
 rules:
 - MATCH,PROXIES
