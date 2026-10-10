@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 01 - li007",
-      "server": "108.181.121.226",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "WSyL4XTwNsdv"
-    },
-    {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 02 - li007",
+      "tag": "🇪🇸 西班牙 (Spain) 01 - li007",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -32,8 +24,37 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 02 - li007",
+      "server": "108.181.121.226",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "WSyL4XTwNsdv"
+    },
+    {
+      "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 03 - li007",
+      "server": "46.28.71.247",
+      "server_port": 443,
+      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
+          "short_id": "0dfc23fe80778c00"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇪🇸 西班牙 (Spain) 04 - li007",
       "server": "185.174.137.172",
       "server_port": 8446,
       "password": "e9dc02d400b67c727aca1620",
@@ -44,67 +65,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 04 - li007",
-      "server": "185.220.249.44",
-      "server_port": 2053,
-      "uuid": "6d1590ed-4c0f-4bbc-931d-2431737615dd",
-      "tls": {
-        "enabled": true,
-        "server_name": "185.220.249.44",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-cdn1-vless",
-        "headers": {
-          "Host": "es.fastmirror-labs.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 05 - li007",
-      "server": "83.147.18.3",
-      "server_port": 443,
-      "uuid": "9f61cdf4-810d-4052-bbc7-2da0c8e20104",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA",
-          "short_id": "fd8cf7e1173f0edb"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 06 - li007",
-      "server": "46.28.71.247",
-      "server_port": 443,
-      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
-          "short_id": "0dfc23fe80778c00"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -112,9 +72,7 @@
         "🇪🇸 西班牙 (Spain) 01 - li007",
         "🇪🇸 西班牙 (Spain) 02 - li007",
         "🇪🇸 西班牙 (Spain) 03 - li007",
-        "🇪🇸 西班牙 (Spain) 04 - li007",
-        "🇪🇸 西班牙 (Spain) 05 - li007",
-        "🇪🇸 西班牙 (Spain) 06 - li007"
+        "🇪🇸 西班牙 (Spain) 04 - li007"
       ]
     },
     {
@@ -124,9 +82,7 @@
         "🇪🇸 西班牙 (Spain) 01 - li007",
         "🇪🇸 西班牙 (Spain) 02 - li007",
         "🇪🇸 西班牙 (Spain) 03 - li007",
-        "🇪🇸 西班牙 (Spain) 04 - li007",
-        "🇪🇸 西班牙 (Spain) 05 - li007",
-        "🇪🇸 西班牙 (Spain) 06 - li007"
+        "🇪🇸 西班牙 (Spain) 04 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

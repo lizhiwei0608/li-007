@@ -4,42 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽·单跳) - li007",
-      "server": "218.237.185.234",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽·单跳) - li007",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21019,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 03 (家宽·单跳) - li007",
-      "server": "209.38.238.229",
-      "server_port": 20202,
-      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
+      "type": "hysteria2",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽·单跳) - li007",
+      "server": "me17.msjia8844.site",
+      "server_port": 7443,
+      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
       "tls": {
         "enabled": true,
-        "server_name": "wzs.echo.net.eu.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "me17.msjia8844.site",
+        "insecure": false
       },
-      "transport": {
-        "type": "ws",
-        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=",
-        "headers": {
-          "Host": "wzs.echo.net.eu.org"
-        }
+      "obfs": {
+        "type": "salamander",
+        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
       }
     },
     {
@@ -47,18 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽·单跳) - li007",
-        "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽·单跳) - li007",
-        "🇩🇪 德国 (Germany) 03 (家宽·单跳) - li007"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽·单跳) - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽·单跳) - li007",
-        "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽·单跳) - li007",
-        "🇩🇪 德国 (Germany) 03 (家宽·单跳) - li007"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽·单跳) - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
