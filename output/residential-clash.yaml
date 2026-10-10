@@ -16,8 +16,15 @@ proxies:
     public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
     short-id: 1a
   servername: s3.ap-east-1.amazonaws.com
-  client-fingerprint: safari
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
+  client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
+  server: p141.panda001.net
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
   server: 61.230.162.88
   port: 24215
   udp: true
@@ -27,20 +34,32 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: safari
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 04 (家宽) - li007
+  server: s3.huhiuh.space
+  port: 18642
+  udp: true
+  type: hysteria2
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: s3.huhiuh.space
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
+  - 🇸🇬 新加坡 (Singapore) 04 (家宽) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
+  - 🇸🇬 新加坡 (Singapore) 04 (家宽) - li007
 rules:
 - MATCH,PROXIES
