@@ -10,33 +10,9 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 103.115.109.49
+  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - li007
-  server: 160.187.100.109
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
-  server: sbgfgov.vip24.wogacnmnagfwgov.com
-  port: 11224
-  udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - li007
-  server: 165.154.195.38
-  port: 35034
-  udp: true
-  type: vmess
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - li007
   server: tw5.dexlos.com
   port: 8080
   udp: true
@@ -49,6 +25,25 @@ proxies:
   udp-relay-mode: native
   alpn:
   - h3
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - li007
+  server: 118.167.248.243
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: firefox
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - li007
+  server: vpn-tw-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 127.0.0.1
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -56,9 +51,8 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - li007
   - 🇹🇼 中国台湾 (Taiwan) 02 - li007
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 03 - li007
   - 🇹🇼 中国台湾 (Taiwan) 04 - li007
-  - 🇹🇼 中国台湾 (Taiwan) 05 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,8 +60,7 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - li007
   - 🇹🇼 中国台湾 (Taiwan) 02 - li007
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 03 - li007
   - 🇹🇼 中国台湾 (Taiwan) 04 - li007
-  - 🇹🇼 中国台湾 (Taiwan) 05 - li007
 rules:
 - MATCH,PROXIES
