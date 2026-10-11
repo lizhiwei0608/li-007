@@ -20,32 +20,18 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽·单跳) - li007",
-      "server": "sg.australiacaregroup.site",
-      "server_port": 20004,
-      "password": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
-      "tls": {
-        "enabled": true,
-        "server_name": "tw.australiacaregroup.site",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽·单跳) - li007",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽·单跳) - li007"
+        "🇺🇸 美国 (United States) 01 (家宽·单跳) - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽·单跳) - li007",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽·单跳) - li007"
+        "🇺🇸 美国 (United States) 01 (家宽·单跳) - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
