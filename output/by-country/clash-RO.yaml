@@ -5,14 +5,49 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - li007
-  server: 77.74.123.106
+  server: 154.46.31.106
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - li007
+  server: 77.74.123.100
   port: 8443
   udp: true
   type: hysteria2
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - li007
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - li007
+  server: 77.74.123.110
+  port: 995
+  udp: true
+  type: vless
+  uuid: d5eb7d7c-244c-46bd-87c9-ea1abfad915c
+  tls: true
+  servername: italy-pay-october.yyuyy.com
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: httpupgrade
+  httpupgrade-opts:
+    path: /api/v1
+    headers:
+      Host: italy-pay-october.yyuyy.com
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - li007
+  server: 46.28.67.55
+  port: 443
+  udp: true
+  type: vless
+  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
+    short-id: d06d78e974491b6e
+  servername: www.cloudflare.com
+  client-fingerprint: edge
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - li007
   server: 162.249.125.133
   port: 443
   udp: true
@@ -22,7 +57,7 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - li007
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - li007
   server: 146.70.124.85
   port: 443
   udp: true
@@ -34,22 +69,43 @@ proxies:
     public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
     short-id: fe24f8a0a560056e
   servername: www.datadoghq.com
-  client-fingerprint: firefox
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - li007
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 07 - li007
+  server: 82.117.255.174
+  port: 443
+  udp: true
+  type: vless
+  uuid: 679439c5-28f2-485e-af5f-60a5fcd9c36c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0QDBHaCRO2dPeeSVy3B3R_U12ZOvbvWl1JTFW_ZcpD0
+    short-id: 31e91d43e553bf32
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 08 - li007
+  server: 103.126.51.58
+  port: 995
+  udp: true
+  type: vless
+  uuid: 1fc575d3-81bb-44d5-9efa-4131c7cc677a
+  tls: true
+  servername: ocober-romania-new.yyuyy.com
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: httpupgrade
+  httpupgrade-opts:
+    path: /api/v1
+    headers:
+      Host: ocober-romania-new.yyuyy.com
+- name: 🇷🇴 罗马尼亚 (Romania) 09 - li007
   server: 185.156.44.99
   port: 443
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: www.amazon.com
+  sni: 185.156.44.99
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - li007
-  server: 154.46.31.106
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,6 +116,10 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - li007
   - 🇷🇴 罗马尼亚 (Romania) 04 - li007
   - 🇷🇴 罗马尼亚 (Romania) 05 - li007
+  - 🇷🇴 罗马尼亚 (Romania) 06 - li007
+  - 🇷🇴 罗马尼亚 (Romania) 07 - li007
+  - 🇷🇴 罗马尼亚 (Romania) 08 - li007
+  - 🇷🇴 罗马尼亚 (Romania) 09 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -70,5 +130,9 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - li007
   - 🇷🇴 罗马尼亚 (Romania) 04 - li007
   - 🇷🇴 罗马尼亚 (Romania) 05 - li007
+  - 🇷🇴 罗马尼亚 (Romania) 06 - li007
+  - 🇷🇴 罗马尼亚 (Romania) 07 - li007
+  - 🇷🇴 罗马尼亚 (Romania) 08 - li007
+  - 🇷🇴 罗马尼亚 (Romania) 09 - li007
 rules:
 - MATCH,PROXIES

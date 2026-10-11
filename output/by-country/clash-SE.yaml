@@ -5,16 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - li007
-  server: 77.110.96.201
-  port: 36264
+  server: 13.143.174.151
+  port: 21223
   udp: true
   type: hysteria2
-  password: Telegram-vpnjey
-  sni: se.vpnjey2.dpdns.org
+  password: 8bd04756-3beb-4348-82c9-d35453df50ce
+  sni: sweedenqfds777.qcloud.surf
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: Telegram@vpnjey
 - name: 🇸🇪 瑞典 (Sweden) 02 - li007
+  server: sw.golangwikito.cfd
+  port: 443
+  udp: true
+  type: vless
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
+    short-id: a1037b25dcef6aa7
+  servername: sw.golangwikito.cfd
+  client-fingerprint: chrome
+- name: 🇸🇪 瑞典 (Sweden) 03 - li007
   server: se3.h1cloud.net
   port: 25119
   udp: true
@@ -26,8 +37,33 @@ proxies:
     public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
     short-id: 10f517
   servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 03 - li007
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 04 - li007
+  server: 191.44.114.51
+  port: 443
+  udp: true
+  type: vless
+  uuid: accfae78-b31c-47cb-86a1-bb9a07973e4a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: oT9R1OPLe1DlvnRK9sXmUH7_bXQ8LcbqEZRCCw4gXgA
+    short-id: af01c62234f5a7b5
+  servername: google.com
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 05 - li007
+  server: specific3.kandnet.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 621bcb9e-7df5-427b-a9d4-6e87223c8bca
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0eWdILjmoRVSJFDMiQskgkKG2Fc4TEMZ3XEPJ8ez9Hw
+  servername: specific3.kandnet.com
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 06 - li007
   server: 62.60.159.81
   port: 2053
   udp: true
@@ -50,6 +86,9 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - li007
   - 🇸🇪 瑞典 (Sweden) 02 - li007
   - 🇸🇪 瑞典 (Sweden) 03 - li007
+  - 🇸🇪 瑞典 (Sweden) 04 - li007
+  - 🇸🇪 瑞典 (Sweden) 05 - li007
+  - 🇸🇪 瑞典 (Sweden) 06 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,5 +97,8 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - li007
   - 🇸🇪 瑞典 (Sweden) 02 - li007
   - 🇸🇪 瑞典 (Sweden) 03 - li007
+  - 🇸🇪 瑞典 (Sweden) 04 - li007
+  - 🇸🇪 瑞典 (Sweden) 05 - li007
+  - 🇸🇪 瑞典 (Sweden) 06 - li007
 rules:
 - MATCH,PROXIES

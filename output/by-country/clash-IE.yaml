@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - li007
-  server: adapting-basilisk.rooster465.autos
+  server: 54.72.130.222
   port: 443
   udp: true
   type: trojan
@@ -49,14 +49,6 @@ proxies:
     short-id: ce6767c3f1
   servername: vk.com
   client-fingerprint: chrome
-- name: 🇮🇪 爱尔兰 (Ireland) 06 - li007
-  server: 3.255.76.207
-  port: 443
-  udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: 3.255.76.207
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,7 +59,6 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 03 - li007
   - 🇮🇪 爱尔兰 (Ireland) 04 - li007
   - 🇮🇪 爱尔兰 (Ireland) 05 - li007
-  - 🇮🇪 爱尔兰 (Ireland) 06 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,6 +69,5 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 03 - li007
   - 🇮🇪 爱尔兰 (Ireland) 04 - li007
   - 🇮🇪 爱尔兰 (Ireland) 05 - li007
-  - 🇮🇪 爱尔兰 (Ireland) 06 - li007
 rules:
 - MATCH,PROXIES
