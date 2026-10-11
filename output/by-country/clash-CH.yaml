@@ -5,31 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - li007
-  server: 208.69.78.217
-  port: 21000
+  server: 132.243.175.144
+  port: 8388
   udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-  ports: 21000-21199,33000-33199
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
 - name: 🇨🇭 瑞士 (Switzerland) 02 - li007
-  server: 208.69.78.217
-  port: 2053
+  server: 129.153.71.28
+  port: 28863
   udp: true
   type: vless
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  uuid: 7ec90e95-2de2-4e30-a647-e4a29c64f08f
   tls: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-  servername: www.apple.com
-  client-fingerprint: chrome
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
 - name: 🇨🇭 瑞士 (Switzerland) 03 - li007
   server: 208.69.78.217
-  port: 8444
+  port: 33098
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -38,55 +36,6 @@ proxies:
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 04 - li007
-  server: 82.38.64.235
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
-  sni: hopp-swizland-new.mysynology.net
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 05 - li007
-  server: 140.238.213.114
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: 140.238.213.114
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 06 - li007
-  server: 45.90.59.15
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
-    short-id: 19253fae84102271
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇨🇭 瑞士 (Switzerland) 07 - li007
-  server: 152.67.75.161
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 3a702d4d1de4949005d8431220e040fb
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
-- name: 🇨🇭 瑞士 (Switzerland) 08 - li007
-  server: 208.69.78.217
-  port: 33130
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 09 - li007
   server: 179.255.191.86
   port: 443
   udp: true
@@ -98,7 +47,76 @@ proxies:
     public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
   servername: dobro.ali-bard.online
   client-fingerprint: firefox
+- name: 🇨🇭 瑞士 (Switzerland) 05 - li007
+  server: 208.69.78.217
+  port: 21054
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 06 - li007
+  server: 208.69.78.217
+  port: 8444
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 07 - li007
+  server: 208.69.78.217
+  port: 21158
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 08 - li007
+  server: 208.69.78.217
+  port: 21016
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 09 - li007
+  server: 208.69.78.217
+  port: 21000
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+  ports: 21000-21199,33000-33199
 - name: 🇨🇭 瑞士 (Switzerland) 10 - li007
+  server: 140.238.213.114
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: 140.238.213.114
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 11 - li007
+  server: 208.69.78.217
+  port: 33195
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 12 - li007
   server: 208.69.78.217
   port: 21047
   udp: true
@@ -108,14 +126,120 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 11 - li007
-  server: 132.243.175.144
-  port: 8388
+- name: 🇨🇭 瑞士 (Switzerland) 13 - li007
+  server: 208.69.78.217
+  port: 33042
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-- name: 🇨🇭 瑞士 (Switzerland) 12 - li007
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 14 - li007
+  server: 208.69.78.217
+  port: 33013
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 15 - li007
+  server: 208.69.78.217
+  port: 21080
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 16 - li007
+  server: 208.69.78.217
+  port: 33133
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 17 - li007
+  server: 208.69.78.217
+  port: 33092
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 18 - li007
+  server: 208.69.78.217
+  port: 2053
+  udp: true
+  type: vless
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  tls: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇭 瑞士 (Switzerland) 19 - li007
+  server: 82.38.64.229
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
+  sni: hopp-swizland-new.mysynology.net
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 20 - li007
+  server: 208.69.78.217
+  port: 21113
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 21 - li007
+  server: 45.90.59.15
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+    short-id: 19253fae84102271
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇭 瑞士 (Switzerland) 22 - li007
+  server: 208.69.78.217
+  port: 21021
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 23 - li007
+  server: 152.67.75.161
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 3a702d4d1de4949005d8431220e040fb
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
+- name: 🇨🇭 瑞士 (Switzerland) 24 - li007
   server: 138.124.63.224
   port: 8444
   udp: true
@@ -130,8 +254,18 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇨🇭 瑞士 (Switzerland) 13 - li007
-  server: 153.76.161.57
+- name: 🇨🇭 瑞士 (Switzerland) 25 - li007
+  server: 208.69.78.217
+  port: 33130
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 26 - li007
+  server: 153.76.161.59
   port: 2096
   udp: true
   type: vless
@@ -144,6 +278,34 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless-grpc-reality
+- name: 🇨🇭 瑞士 (Switzerland) 27 - li007
+  server: 107.191.53.86
+  port: 4798
+  udp: true
+  type: vless
+  uuid: 9d29da86-4184-4ffa-8bfe-02a4a945f0b0
+  tls: true
+  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+- name: 🇨🇭 瑞士 (Switzerland) 28 - li007
+  server: 77.110.103.49
+  port: 8444
+  udp: true
+  type: vless
+  uuid: 8ce93aad-eb19-4876-857b-fd0628b3c1ed
+  tls: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristifp=chrome
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -162,6 +324,21 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 11 - li007
   - 🇨🇭 瑞士 (Switzerland) 12 - li007
   - 🇨🇭 瑞士 (Switzerland) 13 - li007
+  - 🇨🇭 瑞士 (Switzerland) 14 - li007
+  - 🇨🇭 瑞士 (Switzerland) 15 - li007
+  - 🇨🇭 瑞士 (Switzerland) 16 - li007
+  - 🇨🇭 瑞士 (Switzerland) 17 - li007
+  - 🇨🇭 瑞士 (Switzerland) 18 - li007
+  - 🇨🇭 瑞士 (Switzerland) 19 - li007
+  - 🇨🇭 瑞士 (Switzerland) 20 - li007
+  - 🇨🇭 瑞士 (Switzerland) 21 - li007
+  - 🇨🇭 瑞士 (Switzerland) 22 - li007
+  - 🇨🇭 瑞士 (Switzerland) 23 - li007
+  - 🇨🇭 瑞士 (Switzerland) 24 - li007
+  - 🇨🇭 瑞士 (Switzerland) 25 - li007
+  - 🇨🇭 瑞士 (Switzerland) 26 - li007
+  - 🇨🇭 瑞士 (Switzerland) 27 - li007
+  - 🇨🇭 瑞士 (Switzerland) 28 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -180,5 +357,20 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 11 - li007
   - 🇨🇭 瑞士 (Switzerland) 12 - li007
   - 🇨🇭 瑞士 (Switzerland) 13 - li007
+  - 🇨🇭 瑞士 (Switzerland) 14 - li007
+  - 🇨🇭 瑞士 (Switzerland) 15 - li007
+  - 🇨🇭 瑞士 (Switzerland) 16 - li007
+  - 🇨🇭 瑞士 (Switzerland) 17 - li007
+  - 🇨🇭 瑞士 (Switzerland) 18 - li007
+  - 🇨🇭 瑞士 (Switzerland) 19 - li007
+  - 🇨🇭 瑞士 (Switzerland) 20 - li007
+  - 🇨🇭 瑞士 (Switzerland) 21 - li007
+  - 🇨🇭 瑞士 (Switzerland) 22 - li007
+  - 🇨🇭 瑞士 (Switzerland) 23 - li007
+  - 🇨🇭 瑞士 (Switzerland) 24 - li007
+  - 🇨🇭 瑞士 (Switzerland) 25 - li007
+  - 🇨🇭 瑞士 (Switzerland) 26 - li007
+  - 🇨🇭 瑞士 (Switzerland) 27 - li007
+  - 🇨🇭 瑞士 (Switzerland) 28 - li007
 rules:
 - MATCH,PROXIES

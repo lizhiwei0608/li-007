@@ -5,67 +5,39 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - li007
-  server: 77.74.123.103
+  server: 77.74.123.100
   port: 8443
   udp: true
   type: hysteria2
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   sni: grape-test-italy.dynuddns.net
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - li007
-  server: 77.74.123.110
-  port: 995
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
   udp: true
-  type: vless
-  uuid: d5eb7d7c-244c-46bd-87c9-ea1abfad915c
-  tls: true
-  servername: italy-pay-october.yyuyy.com
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: httpupgrade
-  httpupgrade-opts:
-    path: /api/v1
-    headers:
-      Host: italy-pay-october.yyuyy.com
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - li007
-  server: hy2-new.aspidnet.xyz
+  server: 185.156.44.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: css.rbxcdn.com
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - li007
+  server: 162.249.125.133
   port: 443
   udp: true
   type: hysteria2
   password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
   sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - li007
-  server: 95.133.247.98
-  port: 995
-  udp: true
-  type: vless
-  uuid: df275727-c25a-450b-99c3-29e4e6b0b6b9
-  tls: true
-  servername: love-paris.roxa.org
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: httpupgrade
-  httpupgrade-opts:
-    path: /api/v1
-    headers:
-      Host: love-paris.roxa.org
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - li007
-  server: 146.70.124.85
-  port: 443
-  udp: true
-  type: vless
-  uuid: 40abbe13-f02e-4da2-9b19-966c2c3eb4ee
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
-    short-id: fe24f8a0a560056e
-  servername: www.datadoghq.com
-  client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 06 - li007
   server: 46.28.67.55
   port: 443
   udp: true
@@ -77,22 +49,43 @@ proxies:
     public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇷🇴 罗马尼亚 (Romania) 07 - li007
-  server: 185.156.44.99
+  client-fingerprint: qq
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - li007
+  server: hy2-new.aspidnet.xyz
   port: 443
   udp: true
   type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: 185.156.44.99
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  sni: hy2-new.aspidnet.xyz
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 08 - li007
-  server: bogging-eyeteeth-fly.freesocks.work
+  obfs: salamander
+  obfs-password: c1b4086fea89914496c7e10967a419216566
+- name: 🇷🇴 罗马尼亚 (Romania) 07 - li007
+  server: 146.70.124.85
   port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  type: vless
+  uuid: 40abbe13-f02e-4da2-9b19-966c2c3eb4ee
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
+    short-id: fe24f8a0a560056e
+  servername: www.datadoghq.com
+  client-fingerprint: edge
+- name: 🇷🇴 罗马尼亚 (Romania) 08 - li007
+  server: glazatushi.yandex-api.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1b7ee703-fa08-4305-8469-ae3e30e61e44
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: _qSbW4JL4Ffqvj25vX-6a2ul9Qlj6PBdlF0ghsf_0RQ
+    short-id: a9dc98a7dc87a7dc
+  servername: glazatushi.yandex-api.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select

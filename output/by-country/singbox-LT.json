@@ -7,29 +7,13 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - li007",
       "server": "195.238.126.20",
-      "server_port": 9002,
-      "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - li007",
-      "server": "195.238.126.20",
       "server_port": 9078,
       "method": "aes-256-cfb",
       "password": "JCJpbRbQZNw9XFZG"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - li007",
-      "server": "195.238.126.20",
-      "server_port": 9068,
-      "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - li007",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - li007",
       "server": "195.238.126.20",
       "server_port": 9012,
       "method": "aes-256-cfb",
@@ -37,19 +21,35 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - li007",
+      "server": "195.238.126.20",
+      "server_port": 9001,
+      "method": "aes-256-cfb",
+      "password": "UkXRsXvR6buDMG2Y"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - li007",
+      "server": "195.238.126.20",
+      "server_port": 9008,
+      "method": "aes-256-cfb",
+      "password": "y9VURyNzJWNRYEGQ"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 05 - li007",
       "server": "195.238.126.20",
-      "server_port": 9045,
+      "server_port": 9002,
       "method": "aes-256-cfb",
-      "password": "Lp27rqyJq72bZsqX"
+      "password": "b8KkNDjEd5QqFyRm"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 06 - li007",
       "server": "195.238.126.20",
-      "server_port": 9008,
+      "server_port": 9068,
       "method": "aes-256-cfb",
-      "password": "y9VURyNzJWNRYEGQ"
+      "password": "mwgRg9hRq3b4Qnwb"
     },
     {
       "type": "shadowsocks",
@@ -62,15 +62,15 @@
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 08 - li007",
-      "server": "195.238.126.20",
-      "server_port": 9001,
+      "server": "195.238.126.84",
+      "server_port": 9039,
       "method": "aes-256-cfb",
-      "password": "UkXRsXvR6buDMG2Y"
+      "password": "qYEN5HX4JKeVCdEC"
     },
     {
       "type": "vless",
       "tag": "🇱🇹 立陶宛 (Lithuania) 09 - li007",
-      "server": "b58e68t.lt1.h1clayd.click",
+      "server": "80.209.238.60",
       "server_port": 443,
       "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
       "tls": {

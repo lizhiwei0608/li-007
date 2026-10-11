@@ -5,7 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - li007
-  server: 95.85.238.173
+  server: 104.21.36.36
+  port: 443
+  udp: true
+  type: vless
+  uuid: 41750e18-7143-49a3-bdac-4edcb3c8b8f3
+  tls: true
+  servername: h3hadzojqmjxwseayj0dwe4o0.ade-1018.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/ml3Epzqnzr8r2cTPtolbD5lTi1GWsZOP?ed=2560
+    headers:
+      Host: h3hadzojqmjxwseayj0dwe4o0.ade-1018.workers.dev
+- name: 🇨🇿 捷克 (Czech) 02 - li007
+  server: cz.h2.cleanersaz.help
   port: 443
   udp: true
   type: hysteria2
@@ -18,11 +33,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - li007
+  - 🇨🇿 捷克 (Czech) 02 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - li007
+  - 🇨🇿 捷克 (Czech) 02 - li007
 rules:
 - MATCH,PROXIES

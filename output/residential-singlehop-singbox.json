@@ -1,0 +1,61 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽·单跳) - li007",
+      "server": "155.117.19.17",
+      "server_port": 443,
+      "password": "5fa748137b6d822308eea4611f474ad5",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "a39ca173b57ac7021b08bf3e3de9f1f6"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽·单跳) - li007",
+      "server": "sg.australiacaregroup.site",
+      "server_port": 20004,
+      "password": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
+      "tls": {
+        "enabled": true,
+        "server_name": "tw.australiacaregroup.site",
+        "insecure": true
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇺🇸 美国 (United States) 01 (家宽·单跳) - li007",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽·单跳) - li007"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇺🇸 美国 (United States) 01 (家宽·单跳) - li007",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽·单跳) - li007"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
