@@ -4,36 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽·单跳) - li007",
-      "server": "118.167.248.243",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007",
+      "server": "916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "28a5ce18-e7a1-11ec-91b2-f23c91cfbbc9",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
-        }
+        "server_name": "916164fa-tn2tc0-trgaw0-1h240.hk3.hyhuawei.com",
+        "insecure": true
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽·单跳) - li007",
-      "server": "218.237.185.234",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 03 (家宽·单跳) - li007",
+      "tag": "🇺🇸 美国 (United States) 02 (家宽·单跳) - li007",
       "server": "155.117.19.17",
       "server_port": 443,
       "password": "5fa748137b6d822308eea4611f474ad5",
@@ -48,52 +32,53 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽·单跳) - li007",
-      "server": "zfd-hkv1.kunlun01dns.com",
-      "server_port": 16114,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
-    },
-    {
-      "type": "tuic",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽·单跳) - li007",
-      "server": "tw5.dexlos.com",
-      "server_port": 8080,
-      "uuid": "8A9905B7-801B-41AF-BFC9-2034212770F6",
-      "password": "8A9905B7-801B-41AF-BFC9-2034212770F6",
-      "congestion_control": "bbr",
-      "udp_relay_mode": "native",
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽·单跳) - li007",
+      "server": "t4.qifei.app",
+      "server_port": 443,
+      "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "tw5.dexlos.com",
-        "insecure": true,
-        "alpn": [
-          "h3"
-        ]
+        "server_name": "s3.ap-east-1.amazonaws.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo",
+          "short_id": "1a"
+        }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 04 (家宽·单跳) - li007",
+      "server": "218.237.185.234",
+      "server_port": 4652,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽·单跳) - li007",
-        "🇰🇷 韩国 (South Korea) 02 (家宽·单跳) - li007",
-        "🇺🇸 美国 (United States) 03 (家宽·单跳) - li007",
-        "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽·单跳) - li007",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽·单跳) - li007"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007",
+        "🇺🇸 美国 (United States) 02 (家宽·单跳) - li007",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽·单跳) - li007",
+        "🇰🇷 韩国 (South Korea) 04 (家宽·单跳) - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽·单跳) - li007",
-        "🇰🇷 韩国 (South Korea) 02 (家宽·单跳) - li007",
-        "🇺🇸 美国 (United States) 03 (家宽·单跳) - li007",
-        "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽·单跳) - li007",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽·单跳) - li007"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007",
+        "🇺🇸 美国 (United States) 02 (家宽·单跳) - li007",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽·单跳) - li007",
+        "🇰🇷 韩国 (South Korea) 04 (家宽·单跳) - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

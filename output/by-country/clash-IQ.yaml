@@ -5,7 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - li007
-  server: 178.17.57.120
+  server: 104.21.8.63
+  port: 443
+  udp: true
+  type: trojan
+  password: 5855d6850594830f
+  sni: AkbARIan34.j9Z65Ce2uyks.WoRKeRS.DEV
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tr/w2O3K3xXNYDKIxwOIw7?ed=2560
+- name: 🇮🇶 IQ 02 - li007
+  server: courses.mftplus.qzz.io
+  port: 2096
+  udp: true
+  type: vless
+  uuid: b9ede7a5-5b4b-4aee-ac37-2c307e587e47
+  tls: true
+  servername: courses.mftplus.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: courses.mftplus.qzz.io
+- name: 🇮🇶 IQ 03 - li007
+  server: arcturus.yokkastars.com
   port: 40443
   udp: true
   type: vless
@@ -23,11 +49,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇶 IQ 01 - li007
+  - 🇮🇶 IQ 02 - li007
+  - 🇮🇶 IQ 03 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇶 IQ 01 - li007
+  - 🇮🇶 IQ 02 - li007
+  - 🇮🇶 IQ 03 - li007
 rules:
 - MATCH,PROXIES

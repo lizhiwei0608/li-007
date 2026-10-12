@@ -4,21 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - li007
-  server: 49.254.204.133
-  port: 1774
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - li007
+  server: hinet1.2yly.com
+  port: 24215
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - li007
-  server: dog-hk.kunlun01dns.com
-  port: 21019
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 02 (家宽) - li007
+  server: 104.21.35.17
+  port: 443
   udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: a8b1d666-d3ba-4b17-90c4-ba7514c74f78
+  tls: true
+  servername: xstack.mahanfixe.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /xiron
+    headers:
+      Host: xstack.mahanfixe.workers.dev
 - name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - li007
   server: test.keoplentuio.xyz
   port: 2053
@@ -26,14 +36,6 @@ proxies:
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 - name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007
-  server: sbgfgov.vip23.wogacnmnagfwgov.com
-  port: 11223
-  udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - li007
   server: 24864168545164.d6f54hd1j.cc
   port: 443
   udp: true
@@ -47,7 +49,9 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - li007
+    headers:
+      Host: 24864168545164.d6f54hd1j.cc
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - li007
   server: 654168416355441.d6f54hd1j.cc
   port: 443
   udp: true
@@ -63,27 +67,42 @@ proxies:
     path: /
     headers:
       Host: 654168416355441.d6f54hd1j.cc
+- name: 🇸🇬 新加坡 (Singapore) 06 (家宽) - li007
+  server: 152.70.253.44
+  port: 443
+  udp: true
+  type: vless
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  tls: true
+  servername: wzs.echo.net.eu.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HV1ZNVwcHTQsJSgAJVBQUG0dCQEwWAx4AAg4c
+    headers:
+      Host: wzs.echo.net.eu.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - li007
-  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - li007
+  - 🇺🇸 美国 (United States) 02 (家宽) - li007
   - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - li007
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - li007
+  - 🇸🇬 新加坡 (Singapore) 06 (家宽) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - li007
-  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - li007
+  - 🇺🇸 美国 (United States) 02 (家宽) - li007
   - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - li007
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - li007
+  - 🇸🇬 新加坡 (Singapore) 06 (家宽) - li007
 rules:
 - MATCH,PROXIES

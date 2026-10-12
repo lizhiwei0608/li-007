@@ -5,13 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - li007
-  server: sbgfgov.vip23.wogacnmnagfwgov.com
-  port: 11223
+  server: hinet1.2yly.com
+  port: 24215
   udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
   server: 24864168545164.d6f54hd1j.cc
   port: 443
@@ -26,6 +29,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: 24864168545164.d6f54hd1j.cc
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
   server: 654168416355441.d6f54hd1j.cc
   port: 443
