@@ -6,54 +6,6 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - li007",
-      "server": "162.159.153.4",
-      "server_port": 443,
-      "uuid": "f2a73750-3087-48ff-a763-1348c15dce68",
-      "tls": {
-        "enabled": true,
-        "server_name": "rayan-007.maxima.dpdns.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "rayan-007.maxima.dpdns.org"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02 - li007",
-      "server": "188.114.97.6",
-      "server_port": 8080,
-      "uuid": "d9abc6e3-83bf-4c28-ae68-72465e2abe39",
-      "transport": {
-        "type": "ws",
-        "path": "/vl/xQhNe7rLrdM0emZlaW5LMsNwcoIgnT?ed=2560",
-        "headers": {
-          "Host": "ikt-kkc25f27k-3tehr8mc.ade-1007.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇿 捷克 (Czech) 03 - li007",
-      "server": "95.85.238.173",
-      "server_port": 443,
-      "password": "c-E0lamG8OnEj9M_uh3oJPmIXqYIVGctO-NHELF1TmNYs7Jl",
-      "tls": {
-        "enabled": true,
-        "server_name": "cz.h2.cleanersaz.help",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 04 - li007",
       "server": "195.123.245.241",
       "server_port": 443,
       "uuid": "7c053ca8-38cc-45e2-930c-eda1fd66f903",
@@ -77,20 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - li007",
-        "🇨🇿 捷克 (Czech) 02 - li007",
-        "🇨🇿 捷克 (Czech) 03 - li007",
-        "🇨🇿 捷克 (Czech) 04 - li007"
+        "🇨🇿 捷克 (Czech) 01 - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - li007",
-        "🇨🇿 捷克 (Czech) 02 - li007",
-        "🇨🇿 捷克 (Czech) 03 - li007",
-        "🇨🇿 捷克 (Czech) 04 - li007"
+        "🇨🇿 捷克 (Czech) 01 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,23 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - li007",
-      "server": "140.238.198.229",
-      "password": "a34f3990b69f44bfa0d32385",
+      "server": "144.172.65.72",
+      "server_port": 8443,
+      "uuid": "8afeb33c-b686-43e9-a629-0d98f991ec28",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "rmgyvpn.rest",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "a34f3990b69f44bfa0d32385"
-      },
-      "server_ports": [
-        "20000:30000",
-        "20000:20000"
-      ]
+        "server_name": "www.tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "f25sygANXTpzdc9YPCwkggwSmm3piA3BluSeHdfG-hg",
+          "short_id": ""
+        }
+      }
     },
     {
       "type": "hysteria2",
@@ -70,27 +72,6 @@
       ]
     },
     {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 05 - li007",
-      "server": "144.172.65.72",
-      "server_port": 8443,
-      "uuid": "8afeb33c-b686-43e9-a629-0d98f991ec28",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.tradingview.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "f25sygANXTpzdc9YPCwkggwSmm3piA3BluSeHdfG-hg",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -98,8 +79,7 @@
         "🇦🇺 澳大利亚 (Australia) 01 - li007",
         "🇦🇺 澳大利亚 (Australia) 02 - li007",
         "🇦🇺 澳大利亚 (Australia) 03 - li007",
-        "🇦🇺 澳大利亚 (Australia) 04 - li007",
-        "🇦🇺 澳大利亚 (Australia) 05 - li007"
+        "🇦🇺 澳大利亚 (Australia) 04 - li007"
       ]
     },
     {
@@ -109,8 +89,7 @@
         "🇦🇺 澳大利亚 (Australia) 01 - li007",
         "🇦🇺 澳大利亚 (Australia) 02 - li007",
         "🇦🇺 澳大利亚 (Australia) 03 - li007",
-        "🇦🇺 澳大利亚 (Australia) 04 - li007",
-        "🇦🇺 澳大利亚 (Australia) 05 - li007"
+        "🇦🇺 澳大利亚 (Australia) 04 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
