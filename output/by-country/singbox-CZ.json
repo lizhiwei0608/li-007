@@ -6,6 +6,55 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - li007",
+      "server": "104.21.63.236",
+      "server_port": 443,
+      "uuid": "77702cd2-6a11-40f4-a817-1efeae6f6889",
+      "tls": {
+        "enabled": true,
+        "server_name": "t4sy714oeyu0ntwavv62g6ua9o.ade-1001.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/Nmf5YfPITFhUjeHE8KfDU5T8H?ed=2560",
+        "headers": {
+          "Host": "t4sy714oeyu0ntwavv62g6ua9o.ade-1001.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02 - li007",
+      "server": "188.114.97.1",
+      "server_port": 2053,
+      "uuid": "0b3e7958-e5c4-498f-ab21-b49686f95d2d",
+      "tls": {
+        "enabled": true,
+        "server_name": "bold-term-4edd.mbigspot.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "bold-term-4edd.mbigspot.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 03 - li007",
       "server": "195.123.245.241",
       "server_port": 443,
       "uuid": "7c053ca8-38cc-45e2-930c-eda1fd66f903",
@@ -29,14 +78,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - li007"
+        "🇨🇿 捷克 (Czech) 01 - li007",
+        "🇨🇿 捷克 (Czech) 02 - li007",
+        "🇨🇿 捷克 (Czech) 03 - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - li007"
+        "🇨🇿 捷克 (Czech) 01 - li007",
+        "🇨🇿 捷克 (Czech) 02 - li007",
+        "🇨🇿 捷克 (Czech) 03 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

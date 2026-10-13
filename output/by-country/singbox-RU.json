@@ -28,16 +28,78 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - li007",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY="
+      "server": "172.64.153.235",
+      "server_port": 8443,
+      "uuid": "656bb400-3b7a-47e3-94b0-0362f3865072",
+      "tls": {
+        "enabled": true,
+        "server_name": "socks5.revil-time3.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/socks5://128.140.46.169:13482",
+        "headers": {
+          "Host": "socks5.revil-time3.workers.dev"
+        }
+      }
     },
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 03 - li007",
+      "server": "104.21.61.42",
+      "server_port": 443,
+      "uuid": "5b14b2cf-57e3-4f96-92f2-9695078f06d8",
+      "tls": {
+        "enabled": true,
+        "server_name": "001.inc-electrocell-001-001.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiSGdhak9tRkZLeDdwcCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "001.inc-electrocell-001-001.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - li007",
+      "server": "193.233.74.6",
+      "server_port": 8444,
+      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": "457fab2ac885dbe0"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "GunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - li007",
       "server": "194.113.235.121",
       "server_port": 443,
       "uuid": "9ee57d03-dcf5-488b-aff7-305301879353",
@@ -57,8 +119,45 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - li007",
+      "server": "freede.aiage.work",
+      "server_port": 443,
+      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "freede.aiage.work",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g",
+          "short_id": "57e7977c9011061c"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - li007",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07 - li007",
+      "server": "46.17.41.166",
+      "server_port": 20119,
+      "method": "aes-256-gcm",
+      "password": "895b4b796a357570"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 08 - li007",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 09 - li007",
       "server": "194.38.11.86",
       "server_port": 65443,
       "method": "aes-256-cfb",
@@ -66,7 +165,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - li007",
+      "tag": "🇷🇺 俄罗斯 (Russia) 10 - li007",
       "server": "153.80.241.206",
       "server_port": 8444,
       "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
@@ -90,39 +189,115 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - li007",
-      "server": "94.198.54.132",
-      "server_port": 443,
-      "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
-      "tls": {
-        "enabled": true,
-        "server_name": "msk.frkn.org",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 07 - li007",
+      "tag": "🇷🇺 俄罗斯 (Russia) 11 - li007",
       "server": "194.87.118.184",
       "server_port": 2053,
       "password": "7ab3c77e-8fcc-4848-918f-cae3d4eac794",
       "tls": {
         "enabled": true,
         "server_name": "match-stream.lovkisport.blog",
-        "insecure": false
+        "insecure": true
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 08 - li007",
-      "server": "ruot.ayucloudservices.nl",
-      "server_port": 22037,
-      "method": "aes-256-gcm",
-      "password": "c2fe9024-d253-401a-b868-97421f6eb9e0"
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 12 - li007",
+      "server": "185.76.241.146",
+      "server_port": 443,
+      "uuid": "9ee57d03-dcf5-488b-aff7-305301879353",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ru-in-yt-4vp.movietop24.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XDdqRgW3urMyYQm2d2-dAZ2_5Ag_Gb7RLp6Ud-bSUxA",
+          "short_id": "5ebb66674ae401b6"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 09 - li007",
+      "tag": "🇷🇺 俄罗斯 (Russia) 13 - li007",
+      "server": "81.177.215.156",
+      "server_port": 443,
+      "uuid": "9ee57d03-dcf5-488b-aff7-305301879353",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "tr-4vps.yourzloy.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "VNinTQ6vwOujTkrJgK_NPV4SpSBU6B7xG2tpM7prITQ",
+          "short_id": "fd5b0def0660cdb1"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 14 - li007",
+      "server": "spainspeedboostjbl88.qcloud.surf",
+      "server_port": 27313,
+      "password": "4ad3dbf5-2005-4d96-b56c-a0ca9905cab6",
+      "tls": {
+        "enabled": true,
+        "server_name": "spainspeedboostjbl88.qcloud.surf",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 15 - li007",
+      "server": "5.42.99.64",
+      "server_port": 8443,
+      "uuid": "c53ea5e9-ed8b-4990-805d-7f1d6451426c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "du-rov.secureservice.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI",
+          "short_id": "3cbc3d737fb9c4af"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 16 - li007",
+      "server": "5.42.99.64",
+      "server_port": 8443,
+      "uuid": "c53ea5e9-ed8b-4990-805d-7f1d6451426c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "du-rov.secureservice.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI",
+          "short_id": "3cbc3d737fb9c4af"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 17 - li007",
       "server": "ru-1-3.unturned-rust-dead.lol",
       "server_port": 443,
       "uuid": "c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8",
@@ -131,7 +306,7 @@
         "server_name": "ru-1-3.unturned-rust-dead.lol",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -142,6 +317,26 @@
       "transport": {
         "type": "grpc",
         "service_name": "ru-api"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 18 - li007",
+      "server": "b58e68t.lt1.h1clayd.click",
+      "server_port": 443,
+      "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
+      "tls": {
+        "enabled": true,
+        "server_name": "b58e68t.lt1.h1clayd.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MbRONgV8ADD5B_aKDBv15LAW2a8QZok5bkkZexRRVAs",
+          "short_id": "2301ac8aee8bf6d4"
+        }
       }
     },
     {
@@ -157,7 +352,16 @@
         "🇷🇺 俄罗斯 (Russia) 06 - li007",
         "🇷🇺 俄罗斯 (Russia) 07 - li007",
         "🇷🇺 俄罗斯 (Russia) 08 - li007",
-        "🇷🇺 俄罗斯 (Russia) 09 - li007"
+        "🇷🇺 俄罗斯 (Russia) 09 - li007",
+        "🇷🇺 俄罗斯 (Russia) 10 - li007",
+        "🇷🇺 俄罗斯 (Russia) 11 - li007",
+        "🇷🇺 俄罗斯 (Russia) 12 - li007",
+        "🇷🇺 俄罗斯 (Russia) 13 - li007",
+        "🇷🇺 俄罗斯 (Russia) 14 - li007",
+        "🇷🇺 俄罗斯 (Russia) 15 - li007",
+        "🇷🇺 俄罗斯 (Russia) 16 - li007",
+        "🇷🇺 俄罗斯 (Russia) 17 - li007",
+        "🇷🇺 俄罗斯 (Russia) 18 - li007"
       ]
     },
     {
@@ -172,7 +376,16 @@
         "🇷🇺 俄罗斯 (Russia) 06 - li007",
         "🇷🇺 俄罗斯 (Russia) 07 - li007",
         "🇷🇺 俄罗斯 (Russia) 08 - li007",
-        "🇷🇺 俄罗斯 (Russia) 09 - li007"
+        "🇷🇺 俄罗斯 (Russia) 09 - li007",
+        "🇷🇺 俄罗斯 (Russia) 10 - li007",
+        "🇷🇺 俄罗斯 (Russia) 11 - li007",
+        "🇷🇺 俄罗斯 (Russia) 12 - li007",
+        "🇷🇺 俄罗斯 (Russia) 13 - li007",
+        "🇷🇺 俄罗斯 (Russia) 14 - li007",
+        "🇷🇺 俄罗斯 (Russia) 15 - li007",
+        "🇷🇺 俄罗斯 (Russia) 16 - li007",
+        "🇷🇺 俄罗斯 (Russia) 17 - li007",
+        "🇷🇺 俄罗斯 (Russia) 18 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

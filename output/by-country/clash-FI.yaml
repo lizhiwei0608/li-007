@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - li007
-  server: 45.149.114.171
-  port: 777
+  server: 185.103.110.66
+  port: 18280
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
 - name: 🇫🇮 芬兰 (Finland) 02 - li007
   server: 185.103.110.68
   port: 18283
@@ -19,6 +19,26 @@ proxies:
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
 - name: 🇫🇮 芬兰 (Finland) 03 - li007
+  server: 45.149.114.171
+  port: 777
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+- name: 🇫🇮 芬兰 (Finland) 04 - li007
+  server: 31.77.151.175
+  port: 443
+  udp: true
+  type: vless
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg
+    short-id: bdf5852d1423e694
+  servername: fi.pythonsetupbib.online
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 05 - li007
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -29,27 +49,7 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
     short-id: d368b94e275ab080
   servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - li007
-  server: 144.31.212.253
-  port: 443
-  udp: true
-  type: hysteria2
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
-  sni: vps155-edge.kermemehori.ru
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 05 - li007
-  server: 170.168.4.59
-  port: 17170
-  udp: true
-  type: vless
-  uuid: 3eec23c1-2a0d-4d53-afa5-62745a1f5ffe
-  tls: true
-  servername: northerntrail.gazette.help
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trail-grpc
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 06 - li007
   server: 65.108.3.59
   port: 443
@@ -62,20 +62,28 @@ proxies:
     public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
     short-id: 90ec9bba2019
   servername: web.eitaa.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 07 - li007
-  server: edge10.cyrionflare.com
-  port: 2052
+  server: 144.31.212.253
+  port: 443
+  udp: true
+  type: hysteria2
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  sni: vps155-edge.kermemehori.ru
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 08 - li007
+  server: tundra.venorix.online
+  port: 443
   udp: true
   type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇫🇮 芬兰 (Finland) 08 - li007
-  server: 185.103.110.66
-  port: 18280
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  uuid: 6c21cf57-a9a9-4075-ad9f-631152bd911e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: IHm9_n5a0hMAvgclNtwWpNpq68Xdj9-Q5NG3eLkcFjE
+    short-id: 52fe21c959620cd8
+  servername: tundra.venorix.online
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 09 - li007
   server: 109.172.54.135
   port: 8444
@@ -91,20 +99,22 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇫🇮 芬兰 (Finland) 10 - li007
-  server: fi.pythonsetupbib.online
-  port: 443
+  server: fi-p1.h1cloud.net
+  port: 25481
   udp: true
   type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  flow: xtls-rprx-vision
+  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
   tls: true
   reality-opts:
-    public-key: ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg
-    short-id: bdf5852d1423e694
-  servername: fi.pythonsetupbib.online
-  client-fingerprint: chrome
+    public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
+    short-id: 3b84fc70657725af
+  servername: www.bing.com
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 8cb5baa18cd7
 - name: 🇫🇮 芬兰 (Finland) 11 - li007
-  server: 195.226.92.129
+  server: van2.ragnarok-it.xyz
   port: 8446
   udp: true
   type: vless
@@ -116,6 +126,39 @@ proxies:
     short-id: 7bac4b112d30d1
   servername: amd.com
   client-fingerprint: edge
+- name: 🇫🇮 芬兰 (Finland) 12 - li007
+  server: edge10.cyrionflare.com
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- name: 🇫🇮 芬兰 (Finland) 13 - li007
+  server: fi-p1.h1cloud.net
+  port: 25633
+  udp: true
+  type: vless
+  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
+  tls: true
+  reality-opts:
+    public-key: YLIRYJ8UkT0nSSgxJr7YckNuXnokVyEs2G6thNyx1GE
+    short-id: 200811f031ae7463
+  servername: www.icloud.com
+  client-fingerprint: random
+- name: 🇫🇮 芬兰 (Finland) 14 - li007
+  server: 36a466g.fi1.h1clayd.click
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
+  tls: true
+  reality-opts:
+    public-key: pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg
+    short-id: b3c9d0c6bdd114a6
+  servername: 36a466g.fi1.h1clayd.click
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 0adb9638509b
 proxy-groups:
 - name: PROXIES
   type: select
@@ -132,6 +175,9 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 09 - li007
   - 🇫🇮 芬兰 (Finland) 10 - li007
   - 🇫🇮 芬兰 (Finland) 11 - li007
+  - 🇫🇮 芬兰 (Finland) 12 - li007
+  - 🇫🇮 芬兰 (Finland) 13 - li007
+  - 🇫🇮 芬兰 (Finland) 14 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -148,5 +194,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 09 - li007
   - 🇫🇮 芬兰 (Finland) 10 - li007
   - 🇫🇮 芬兰 (Finland) 11 - li007
+  - 🇫🇮 芬兰 (Finland) 12 - li007
+  - 🇫🇮 芬兰 (Finland) 13 - li007
+  - 🇫🇮 芬兰 (Finland) 14 - li007
 rules:
 - MATCH,PROXIES
