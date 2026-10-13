@@ -6,38 +6,14 @@
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - li007",
-      "server": "195.238.126.20",
-      "server_port": 9001,
+      "server": "195.238.126.84",
+      "server_port": 9039,
       "method": "aes-256-cfb",
-      "password": "UkXRsXvR6buDMG2Y"
+      "password": "qYEN5HX4JKeVCdEC"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 02 - li007",
-      "server": "195.238.126.20",
-      "server_port": 9012,
-      "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - li007",
-      "server": "195.238.126.20",
-      "server_port": 9086,
-      "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - li007",
-      "server": "195.238.126.20",
-      "server_port": 9002,
-      "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - li007",
       "server": "195.238.126.20",
       "server_port": 9078,
       "method": "aes-256-cfb",
@@ -45,15 +21,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 06 - li007",
-      "server": "195.238.126.20",
-      "server_port": 9045,
-      "method": "aes-256-cfb",
-      "password": "Lp27rqyJq72bZsqX"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 07 - li007",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - li007",
       "server": "195.238.126.20",
       "server_port": 9011,
       "method": "aes-256-cfb",
@@ -61,7 +29,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 08 - li007",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - li007",
       "server": "195.238.126.20",
       "server_port": 9068,
       "method": "aes-256-cfb",
@@ -69,11 +37,43 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 09 - li007",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - li007",
       "server": "195.238.126.20",
       "server_port": 9008,
       "method": "aes-256-cfb",
       "password": "y9VURyNzJWNRYEGQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 06 - li007",
+      "server": "195.238.126.20",
+      "server_port": 9086,
+      "method": "aes-256-cfb",
+      "password": "37Z4TFCYhfxcpc9Q"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 07 - li007",
+      "server": "195.238.126.20",
+      "server_port": 9001,
+      "method": "aes-256-cfb",
+      "password": "UkXRsXvR6buDMG2Y"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 08 - li007",
+      "server": "195.238.126.20",
+      "server_port": 9012,
+      "method": "aes-256-cfb",
+      "password": "xaupMUvhptwxdDUg"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 09 - li007",
+      "server": "195.238.126.20",
+      "server_port": 9045,
+      "method": "aes-256-cfb",
+      "password": "Lp27rqyJq72bZsqX"
     },
     {
       "type": "vless",
@@ -87,33 +87,12 @@
         "server_name": "litv.nztvpn.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
           "public_key": "3jySGemfaqPZ2vM66Qtzo5SotO3eoRn1FeGaKp6KBQ4",
           "short_id": "0da7e14db353e7d0"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 11 - li007",
-      "server": "89.23.113.11",
-      "server_port": 443,
-      "uuid": "9ee57d03-dcf5-488b-aff7-305301879353",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ru-in-lt-4vp.movietop24.site",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "DP_8vX-l2ugAHn828ZGa4wHp4Y7YOZrhGKiTMaFoCDc",
-          "short_id": "4ea43db267b5fd8b"
         }
       }
     },
@@ -131,8 +110,7 @@
         "🇱🇹 立陶宛 (Lithuania) 07 - li007",
         "🇱🇹 立陶宛 (Lithuania) 08 - li007",
         "🇱🇹 立陶宛 (Lithuania) 09 - li007",
-        "🇱🇹 立陶宛 (Lithuania) 10 - li007",
-        "🇱🇹 立陶宛 (Lithuania) 11 - li007"
+        "🇱🇹 立陶宛 (Lithuania) 10 - li007"
       ]
     },
     {
@@ -148,8 +126,7 @@
         "🇱🇹 立陶宛 (Lithuania) 07 - li007",
         "🇱🇹 立陶宛 (Lithuania) 08 - li007",
         "🇱🇹 立陶宛 (Lithuania) 09 - li007",
-        "🇱🇹 立陶宛 (Lithuania) 10 - li007",
-        "🇱🇹 立陶宛 (Lithuania) 11 - li007"
+        "🇱🇹 立陶宛 (Lithuania) 10 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

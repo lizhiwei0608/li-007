@@ -5,36 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - li007
-  server: 104.21.63.236
-  port: 443
-  udp: true
-  type: vless
-  uuid: 77702cd2-6a11-40f4-a817-1efeae6f6889
-  tls: true
-  servername: t4sy714oeyu0ntwavv62g6ua9o.ade-1001.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/Nmf5YfPITFhUjeHE8KfDU5T8H?ed=2560
-    headers:
-      Host: t4sy714oeyu0ntwavv62g6ua9o.ade-1001.workers.dev
-- name: 🇨🇿 捷克 (Czech) 02 - li007
-  server: 188.114.97.1
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
-  tls: true
-  servername: bold-term-4edd.mbigspot.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bold-term-4edd.mbigspot.workers.dev
-- name: 🇨🇿 捷克 (Czech) 03 - li007
   server: 195.123.245.241
   port: 443
   udp: true
@@ -47,6 +17,19 @@ proxies:
     short-id: 23d0950d60bc0d5b
   servername: gateway.icloud.com
   client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 02 - li007
+  server: 81.94.148.50
+  port: 7449
+  udp: true
+  type: vless
+  uuid: 7ac594a4-fabc-486c-9a91-5662c09e63cd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbSuvgEeMrvFIV7C3tLaJhEADo_2RQdGvwFFrfJJQE0
+    short-id: 7abd137540629e9d
+  servername: passport.yandex.ru
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - li007
   - 🇨🇿 捷克 (Czech) 02 - li007
-  - 🇨🇿 捷克 (Czech) 03 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - li007
   - 🇨🇿 捷克 (Czech) 02 - li007
-  - 🇨🇿 捷克 (Czech) 03 - li007
 rules:
 - MATCH,PROXIES
