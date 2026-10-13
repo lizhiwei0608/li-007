@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - li007
+  server: 109.206.241.10
+  port: 449
+  udp: true
+  type: trojan
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: 109.206.241.10
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - li007
   server: 93.123.39.84
   port: 443
   udp: true
@@ -13,31 +21,18 @@ proxies:
   tls: true
   servername: ee2x.global-cdn.org
   skip-cert-verify: false
-  client-fingerprint: edge
   network: grpc
   grpc-opts:
     grpc-service-name: content.v1.Feed
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - li007
-  server: 109.206.241.10
-  port: 449
-  udp: true
-  type: trojan
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: russiapower.accesscam.org
-  skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - li007
-  server: 185.31.242.61
-  port: 443
+  server: 94.183.170.135
+  port: 8443
   udp: true
   type: vless
-  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
-  flow: xtls-rprx-vision
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   tls: true
-  reality-opts:
-    public-key: 7mRrVzTchVLWWBru5fCgTvtdkL7lVJ_qRj9HW8Rd8X0
-    short-id: 0da7e14db353e7d0
-  servername: est.nztvpn.com
-  client-fingerprint: chrome
+  servername: estproxy4.lockdwn.com
+  skip-cert-verify: false
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - li007
   server: 94.183.170.135
   port: 443
@@ -47,10 +42,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: estproxy4.lockdwn.com
 - name: 🇪🇪 爱沙尼亚 (Estonia) 05 - li007
-  server: 143.246.41.31
+  server: ees92.shhflow.xyz
   port: 443
   udp: true
   type: vless
@@ -61,16 +54,19 @@ proxies:
     public-key: h1xVB_-djXL6A7tvnnVbjV4bYKplHOuN0bgmFJQE6AE
     short-id: 7f3a91c2d8e640ab
   servername: ees92.shhflow.xyz
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇪🇪 爱沙尼亚 (Estonia) 06 - li007
-  server: 94.183.170.135
-  port: 8443
+  server: zahvatpribaltovonline.vvzzkontaktezzvv.garden
+  port: 443
   udp: true
   type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
+  flow: xtls-rprx-vision
   tls: true
-  servername: estproxy4.lockdwn.com
-  skip-cert-verify: false
+  reality-opts:
+    public-key: r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk
+    short-id: d98e7afec9c0c359
+  servername: zahvatpribaltovonline.vvzzkontaktezzvv.garden
   client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 07 - li007
   server: ee.h1cloud.net
@@ -84,19 +80,6 @@ proxies:
     short-id: a73f0410d728c823
   servername: www.samsung.com
   client-fingerprint: ios
-- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - li007
-  server: 93.89.220.37
-  port: 443
-  udp: true
-  type: vless
-  uuid: 185e2bb3-2934-48d0-bbd5-dd20d16e83ee
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
-    short-id: e88cb983f3c97528
-  servername: ibm.com
-  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -109,7 +92,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - li007
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - li007
   - 🇪🇪 爱沙尼亚 (Estonia) 07 - li007
-  - 🇪🇪 爱沙尼亚 (Estonia) 08 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -122,6 +104,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - li007
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - li007
   - 🇪🇪 爱沙尼亚 (Estonia) 07 - li007
-  - 🇪🇪 爱沙尼亚 (Estonia) 08 - li007
 rules:
 - MATCH,PROXIES

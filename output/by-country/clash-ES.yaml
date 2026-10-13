@@ -25,50 +25,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 03 - li007
-  server: 5.188.181.201
-  port: 9025
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: XPtzA9sCug3SPR4c
-- name: 🇪🇸 西班牙 (Spain) 04 - li007
-  server: es3.h1cloud.net
-  port: 25136
-  udp: true
-  type: vless
-  uuid: 440b5558-e701-4c6f-8de2-d24dcf1ebbe6
-  tls: true
-  reality-opts:
-    public-key: nkmfL3QCskKAfBUk-OiTgcWyIXGmXrZVtDEoio0Qo1w
-    short-id: f78838fbd85e59ae
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 05 - li007
-  server: 46.28.71.247
-  port: 443
-  udp: true
-  type: vless
-  uuid: 12c53e32-e589-47d6-b857-e4132294f767
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
-    short-id: 0dfc23fe80778c00
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇪🇸 西班牙 (Spain) 06 - li007
-  server: 196.245.52.146
-  port: 25535
-  udp: true
-  type: vless
-  uuid: c379d8e4-c67d-42ec-a3ed-ca99d1ad0546
-  tls: true
-  reality-opts:
-    public-key: Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4
-    short-id: 7642ce57308852e7
-  servername: www.microsoft.com
-  client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 07 - li007
   server: 193.238.154.78
   port: 443
   udp: true
@@ -81,6 +37,19 @@ proxies:
     short-id: e93d46ee3735069e
   servername: gateway.icloud.com
   client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 04 - li007
+  server: 46.28.71.247
+  port: 443
+  udp: true
+  type: vless
+  uuid: 12c53e32-e589-47d6-b857-e4132294f767
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
+    short-id: 0dfc23fe80778c00
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -90,9 +59,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - li007
   - 🇪🇸 西班牙 (Spain) 03 - li007
   - 🇪🇸 西班牙 (Spain) 04 - li007
-  - 🇪🇸 西班牙 (Spain) 05 - li007
-  - 🇪🇸 西班牙 (Spain) 06 - li007
-  - 🇪🇸 西班牙 (Spain) 07 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -102,8 +68,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - li007
   - 🇪🇸 西班牙 (Spain) 03 - li007
   - 🇪🇸 西班牙 (Spain) 04 - li007
-  - 🇪🇸 西班牙 (Spain) 05 - li007
-  - 🇪🇸 西班牙 (Spain) 06 - li007
-  - 🇪🇸 西班牙 (Spain) 07 - li007
 rules:
 - MATCH,PROXIES
