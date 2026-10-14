@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - li007
+  server: 104.21.70.21
+  port: 443
+  udp: true
+  type: vless
+  uuid: 20e295db-a6af-4006-bfd6-91453f169968
+  tls: true
+  servername: 057.electrocellco-cf-057.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiSFM1N0lLQmx2UU1qRzlnTiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: 057.electrocellco-cf-057.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 02 - li007
   server: 147.45.60.160
   port: 8444
   udp: true
@@ -18,34 +33,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇷🇺 俄罗斯 (Russia) 02 - li007
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=
 - name: 🇷🇺 俄罗斯 (Russia) 03 - li007
-  server: 217.60.72.238
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  servername: amd.com
-  client-fingerprint: qq
-- name: 🇷🇺 俄罗斯 (Russia) 04 - li007
-  server: 194.38.11.86
-  port: 65443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 🇷🇺 俄罗斯 (Russia) 05 - li007
   server: 193.233.74.6
   port: 8444
   udp: true
@@ -56,26 +44,31 @@ proxies:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
     short-id: 457fab2ac885dbe0
   servername: github.com
-  client-fingerprint: random
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇷🇺 俄罗斯 (Russia) 06 - li007
-  server: 176.124.214.107
-  port: 8443
+- name: 🇷🇺 俄罗斯 (Russia) 04 - li007
+  server: 213.165.56.102
+  port: 443
   udp: true
   type: vless
-  uuid: ed8704b8-9e9e-48e6-b55b-ae9079ab3a59
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: i5a8i2AWUSMZ-rYA6hGBRCBBoe7W5ah33SCdF5JkMk4
-    short-id: 8bcfe256cf216fd8
-  servername: apple.com
-  client-fingerprint: ''
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: 🇷🇺 俄罗斯 (Russia) 07 - li007
+    public-key: A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g
+    short-id: 57e7977c9011061c
+  servername: freede.aiage.work
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 05 - li007
+  server: 194.38.11.86
+  port: 65443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: 🇷🇺 俄罗斯 (Russia) 06 - li007
   server: 153.80.241.206
   port: 8444
   udp: true
@@ -89,7 +82,27 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
+- name: 🇷🇺 俄罗斯 (Russia) 07 - li007
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=
 - name: 🇷🇺 俄罗斯 (Russia) 08 - li007
+  server: 217.60.72.238
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: amd.com
+  client-fingerprint: qq
+- name: 🇷🇺 俄罗斯 (Russia) 09 - li007
   server: 194.87.118.184
   port: 2053
   udp: true
@@ -97,20 +110,41 @@ proxies:
   password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
   sni: 194.87.118.184
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 09 - li007
-  server: freede.aiage.work
+- name: 🇷🇺 俄罗斯 (Russia) 10 - li007
+  server: 159.194.240.128
   port: 443
   udp: true
   type: vless
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g
-    short-id: 5f5e74dfd296b28d
-  servername: freede.aiage.work
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: amd.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 10 - li007
+- name: 🇷🇺 俄罗斯 (Russia) 11 - li007
+  server: hy9.shamanfun.ru
+  port: 1443
+  udp: true
+  type: hysteria2
+  password: c635b5f6-b5ea-4e57-927f-75860b0cb984
+  sni: hy9.shamanfun.ru
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 12 - li007
+  server: 87.242.95.150
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 7ac594a4-fabc-486c-9a91-5662c09e63cd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: pobC1laHCtpMK1EA520CyOpYeel0t90hEV_eRJExFAE
+    short-id: 20272c52657d22da
+  servername: passport.yandex.ru
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 13 - li007
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -121,7 +155,7 @@ proxies:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
   servername: ya.ru
-  client-fingerprint: qq
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -137,6 +171,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 08 - li007
   - 🇷🇺 俄罗斯 (Russia) 09 - li007
   - 🇷🇺 俄罗斯 (Russia) 10 - li007
+  - 🇷🇺 俄罗斯 (Russia) 11 - li007
+  - 🇷🇺 俄罗斯 (Russia) 12 - li007
+  - 🇷🇺 俄罗斯 (Russia) 13 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -152,5 +189,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 08 - li007
   - 🇷🇺 俄罗斯 (Russia) 09 - li007
   - 🇷🇺 俄罗斯 (Russia) 10 - li007
+  - 🇷🇺 俄罗斯 (Russia) 11 - li007
+  - 🇷🇺 俄罗斯 (Russia) 12 - li007
+  - 🇷🇺 俄罗斯 (Russia) 13 - li007
 rules:
 - MATCH,PROXIES

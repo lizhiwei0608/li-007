@@ -15,7 +15,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -56,8 +56,16 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇮🇳 印度 (India) 04 - li007",
+      "server": "172.105.39.124",
+      "server_port": 7002,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇮🇳 印度 (India) 05 - li007",
       "server": "in.tronsg.com",
       "server_port": 443,
       "password": "Trojan@82164024",
@@ -75,7 +83,8 @@
         "🇮🇳 印度 (India) 01 - li007",
         "🇮🇳 印度 (India) 02 - li007",
         "🇮🇳 印度 (India) 03 - li007",
-        "🇮🇳 印度 (India) 04 - li007"
+        "🇮🇳 印度 (India) 04 - li007",
+        "🇮🇳 印度 (India) 05 - li007"
       ]
     },
     {
@@ -85,7 +94,8 @@
         "🇮🇳 印度 (India) 01 - li007",
         "🇮🇳 印度 (India) 02 - li007",
         "🇮🇳 印度 (India) 03 - li007",
-        "🇮🇳 印度 (India) 04 - li007"
+        "🇮🇳 印度 (India) 04 - li007",
+        "🇮🇳 印度 (India) 05 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
