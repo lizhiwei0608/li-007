@@ -5,16 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - li007
-  server: 103.169.142.30
-  port: 8880
+  server: 5.188.181.201
+  port: 9001
   udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime38.workers.dev
+  type: ss
+  cipher: aes-256-cfb
+  password: UkXRsXvR6buDMG2Y
 - name: 🇪🇸 西班牙 (Spain) 02 - li007
   server: 212.227.235.66
   port: 2053
@@ -28,14 +24,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 03 - li007
-  server: 185.174.137.172
-  port: 8446
-  udp: true
-  type: hysteria2
-  password: e9dc02d400b67c727aca1620
-  sni: 185.174.137.172
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 04 - li007
   server: 46.28.71.247
   port: 443
   udp: true
@@ -47,20 +35,8 @@ proxies:
     public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
     short-id: 0dfc23fe80778c00
   servername: www.cloudflare.com
-  client-fingerprint: ''
-- name: 🇪🇸 西班牙 (Spain) 05 - li007
-  server: es3.h1cloud.net
-  port: 25136
-  udp: true
-  type: vless
-  uuid: 440b5558-e701-4c6f-8de2-d24dcf1ebbe6
-  tls: true
-  reality-opts:
-    public-key: nkmfL3QCskKAfBUk-OiTgcWyIXGmXrZVtDEoio0Qo1w
-    short-id: f78838fbd85e59ae
-  servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇪🇸 西班牙 (Spain) 06 - li007
+  client-fingerprint: safari
+- name: 🇪🇸 西班牙 (Spain) 04 - li007
   server: 193.238.154.78
   port: 443
   udp: true
@@ -82,8 +58,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - li007
   - 🇪🇸 西班牙 (Spain) 03 - li007
   - 🇪🇸 西班牙 (Spain) 04 - li007
-  - 🇪🇸 西班牙 (Spain) 05 - li007
-  - 🇪🇸 西班牙 (Spain) 06 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -93,7 +67,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - li007
   - 🇪🇸 西班牙 (Spain) 03 - li007
   - 🇪🇸 西班牙 (Spain) 04 - li007
-  - 🇪🇸 西班牙 (Spain) 05 - li007
-  - 🇪🇸 西班牙 (Spain) 06 - li007
 rules:
 - MATCH,PROXIES

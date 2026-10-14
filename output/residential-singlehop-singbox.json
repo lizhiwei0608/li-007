@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - li007",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽·单跳) - li007",
       "server": "155.117.19.17",
       "server_port": 443,
       "password": "5fa748137b6d822308eea4611f474ad5",
@@ -20,18 +20,28 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽·单跳) - li007",
+      "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21021,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - li007"
+        "🇺🇸 美国 (United States) 01 (家宽·单跳) - li007",
+        "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽·单跳) - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - li007"
+        "🇺🇸 美国 (United States) 01 (家宽·单跳) - li007",
+        "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽·单跳) - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
