@@ -5,22 +5,18 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇩 印尼 (Indonesia) 01 - li007",
-      "server": "154.21.203.106",
-      "server_port": 46984,
-      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - li007",
+      "server": "62.lwdh.us",
+      "server_port": 12952,
+      "uuid": "d68fbc96-5187-4b8f-965e-eecd7a699e81",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.lamer.com.sg",
+        "server_name": "62.lwdh.us",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "XBntt77MdH3EMkPXibOAO_NSBrL_aqwiLItU98rqlHE",
-          "short_id": "9c3c0f8ec8b4af12"
+          "fingerprint": "edge"
         }
       }
     },
@@ -29,14 +25,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 印尼 (Indonesia) 01 - li007"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 印尼 (Indonesia) 01 - li007"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
