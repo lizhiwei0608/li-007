@@ -61,26 +61,13 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - li007",
-      "server": "ees92.shhflow.xyz",
-      "server_port": 5443,
-      "password": "43212c32-01f2-4356-b216-67dc1c178262",
-      "tls": {
-        "enabled": true,
-        "server_name": "ees92.shhflow.xyz",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇪🇪 爱沙尼亚 (Estonia) 01 - li007",
         "🇪🇪 爱沙尼亚 (Estonia) 02 - li007",
-        "🇪🇪 爱沙尼亚 (Estonia) 03 - li007",
-        "🇪🇪 爱沙尼亚 (Estonia) 04 - li007"
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - li007"
       ]
     },
     {
@@ -89,8 +76,7 @@
       "outbounds": [
         "🇪🇪 爱沙尼亚 (Estonia) 01 - li007",
         "🇪🇪 爱沙尼亚 (Estonia) 02 - li007",
-        "🇪🇪 爱沙尼亚 (Estonia) 03 - li007",
-        "🇪🇪 爱沙尼亚 (Estonia) 04 - li007"
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
