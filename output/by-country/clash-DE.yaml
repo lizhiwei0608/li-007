@@ -5,26 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - li007
-  server: 213.202.208.199
-  port: 5000
+  server: 31.76.11.83
+  port: 22366
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+  type: vmess
+  uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
+  alterId: 0
+  cipher: auto
 - name: 🇩🇪 德国 (Germany) 02 - li007
-  server: 213.202.208.199
-  port: 7001
+  server: 185.226.172.8
+  port: 8008
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  password: XKFKl2rULjIp74
 - name: 🇩🇪 德国 (Germany) 03 - li007
-  server: 8.209.74.72
-  port: 20001
+  server: 31.76.11.83
+  port: 15731
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
+  password: xAYXtB+XMdfWWOlmL8PWcOZEPfKHKVv7NcTY6jpcL/A=
 - name: 🇩🇪 德国 (Germany) 04 - li007
   server: 209.46.102.22
   port: 8388
@@ -33,13 +34,12 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 1hhrqrokj3ag
 - name: 🇩🇪 德国 (Germany) 05 - li007
-  server: 31.76.11.83
-  port: 22366
+  server: 8.209.74.72
+  port: 20001
   udp: true
-  type: vmess
-  uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
-  alterId: 0
-  cipher: auto
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
 - name: 🇩🇪 德国 (Germany) 06 - li007
   server: 178.17.57.33
   port: 8444
@@ -51,42 +51,78 @@ proxies:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
     short-id: 457fab2ac885dbe0
   servername: github.com
-  client-fingerprint: random
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇩🇪 德国 (Germany) 07 - li007
-  server: 185.226.172.8
-  port: 8008
+  server: edge.bookmai.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: mother-earth.fyi
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 08 - li007
+  server: 169.150.210.233
+  port: 8080
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-- name: 🇩🇪 德国 (Germany) 08 - li007
-  server: 163.245.42.48
-  port: 443
-  udp: true
-  type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: mother-earth.fyi
-  client-fingerprint: chrome
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇩🇪 德国 (Germany) 09 - li007
-  server: 163.245.42.48
+  server: 37.46.199.138
   port: 443
   udp: true
   type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  uuid: 741809be-e44e-0004-b411-bf66f0ae3860
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: mother-earth.fyi
+    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
+  servername: key-master-saver.com
   client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 10 - li007
+  server: 163.245.42.48
+  port: 443
+  udp: true
+  type: vless
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: mother-earth.fyi
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 11 - li007
+  server: 163.245.42.48
+  port: 443
+  udp: true
+  type: vless
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: mother-earth.fyi
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 12 - li007
+  server: 147.45.222.137
+  port: 443
+  udp: true
+  type: vless
+  uuid: f9cb2991-ad4a-4a54-aeb3-55d56ac02a8e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: dZl5iJJCMOXR6cJY4M_PbyV2bFp15dhAkz95NCGLsCc
+  servername: ger01.deflink.net
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 13 - li007
   server: 130.17.25.67
   port: 443
   udp: true
@@ -99,58 +135,7 @@ proxies:
     short-id: 9e4eced6e98ed4d4
   servername: github.com
   client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 11 - li007
-  server: 169.150.210.233
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇩🇪 德国 (Germany) 12 - li007
-  server: 37.46.199.138
-  port: 443
-  udp: true
-  type: vless
-  uuid: 741809be-e44e-0004-b411-bf66f0ae3860
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
-  servername: key-master-saver.com
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 13 - li007
-  server: 91.107.169.224
-  port: 80
-  udp: true
-  type: vmess
-  uuid: d4b69108-f756-48af-a331-e8356bc95eb4
-  alterId: 0
-  cipher: auto
-  network: httpupgrade
 - name: 🇩🇪 德国 (Germany) 14 - li007
-  server: freesocks.work
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 26769ac3-b34c-430a-87f8-e1de14619d25
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 15 - li007
-  server: 179.254.115.245
-  port: 25208
-  udp: true
-  type: vless
-  uuid: d54a7512-dda3-4218-8ae7-c591d300fd7c
-  tls: true
-  reality-opts:
-    public-key: t7Ja5Wnzg5-vtS2ebmyBZzPI7-CbiGRjny1sNZ9WdV4
-    short-id: 3974c4eacd299c12
-  servername: www.microsoft.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 16 - li007
   server: 2.27.69.117
   port: 443
   udp: true
@@ -163,19 +148,16 @@ proxies:
     short-id: 123c2bff
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 17 - li007
-  server: 162.55.242.208
-  port: 2053
+- name: 🇩🇪 德国 (Germany) 15 - li007
+  server: 91.107.169.224
+  port: 80
   udp: true
-  type: vless
-  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
-  tls: true
-  reality-opts:
-    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
-    short-id: 4d14da19b19cfc8c
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 18 - li007
+  type: vmess
+  uuid: d4b69108-f756-48af-a331-e8356bc95eb4
+  alterId: 0
+  cipher: auto
+  network: httpupgrade
+- name: 🇩🇪 德国 (Germany) 16 - li007
   server: 46.28.69.123
   port: 443
   udp: true
@@ -188,19 +170,61 @@ proxies:
     short-id: 238e23c5150f02e4
   servername: gateway.icloud.com
   client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 17 - li007
+  server: 57.129.41.216
+  port: 80
+  udp: true
+  type: vless
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇩🇪 德国 (Germany) 18 - li007
+  server: 162.55.242.208
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  tls: true
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+    short-id: 4d14da19b19cfc8c
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇩🇪 德国 (Germany) 19 - li007
-  server: edge.bookmai.com
+  server: 2.27.69.128
   port: 443
   udp: true
   type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: mother-earth.fyi
+    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
+    short-id: e696e744
+  servername: addons.mozilla.org
   client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 20 - li007
+  server: 57.129.113.16
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: NcAXc0UZI6yQJE1p8QmOv8
+- name: 🇩🇪 德国 (Germany) 21 - li007
+  server: 31.70.111.146
+  port: 443
+  udp: true
+  type: vless
+  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
+    short-id: d7de3a6ff4018957
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 22 - li007
   server: 189.24.82.195
   port: 443
   udp: true
@@ -217,60 +241,34 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇩🇪 德国 (Germany) 21 - li007
-  server: 2.27.69.128
-  port: 443
-  udp: true
-  type: vless
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
-    short-id: e696e744
-  servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 22 - li007
-  server: 82.118.19.153
-  port: 443
-  udp: true
-  type: vless
-  uuid: adcaa148-7c66-4282-a81a-99ec8afa029d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
-    short-id: 670ed9f350bd8ee0
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 23 - li007
-  server: 31.70.111.146
+  server: api.setevoyzaliv.cc
   port: 443
   udp: true
   type: vless
-  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
+  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
-    short-id: d7de3a6ff4018957
-  servername: www.apple.com
+    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+    short-id: a8
+  servername: api.setevoyzaliv.cc
   client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 24 - li007
-  server: 2.27.35.74
+  server: 212.100.171.154
   port: 443
   udp: true
   type: vless
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  uuid: a5ce10af-5e95-4eb3-ab87-bf4f95cb059b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: zAmNLsLPizp96b55zNe2kJ3zXBdpuNY0olnRaOpluks
-    short-id: 34e797af
-  servername: addons.mozilla.org
-  client-fingerprint: randomized
+    public-key: 8u8r2iWMt8Isz2ZNRbn3g4cfldhcePRB-1hxGYLTnSg
+    short-id: aa6582cf25e243ce
+  servername: www.google.com
+  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 25 - li007
-  server: eu02.123450908.xyz
+  server: 104.18.0.181
   port: 2052
   udp: true
   type: vless
@@ -281,19 +279,44 @@ proxies:
     headers:
       Host: eu02.123450908.xyz
 - name: 🇩🇪 德国 (Germany) 26 - li007
-  server: 64.188.68.203
-  port: 443
+  server: 91.107.247.173
+  port: 2083
   udp: true
   type: vless
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-  flow: xtls-rprx-vision
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
   tls: true
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  servername: de1.balancer.vbuste-bot.com
-  client-fingerprint: random
+  servername: sino.bestsellers1.site
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇩🇪 德国 (Germany) 27 - li007
+  server: ov-germany1.09vpn.com
+  port: 80
+  udp: true
+  type: vless
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇩🇪 德国 (Germany) 28 - li007
+  server: uk2-2.998998.best
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: server3.9966338.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /waetasiuofguiwer
+    headers:
+      Host: server3.9966338.xyz
+- name: 🇩🇪 德国 (Germany) 29 - li007
   server: de1.xiaoliyu.cyou
   port: 4433
   udp: true
@@ -301,78 +324,36 @@ proxies:
   password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
   sni: 127.0.0.1
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 28 - li007
-  server: 185.125.50.181
-  port: 443
-  udp: true
-  type: vless
-  uuid: ee3de8a9-ce8a-4316-b128-101d0816df4d
-  tls: true
-  servername: de-game.pink-service.ru
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: degrpc
-- name: 🇩🇪 德国 (Germany) 29 - li007
-  server: hikvision-plus.com
-  port: 2052
-  udp: true
-  type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
 - name: 🇩🇪 德国 (Germany) 30 - li007
-  server: 188.114.98.0
-  port: 443
-  udp: true
-  type: vless
-  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
-  tls: true
-  servername: cdn.topingr.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /gropcdn
-    headers:
-      Host: cdn.topingr.ir
-- name: 🇩🇪 德国 (Germany) 31 - li007
-  server: 104.27.88.172
+  server: ov-germany1.09vpn.com
   port: 80
   udp: true
   type: vless
-  uuid: 50414e45-4c5f-5a45-5553-52108a2d5224
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
   network: ws
   ws-opts:
-    path: /api/ws
-    headers:
-      Host: web-app-nr6wpa.app-tp57xz.workers.dev
-- name: 🇩🇪 德国 (Germany) 32 - li007
-  server: outh.yandex-cloud.org
-  port: 54183
-  udp: true
-  type: hysteria2
-  password: 082f5694-9019-4110-b67b-8125dbb9bab8
-  sni: outh.yandex-cloud.org
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 33 - li007
-  server: cctvhikvision.center
-  port: 2053
+    path: /vless/
+- name: 🇩🇪 德国 (Germany) 31 - li007
+  server: 77.110.105.122
+  port: 443
   udp: true
   type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  uuid: 019fbe0f-2d9f-4b89-9f81-e1e36129892a
+  flow: xtls-rprx-vision
   tls: true
-  servername: uwu.blueknightnet.qzz.io
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 34 - li007
+  reality-opts:
+    public-key: EBISh6QAVskJ_nvet-Qio9jS2yqxe9de6GMScYlbjhI
+    short-id: 226509f017e4c36d
+  servername: co-de.speedtec.ru
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 32 - li007
+  server: 213.202.208.199
+  port: 5000
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇩🇪 德国 (Germany) 33 - li007
   server: 134.255.227.145
   port: 25809
   udp: true
@@ -387,20 +368,82 @@ proxies:
     path: /
     headers:
       Host: gang.gayvibe.dpdns.org
-- name: 🇩🇪 德国 (Germany) 35 - li007
-  server: 64.188.70.56
+- name: 🇩🇪 德国 (Germany) 34 - li007
+  server: cdn.topingr.ir
   port: 443
   udp: true
   type: vless
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
+  tls: true
+  servername: cdn.topingr.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /gropcdn
+- name: 🇩🇪 德国 (Germany) 35 - li007
+  server: 185.125.50.181
+  port: 443
+  udp: true
+  type: vless
+  uuid: ee3de8a9-ce8a-4316-b128-101d0816df4d
+  tls: true
+  servername: de-game.pink-service.ru
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: degrpc
+- name: 🇩🇪 德国 (Germany) 36 - li007
+  server: 82.118.19.153
+  port: 443
+  udp: true
+  type: vless
+  uuid: adcaa148-7c66-4282-a81a-99ec8afa029d
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  servername: de2.balancer.vbuste-bot.com
+    public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
+    short-id: 670ed9f350bd8ee0
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 36 - li007
+- name: 🇩🇪 德国 (Germany) 37 - li007
+  server: seal-de1.bypassme.online
+  port: 443
+  udp: true
+  type: vless
+  uuid: e625f8ef-f935-4c7d-a259-0f154b6842fd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: jQC3Kmmbu-CfUKlQaeuSn4I8dbqAZhpgihZhWu1SvBk
+    short-id: 6b69118a7847c4c3
+  servername: seal-de1.bypassme.online
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 38 - li007
+  server: cctvhikvision.center
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 26769ac3-b34c-430a-87f8-e1de14619d25
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇩🇪 德国 (Germany) 39 - li007
+  server: 144.31.125.60
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9015f0bc-2053-4ca1-9b9b-a018b97b32d2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SVgtyuD9khylgHuB0treGekxVSHPOS-wPZTNHUf6zj8
+    short-id: 85c86a9863
+  servername: www.intel.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 40 - li007
   server: ragnarok-vpn.ru
   port: 8443
   udp: true
@@ -412,7 +455,20 @@ proxies:
     public-key: aV7fW5RmH-i6HzOiqnFlMwV_ZgfuutMpeWWfEaJBsTM
     short-id: 5bfa1416
   servername: amd.com
-  client-fingerprint: edge
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 41 - li007
+  server: freede.aiage.work
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g
+    short-id: 5f5e74dfd296b28d
+  servername: freede.aiage.work
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -454,6 +510,11 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 34 - li007
   - 🇩🇪 德国 (Germany) 35 - li007
   - 🇩🇪 德国 (Germany) 36 - li007
+  - 🇩🇪 德国 (Germany) 37 - li007
+  - 🇩🇪 德国 (Germany) 38 - li007
+  - 🇩🇪 德国 (Germany) 39 - li007
+  - 🇩🇪 德国 (Germany) 40 - li007
+  - 🇩🇪 德国 (Germany) 41 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -495,5 +556,10 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 34 - li007
   - 🇩🇪 德国 (Germany) 35 - li007
   - 🇩🇪 德国 (Germany) 36 - li007
+  - 🇩🇪 德国 (Germany) 37 - li007
+  - 🇩🇪 德国 (Germany) 38 - li007
+  - 🇩🇪 德国 (Germany) 39 - li007
+  - 🇩🇪 德国 (Germany) 40 - li007
+  - 🇩🇪 德国 (Germany) 41 - li007
 rules:
 - MATCH,PROXIES
