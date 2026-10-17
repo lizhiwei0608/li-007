@@ -5,20 +5,15 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇶 IQ 01 - li007",
-      "server": "104.21.77.142",
-      "server_port": 2096,
-      "uuid": "b9ede7a5-5b4b-4aee-ac37-2c307e587e47",
-      "tls": {
-        "enabled": true,
-        "server_name": "courses.mftplus.qzz.io",
-        "insecure": false
-      },
+      "tag": "🌐 其他地区 (Other) 01 - li007",
+      "server": "uwu.blueknightnet.qzz.io",
+      "server_port": 2052,
+      "uuid": "aa5d861a-7799-41a7-bdf4-7a6414cf98fd",
       "transport": {
         "type": "ws",
-        "path": "/eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "path": "/@BlueKnight_net--@BlueKnight_net",
         "headers": {
-          "Host": "courses.mftplus.qzz.io"
+          "Host": "uwu.blueknightnet.qzz.io"
         }
       }
     },
@@ -27,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - li007"
+        "🌐 其他地区 (Other) 01 - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - li007"
+        "🌐 其他地区 (Other) 01 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -14,18 +14,6 @@
     {
       "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 02 - li007",
-      "server": "140.238.213.114",
-      "server_port": 50160,
-      "password": "84a506ca5aca505696a454d828420b3f",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 - li007",
       "server": "152.67.75.161",
       "server_port": 443,
       "password": "3a702d4d1de4949005d8431220e040fb",
@@ -40,29 +28,20 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04 - li007",
-      "server": "freefl.aiage.work",
-      "server_port": 443,
-      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - li007",
+      "server": "140.238.213.114",
+      "server_port": 50160,
+      "password": "84a506ca5aca505696a454d828420b3f",
       "tls": {
         "enabled": true,
-        "server_name": "freefl.aiage.work",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EqN5QtvWGccdkmL5ZNVDBRxRhWgr6g_vr3ABT8Q2dW4",
-          "short_id": "ff0ddf949624ef2a"
-        }
+        "server_name": "140.238.213.114",
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 05 - li007",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 - li007",
       "server": "45.90.59.15",
       "server_port": 443,
       "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
@@ -79,6 +58,18 @@
           "public_key": "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY",
           "short_id": "19253fae84102271"
         }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 05 - li007",
+      "server": "104.165.205.42",
+      "server_port": 8443,
+      "password": "990c8eb6-4c4e-4277-8602-79af8402cdd0",
+      "tls": {
+        "enabled": true,
+        "server_name": "speedtestmark.com",
+        "insecure": false
       }
     },
     {
@@ -106,30 +97,42 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 07 - li007",
-      "server": "132.243.175.144",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
+      "server": "208.69.78.217",
+      "server_port": 21090,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
     },
     {
       "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 08 - li007",
-      "server": "104.165.205.42",
-      "server_port": 8443,
-      "password": "990c8eb6-4c4e-4277-8602-79af8402cdd0",
+      "server": "208.69.78.217",
+      "server_port": 21161,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
       "tls": {
         "enabled": true,
-        "server_name": "speedtestmark.com",
-        "insecure": false
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 09 - li007",
       "server": "208.69.78.217",
-      "server_port": 21021,
+      "server_port": 21054,
       "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
       "tls": {
         "enabled": true,
@@ -145,7 +148,7 @@
       "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 10 - li007",
       "server": "208.69.78.217",
-      "server_port": 33130,
+      "server_port": 21021,
       "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
       "tls": {
         "enabled": true,
@@ -158,24 +161,61 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 11 - li007",
-      "server": "208.69.78.217",
-      "server_port": 33141,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "server": "freefl.aiage.work",
+      "server_port": 443,
+      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
+        "server_name": "freefl.aiage.work",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EqN5QtvWGccdkmL5ZNVDBRxRhWgr6g_vr3ABT8Q2dW4",
+          "short_id": "ff0ddf949624ef2a"
+        }
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 12 - li007",
+      "server": "208.69.78.217",
+      "server_port": 33025,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 13 - li007",
+      "server": "208.69.78.217",
+      "server_port": 33171,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 14 - li007",
       "server": "208.69.78.217",
       "server_port": 21047,
       "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
@@ -205,7 +245,9 @@
         "🇨🇭 瑞士 (Switzerland) 09 - li007",
         "🇨🇭 瑞士 (Switzerland) 10 - li007",
         "🇨🇭 瑞士 (Switzerland) 11 - li007",
-        "🇨🇭 瑞士 (Switzerland) 12 - li007"
+        "🇨🇭 瑞士 (Switzerland) 12 - li007",
+        "🇨🇭 瑞士 (Switzerland) 13 - li007",
+        "🇨🇭 瑞士 (Switzerland) 14 - li007"
       ]
     },
     {
@@ -223,7 +265,9 @@
         "🇨🇭 瑞士 (Switzerland) 09 - li007",
         "🇨🇭 瑞士 (Switzerland) 10 - li007",
         "🇨🇭 瑞士 (Switzerland) 11 - li007",
-        "🇨🇭 瑞士 (Switzerland) 12 - li007"
+        "🇨🇭 瑞士 (Switzerland) 12 - li007",
+        "🇨🇭 瑞士 (Switzerland) 13 - li007",
+        "🇨🇭 瑞士 (Switzerland) 14 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
