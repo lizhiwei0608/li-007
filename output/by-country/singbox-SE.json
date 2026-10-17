@@ -50,40 +50,23 @@
       "tls": {
         "enabled": true,
         "server_name": "hy-se.bypassme.online",
-        "insecure": false
+        "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 04 - li007",
-      "server": "87.239.111.174",
-      "server_port": 18563,
-      "uuid": "71c8d2c6-a7f1-4c74-b37d-d7f06fef9c04",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "RjRxUMkBaWZPU2GlovSFYV4UdIFhc2LETtVUJVgoVj8",
-          "short_id": "e9eb910e5af883e3"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - li007",
-      "server": "edge-lab-b.10media.top",
+      "server": "45.12.63.219",
       "server_port": 443,
       "uuid": "9cb8d71c-fe06-4402-a591-eaa1f173b890",
       "tls": {
         "enabled": true,
         "server_name": "edge-lab-b.10media.top",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       },
       "transport": {
         "type": "grpc",
@@ -92,63 +75,25 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - li007",
-      "server": "193.27.200.200",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - li007",
+      "server": "94.143.231.146",
       "server_port": 443,
-      "uuid": "3db6eb7e-c548-11f1-9902-a337233c6cda",
-      "flow": "xtls-rprx-vision",
+      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
       "tls": {
         "enabled": true,
-        "server_name": "swe.wizard.select",
+        "server_name": "sub.merky.top",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0",
-          "short_id": "3b20e438da99"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 - li007",
-      "server": "77.110.96.201",
-      "server_port": 36264,
-      "password": "Telegram-vpnjey",
-      "tls": {
-        "enabled": true,
-        "server_name": "se.vpnjey2.dpdns.org",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "Telegram@vpnjey"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 08 - li007",
-      "server": "se1.h1cloud.net",
-      "server_port": 26128,
-      "uuid": "68c3d665-b2b5-4ffb-9f37-9f3d8c47324d",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sACiHit5lNtPRK_eFP6jT8dMPUZ4kQRsfPj_LL5p7Uk",
-          "short_id": "13ac4d3bdadf1ea1"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "df50147201bf"
+        "type": "ws",
+        "path": "/merky-connect/de6/",
+        "headers": {
+          "Host": "sub.merky.top"
+        }
       }
     },
     {
@@ -160,10 +105,7 @@
         "🇸🇪 瑞典 (Sweden) 02 - li007",
         "🇸🇪 瑞典 (Sweden) 03 - li007",
         "🇸🇪 瑞典 (Sweden) 04 - li007",
-        "🇸🇪 瑞典 (Sweden) 05 - li007",
-        "🇸🇪 瑞典 (Sweden) 06 - li007",
-        "🇸🇪 瑞典 (Sweden) 07 - li007",
-        "🇸🇪 瑞典 (Sweden) 08 - li007"
+        "🇸🇪 瑞典 (Sweden) 05 - li007"
       ]
     },
     {
@@ -174,10 +116,7 @@
         "🇸🇪 瑞典 (Sweden) 02 - li007",
         "🇸🇪 瑞典 (Sweden) 03 - li007",
         "🇸🇪 瑞典 (Sweden) 04 - li007",
-        "🇸🇪 瑞典 (Sweden) 05 - li007",
-        "🇸🇪 瑞典 (Sweden) 06 - li007",
-        "🇸🇪 瑞典 (Sweden) 07 - li007",
-        "🇸🇪 瑞典 (Sweden) 08 - li007"
+        "🇸🇪 瑞典 (Sweden) 05 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

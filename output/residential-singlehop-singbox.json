@@ -4,19 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽·单跳) - li007",
-      "server": "155.117.19.17",
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007",
+      "server": "874e71ae-6c7c-4944-a959-dd6004aab194.ad68289f-02c1-4eeb-83e3-f18114f90c86.byteprivatelink.com",
       "server_port": 443,
-      "password": "5fa748137b6d822308eea4611f474ad5",
+      "uuid": "66d0b230-3b09-421d-be15-ad2e27a90c00",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "a39ca173b57ac7021b08bf3e3de9f1f6"
+        "server_name": "live.douyin.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "em4y1LNcT6JuLvEa3LoNYikp1vShx4ToM1rhvNe-kSY",
+          "short_id": "c975352f"
+        }
       }
     },
     {
@@ -32,7 +37,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽·单跳) - li007",
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007",
         "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽·单跳) - li007"
       ]
     },
@@ -40,7 +45,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽·单跳) - li007",
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007",
         "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽·单跳) - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
