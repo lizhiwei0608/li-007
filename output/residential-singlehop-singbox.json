@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽·单跳) - li007",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - li007",
+      "tag": "🇺🇸 美国 (United States) 02 (家宽·单跳) - li007",
       "server": "155.117.19.17",
       "server_port": 443,
       "password": "5fa748137b6d822308eea4611f474ad5",
@@ -24,14 +32,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - li007"
+        "🇰🇷 韩国 (South Korea) 01 (家宽·单跳) - li007",
+        "🇺🇸 美国 (United States) 02 (家宽·单跳) - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - li007"
+        "🇰🇷 韩国 (South Korea) 01 (家宽·单跳) - li007",
+        "🇺🇸 美国 (United States) 02 (家宽·单跳) - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
