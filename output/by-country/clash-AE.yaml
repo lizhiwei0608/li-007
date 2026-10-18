@@ -35,21 +35,21 @@ proxies:
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 04 - li007
-  server: 31.59.210.26
-  port: 2088
+  server: 31.59.210.37
+  port: 443
   udp: true
   type: vless
   uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
   tls: true
   reality-opts:
-    public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
-    short-id: b1ad165f903c62fe
+    public-key: 5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4
+    short-id: 6dbf4931096f9890
   servername: www.yandex.ru
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
@@ -64,27 +64,27 @@ proxies:
     public-key: qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA
     short-id: 7ec4374ffc6308fd
   servername: www.yandex.ru
-  client-fingerprint: random
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
 - name: 🇦🇪 阿联酋 (UAE) 06 - li007
-  server: 31.59.210.37
-  port: 443
+  server: 31.59.210.26
+  port: 2088
   udp: true
   type: vless
   uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
   tls: true
   reality-opts:
-    public-key: 5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4
-    short-id: 6dbf4931096f9890
+    public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
+    short-id: b1ad165f903c62fe
   servername: www.yandex.ru
-  client-fingerprint: edge
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
 - name: 🇦🇪 阿联酋 (UAE) 07 - li007
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -92,17 +92,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 08 - li007
-  server: 200.181.82.91
-  port: 28740
-  udp: true
-  type: trojan
-  password: 0dad9116-eb88-47b6-98dd-67c9ed43afa6
-  sni: www.baidu.com
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 09 - li007
   server: 45.59.120.217
   port: 443
   udp: true
@@ -114,13 +104,21 @@ proxies:
     short-id: 29c2dd1e3ef7c4d4
   servername: strm.yandex.net
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 10 - li007
-  server: 200.181.82.91
-  port: 21737
+- name: 🇦🇪 阿联酋 (UAE) 09 - li007
+  server: 157.228.149.211
+  port: 2054
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 0dad9116-eb88-47b6-98dd-67c9ed43afa6
+  type: vless
+  uuid: cdc72f62-1697-4644-b5a9-ca6308584c86
+  tls: true
+  reality-opts:
+    public-key: UgJ0ENqGGX-ch2mLdRZiw67OhU3Dqz7rDYCPKcdnn0w
+    short-id: d3d9e08a74807928
+  servername: cloud.ibm.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -135,7 +133,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 07 - li007
   - 🇦🇪 阿联酋 (UAE) 08 - li007
   - 🇦🇪 阿联酋 (UAE) 09 - li007
-  - 🇦🇪 阿联酋 (UAE) 10 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -150,6 +147,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 07 - li007
   - 🇦🇪 阿联酋 (UAE) 08 - li007
   - 🇦🇪 阿联酋 (UAE) 09 - li007
-  - 🇦🇪 阿联酋 (UAE) 10 - li007
 rules:
 - MATCH,PROXIES
