@@ -14,24 +14,13 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
-  server: 183.109.131.75
-  port: 20086
-  udp: true
-  type: vmess
-  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - li007
-  server: test.keoplentuio.xyz
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - li007
+  server: vpn.networkforexir.site
   port: 2053
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - li007
+- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - li007
   server: me17.msjia8844.site
   port: 7443
   udp: true
@@ -41,23 +30,34 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007
+  server: hinet1.2yly.com
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - li007
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - li007
   - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - li007
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - li007
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - li007
   - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - li007
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007
 rules:
 - MATCH,PROXIES

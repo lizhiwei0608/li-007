@@ -5,6 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - li007
+  server: 185.135.86.175
+  port: 9017
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: HAVAdE3nXhqA5nHp
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - li007
+  server: 138.124.180.137
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
+    short-id: 33acba1b
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - li007
   server: 185.220.223.25
   port: 443
   udp: true
@@ -17,34 +37,7 @@ proxies:
     short-id: 3c6afdc4124d0560
   servername: lv.aiage.work
   client-fingerprint: firefox
-- name: 🇱🇻 拉脱维亚 (Latvia) 02 - li007
-  server: 185.135.86.175
-  port: 9033
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: UTJA57ypk2XKQpnm
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - li007
-  server: 185.135.86.175
-  port: 9017
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: HAVAdE3nXhqA5nHp
 - name: 🇱🇻 拉脱维亚 (Latvia) 04 - li007
-  server: 138.124.180.137
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 05 - li007
   server: 195.123.208.32
   port: 443
   udp: true
@@ -56,8 +49,8 @@ proxies:
     public-key: ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk
     short-id: 757b9e1ef18e60f0
   servername: gateway.icloud.com
-  client-fingerprint: ios
-- name: 🇱🇻 拉脱维亚 (Latvia) 06 - li007
+  client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 05 - li007
   server: 185.220.223.24
   port: 443
   udp: true
@@ -80,7 +73,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 03 - li007
   - 🇱🇻 拉脱维亚 (Latvia) 04 - li007
   - 🇱🇻 拉脱维亚 (Latvia) 05 - li007
-  - 🇱🇻 拉脱维亚 (Latvia) 06 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -91,6 +83,5 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 03 - li007
   - 🇱🇻 拉脱维亚 (Latvia) 04 - li007
   - 🇱🇻 拉脱维亚 (Latvia) 05 - li007
-  - 🇱🇻 拉脱维亚 (Latvia) 06 - li007
 rules:
 - MATCH,PROXIES

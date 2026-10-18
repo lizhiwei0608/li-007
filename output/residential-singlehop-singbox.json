@@ -4,48 +4,36 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽·单跳) - li007",
-      "server": "118.167.219.24",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽·单跳) - li007",
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽·单跳) - li007",
       "server": "218.237.185.234",
       "server_port": 4652,
       "method": "aes-256-cfb",
       "password": "qwerREWQ@@"
     },
     {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽·单跳) - li007",
+      "server": "zfd-hkv1.kunlun01dns.com",
+      "server_port": 16115,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽·单跳) - li007",
-        "🇰🇷 韩国 (South Korea) 02 (家宽·单跳) - li007"
+        "🇰🇷 韩国 (South Korea) 01 (家宽·单跳) - li007",
+        "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽·单跳) - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽·单跳) - li007",
-        "🇰🇷 韩国 (South Korea) 02 (家宽·单跳) - li007"
+        "🇰🇷 韩国 (South Korea) 01 (家宽·单跳) - li007",
+        "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽·单跳) - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
