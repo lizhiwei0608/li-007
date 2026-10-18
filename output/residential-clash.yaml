@@ -5,74 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - li007
-  server: 172.64.145.202
-  port: 2083
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: newwk1.f1w.de5.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: newwk1.f1w.de5.net
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - li007
-  server: 206.1.100.148
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 53373a04-2dd2-472e-af5d-d55fbffa7dbd
-  tls: true
-  servername: game.jafarghasemivip.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - li007
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇩🇪 德国 (Germany) 05 (家宽) - li007
-  server: 209.38.238.229
-  port: 20202
-  udp: true
-  type: vless
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  tls: true
-  servername: wzs.echo.net.eu.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
-    headers:
-      Host: wzs.echo.net.eu.org
-- name: 🇸🇬 新加坡 (Singapore) 06 (家宽) - li007
-  server: 185.115.207.141
+  server: 155.117.19.17
   port: 443
   udp: true
-  type: vless
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  tls: true
-  servername: wzs.echo.net.eu.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HV1ZNVwcHTQsJSgAJVBQUG0dCQEwWAx4AAg4c
-    headers:
-      Host: wzs.echo.net.eu.org
-- name: 🇰🇷 韩国 (South Korea) 07 (家宽) - li007
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
   server: 183.109.131.75
   port: 20086
   udp: true
@@ -83,24 +25,22 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - li007
-  server: 118.167.219.24
-  port: 24215
+- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - li007
+  server: test.keoplentuio.xyz
+  port: 2053
   udp: true
   type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 09 (家宽) - li007
-  server: 218.237.185.234
-  port: 4652
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - li007
+  server: me17.msjia8844.site
+  port: 7443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
+  type: hysteria2
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -110,11 +50,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
   - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - li007
   - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - li007
-  - 🇩🇪 德国 (Germany) 05 (家宽) - li007
-  - 🇸🇬 新加坡 (Singapore) 06 (家宽) - li007
-  - 🇰🇷 韩国 (South Korea) 07 (家宽) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - li007
-  - 🇰🇷 韩国 (South Korea) 09 (家宽) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -124,10 +59,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
   - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - li007
   - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - li007
-  - 🇩🇪 德国 (Germany) 05 (家宽) - li007
-  - 🇸🇬 新加坡 (Singapore) 06 (家宽) - li007
-  - 🇰🇷 韩国 (South Korea) 07 (家宽) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - li007
-  - 🇰🇷 韩国 (South Korea) 09 (家宽) - li007
 rules:
 - MATCH,PROXIES

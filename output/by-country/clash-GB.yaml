@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - li007
-  server: 94.156.250.148
-  port: 7001
+  server: 149.102.132.184
+  port: 80
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  password: g5h5jleTRSyO3Rk4
 - name: 🇬🇧 英国 (United Kingdom) 02 - li007
   server: 149.102.132.184
   port: 443
@@ -19,50 +19,20 @@ proxies:
   cipher: aes-256-gcm
   password: g5h5jleTRSyO3Rk4
 - name: 🇬🇧 英国 (United Kingdom) 03 - li007
-  server: 149.102.132.184
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-- name: 🇬🇧 英国 (United Kingdom) 04 - li007
-  server: 89.238.165.94
-  port: 12023
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: 17619e86dcfbf696a6274b1f4a714419
-- name: 🇬🇧 英国 (United Kingdom) 05 - li007
   server: 141.98.101.181
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇬🇧 英国 (United Kingdom) 06 - li007
+- name: 🇬🇧 英国 (United Kingdom) 04 - li007
   server: 146.70.61.37
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 07 - li007
-  server: 146.70.61.18
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 08 - li007
-  server: 57.129.132.223
-  port: 80
-  udp: true
-  type: vless
-  uuid: dbb78c94-9f87-4d7d-b945-2000b60352fd
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇬🇧 英国 (United Kingdom) 09 - li007
+- name: 🇬🇧 英国 (United Kingdom) 05 - li007
   server: 191.215.46.37
   port: 443
   udp: true
@@ -70,20 +40,26 @@ proxies:
   password: b3a11068-1a7e-4643-85de-7c82cce46943
   sni: uk.shamanapp.online
   skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 10 - li007
-  server: 31.59.217.164
-  port: 443
+- name: 🇬🇧 英国 (United Kingdom) 06 - li007
+  server: 146.70.61.18
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 07 - li007
+  server: 151.243.101.126
+  port: 51105
   udp: true
   type: vless
-  uuid: 4b09d40d-e36a-47c3-baa4-e6bf551b3183
-  flow: xtls-rprx-vision
+  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
   tls: true
   reality-opts:
-    public-key: kOkILS7UXUQDNPLYn4SQ65kMIWKXNOttV5Kddw4ZqTo
-    short-id: 1625a2a79d01328f
-  servername: www.adobe.com
+    public-key: _DxG0K_Hvw7qfGTtfeYm95vCBS_3E2x1gzVzfJqQGjE
+    short-id: abcd1234
+  servername: apple.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 11 - li007
+- name: 🇬🇧 英国 (United Kingdom) 08 - li007
   server: 138.124.125.193
   port: 10444
   udp: true
@@ -96,32 +72,7 @@ proxies:
     short-id: 8debcf36f1cc69ff
   servername: ads.x5.ru
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 12 - li007
-  server: 23.81.36.148
-  port: 1222
-  udp: true
-  type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  tls: true
-  reality-opts:
-    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
-    short-id: a25d0f
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 13 - li007
-  server: 31.76.62.32
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8e66d40e-6f62-4243-a7d8-ebe83e4c2e77
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: C4kK4uxh9a5ym0-JmcaTwkUwkB0FTRjSAIlHLTKRHlo
-    short-id: 84341e3e
-  servername: lv-rix-1.koolb.org
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 14 - li007
+- name: 🇬🇧 英国 (United Kingdom) 09 - li007
   server: 185.200.199.199
   port: 8444
   udp: true
@@ -132,34 +83,24 @@ proxies:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
     short-id: 457fab2ac885dbe0
   servername: github.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇬🇧 英国 (United Kingdom) 15 - li007
-  server: uk1.connectsuite.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
-  tls: true
-  servername: uk1.connectsuite.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /cdn-cgi/ws
-- name: 🇬🇧 英国 (United Kingdom) 16 - li007
+- name: 🇬🇧 英国 (United Kingdom) 10 - li007
   server: 57.129.132.223
   port: 80
   udp: true
-  type: vless
-  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
+  type: vmess
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /vless/
+    path: /vmess/
     headers:
       Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 17 - li007
+- name: 🇬🇧 英国 (United Kingdom) 11 - li007
   server: 172.67.137.209
   port: 443
   udp: true
@@ -175,19 +116,31 @@ proxies:
     path: /London31
     headers:
       Host: ukl.lovehk.xyz
-- name: 🇬🇧 英国 (United Kingdom) 18 - li007
-  server: 46.250.250.149
-  port: 2053
+- name: 🇬🇧 英国 (United Kingdom) 12 - li007
+  server: 193.188.21.253
+  port: 14430
   udp: true
   type: vless
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
+- name: 🇬🇧 英国 (United Kingdom) 13 - li007
+  server: 31.76.62.32
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8e66d40e-6f62-4243-a7d8-ebe83e4c2e77
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-    short-id: 9922313fffed1c63
-  servername: www.apple.com
+    public-key: C4kK4uxh9a5ym0-JmcaTwkUwkB0FTRjSAIlHLTKRHlo
+    short-id: 84341e3e
+  servername: lv-rix-1.koolb.org
   client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 19 - li007
+- name: 🇬🇧 英国 (United Kingdom) 14 - li007
   server: 213.176.92.168
   port: 14430
   udp: true
@@ -196,16 +149,9 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇬🇧 英国 (United Kingdom) 20 - li007
-  server: node-uk.connectsuite.org
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
-  tls: true
-  servername: node-uk.connectsuite.org
-  skip-cert-verify: false
-- name: 🇬🇧 英国 (United Kingdom) 21 - li007
+    headers:
+      Host: 213.176.92.168
+- name: 🇬🇧 英国 (United Kingdom) 15 - li007
   server: 213.176.92.168
   port: 10444
   udp: true
@@ -218,7 +164,44 @@ proxies:
     short-id: 8debcf36f1cc69ff
   servername: video.yandex.ru
   client-fingerprint: safari
-- name: 🇬🇧 英国 (United Kingdom) 22 - li007
+- name: 🇬🇧 英国 (United Kingdom) 16 - li007
+  server: 193.188.21.253
+  port: 10444
+  udp: true
+  type: vless
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: video.yandex.ru
+  client-fingerprint: safari
+- name: 🇬🇧 英国 (United Kingdom) 17 - li007
+  server: 46.250.250.149
+  port: 2053
+  udp: true
+  type: vless
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  tls: true
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+    short-id: 9922313fffed1c63
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 18 - li007
+  server: 23.81.36.148
+  port: 1222
+  udp: true
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  tls: true
+  reality-opts:
+    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
+    short-id: a25d0f
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 19 - li007
   server: 46.250.240.80
   port: 2053
   udp: true
@@ -229,21 +212,8 @@ proxies:
     public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
     short-id: 4cc9dc65f7770115
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 23 - li007
-  server: 193.163.203.170
-  port: 443
-  udp: true
-  type: vless
-  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
-    short-id: b28db60d77c50b4f
-  servername: yandex.ru
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 24 - li007
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 20 - li007
   server: 51.89.194.151
   port: 2053
   udp: true
@@ -254,8 +224,32 @@ proxies:
     public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
     short-id: d051f678212f9d54
   servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 21 - li007
+  server: node-uk.connectsuite.org
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
+  tls: true
+  servername: node-uk.connectsuite.org
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 25 - li007
+- name: 🇬🇧 英国 (United Kingdom) 22 - li007
+  server: 188.114.96.25
+  port: 443
+  udp: true
+  type: vless
+  uuid: ed6c724c-435f-4f83-a781-f57579af320b
+  tls: true
+  servername: gbi.els1v0u3t31v.info
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /9d9fdbc18c834cffab4276811501fbae
+    headers:
+      Host: gbi.els1v0u3t31v.info
+- name: 🇬🇧 英国 (United Kingdom) 23 - li007
   server: reaza.localip.ir
   port: 443
   udp: true
@@ -269,6 +263,28 @@ proxies:
     path: /9d9fdbc18c834cffab4276811501fbae
     headers:
       Host: gbi.els1v0u3t31v.info
+- name: 🇬🇧 英国 (United Kingdom) 24 - li007
+  server: 193.163.203.170
+  port: 443
+  udp: true
+  type: vless
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+  servername: yandex.ru
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 25 - li007
+  server: 186.190.211.188
+  port: 443
+  udp: true
+  type: vless
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  tls: true
+  servername: 186.190.211.188
+  skip-cert-verify: true
 - name: 🇬🇧 英国 (United Kingdom) 26 - li007
   server: 104.238.2.82
   port: 443
@@ -283,31 +299,51 @@ proxies:
   servername: www.microsoft.com
   client-fingerprint: chrome
 - name: 🇬🇧 英国 (United Kingdom) 27 - li007
-  server: 107.181.151.39
+  server: 87.239.249.137
   port: 443
   udp: true
   type: vless
-  uuid: 13aef2e0-b3fb-4322-a0e9-c10b908ce6b5
+  uuid: 67eb6b17-7797-4ded-bf52-423c4c5f6cbd
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 87f895f23064
-  servername: www.techradar.com
-  client-fingerprint: firefox
+    public-key: G7bpUPFSW28-oE6ff8qZac1_apU6PiJ-GHmi7tAPDSY
+    short-id: 91af08b1ce1f
+  servername: www.foxsports.com
+  client-fingerprint: chrome
 - name: 🇬🇧 英国 (United Kingdom) 28 - li007
-  server: 193.188.21.253
-  port: 10444
+  server: 107.181.151.241
+  port: 443
   udp: true
   type: vless
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  uuid: 2ba7f500-017b-4891-87a0-e4e62a4ad52d
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: video.yandex.ru
-  client-fingerprint: safari
+    public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
+    short-id: 9409f73c2fd7
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 29 - li007
+  server: 107.181.151.128
+  port: 443
+  udp: true
+  type: vless
+  uuid: 73cb2a0d-e2a9-4e61-a343-f2845e8c272e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
+    short-id: 611ceeb0ae78
+  servername: www.tradingview.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 30 - li007
+  server: 158.173.24.73
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
 proxy-groups:
 - name: PROXIES
   type: select
@@ -341,6 +377,8 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 26 - li007
   - 🇬🇧 英国 (United Kingdom) 27 - li007
   - 🇬🇧 英国 (United Kingdom) 28 - li007
+  - 🇬🇧 英国 (United Kingdom) 29 - li007
+  - 🇬🇧 英国 (United Kingdom) 30 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -374,5 +412,7 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 26 - li007
   - 🇬🇧 英国 (United Kingdom) 27 - li007
   - 🇬🇧 英国 (United Kingdom) 28 - li007
+  - 🇬🇧 英国 (United Kingdom) 29 - li007
+  - 🇬🇧 英国 (United Kingdom) 30 - li007
 rules:
 - MATCH,PROXIES
