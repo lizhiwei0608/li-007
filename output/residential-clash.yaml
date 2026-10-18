@@ -4,12 +4,21 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - li007
-  server: test.keoplentuio.xyz
-  port: 2053
+- name: 🇺🇸 美国 (United States) 01 (家宽) - li007
+  server: 172.64.145.202
+  port: 2083
   udp: true
   type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: newwk1.f1w.de5.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: newwk1.f1w.de5.net
 - name: 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
   server: 49.254.204.133
   port: 1774
@@ -17,7 +26,64 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
+- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - li007
+  server: 206.1.100.148
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 53373a04-2dd2-472e-af5d-d55fbffa7dbd
+  tls: true
+  servername: game.jafarghasemivip.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - li007
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇩🇪 德国 (Germany) 05 (家宽) - li007
+  server: 209.38.238.229
+  port: 20202
+  udp: true
+  type: vless
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  tls: true
+  servername: wzs.echo.net.eu.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
+    headers:
+      Host: wzs.echo.net.eu.org
+- name: 🇸🇬 新加坡 (Singapore) 06 (家宽) - li007
+  server: 185.115.207.141
+  port: 443
+  udp: true
+  type: vless
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  tls: true
+  servername: wzs.echo.net.eu.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HV1ZNVwcHTQsJSgAJVBQUG0dCQEwWAx4AAg4c
+    headers:
+      Host: wzs.echo.net.eu.org
+- name: 🇰🇷 韩国 (South Korea) 07 (家宽) - li007
+  server: 183.109.131.75
+  port: 20086
+  udp: true
+  type: vmess
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - li007
   server: 118.167.219.24
   port: 24215
   udp: true
@@ -28,35 +94,40 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (移动家宽) - li007
-  server: tw0.zhujue.us
-  port: 11000
+- name: 🇰🇷 韩国 (South Korea) 09 (家宽) - li007
+  server: 218.237.185.234
+  port: 4652
   udp: true
-  type: vless
-  uuid: 0e46345c-f33b-4f9b-b8ec-90e7c986af7e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - li007
+  - 🇺🇸 美国 (United States) 01 (家宽) - li007
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 04 (移动家宽) - li007
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - li007
+  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - li007
+  - 🇩🇪 德国 (Germany) 05 (家宽) - li007
+  - 🇸🇬 新加坡 (Singapore) 06 (家宽) - li007
+  - 🇰🇷 韩国 (South Korea) 07 (家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - li007
+  - 🇰🇷 韩国 (South Korea) 09 (家宽) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - li007
+  - 🇺🇸 美国 (United States) 01 (家宽) - li007
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 04 (移动家宽) - li007
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - li007
+  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - li007
+  - 🇩🇪 德国 (Germany) 05 (家宽) - li007
+  - 🇸🇬 新加坡 (Singapore) 06 (家宽) - li007
+  - 🇰🇷 韩国 (South Korea) 07 (家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - li007
+  - 🇰🇷 韩国 (South Korea) 09 (家宽) - li007
 rules:
 - MATCH,PROXIES
