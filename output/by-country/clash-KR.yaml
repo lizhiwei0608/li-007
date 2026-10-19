@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - li007
   server: 141.164.45.187
+  port: 7002
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇰🇷 韩国 (South Korea) 02 - li007
+  server: 141.164.45.187
   port: 9090
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
-- name: 🇰🇷 韩国 (South Korea) 02 - li007
-  server: 141.164.45.187
-  port: 2376
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
 - name: 🇰🇷 韩国 (South Korea) 03 - li007
   server: 140.238.2.250
   port: 443
@@ -27,19 +27,20 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 04 - li007
-  server: 141.164.45.187
-  port: 5001
+  server: 132.226.226.189
+  port: 50160
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+  type: hysteria2
+  password: 1671a252e2a97dc2bda4e515475931da
+  sni: 'off'
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 05 - li007
-  server: 211.178.105.134
-  port: 6123
+  server: 49.254.204.134
+  port: 1774
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: qwerREWQ@@
+  password: 1234!@#$
 - name: 🇰🇷 韩国 (South Korea) 06 - li007
   server: 132.145.80.230
   port: 80
@@ -52,8 +53,15 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: kr02.a0a.xyz
+      Host: 'null'
 - name: 🇰🇷 韩国 (South Korea) 07 - li007
+  server: 141.164.45.187
+  port: 8000
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇰🇷 韩国 (South Korea) 08 - li007
   server: 152.70.237.123
   port: 2053
   udp: true
@@ -61,28 +69,7 @@ proxies:
   password: maintell
   sni: 152.70.237.123
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08 - li007
-  server: 132.226.226.189
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1671a252e2a97dc2bda4e515475931da
-  sni: 132.226.226.189
-  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 09 - li007
-  server: 3.39.4.109
-  port: 13672
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: edge
-- name: 🇰🇷 韩国 (South Korea) 10 - li007
   server: 3.39.4.109
   port: 18967
   udp: true
@@ -95,15 +82,7 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 11 - li007
-  server: 152.67.200.82
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: 152.67.200.82
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 12 - li007
+- name: 🇰🇷 韩国 (South Korea) 10 - li007
   server: 64.176.231.183
   port: 443
   udp: true
@@ -116,7 +95,44 @@ proxies:
     short-id: ca193e889d958f81
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 11 - li007
+  server: 3.39.4.109
+  port: 13672
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 12 - li007
+  server: 154.90.62.70
+  port: 56127
+  udp: true
+  type: trojan
+  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
+  sni: 154.90.62.70
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 13 - li007
+  server: 152.67.200.82
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: css.rbxcdn.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 14 - li007
+  server: 150-230-252-217.liao.kdns.fr
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 9cfc9458e48c028ec03ff86ebc71c744
+  sni: 150-230-252-217.liao.kdns.fr
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 15 - li007
   server: 151.245.106.49
   port: 2053
   udp: true
@@ -127,39 +143,8 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
     short-id: 429499c03d4cc8a0
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 14 - li007
-  server: 154.90.62.70
-  port: 56127
-  udp: true
-  type: trojan
-  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
-  sni: 154.90.62.70
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 15 - li007
-  server: 150-230-252-217.liao.kdns.fr
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 9cfc9458e48c028ec03ff86ebc71c744
-  sni: 150-230-252-217.liao.kdns.fr
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 16 - li007
-  server: 220.71.172.2
-  port: 16034
-  udp: true
-  type: vless
-  uuid: a981b1f7-1afa-4d34-bc5d-6ffbe9bb0cca
-  tls: true
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-  skip-cert-verify: false
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 17 - li007
+- name: 🇰🇷 韩国 (South Korea) 16 - li007
   server: jp4.998998.best
   port: 443
   udp: true
@@ -175,33 +160,34 @@ proxies:
     path: /vvvvvvvvv
     headers:
       Host: nat12.9966338.xyz
-- name: 🇰🇷 韩国 (South Korea) 18 - li007
-  server: 141.164.45.187
-  port: 8119
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-- name: 🇰🇷 韩国 (South Korea) 19 - li007
+- name: 🇰🇷 韩国 (South Korea) 17 - li007
   server: 141.164.45.187
   port: 8091
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: PCnnH6SQSnfoS27
-- name: 🇰🇷 韩国 (South Korea) 20 - li007
-  server: 47.80.19.173
-  port: 2053
+- name: 🇰🇷 韩国 (South Korea) 18 - li007
+  server: 141.164.45.187
+  port: 5001
   udp: true
-  type: vless
-  uuid: 319d5ffb-57e8-4bbd-ac0c-5d55d0c253de
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms
-    short-id: 3c4041d3
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇰🇷 韩国 (South Korea) 19 - li007
+  server: 141.164.45.187
+  port: 5498
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
+- name: 🇰🇷 韩国 (South Korea) 20 - li007
+  server: 141.164.45.187
+  port: 8119
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
 proxy-groups:
 - name: PROXIES
   type: select
