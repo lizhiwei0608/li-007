@@ -6,6 +6,13 @@
     {
       "type": "vless",
       "tag": "🇻🇳 越南 (Vietnam) 01 - li007",
+      "server": "150.95.109.109",
+      "server_port": 2086,
+      "uuid": "b83faafc-cbb7-4655-99d4-2c4c39a49d1b"
+    },
+    {
+      "type": "vless",
+      "tag": "🇻🇳 越南 (Vietnam) 02 - li007",
       "server": "172.67.168.158",
       "server_port": 2087,
       "uuid": "1d0e8e53-6999-4752-ac21-c0c54ff5bc09",
@@ -31,14 +38,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇻🇳 越南 (Vietnam) 01 - li007"
+        "🇻🇳 越南 (Vietnam) 01 - li007",
+        "🇻🇳 越南 (Vietnam) 02 - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇻🇳 越南 (Vietnam) 01 - li007"
+        "🇻🇳 越南 (Vietnam) 01 - li007",
+        "🇻🇳 越南 (Vietnam) 02 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
