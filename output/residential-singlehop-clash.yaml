@@ -5,13 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007
-  server: 74a598d0-tnhmo0-toktib-1hhyy.hk3.hyhuawei.com
+  server: t9.qifei.app
   port: 443
   udp: true
-  type: hysteria2
-  password: c594c7ec-8b10-11ef-a2b8-f23c9164ca5d
-  sni: 74a598d0-tnhmo0-toktib-1hhyy.hk3.hyhuawei.com
-  skip-cert-verify: true
+  type: vless
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
+  servername: www.amazon.com
+  client-fingerprint: random
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽·单跳) - li007
   server: 61.230.160.34
   port: 24215
@@ -23,14 +28,6 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 03 (家宽·单跳) R46 - li007
-  server: 4c2d5151.266nets.com
-  port: 12031
-  udp: true
-  type: trojan
-  password: bad06c3525a6eaee1757b34776b83892
-  sni: ixigua.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,7 +35,6 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽·单跳) - li007
-  - 🇺🇸 美国 (United States) 03 (家宽·单跳) R46 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,6 +42,5 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽·单跳) - li007
-  - 🇺🇸 美国 (United States) 03 (家宽·单跳) R46 - li007
 rules:
 - MATCH,PROXIES

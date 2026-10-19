@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - li007
-  server: 104.21.67.122
-  port: 443
-  udp: true
-  type: vless
-  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
-  tls: true
-  servername: novantunnel.tech
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /Novan-AE9
-    headers:
-      Host: novantunnel.tech
-- name: 🇦🇪 阿联酋 (UAE) 02 - li007
   server: 157.228.155.184
   port: 443
   udp: true
@@ -31,18 +17,7 @@ proxies:
     short-id: e022bfea
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 03 - li007
-  server: 185.253.116.33
-  port: 14430
-  udp: true
-  type: vless
-  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 185.253.116.33
-- name: 🇦🇪 阿联酋 (UAE) 04 - li007
+- name: 🇦🇪 阿联酋 (UAE) 02 - li007
   server: 130.49.161.70
   port: 443
   udp: true
@@ -52,7 +27,7 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 05 - li007
+- name: 🇦🇪 阿联酋 (UAE) 03 - li007
   server: 31.59.210.32
   port: 443
   udp: true
@@ -67,7 +42,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 06 - li007
+- name: 🇦🇪 阿联酋 (UAE) 04 - li007
   server: 31.59.210.26
   port: 2088
   udp: true
@@ -82,23 +57,19 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 07 - li007
-  server: 31.59.210.37
-  port: 443
+- name: 🇦🇪 阿联酋 (UAE) 05 - li007
+  server: 185.253.116.33
+  port: 14430
   udp: true
   type: vless
-  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
-  tls: true
-  reality-opts:
-    public-key: 5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4
-    short-id: 6dbf4931096f9890
-  servername: www.yandex.ru
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 08 - li007
-  server: 84.235.244.108
+  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 185.253.116.33
+- name: 🇦🇪 阿联酋 (UAE) 06 - li007
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -106,20 +77,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 09 - li007
-  server: 95.174.68.188
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 10 - li007
+- name: 🇦🇪 阿联酋 (UAE) 07 - li007
   server: 45.59.120.217
   port: 443
   udp: true
@@ -143,9 +101,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - li007
   - 🇦🇪 阿联酋 (UAE) 06 - li007
   - 🇦🇪 阿联酋 (UAE) 07 - li007
-  - 🇦🇪 阿联酋 (UAE) 08 - li007
-  - 🇦🇪 阿联酋 (UAE) 09 - li007
-  - 🇦🇪 阿联酋 (UAE) 10 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -158,8 +113,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - li007
   - 🇦🇪 阿联酋 (UAE) 06 - li007
   - 🇦🇪 阿联酋 (UAE) 07 - li007
-  - 🇦🇪 阿联酋 (UAE) 08 - li007
-  - 🇦🇪 阿联酋 (UAE) 09 - li007
-  - 🇦🇪 阿联酋 (UAE) 10 - li007
 rules:
 - MATCH,PROXIES
