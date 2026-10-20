@@ -5,29 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - li007
-  server: 18.169.146.8
-  port: 22224
+  server: 54.229.164.140
+  port: 443
   udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇮🇪 爱尔兰 (Ireland) 02 - li007
-  server: 51.200.48.17
-  port: 22222
+  server: 108.129.216.202
+  port: 443
   udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇮🇪 爱尔兰 (Ireland) 03 - li007
-  server: 18.169.146.8
-  port: 22223
+  server: ie1.dedushka.top
+  port: 443
   udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 04 - li007
-  server: 18.169.146.8
-  port: 22222
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: ie1.dedushka.top
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,7 +34,6 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 01 - li007
   - 🇮🇪 爱尔兰 (Ireland) 02 - li007
   - 🇮🇪 爱尔兰 (Ireland) 03 - li007
-  - 🇮🇪 爱尔兰 (Ireland) 04 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -45,6 +42,5 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 01 - li007
   - 🇮🇪 爱尔兰 (Ireland) 02 - li007
   - 🇮🇪 爱尔兰 (Ireland) 03 - li007
-  - 🇮🇪 爱尔兰 (Ireland) 04 - li007
 rules:
 - MATCH,PROXIES
