@@ -20,20 +20,116 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - li007",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21022,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽) - li007",
-      "server": "p141.panda001.net",
+      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - li007",
+      "server": "218.237.185.234",
       "server_port": 4652,
       "method": "aes-256-cfb",
       "password": "qwerREWQ@@"
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - li007",
+      "server": "t9.qifei.app",
+      "server_port": 443,
+      "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo",
+          "short_id": "1a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 04 (家宽) - li007",
+      "server": "209.38.238.229",
+      "server_port": 20202,
+      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
+      "tls": {
+        "enabled": true,
+        "server_name": "wzs.echo.net.eu.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=",
+        "headers": {
+          "Host": "wzs.echo.net.eu.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 (移动家宽) - li007",
+      "server": "zfd-hkv1.kunlun01dns.com",
+      "server_port": 16115,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
+      "type": "anytls",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - li007",
+      "server": "er8u54dh.df6h451rh.xin",
+      "server_port": 443,
+      "password": "0324fbc29561",
+      "tls": {
+        "enabled": true,
+        "server_name": "px.ads.linkedin.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - li007",
+      "server": "61.230.160.34",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇨🇦 加拿大 (Canada) 08 (家宽) - li007",
+      "server": "47.129.115.96",
+      "server_port": 30330,
+      "uuid": "dfa9f875-3805-49d9-8636-46b6899be24e",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "sg-transit-3.nebulacloud.win",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ca/getData",
+        "headers": {
+          "Host": "sg-transit-3.nebulacloud.win"
+        }
+      }
     },
     {
       "type": "selector",
@@ -41,8 +137,13 @@
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 (家宽) - li007",
-        "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - li007",
-        "🇰🇷 韩国 (South Korea) 03 (家宽) - li007"
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - li007",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - li007",
+        "🇩🇪 德国 (Germany) 04 (家宽) - li007",
+        "🇭🇰 中国香港 (Hong Kong) 05 (移动家宽) - li007",
+        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - li007",
+        "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - li007",
+        "🇨🇦 加拿大 (Canada) 08 (家宽) - li007"
       ]
     },
     {
@@ -50,8 +151,13 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 (United States) 01 (家宽) - li007",
-        "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - li007",
-        "🇰🇷 韩国 (South Korea) 03 (家宽) - li007"
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - li007",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - li007",
+        "🇩🇪 德国 (Germany) 04 (家宽) - li007",
+        "🇭🇰 中国香港 (Hong Kong) 05 (移动家宽) - li007",
+        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) - li007",
+        "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - li007",
+        "🇨🇦 加拿大 (Canada) 08 (家宽) - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
