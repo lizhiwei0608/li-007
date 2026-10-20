@@ -28,7 +28,7 @@
         "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -44,17 +44,25 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - li007",
-      "server": "94.143.231.146",
-      "server_port": 443,
-      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
+      "server": "se1.h1cloud.net",
+      "server_port": 26128,
+      "uuid": "68c3d665-b2b5-4ffb-9f37-9f3d8c47324d",
       "tls": {
         "enabled": true,
-        "server_name": "sub.merky.top",
-        "insecure": false
+        "server_name": "www.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sACiHit5lNtPRK_eFP6jT8dMPUZ4kQRsfPj_LL5p7Uk",
+          "short_id": "13ac4d3bdadf1ea1"
+        }
       },
       "transport": {
-        "type": "ws",
-        "path": "/merky-connect/de6/"
+        "type": "grpc",
+        "service_name": "df50147201bf"
       }
     },
     {
