@@ -18,8 +18,22 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https
+  sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - li007
+  server: 59.125.69.22
+  port: 443
+  udp: true
+  type: vless
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  tls: true
+  servername: tse1.mm.bing.net
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: tse1.mm.bing.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -27,6 +41,7 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - li007
   - 🇹🇼 中国台湾 (Taiwan) 02 - li007
+  - 🇹🇼 中国台湾 (Taiwan) 03 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -34,5 +49,6 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - li007
   - 🇹🇼 中国台湾 (Taiwan) 02 - li007
+  - 🇹🇼 中国台湾 (Taiwan) 03 - li007
 rules:
 - MATCH,PROXIES

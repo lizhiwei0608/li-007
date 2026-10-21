@@ -14,7 +14,7 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -38,7 +38,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -48,8 +48,24 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇹🇷 土耳其 (Turkey) 03 - li007",
+      "server": "me17.msjia8844.site",
+      "server_port": 7443,
+      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
+      "tls": {
+        "enabled": true,
+        "server_name": "me17.msjia8844.site",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - li007",
       "server": "78.135.73.47",
       "server_port": 443,
       "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
@@ -59,7 +75,7 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -69,13 +85,35 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - li007",
+      "server": "177.3.208.65",
+      "server_port": 443,
+      "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
+      "tls": {
+        "enabled": true,
+        "server_name": "tgmansion.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless-tr"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - li007",
         "🇹🇷 土耳其 (Turkey) 02 - li007",
-        "🇹🇷 土耳其 (Turkey) 03 - li007"
+        "🇹🇷 土耳其 (Turkey) 03 - li007",
+        "🇹🇷 土耳其 (Turkey) 04 - li007",
+        "🇹🇷 土耳其 (Turkey) 05 - li007"
       ]
     },
     {
@@ -84,7 +122,9 @@
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - li007",
         "🇹🇷 土耳其 (Turkey) 02 - li007",
-        "🇹🇷 土耳其 (Turkey) 03 - li007"
+        "🇹🇷 土耳其 (Turkey) 03 - li007",
+        "🇹🇷 土耳其 (Turkey) 04 - li007",
+        "🇹🇷 土耳其 (Turkey) 05 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

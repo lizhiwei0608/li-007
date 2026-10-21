@@ -14,30 +14,21 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇨🇳 CN 02 (家宽) - li007
-  server: 112.132.215.108
-  port: 50002
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
+  server: 6aa21c4d-11d4-45bf-ba55-59512593692c.7b63595a-1119-4080-80e1-3f638120be58.smartprivatelink.com
+  port: 443
   udp: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 0
-  cipher: auto
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - li007
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - li007
-  server: p141.panda001.net
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - li007
-  server: 61.230.160.34
+  type: vless
+  uuid: 2a778078-9f4f-4203-a204-6fb94547b707
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 3nFa_3MSnFQDm9XfVfFHOnMb3FOptREpe1ehXjAbk1c
+    short-id: d369dbc2
+  servername: www.douyin.com
+  client-fingerprint: ios
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
+  server: hinet1.2yly.com
   port: 24215
   udp: true
   type: vless
@@ -46,26 +37,51 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: firefox
+  client-fingerprint: random
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007
+  server: 9641684.sdf65h4.top
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 250c015d-bab0-4ed3-b638-b4eda48f5840
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: 9641684.sdf65h4.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - li007
+  server: 183.109.131.75
+  port: 20086
+  udp: true
+  type: vmess
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - li007
-  - 🇨🇳 CN 02 (家宽) - li007
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - li007
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007
+  - 🇰🇷 韩国 (South Korea) 05 (家宽) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - li007
-  - 🇨🇳 CN 02 (家宽) - li007
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - li007
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007
+  - 🇰🇷 韩国 (South Korea) 05 (家宽) - li007
 rules:
 - MATCH,PROXIES
