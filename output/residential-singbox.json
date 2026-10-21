@@ -4,8 +4,42 @@
   },
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽) - li007",
+      "server": "104.17.100.185",
+      "server_port": 443,
+      "uuid": "1e922b22-d169-4461-89c1-07e09ff2617c",
+      "tls": {
+        "enabled": true,
+        "server_name": "vlesss.xttd.eu.org",
+        "insecure": false,
+        "alpn": [
+          "h3"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/proxyip=proxyip.fxxk.dedyn.io",
+        "headers": {
+          "Host": "vlesss.xttd.eu.org"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - li007",
+      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - li007",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽) - li007",
       "server": "218.237.185.234",
       "server_port": 4652,
       "method": "aes-256-cfb",
@@ -13,7 +47,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007",
       "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -32,20 +66,37 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇰🇷 韩国 (South Korea) 05 (家宽) - li007",
+      "server": "183.109.131.75",
+      "server_port": 20086,
+      "uuid": "b26c4803-0bca-467c-a245-c9a80bdd72ec",
+      "security": "auto",
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - li007",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007"
+        "🇺🇸 美国 (United States) 01 (家宽) - li007",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - li007",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - li007",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007",
+        "🇰🇷 韩国 (South Korea) 05 (家宽) - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - li007",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007"
+        "🇺🇸 美国 (United States) 01 (家宽) - li007",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - li007",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - li007",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007",
+        "🇰🇷 韩国 (South Korea) 05 (家宽) - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

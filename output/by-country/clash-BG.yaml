@@ -6,32 +6,24 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - li007
   server: 213.183.63.60
-  port: 9029
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: dU3DSNS8wYPXzEKw
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - li007
-  server: 213.183.63.60
   port: 9085
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 9ej82EKe2gq7gLAM
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - li007
-  server: 213.183.63.60
-  port: 9030
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - li007
+  server: 195.123.226.21
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: GeregetR8cvQHzYr
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - li007
-  server: 213.183.63.60
-  port: 9064
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: cp8pRSUAyLhTfVWH
+  type: vless
+  uuid: 6589c320-db68-43cd-a273-b46299bab355
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: rabtI-ymNXBUvYYRwAw8DiR-1pdP7U0WPIaCBHEkgzo
+    short-id: 77bb0d07bddbc832
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,8 +31,6 @@ proxy-groups:
   - AUTO
   - 🇧🇬 保加利亚 (Bulgaria) 01 - li007
   - 🇧🇬 保加利亚 (Bulgaria) 02 - li007
-  - 🇧🇬 保加利亚 (Bulgaria) 03 - li007
-  - 🇧🇬 保加利亚 (Bulgaria) 04 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,7 +38,5 @@ proxy-groups:
   proxies:
   - 🇧🇬 保加利亚 (Bulgaria) 01 - li007
   - 🇧🇬 保加利亚 (Bulgaria) 02 - li007
-  - 🇧🇬 保加利亚 (Bulgaria) 03 - li007
-  - 🇧🇬 保加利亚 (Bulgaria) 04 - li007
 rules:
 - MATCH,PROXIES
