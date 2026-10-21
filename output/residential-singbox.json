@@ -4,34 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇺🇸 美国 (United States) 01 (家宽) - li007",
-      "server": "104.17.100.185",
+      "server": "155.117.19.17",
       "server_port": 443,
-      "uuid": "1e922b22-d169-4461-89c1-07e09ff2617c",
+      "password": "5fa748137b6d822308eea4611f474ad5",
       "tls": {
         "enabled": true,
-        "server_name": "vlesss.xttd.eu.org",
-        "insecure": false,
-        "alpn": [
-          "h3"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        }
+        "server_name": "www.bing.com",
+        "insecure": true
       },
-      "transport": {
-        "type": "ws",
-        "path": "/proxyip=proxyip.fxxk.dedyn.io",
-        "headers": {
-          "Host": "vlesss.xttd.eu.org"
-        }
+      "obfs": {
+        "type": "salamander",
+        "password": "a39ca173b57ac7021b08bf3e3de9f1f6"
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇨🇳 CN 02 (家宽) - li007",
+      "server": "112.132.215.108",
+      "server_port": 50002,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "security": "auto"
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - li007",
+      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽) - li007",
       "server": "49.254.204.133",
       "server_port": 1774,
       "method": "aes-256-cfb",
@@ -39,16 +37,16 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽) - li007",
-      "server": "218.237.185.234",
+      "tag": "🇰🇷 韩国 (South Korea) 04 (家宽) - li007",
+      "server": "p141.panda001.net",
       "server_port": 4652,
       "method": "aes-256-cfb",
       "password": "qwerREWQ@@"
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007",
-      "server": "hinet1.2yly.com",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - li007",
+      "server": "61.230.160.34",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -56,7 +54,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -66,26 +64,15 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 05 (家宽) - li007",
-      "server": "183.109.131.75",
-      "server_port": 20086,
-      "uuid": "b26c4803-0bca-467c-a245-c9a80bdd72ec",
-      "security": "auto",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 (家宽) - li007",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - li007",
+        "🇨🇳 CN 02 (家宽) - li007",
         "🇰🇷 韩国 (South Korea) 03 (家宽) - li007",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007",
-        "🇰🇷 韩国 (South Korea) 05 (家宽) - li007"
+        "🇰🇷 韩国 (South Korea) 04 (家宽) - li007",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - li007"
       ]
     },
     {
@@ -93,10 +80,10 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 (United States) 01 (家宽) - li007",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - li007",
+        "🇨🇳 CN 02 (家宽) - li007",
         "🇰🇷 韩国 (South Korea) 03 (家宽) - li007",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007",
-        "🇰🇷 韩国 (South Korea) 05 (家宽) - li007"
+        "🇰🇷 韩国 (South Korea) 04 (家宽) - li007",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

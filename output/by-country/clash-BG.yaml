@@ -6,12 +6,19 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - li007
   server: 213.183.63.60
-  port: 9085
+  port: 9054
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 9ej82EKe2gq7gLAM
+  password: VcFuyXvND2yQWSFY
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - li007
+  server: 213.183.63.60
+  port: 9030
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: GeregetR8cvQHzYr
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - li007
   server: 195.123.226.21
   port: 443
   udp: true
@@ -31,6 +38,7 @@ proxy-groups:
   - AUTO
   - 🇧🇬 保加利亚 (Bulgaria) 01 - li007
   - 🇧🇬 保加利亚 (Bulgaria) 02 - li007
+  - 🇧🇬 保加利亚 (Bulgaria) 03 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -38,5 +46,6 @@ proxy-groups:
   proxies:
   - 🇧🇬 保加利亚 (Bulgaria) 01 - li007
   - 🇧🇬 保加利亚 (Bulgaria) 02 - li007
+  - 🇧🇬 保加利亚 (Bulgaria) 03 - li007
 rules:
 - MATCH,PROXIES
