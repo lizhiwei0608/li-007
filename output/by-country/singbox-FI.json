@@ -12,20 +12,27 @@
       "tls": {
         "enabled": true,
         "server_name": "fi.67chat.ru",
-        "insecure": false
+        "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02 - li007",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "45.144.234.157"
+      "server": "31.77.199.147",
+      "server_port": 4443,
+      "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "images.unsplash.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A",
+          "short_id": "7da2eae792187ab9"
         }
       }
     },
@@ -52,27 +59,6 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 04 - li007",
-      "server": "31.77.199.147",
-      "server_port": 4443,
-      "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "images.unsplash.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A",
-          "short_id": "7da2eae792187ab9"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - li007",
       "server": "212.87.222.10",
       "server_port": 8443,
       "uuid": "8afeb33c-b686-43e9-a629-0d98f991ec28",
@@ -82,7 +68,7 @@
         "server_name": "www.nokia.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -93,7 +79,40 @@
     },
     {
       "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - li007",
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "45.144.234.157"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 06 - li007",
+      "server": "144.31.34.146",
+      "server_port": 2096,
+      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi1.merky.one",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/mky-ws-4f19c8a7",
+        "headers": {
+          "Host": "fi1.merky.one"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 07 - li007",
       "server": "uk9.998998.best",
       "server_port": 443,
       "uuid": "5504eaa8-1395-402f-8e0e-75ecd762e627",
@@ -115,52 +134,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 07 - li007",
-      "server": "2.26.106.232",
-      "server_port": 8443,
-      "uuid": "5a96c1fc-f167-44b9-9020-8f6867537d14",
-      "tls": {
-        "enabled": true,
-        "server_name": "finland02.azotvpn.xyz",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fQ1M2sO50w5A3oM55Hfs8vmZ320I8VaKdzRqeXOMMnQ",
-          "short_id": "07f508fe5d2355d3"
-        }
-      },
-      "transport": {
-        "type": "grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 08 - li007",
-      "server": "45.144.52.65",
-      "server_port": 8443,
-      "uuid": "9c794bb7-54fe-4acd-844a-a26209af36c3",
-      "tls": {
-        "enabled": true,
-        "server_name": "vk.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zdUSjR5iPKcmOOUbSFQQ0pCYjGGVJMRBMD6_F3_wBEs",
-          "short_id": "4d2cf3"
-        }
-      },
-      "transport": {
-        "type": "grpc"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -171,8 +144,7 @@
         "🇫🇮 芬兰 (Finland) 04 - li007",
         "🇫🇮 芬兰 (Finland) 05 - li007",
         "🇫🇮 芬兰 (Finland) 06 - li007",
-        "🇫🇮 芬兰 (Finland) 07 - li007",
-        "🇫🇮 芬兰 (Finland) 08 - li007"
+        "🇫🇮 芬兰 (Finland) 07 - li007"
       ]
     },
     {
@@ -185,8 +157,7 @@
         "🇫🇮 芬兰 (Finland) 04 - li007",
         "🇫🇮 芬兰 (Finland) 05 - li007",
         "🇫🇮 芬兰 (Finland) 06 - li007",
-        "🇫🇮 芬兰 (Finland) 07 - li007",
-        "🇫🇮 芬兰 (Finland) 08 - li007"
+        "🇫🇮 芬兰 (Finland) 07 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,199 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - li007
-  server: 151.241.166.159
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7ab86f1f-871e-4de6-9dae-7addf6dc976c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: tPhBRGpTbyaPFF3W0wpqncSrdNsV5I-eyM3S9CZoeCQ
-    short-id: 9a26e586f8cadc07
-  servername: pl-hsts.zloygo.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 02 - li007
   server: 130.49.161.70
   port: 443
   udp: true
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 02 - li007
+  server: 185.253.116.33
+  port: 14430
+  udp: true
+  type: vless
+  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
+  network: ws
+  ws-opts:
+    path: /vless
 - name: 🇦🇪 阿联酋 (UAE) 03 - li007
-  server: 45.59.120.217
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
-  tls: true
-  reality-opts:
-    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
-  servername: strm.yandex.net
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 04 - li007
-  server: 31.57.190.89
-  port: 443
-  udp: true
-  type: vless
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  tls: true
-  servername: a.cwvps.eu.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: a.cwvps.eu.org
-- name: 🇦🇪 阿联酋 (UAE) 05 - li007
-  server: 31.57.190.89
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
-  tls: true
-  servername: ccc.010304.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /fp=chromefp=chromesecurity=tls
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇦🇪 阿联酋 (UAE) 06 - li007
-  server: 31.57.190.89
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
-  network: ws
-  ws-opts:
-    path: /fp=chromefp=chromesecurity=tls
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇦🇪 阿联酋 (UAE) 07 - li007
-  server: 31.57.190.89
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
-  tls: true
-  servername: ccc.010304.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /fp=chromefp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇦🇪 阿联酋 (UAE) 08 - li007
-  server: 31.57.190.89
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
-  tls: true
-  servername: ccc.010304.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇦🇪 阿联酋 (UAE) 09 - li007
-  server: 31.57.190.89
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
-- name: 🇦🇪 阿联酋 (UAE) 10 - li007
-  server: 31.57.190.89
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
-  tls: true
-  servername: ccc.010304.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇦🇪 阿联酋 (UAE) 11 - li007
-  server: 31.57.190.89
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
-  tls: true
-  servername: ccc.010304.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇦🇪 阿联酋 (UAE) 12 - li007
-  server: 31.57.190.89
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
-  network: ws
-  ws-opts:
-    path: /security=tls
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇦🇪 阿联酋 (UAE) 13 - li007
-  server: 31.57.190.89
-  port: 443
-  udp: true
-  type: vless
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  tls: true
-  servername: lucasjow.us.ci
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇦🇪 阿联酋 (UAE) 14 - li007
-  server: 31.57.190.89
-  port: 443
-  udp: true
-  type: vless
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  tls: true
-  servername: lucasjow.us.ci
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇦🇪 阿联酋 (UAE) 15 - li007
-  server: 31.57.190.89
-  port: 443
-  udp: true
-  type: vless
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  tls: true
-  servername: a.cwvps.eu.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: a.cwvps.eu.org
-- name: 🇦🇪 阿联酋 (UAE) 16 - li007
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -207,15 +34,18 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 17 - li007
-  server: 185.253.116.33
-  port: 14430
+- name: 🇦🇪 阿联酋 (UAE) 04 - li007
+  server: 45.59.120.217
+  port: 443
   udp: true
   type: vless
-  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
-  network: ws
-  ws-opts:
-    path: /vless
+  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
+  tls: true
+  reality-opts:
+    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
+    short-id: 29c2dd1e3ef7c4d4
+  servername: strm.yandex.net
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -225,19 +55,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - li007
   - 🇦🇪 阿联酋 (UAE) 03 - li007
   - 🇦🇪 阿联酋 (UAE) 04 - li007
-  - 🇦🇪 阿联酋 (UAE) 05 - li007
-  - 🇦🇪 阿联酋 (UAE) 06 - li007
-  - 🇦🇪 阿联酋 (UAE) 07 - li007
-  - 🇦🇪 阿联酋 (UAE) 08 - li007
-  - 🇦🇪 阿联酋 (UAE) 09 - li007
-  - 🇦🇪 阿联酋 (UAE) 10 - li007
-  - 🇦🇪 阿联酋 (UAE) 11 - li007
-  - 🇦🇪 阿联酋 (UAE) 12 - li007
-  - 🇦🇪 阿联酋 (UAE) 13 - li007
-  - 🇦🇪 阿联酋 (UAE) 14 - li007
-  - 🇦🇪 阿联酋 (UAE) 15 - li007
-  - 🇦🇪 阿联酋 (UAE) 16 - li007
-  - 🇦🇪 阿联酋 (UAE) 17 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -247,18 +64,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - li007
   - 🇦🇪 阿联酋 (UAE) 03 - li007
   - 🇦🇪 阿联酋 (UAE) 04 - li007
-  - 🇦🇪 阿联酋 (UAE) 05 - li007
-  - 🇦🇪 阿联酋 (UAE) 06 - li007
-  - 🇦🇪 阿联酋 (UAE) 07 - li007
-  - 🇦🇪 阿联酋 (UAE) 08 - li007
-  - 🇦🇪 阿联酋 (UAE) 09 - li007
-  - 🇦🇪 阿联酋 (UAE) 10 - li007
-  - 🇦🇪 阿联酋 (UAE) 11 - li007
-  - 🇦🇪 阿联酋 (UAE) 12 - li007
-  - 🇦🇪 阿联酋 (UAE) 13 - li007
-  - 🇦🇪 阿联酋 (UAE) 14 - li007
-  - 🇦🇪 阿联酋 (UAE) 15 - li007
-  - 🇦🇪 阿联酋 (UAE) 16 - li007
-  - 🇦🇪 阿联酋 (UAE) 17 - li007
 rules:
 - MATCH,PROXIES
