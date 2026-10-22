@@ -5,15 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - li007
-  server: 13.60.198.133
-  port: 443
+  server: 5.178.109.174
+  port: 14430
   udp: true
   type: vless
-  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
-  network: h2
-  h2-opts:
-    host: []
-    path: /
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
 - name: 🇸🇪 瑞典 (Sweden) 02 - li007
   server: 77.110.96.201
   port: 36264
@@ -25,14 +24,30 @@ proxies:
   obfs: salamander
   obfs-password: Telegram@vpnjey
 - name: 🇸🇪 瑞典 (Sweden) 03 - li007
-  server: 5.178.109.174
-  port: 14430
+  server: sub.merky.top
+  port: 443
   udp: true
   type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  tls: true
+  servername: sub.merky.top
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /vless
+    path: /merky-connect/de6/
+- name: 🇸🇪 瑞典 (Sweden) 04 - li007
+  server: 185.58.115.62
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
+    short-id: 7271129440ade8fa
+  servername: se2.gderevievsvideos.fyi
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +56,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - li007
   - 🇸🇪 瑞典 (Sweden) 02 - li007
   - 🇸🇪 瑞典 (Sweden) 03 - li007
+  - 🇸🇪 瑞典 (Sweden) 04 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,5 +65,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - li007
   - 🇸🇪 瑞典 (Sweden) 02 - li007
   - 🇸🇪 瑞典 (Sweden) 03 - li007
+  - 🇸🇪 瑞典 (Sweden) 04 - li007
 rules:
 - MATCH,PROXIES

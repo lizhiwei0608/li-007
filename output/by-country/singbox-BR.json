@@ -7,6 +7,25 @@
       "type": "hysteria2",
       "tag": "🇧🇷 巴西 (Brazil) 01 - li007",
       "server": "147.15.108.14",
+      "password": "CyG0RFxMjzs41uQD4OLuHQ==",
+      "tls": {
+        "enabled": true,
+        "server_name": "rmgyvpn.rest",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "CyG0RFxMjzs41uQD4OLuHQ=="
+      },
+      "server_ports": [
+        "20000:30000",
+        "20000:20000"
+      ]
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇧🇷 巴西 (Brazil) 02 - li007",
+      "server": "147.15.108.14",
       "server_port": 20000,
       "password": "CyG0RFxMjzs41uQD4OLuHQ==",
       "tls": {
@@ -24,14 +43,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - li007"
+        "🇧🇷 巴西 (Brazil) 01 - li007",
+        "🇧🇷 巴西 (Brazil) 02 - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - li007"
+        "🇧🇷 巴西 (Brazil) 01 - li007",
+        "🇧🇷 巴西 (Brazil) 02 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

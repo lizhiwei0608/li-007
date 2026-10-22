@@ -7,9 +7,9 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 - li007",
       "server": "217.30.10.44",
-      "server_port": 9062,
+      "server_port": 9006,
       "method": "aes-256-cfb",
-      "password": "tkhHVxxfM2QErBWe"
+      "password": "FAdUvMJUq5vDgKEq"
     },
     {
       "type": "shadowsocks",
@@ -20,20 +20,24 @@
       "password": "S7KwUu7yBy58S3Ga"
     },
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 03 - li007",
-      "server": "31.133.0.186",
-      "server_port": 443,
-      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl2.dedushka.top",
-        "insecure": false
-      }
+      "server": "217.30.10.44",
+      "server_port": 9099,
+      "method": "aes-256-cfb",
+      "password": "7heRqkPG3hg4UnRm"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 04 - li007",
+      "server": "217.30.10.44",
+      "server_port": 9062,
+      "method": "aes-256-cfb",
+      "password": "tkhHVxxfM2QErBWe"
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 04 - li007",
+      "tag": "🇵🇱 波兰 (Poland) 05 - li007",
       "server": "82.118.22.161",
       "server_port": 443,
       "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
@@ -43,7 +47,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -54,63 +58,70 @@
     },
     {
       "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 05 - li007",
-      "server": "31.133.0.182",
+      "tag": "🇵🇱 波兰 (Poland) 06 - li007",
+      "server": "pl2.dedushka.top",
+      "server_port": 443,
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl2.dedushka.top",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇵🇱 波兰 (Poland) 07 - li007",
+      "server": "78.17.128.153",
+      "server_port": 35076,
+      "password": "b4c8ee9caa74b7ba0a61",
+      "tls": {
+        "enabled": true,
+        "server_name": "scrap.halyvanedorogo.ru",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇵🇱 波兰 (Poland) 08 - li007",
+      "server": "pl1.dedushka.top",
       "server_port": 443,
       "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
       "tls": {
         "enabled": true,
         "server_name": "pl1.dedushka.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": true
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 06 - li007",
-      "server": "144.31.0.140",
-      "server_port": 443,
-      "uuid": "9c794bb7-54fe-4acd-844a-a26209af36c3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.sakhalin.fyi",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ",
-          "short_id": "7271129440ade8fa"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 07 - li007",
-      "server": "78.17.171.137",
-      "server_port": 443,
-      "password": "u93yPGuY2zgIsisJZKS2QzJzg",
-      "tls": {
-        "enabled": true,
-        "server_name": "2.HI-L.IM",
-        "insecure": false
-      },
+      "type": "vmess",
+      "tag": "🇵🇱 波兰 (Poland) 09 - li007",
+      "server": "54.37.131.126",
+      "server_port": 80,
+      "uuid": "6deef9ad-1357-443d-f95c-cb18952c20b3",
+      "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/f2fc2a1f",
+        "path": "/",
         "headers": {
-          "Host": "2.hi-l.im"
+          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 08 - li007",
+      "tag": "🇵🇱 波兰 (Poland) 10 - li007",
+      "server": "2.26.225.89",
+      "server_port": 8443,
+      "uuid": "51a1fd52-fd88-4905-a976-35e44be28e4b",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.flen-vpn.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 11 - li007",
       "server": "150.251.113.34",
       "server_port": 443,
       "uuid": "d7d724b5-17ce-4f3c-877d-dfbf0f07afa1",
@@ -141,7 +152,10 @@
         "🇵🇱 波兰 (Poland) 05 - li007",
         "🇵🇱 波兰 (Poland) 06 - li007",
         "🇵🇱 波兰 (Poland) 07 - li007",
-        "🇵🇱 波兰 (Poland) 08 - li007"
+        "🇵🇱 波兰 (Poland) 08 - li007",
+        "🇵🇱 波兰 (Poland) 09 - li007",
+        "🇵🇱 波兰 (Poland) 10 - li007",
+        "🇵🇱 波兰 (Poland) 11 - li007"
       ]
     },
     {
@@ -155,7 +169,10 @@
         "🇵🇱 波兰 (Poland) 05 - li007",
         "🇵🇱 波兰 (Poland) 06 - li007",
         "🇵🇱 波兰 (Poland) 07 - li007",
-        "🇵🇱 波兰 (Poland) 08 - li007"
+        "🇵🇱 波兰 (Poland) 08 - li007",
+        "🇵🇱 波兰 (Poland) 09 - li007",
+        "🇵🇱 波兰 (Poland) 10 - li007",
+        "🇵🇱 波兰 (Poland) 11 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

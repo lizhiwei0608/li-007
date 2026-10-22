@@ -4,12 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - li007",
-      "server": "176.32.34.253",
-      "server_port": 18443,
-      "method": "aes-256-gcm",
-      "password": "Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE"
+      "server": "77.90.61.135",
+      "server_port": 443,
+      "uuid": "8815925b-c7b8-4f94-9c24-9dc864f63a29",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg",
+          "short_id": "ce1dc482"
+        }
+      }
     },
     {
       "type": "vless",
@@ -33,24 +45,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - li007",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "nQeEoXC5Yl5PZnPLvKUpFTU9cyQcNG902zpibWkwGbo="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - li007",
-      "server": "46.17.44.216",
-      "server_port": 18443,
-      "method": "aes-256-gcm",
-      "password": "NTiHBg64fsY8u8DbGrtypD9gPGSL386p"
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - li007",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - li007",
       "server": "45.128.78.178",
       "server_port": 443,
       "uuid": "261160d5-0343-4b85-8c28-3d40dd681559",
@@ -71,7 +67,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - li007",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - li007",
       "server": "193.233.253.180",
       "server_port": 8444,
       "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
@@ -80,7 +76,7 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -94,28 +90,29 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 07 - li007",
-      "server": "194.87.118.184",
-      "server_port": 2053,
-      "password": "7ab3c77e-8fcc-4848-918f-cae3d4eac794",
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - li007",
+      "server": "46.254.17.88",
+      "server_port": 30065,
+      "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "194.87.118.184",
-        "insecure": true
+        "server_name": "a3.eosapp.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU",
+          "short_id": ""
+        }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 08 - li007",
-      "server": "176.32.33.254",
-      "server_port": 18443,
-      "method": "aes-256-gcm",
-      "password": "cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa"
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 09 - li007",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - li007",
       "server": "45.12.75.242",
       "server_port": 26424,
       "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
@@ -124,7 +121,7 @@
         "server_name": "ya.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -135,45 +132,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 10 - li007",
-      "server": "0f5857g.msk1.h1clayd.click",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07 - li007",
+      "server": "95.182.120.128",
       "server_port": 443,
-      "uuid": "3acb386b-fdd7-4bc9-911f-159fdcd834ce",
+      "uuid": "9c794bb7-54fe-4acd-844a-a26209af36c3",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "0f5857g.msk1.h1clayd.click",
+        "server_name": "api.stride.surf",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "_UKyZZvF2cvo6qev4VY-QoOyzqE8cGT3hciD0g--sD8",
-          "short_id": "07e197719352d606"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "fb78f1bc0355"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 11 - li007",
-      "server": "77.90.61.135",
-      "server_port": 443,
-      "uuid": "8815925b-c7b8-4f94-9c24-9dc864f63a29",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg",
-          "short_id": "ce1dc482"
+          "public_key": "7MRwvMvlDcjZqfdbBmePpZI5WDEYgya1y_pOp7B9CDc",
+          "short_id": "d0dc65ab94f5e69b"
         }
       }
     },
@@ -188,11 +162,7 @@
         "🇷🇺 俄罗斯 (Russia) 04 - li007",
         "🇷🇺 俄罗斯 (Russia) 05 - li007",
         "🇷🇺 俄罗斯 (Russia) 06 - li007",
-        "🇷🇺 俄罗斯 (Russia) 07 - li007",
-        "🇷🇺 俄罗斯 (Russia) 08 - li007",
-        "🇷🇺 俄罗斯 (Russia) 09 - li007",
-        "🇷🇺 俄罗斯 (Russia) 10 - li007",
-        "🇷🇺 俄罗斯 (Russia) 11 - li007"
+        "🇷🇺 俄罗斯 (Russia) 07 - li007"
       ]
     },
     {
@@ -205,11 +175,7 @@
         "🇷🇺 俄罗斯 (Russia) 04 - li007",
         "🇷🇺 俄罗斯 (Russia) 05 - li007",
         "🇷🇺 俄罗斯 (Russia) 06 - li007",
-        "🇷🇺 俄罗斯 (Russia) 07 - li007",
-        "🇷🇺 俄罗斯 (Russia) 08 - li007",
-        "🇷🇺 俄罗斯 (Russia) 09 - li007",
-        "🇷🇺 俄罗斯 (Russia) 10 - li007",
-        "🇷🇺 俄罗斯 (Russia) 11 - li007"
+        "🇷🇺 俄罗斯 (Russia) 07 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

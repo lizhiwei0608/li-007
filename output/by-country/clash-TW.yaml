@@ -10,10 +10,10 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
+  sni: www.bing.com
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - li007
-  server: 59.125.69.23
+  server: 60.248.219.78
   port: 443
   udp: true
   type: vless
@@ -21,7 +21,6 @@ proxies:
   tls: true
   servername: ty986gfazs.cainiaohub.xyz
   skip-cert-verify: true
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
