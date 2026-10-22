@@ -7,33 +7,17 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - li007",
       "server": "195.238.126.20",
-      "server_port": 9001,
-      "method": "aes-256-cfb",
-      "password": "UkXRsXvR6buDMG2Y"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - li007",
-      "server": "195.238.126.20",
       "server_port": 9002,
       "method": "aes-256-cfb",
       "password": "b8KkNDjEd5QqFyRm"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - li007",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - li007",
       "server": "195.238.126.20",
-      "server_port": 9011,
+      "server_port": 9086,
       "method": "aes-256-cfb",
-      "password": "M3t2ZEQcMGRWBjRa"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - li007",
-      "server": "195.238.126.20",
-      "server_port": 9078,
-      "method": "aes-256-cfb",
-      "password": "JCJpbRbQZNw9XFZG"
+      "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "selector",
@@ -41,9 +25,7 @@
       "outbounds": [
         "auto",
         "🇱🇹 立陶宛 (Lithuania) 01 - li007",
-        "🇱🇹 立陶宛 (Lithuania) 02 - li007",
-        "🇱🇹 立陶宛 (Lithuania) 03 - li007",
-        "🇱🇹 立陶宛 (Lithuania) 04 - li007"
+        "🇱🇹 立陶宛 (Lithuania) 02 - li007"
       ]
     },
     {
@@ -51,9 +33,7 @@
       "tag": "auto",
       "outbounds": [
         "🇱🇹 立陶宛 (Lithuania) 01 - li007",
-        "🇱🇹 立陶宛 (Lithuania) 02 - li007",
-        "🇱🇹 立陶宛 (Lithuania) 03 - li007",
-        "🇱🇹 立陶宛 (Lithuania) 04 - li007"
+        "🇱🇹 立陶宛 (Lithuania) 02 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
