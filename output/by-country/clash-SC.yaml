@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇾 马来西亚 (Malaysia) 01 - li007
-  server: my2.frnhk.xyz
+- name: 🇸🇨 塞舌尔 (Seychelles) 01 - li007
+  server: 144.31.50.236
   port: 443
   udp: true
   type: vless
-  uuid: 6006c9a2-c0a2-4cda-80f2-405b0d790fc8
+  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SPtkbd9O6y-rdGoR2CLzW1IFr6WMlqt2lM9wU-VURig
-    short-id: 6b7a8c9d
-  servername: www.waseda.jp
+    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
+    short-id: bbe46bd8f6b96839
+  servername: yandex.ru
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇾 马来西亚 (Malaysia) 01 - li007
+  - 🇸🇨 塞舌尔 (Seychelles) 01 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇾 马来西亚 (Malaysia) 01 - li007
+  - 🇸🇨 塞舌尔 (Seychelles) 01 - li007
 rules:
 - MATCH,PROXIES

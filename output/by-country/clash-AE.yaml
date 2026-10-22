@@ -5,31 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - li007
-  server: 128.241.25.3
-  port: 30021
-  udp: true
-  type: vless
-  uuid: 6badcd2f-26e5-4eb4-9169-86052115058a
-  tls: true
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 02 - li007
   server: 130.49.161.70
   port: 443
   udp: true
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 - li007
+- name: 🇦🇪 阿联酋 (UAE) 02 - li007
   server: 185.253.116.33
   port: 14430
   udp: true
@@ -38,25 +23,8 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 185.253.116.33
-- name: 🇦🇪 阿联酋 (UAE) 04 - li007
-  server: 144.31.135.38
-  port: 9444
-  udp: true
-  type: vless
-  uuid: d623f979-df61-4b00-9f88-00a8b1ad861c
-  tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 05 - li007
-  server: 84.235.244.108
+- name: 🇦🇪 阿联酋 (UAE) 03 - li007
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -66,7 +34,18 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - li007
+- name: 🇦🇪 阿联酋 (UAE) 04 - li007
+  server: 95.174.68.188
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 05 - li007
   server: 45.59.120.217
   port: 443
   udp: true
@@ -88,7 +67,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - li007
   - 🇦🇪 阿联酋 (UAE) 04 - li007
   - 🇦🇪 阿联酋 (UAE) 05 - li007
-  - 🇦🇪 阿联酋 (UAE) 06 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -99,6 +77,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - li007
   - 🇦🇪 阿联酋 (UAE) 04 - li007
   - 🇦🇪 阿联酋 (UAE) 05 - li007
-  - 🇦🇪 阿联酋 (UAE) 06 - li007
 rules:
 - MATCH,PROXIES

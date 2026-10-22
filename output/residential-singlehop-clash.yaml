@@ -4,20 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽·单跳) - li007
-  server: 6aa21c4d-11d4-45bf-ba55-59512593692c.7b63595a-1119-4080-80e1-3f638120be58.smartprivatelink.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2a778078-9f4f-4203-a204-6fb94547b707
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 3nFa_3MSnFQDm9XfVfFHOnMb3FOptREpe1ehXjAbk1c
-    short-id: d369dbc2
-  servername: www.douyin.com
-  client-fingerprint: ios
-- name: 🇺🇸 美国 (United States) 02 (家宽·单跳) - li007
+- name: 🇺🇸 美国 (United States) 01 (家宽·单跳) - li007
   server: 155.117.19.17
   port: 443
   udp: true
@@ -27,19 +14,38 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽·单跳) - li007
+  server: me17.msjia8844.site
+  port: 7443
+  udp: true
+  type: hysteria2
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽·单跳) - li007
+  server: 49.254.204.133
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽·单跳) - li007
-  - 🇺🇸 美国 (United States) 02 (家宽·单跳) - li007
+  - 🇺🇸 美国 (United States) 01 (家宽·单跳) - li007
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽·单跳) - li007
+  - 🇰🇷 韩国 (South Korea) 03 (家宽·单跳) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽·单跳) - li007
-  - 🇺🇸 美国 (United States) 02 (家宽·单跳) - li007
+  - 🇺🇸 美国 (United States) 01 (家宽·单跳) - li007
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽·单跳) - li007
+  - 🇰🇷 韩国 (South Korea) 03 (家宽·单跳) - li007
 rules:
 - MATCH,PROXIES
