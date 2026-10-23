@@ -7,29 +7,21 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - li007",
       "server": "213.183.63.60",
-      "server_port": 9085,
+      "server_port": 9066,
       "method": "aes-256-cfb",
-      "password": "9ej82EKe2gq7gLAM"
+      "password": "2KUaE2a8NWTvuCZ3"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - li007",
       "server": "213.183.63.60",
-      "server_port": 9029,
+      "server_port": 9064,
       "method": "aes-256-cfb",
-      "password": "dU3DSNS8wYPXzEKw"
+      "password": "cp8pRSUAyLhTfVWH"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - li007",
-      "server": "213.183.63.60",
-      "server_port": 9054,
-      "method": "aes-256-cfb",
-      "password": "VcFuyXvND2yQWSFY"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - li007",
       "server": "213.183.63.60",
       "server_port": 9098,
       "method": "aes-256-cfb",
@@ -37,15 +29,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - li007",
-      "server": "213.183.63.60",
-      "server_port": 9049,
-      "method": "aes-256-cfb",
-      "password": "PRBf4BS2HvJqtWxY"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - li007",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - li007",
       "server": "213.183.63.60",
       "server_port": 9028,
       "method": "aes-256-cfb",
@@ -53,19 +37,35 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - li007",
+      "server": "213.183.63.60",
+      "server_port": 9029,
+      "method": "aes-256-cfb",
+      "password": "dU3DSNS8wYPXzEKw"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - li007",
+      "server": "213.183.63.60",
+      "server_port": 9054,
+      "method": "aes-256-cfb",
+      "password": "VcFuyXvND2yQWSFY"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - li007",
       "server": "213.183.63.60",
-      "server_port": 9066,
+      "server_port": 9061,
       "method": "aes-256-cfb",
-      "password": "2KUaE2a8NWTvuCZ3"
+      "password": "4R3hUfZ2FHhDmNcP"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - li007",
       "server": "213.183.63.60",
-      "server_port": 9061,
+      "server_port": 9049,
       "method": "aes-256-cfb",
-      "password": "4R3hUfZ2FHhDmNcP"
+      "password": "PRBf4BS2HvJqtWxY"
     },
     {
       "type": "vless",
@@ -89,6 +89,26 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 10 - li007",
+      "server": "p2real4.greewebservices.ir",
+      "server_port": 1340,
+      "uuid": "2582857a-632b-4c4e-9b67-96213cbaf58c",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.googleapis.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8",
+          "short_id": "9b60d3"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -101,7 +121,8 @@
         "🇧🇬 保加利亚 (Bulgaria) 06 - li007",
         "🇧🇬 保加利亚 (Bulgaria) 07 - li007",
         "🇧🇬 保加利亚 (Bulgaria) 08 - li007",
-        "🇧🇬 保加利亚 (Bulgaria) 09 - li007"
+        "🇧🇬 保加利亚 (Bulgaria) 09 - li007",
+        "🇧🇬 保加利亚 (Bulgaria) 10 - li007"
       ]
     },
     {
@@ -116,7 +137,8 @@
         "🇧🇬 保加利亚 (Bulgaria) 06 - li007",
         "🇧🇬 保加利亚 (Bulgaria) 07 - li007",
         "🇧🇬 保加利亚 (Bulgaria) 08 - li007",
-        "🇧🇬 保加利亚 (Bulgaria) 09 - li007"
+        "🇧🇬 保加利亚 (Bulgaria) 09 - li007",
+        "🇧🇬 保加利亚 (Bulgaria) 10 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
