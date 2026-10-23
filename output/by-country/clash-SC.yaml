@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01 - li007
-  server: 144.31.50.236
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
-    short-id: bbe46bd8f6b96839
-  servername: yandex.ru
-  client-fingerprint: firefox
-- name: 🇸🇨 塞舌尔 (Seychelles) 02 - li007
   server: hk1.frnhk.xyz
   port: 443
   udp: true
@@ -30,6 +17,49 @@ proxies:
     short-id: 6b7a8c9d
   servername: www.uni-frankfurt.de
   client-fingerprint: chrome
+- name: 🇸🇨 塞舌尔 (Seychelles) 02 - li007
+  server: 178.104.70.11
+  port: 443
+  udp: true
+  type: vless
+  uuid: 64726966-0000-4000-8000-740000000000
+  tls: true
+  servername: parsa-panel-dy55x.railway1385-2a46.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: parsa-panel-dy55x.railway1385-2a46.workers.dev
+- name: 🇸🇨 塞舌尔 (Seychelles) 03 - li007
+  server: 193.180.208.167
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 64726966-0000-4000-8000-740000000000
+  tls: true
+  servername: parsa-panel-dy55x.railway1385-2a46.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: parsa-panel-dy55x.railway1385-2a46.workers.dev
+- name: 🇸🇨 塞舌尔 (Seychelles) 04 - li007
+  server: 144.31.50.236
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
+    short-id: bbe46bd8f6b96839
+  servername: yandex.ru
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +67,8 @@ proxy-groups:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01 - li007
   - 🇸🇨 塞舌尔 (Seychelles) 02 - li007
+  - 🇸🇨 塞舌尔 (Seychelles) 03 - li007
+  - 🇸🇨 塞舌尔 (Seychelles) 04 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +76,7 @@ proxy-groups:
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - li007
   - 🇸🇨 塞舌尔 (Seychelles) 02 - li007
+  - 🇸🇨 塞舌尔 (Seychelles) 03 - li007
+  - 🇸🇨 塞舌尔 (Seychelles) 04 - li007
 rules:
 - MATCH,PROXIES

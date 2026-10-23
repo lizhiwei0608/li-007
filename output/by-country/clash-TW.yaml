@@ -5,22 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - li007
-  server: 165.154.195.38
-  port: 35034
-  udp: true
-  type: vmess
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - li007
   server: 160.187.100.109
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 160.187.100.109
+  sni: 'off'
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - li007
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - li007
   server: 103.115.109.49
   port: 443
   udp: true
@@ -28,6 +20,19 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - li007
+  server: 6aa21c4d-11d4-45bf-ba55-59512593692c.7b63595a-1119-4080-80e1-3f638120be58.smartprivatelink.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2a778078-9f4f-4203-a204-6fb94547b707
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 3nFa_3MSnFQDm9XfVfFHOnMb3FOptREpe1ehXjAbk1c
+    short-id: d369dbc2
+  servername: www.douyin.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
