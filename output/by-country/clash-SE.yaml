@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - li007
+  server: redis.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: e818a20d-9bcd-4744-9061-ca51b9c8aeea
+  tls: true
+  servername: wallweb-4ez.pages.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wallweb-4ez.pages.dev
+- name: 🇸🇪 瑞典 (Sweden) 02 - li007
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -15,19 +30,6 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 02 - li007
-  server: 185.58.115.62
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
-    short-id: 7271129440ade8fa
-  servername: se2.gderevievsvideos.fyi
-  client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 03 - li007
   server: 77.110.96.201
   port: 36264
@@ -38,36 +40,6 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: Telegram@vpnjey
-- name: 🇸🇪 瑞典 (Sweden) 04 - li007
-  server: 94.143.231.146
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  tls: true
-  servername: sub.merky.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇸🇪 瑞典 (Sweden) 05 - li007
-  server: media.vik.lalibobi.online
-  port: 443
-  udp: true
-  type: vless
-  uuid: 21ffcccd-8fbe-43fb-9dd1-24452fdfa8ad
-  tls: true
-  servername: media.vik.lalibobi.online
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /live/showroom
-    headers:
-      Host: media.vik.lalibobi.online
 proxy-groups:
 - name: PROXIES
   type: select
@@ -76,8 +48,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - li007
   - 🇸🇪 瑞典 (Sweden) 02 - li007
   - 🇸🇪 瑞典 (Sweden) 03 - li007
-  - 🇸🇪 瑞典 (Sweden) 04 - li007
-  - 🇸🇪 瑞典 (Sweden) 05 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -86,7 +56,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - li007
   - 🇸🇪 瑞典 (Sweden) 02 - li007
   - 🇸🇪 瑞典 (Sweden) 03 - li007
-  - 🇸🇪 瑞典 (Sweden) 04 - li007
-  - 🇸🇪 瑞典 (Sweden) 05 - li007
 rules:
 - MATCH,PROXIES

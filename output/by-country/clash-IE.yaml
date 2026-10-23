@@ -5,31 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - li007
-  server: 13.134.125.31
+  server: 18.135.33.244
   port: 22224
   udp: true
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - name: 🇮🇪 爱尔兰 (Ireland) 02 - li007
-  server: 18.168.90.187
-  port: 22223
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 03 - li007
-  server: 13.134.125.31
-  port: 22223
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 04 - li007
-  server: 18.168.90.187
-  port: 22224
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 05 - li007
-  server: ie1.dedushka.top
+  server: 188.211.233.134
   port: 443
   udp: true
   type: trojan
@@ -43,9 +25,6 @@ proxy-groups:
   - AUTO
   - 🇮🇪 爱尔兰 (Ireland) 01 - li007
   - 🇮🇪 爱尔兰 (Ireland) 02 - li007
-  - 🇮🇪 爱尔兰 (Ireland) 03 - li007
-  - 🇮🇪 爱尔兰 (Ireland) 04 - li007
-  - 🇮🇪 爱尔兰 (Ireland) 05 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,8 +32,5 @@ proxy-groups:
   proxies:
   - 🇮🇪 爱尔兰 (Ireland) 01 - li007
   - 🇮🇪 爱尔兰 (Ireland) 02 - li007
-  - 🇮🇪 爱尔兰 (Ireland) 03 - li007
-  - 🇮🇪 爱尔兰 (Ireland) 04 - li007
-  - 🇮🇪 爱尔兰 (Ireland) 05 - li007
 rules:
 - MATCH,PROXIES
