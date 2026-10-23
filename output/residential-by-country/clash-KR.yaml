@@ -4,30 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - li007
-  server: 104.21.7.133
-  port: 80
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - li007
+  server: 183.109.131.75
+  port: 20086
   udp: true
   type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - li007
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - li007
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - li007
 rules:
 - MATCH,PROXIES

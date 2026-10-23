@@ -4,28 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 01 - li007",
-      "server": "217.30.10.44",
-      "server_port": 9042,
-      "method": "aes-256-cfb",
-      "password": "S7KwUu7yBy58S3Ga"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 02 - li007",
-      "server": "78.17.128.153",
-      "server_port": 35076,
-      "password": "b4c8ee9caa74b7ba0a61",
-      "tls": {
-        "enabled": true,
-        "server_name": "scrap.halyvanedorogo.ru",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 03 - li007",
+      "tag": "🇵🇱 波兰 (Poland) 01 - li007",
       "server": "82.118.22.161",
       "server_port": 443,
       "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
@@ -35,7 +15,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -45,28 +25,20 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 04 - li007",
-      "server": "pl1.h1cloud.net",
-      "server_port": 27591,
-      "uuid": "056405e8-de9f-4d0d-8145-956f13cc34da",
+      "type": "hysteria2",
+      "tag": "🇵🇱 波兰 (Poland) 02 - li007",
+      "server": "scrap.halyvanedorogo.ru",
+      "server_port": 35076,
+      "password": "b4c8ee9caa74b7ba0a61",
       "tls": {
         "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM",
-          "short_id": "6c5c7900406a1ae7"
-        }
+        "server_name": "scrap.halyvanedorogo.ru",
+        "insecure": true
       }
     },
     {
       "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 05 - li007",
+      "tag": "🇵🇱 波兰 (Poland) 03 - li007",
       "server": "54.37.131.126",
       "server_port": 80,
       "uuid": "6deef9ad-1357-443d-f95c-cb18952c20b3",
@@ -80,41 +52,13 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 06 - li007",
-      "server": "92.118.150.146",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl.tronsg.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 07 - li007",
-      "server": "pl.tronsg.com",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl.tronsg.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇵🇱 波兰 (Poland) 01 - li007",
         "🇵🇱 波兰 (Poland) 02 - li007",
-        "🇵🇱 波兰 (Poland) 03 - li007",
-        "🇵🇱 波兰 (Poland) 04 - li007",
-        "🇵🇱 波兰 (Poland) 05 - li007",
-        "🇵🇱 波兰 (Poland) 06 - li007",
-        "🇵🇱 波兰 (Poland) 07 - li007"
+        "🇵🇱 波兰 (Poland) 03 - li007"
       ]
     },
     {
@@ -123,11 +67,7 @@
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01 - li007",
         "🇵🇱 波兰 (Poland) 02 - li007",
-        "🇵🇱 波兰 (Poland) 03 - li007",
-        "🇵🇱 波兰 (Poland) 04 - li007",
-        "🇵🇱 波兰 (Poland) 05 - li007",
-        "🇵🇱 波兰 (Poland) 06 - li007",
-        "🇵🇱 波兰 (Poland) 07 - li007"
+        "🇵🇱 波兰 (Poland) 03 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
