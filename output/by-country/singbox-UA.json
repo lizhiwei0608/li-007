@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - li007",
-      "server": "staging.lastilhame.monster",
-      "server_port": 49917,
-      "method": "chacha20-ietf-poly1305",
-      "password": "G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP"
-    },
-    {
       "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 02 - li007",
+      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - li007",
       "server": "83.147.18.75",
       "server_port": 443,
       "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
@@ -34,42 +26,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 03 - li007",
-      "server": "netx.smrtai.top",
+      "tag": "🇺🇦 乌克兰 (Ukraine) 02 - li007",
+      "server": "staging.lastilhame.monster",
       "server_port": 443,
-      "uuid": "d8b58872-cc25-4bb2-badb-b86399c075fa",
+      "uuid": "de38389f-5651-4f2f-8276-5aabf3b861c9",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "www.hollywoodreporter.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk",
-          "short_id": "d8b58872"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 04 - li007",
-      "server": "staging.lastilhame.monster",
-      "server_port": 443,
-      "uuid": "2f6e2b17-4d5e-4a12-8979-f53fdd347580",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
           "public_key": "FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg",
-          "short_id": "5c8a8e6c615b"
+          "short_id": "225e930cfd4d"
         }
       }
     },
@@ -79,9 +51,7 @@
       "outbounds": [
         "auto",
         "🇺🇦 乌克兰 (Ukraine) 01 - li007",
-        "🇺🇦 乌克兰 (Ukraine) 02 - li007",
-        "🇺🇦 乌克兰 (Ukraine) 03 - li007",
-        "🇺🇦 乌克兰 (Ukraine) 04 - li007"
+        "🇺🇦 乌克兰 (Ukraine) 02 - li007"
       ]
     },
     {
@@ -89,9 +59,7 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇦 乌克兰 (Ukraine) 01 - li007",
-        "🇺🇦 乌克兰 (Ukraine) 02 - li007",
-        "🇺🇦 乌克兰 (Ukraine) 03 - li007",
-        "🇺🇦 乌克兰 (Ukraine) 04 - li007"
+        "🇺🇦 乌克兰 (Ukraine) 02 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

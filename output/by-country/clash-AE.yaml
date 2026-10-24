@@ -24,17 +24,6 @@ proxies:
   ws-opts:
     path: /vless
 - name: 🇦🇪 阿联酋 (UAE) 03 - li007
-  server: 95.174.68.188
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 04 - li007
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -45,6 +34,61 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - li007
+  server: 95.174.68.188
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 05 - li007
+  server: 31.57.190.40
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇦🇪 阿联酋 (UAE) 06 - li007
+  server: 31.57.190.40
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇦🇪 阿联酋 (UAE) 07 - li007
+  server: 31.57.190.40
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇦🇪 阿联酋 (UAE) 08 - li007
+  server: 31.57.190.40
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +98,10 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - li007
   - 🇦🇪 阿联酋 (UAE) 03 - li007
   - 🇦🇪 阿联酋 (UAE) 04 - li007
+  - 🇦🇪 阿联酋 (UAE) 05 - li007
+  - 🇦🇪 阿联酋 (UAE) 06 - li007
+  - 🇦🇪 阿联酋 (UAE) 07 - li007
+  - 🇦🇪 阿联酋 (UAE) 08 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,5 +111,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - li007
   - 🇦🇪 阿联酋 (UAE) 03 - li007
   - 🇦🇪 阿联酋 (UAE) 04 - li007
+  - 🇦🇪 阿联酋 (UAE) 05 - li007
+  - 🇦🇪 阿联酋 (UAE) 06 - li007
+  - 🇦🇪 阿联酋 (UAE) 07 - li007
+  - 🇦🇪 阿联酋 (UAE) 08 - li007
 rules:
 - MATCH,PROXIES

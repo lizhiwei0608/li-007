@@ -5,12 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - li007
-  server: edge10.cyrionflare.com
-  port: 2052
+  server: 217.30.10.44
+  port: 9062
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: tkhHVxxfM2QErBWe
+- name: 🇵🇱 波兰 (Poland) 02 - li007
+  server: 5.22.221.127
+  port: 443
   udp: true
   type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇵🇱 波兰 (Poland) 02 - li007
+  uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
+- name: 🇵🇱 波兰 (Poland) 03 - li007
   server: 82.118.22.161
   port: 443
   udp: true
@@ -22,21 +29,32 @@ proxies:
     public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
     short-id: fa3ea655619a3e78
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 03 - li007
-  server: 49.12.249.167
-  port: 147
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 5uDrCF_iLoxCiRkKku6f7A
+  client-fingerprint: random
 - name: 🇵🇱 波兰 (Poland) 04 - li007
+  server: edge10.cyrionflare.com
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- name: 🇵🇱 波兰 (Poland) 05 - li007
   server: site.teslamotor.site
   port: 20001
   udp: true
   type: vless
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 05 - li007
+- name: 🇵🇱 波兰 (Poland) 06 - li007
+  server: ru1.radiolumens.uk
+  port: 8445
+  udp: true
+  type: vless
+  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
+  tls: true
+  servername: ru1.radiolumens.uk
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: beru-pl
+- name: 🇵🇱 波兰 (Poland) 07 - li007
   server: 54.37.131.126
   port: 80
   udp: true
@@ -59,6 +77,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - li007
   - 🇵🇱 波兰 (Poland) 04 - li007
   - 🇵🇱 波兰 (Poland) 05 - li007
+  - 🇵🇱 波兰 (Poland) 06 - li007
+  - 🇵🇱 波兰 (Poland) 07 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,5 +89,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - li007
   - 🇵🇱 波兰 (Poland) 04 - li007
   - 🇵🇱 波兰 (Poland) 05 - li007
+  - 🇵🇱 波兰 (Poland) 06 - li007
+  - 🇵🇱 波兰 (Poland) 07 - li007
 rules:
 - MATCH,PROXIES
