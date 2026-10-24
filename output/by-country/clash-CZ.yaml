@@ -25,17 +25,29 @@ proxies:
   servername: gateway.icloud.com
   client-fingerprint: chrome
 - name: 🇨🇿 捷克 (Czech) 03 - li007
+  server: edge.jagavps.ru
+  port: 443
+  udp: true
+  type: vless
+  uuid: 736d08e1-27b0-4ec2-a5e0-4575e24da6b5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: NiUsL7f8tuEUltpr9UC98fnZQs510PlQDCCi32WbgAA
+  servername: edge.jagavps.ru
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 04 - li007
   server: 193.124.17.190
   port: 443
   udp: true
   type: vless
-  uuid: 13aef2e0-b3fb-4322-a0e9-c10b908ce6b5
+  uuid: ff40696b-06d6-443b-9481-8d01eddd13e1
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 87f895f23064
-  servername: www.techradar.com
+    short-id: d659da01fb94
+  servername: www.foxsports.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -45,6 +57,7 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - li007
   - 🇨🇿 捷克 (Czech) 02 - li007
   - 🇨🇿 捷克 (Czech) 03 - li007
+  - 🇨🇿 捷克 (Czech) 04 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,5 +66,6 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - li007
   - 🇨🇿 捷克 (Czech) 02 - li007
   - 🇨🇿 捷克 (Czech) 03 - li007
+  - 🇨🇿 捷克 (Czech) 04 - li007
 rules:
 - MATCH,PROXIES
