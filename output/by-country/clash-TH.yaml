@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - li007
-  server: 103.86.49.57
+  server: v2ray.simspeedup.com
   port: 80
   udp: true
   type: vless
@@ -13,10 +13,8 @@ proxies:
   network: ws
   ws-opts:
     path: /ws
-    headers:
-      Host: ais.speedtest.net
 - name: 🇹🇭 泰国 (Thailand) 02 - li007
-  server: 188.114.98.0
+  server: 188.114.97.6
   port: 443
   udp: true
   type: vless
@@ -30,19 +28,6 @@ proxies:
     headers:
       Host: v2ray.simspeedup.com
 - name: 🇹🇭 泰国 (Thailand) 03 - li007
-  server: funagfrdfs.alixxplay.com
-  port: 56415
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
-    short-id: cbd39bea0805e2
-  servername: www.kaidee.com
-  client-fingerprint: chrome
-- name: 🇹🇭 泰国 (Thailand) 04 - li007
   server: pphfree2.mvpnpvpn.de5.net
   port: 52351
   udp: true
@@ -57,7 +42,6 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - li007
   - 🇹🇭 泰国 (Thailand) 02 - li007
   - 🇹🇭 泰国 (Thailand) 03 - li007
-  - 🇹🇭 泰国 (Thailand) 04 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,6 +50,5 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - li007
   - 🇹🇭 泰国 (Thailand) 02 - li007
   - 🇹🇭 泰国 (Thailand) 03 - li007
-  - 🇹🇭 泰国 (Thailand) 04 - li007
 rules:
 - MATCH,PROXIES

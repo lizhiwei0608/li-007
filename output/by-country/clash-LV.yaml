@@ -6,11 +6,11 @@ log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - li007
   server: 185.135.86.175
-  port: 9036
+  port: 9033
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: hbtvgUz5uNYyB3Rf
+  password: UTJA57ypk2XKQpnm
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - li007
   server: 185.135.86.175
   port: 9034
@@ -20,11 +20,11 @@ proxies:
   password: Yg4MbdXFQ9HFFVY6
 - name: 🇱🇻 拉脱维亚 (Latvia) 03 - li007
   server: 185.135.86.175
-  port: 9033
+  port: 9007
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: UTJA57ypk2XKQpnm
+  password: kSPmvwdFzGMMW5pY
 - name: 🇱🇻 拉脱维亚 (Latvia) 04 - li007
   server: 185.135.86.175
   port: 9068
@@ -34,25 +34,25 @@ proxies:
   password: mwgRg9hRq3b4Qnwb
 - name: 🇱🇻 拉脱维亚 (Latvia) 05 - li007
   server: 185.135.86.175
-  port: 9094
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: rpgbNnU9rDDU4aWZ
-- name: 🇱🇻 拉脱维亚 (Latvia) 06 - li007
-  server: 185.135.86.175
-  port: 9007
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: kSPmvwdFzGMMW5pY
-- name: 🇱🇻 拉脱维亚 (Latvia) 07 - li007
-  server: 185.135.86.175
   port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇻 拉脱维亚 (Latvia) 06 - li007
+  server: 185.135.86.175
+  port: 9036
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: hbtvgUz5uNYyB3Rf
+- name: 🇱🇻 拉脱维亚 (Latvia) 07 - li007
+  server: 185.135.86.175
+  port: 9082
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 45xgMgm386pjWjTx
 - name: 🇱🇻 拉脱维亚 (Latvia) 08 - li007
   server: 185.135.86.175
   port: 9017
@@ -62,11 +62,11 @@ proxies:
   password: HAVAdE3nXhqA5nHp
 - name: 🇱🇻 拉脱维亚 (Latvia) 09 - li007
   server: 185.135.86.175
-  port: 9082
+  port: 9094
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 45xgMgm386pjWjTx
+  password: rpgbNnU9rDDU4aWZ
 - name: 🇱🇻 拉脱维亚 (Latvia) 10 - li007
   server: 195.123.213.28
   port: 443

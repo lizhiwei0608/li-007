@@ -18,17 +18,18 @@ proxies:
   servername: ee1.mycloud1.org
   client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - li007
-  server: 79.98.37.106
+  server: 177.3.208.65
   port: 443
   udp: true
   type: vless
-  uuid: 846cedee-2a52-0001-a0b9-11850ead6a8b
-  flow: xtls-rprx-vision
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
   tls: true
-  reality-opts:
-    public-key: USSepsAbvP9LpByHLV2xD2H8dq8GAJ6G0fINEqD4PAw
-  servername: ee-central.v8x2b.lol
+  servername: tgmansion.site
+  skip-cert-verify: false
   client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless-ee
 proxy-groups:
 - name: PROXIES
   type: select
