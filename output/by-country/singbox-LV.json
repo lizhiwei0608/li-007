@@ -7,9 +7,9 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - li007",
       "server": "185.135.86.175",
-      "server_port": 9017,
+      "server_port": 9034,
       "method": "aes-256-cfb",
-      "password": "HAVAdE3nXhqA5nHp"
+      "password": "Yg4MbdXFQ9HFFVY6"
     },
     {
       "type": "shadowsocks",
@@ -23,29 +23,21 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - li007",
       "server": "185.135.86.175",
+      "server_port": 9017,
+      "method": "aes-256-cfb",
+      "password": "HAVAdE3nXhqA5nHp"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - li007",
+      "server": "185.135.86.175",
       "server_port": 9068,
       "method": "aes-256-cfb",
       "password": "mwgRg9hRq3b4Qnwb"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - li007",
-      "server": "185.135.86.175",
-      "server_port": 9086,
-      "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - li007",
-      "server": "185.135.86.175",
-      "server_port": 9033,
-      "method": "aes-256-cfb",
-      "password": "UTJA57ypk2XKQpnm"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - li007",
       "server": "185.135.86.175",
       "server_port": 9082,
       "method": "aes-256-cfb",
@@ -53,19 +45,27 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - li007",
+      "server": "185.135.86.175",
+      "server_port": 9036,
+      "method": "aes-256-cfb",
+      "password": "hbtvgUz5uNYyB3Rf"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - li007",
       "server": "185.135.86.175",
-      "server_port": 9034,
+      "server_port": 9007,
       "method": "aes-256-cfb",
-      "password": "Yg4MbdXFQ9HFFVY6"
+      "password": "kSPmvwdFzGMMW5pY"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 08 - li007",
       "server": "185.135.86.175",
-      "server_port": 9007,
+      "server_port": 9033,
       "method": "aes-256-cfb",
-      "password": "kSPmvwdFzGMMW5pY"
+      "password": "UTJA57ypk2XKQpnm"
     },
     {
       "type": "vless",
@@ -89,6 +89,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 10 - li007",
+      "server": "195.123.208.32",
+      "server_port": 443,
+      "uuid": "1ebcb694-875c-4be7-b6a2-d53c8208991b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk",
+          "short_id": "757b9e1ef18e60f0"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -101,7 +122,8 @@
         "🇱🇻 拉脱维亚 (Latvia) 06 - li007",
         "🇱🇻 拉脱维亚 (Latvia) 07 - li007",
         "🇱🇻 拉脱维亚 (Latvia) 08 - li007",
-        "🇱🇻 拉脱维亚 (Latvia) 09 - li007"
+        "🇱🇻 拉脱维亚 (Latvia) 09 - li007",
+        "🇱🇻 拉脱维亚 (Latvia) 10 - li007"
       ]
     },
     {
@@ -116,7 +138,8 @@
         "🇱🇻 拉脱维亚 (Latvia) 06 - li007",
         "🇱🇻 拉脱维亚 (Latvia) 07 - li007",
         "🇱🇻 拉脱维亚 (Latvia) 08 - li007",
-        "🇱🇻 拉脱维亚 (Latvia) 09 - li007"
+        "🇱🇻 拉脱维亚 (Latvia) 09 - li007",
+        "🇱🇻 拉脱维亚 (Latvia) 10 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
