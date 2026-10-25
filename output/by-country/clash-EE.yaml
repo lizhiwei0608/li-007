@@ -4,30 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇨 塞舌尔 (Seychelles) 01 - li007
-  server: 144.31.50.236
+- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - li007
+  server: ee-central.v8x2b.lol
   port: 443
   udp: true
   type: vless
-  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
+  uuid: 846cedee-2a52-0001-a0b9-11850ead6a8b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
-    short-id: bbe46bd8f6b96839
-  servername: yandex.ru
-  client-fingerprint: chrome
+    public-key: USSepsAbvP9LpByHLV2xD2H8dq8GAJ6G0fINEqD4PAw
+  servername: ee-central.v8x2b.lol
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇨 塞舌尔 (Seychelles) 01 - li007
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇨 塞舌尔 (Seychelles) 01 - li007
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - li007
 rules:
 - MATCH,PROXIES
