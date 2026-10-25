@@ -5,16 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - li007
-  server: 45.142.120.30
-  port: 8880
+  server: 147.15.108.14
+  port: 20000
   udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime08.workers.dev
+  type: hysteria2
+  password: CyG0RFxMjzs41uQD4OLuHQ==
+  sni: rmgyvpn.rest
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
 - name: 🇧🇷 巴西 (Brazil) 02 - li007
   server: 147.15.108.14
   port: 20000
@@ -25,6 +24,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
+  ports: 20000-30000,20000-20000
 - name: 🇧🇷 巴西 (Brazil) 03 - li007
   server: 92.53.119.212
   port: 40849

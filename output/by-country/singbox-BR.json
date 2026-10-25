@@ -4,22 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 01 - li007",
-      "server": "45.142.120.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime08.workers.dev"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇧🇷 巴西 (Brazil) 02 - li007",
+      "tag": "🇧🇷 巴西 (Brazil) 01 - li007",
       "server": "147.15.108.14",
       "server_port": 20000,
       "password": "CyG0RFxMjzs41uQD4OLuHQ==",
@@ -32,6 +18,25 @@
         "type": "salamander",
         "password": "CyG0RFxMjzs41uQD4OLuHQ=="
       }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇧🇷 巴西 (Brazil) 02 - li007",
+      "server": "147.15.108.14",
+      "password": "CyG0RFxMjzs41uQD4OLuHQ==",
+      "tls": {
+        "enabled": true,
+        "server_name": "rmgyvpn.rest",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "CyG0RFxMjzs41uQD4OLuHQ=="
+      },
+      "server_ports": [
+        "20000:30000",
+        "20000:20000"
+      ]
     },
     {
       "type": "vless",
