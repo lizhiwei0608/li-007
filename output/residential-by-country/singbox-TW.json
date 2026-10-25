@@ -14,7 +14,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -24,18 +24,36 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (移动家宽) - li007",
+      "server": "gu232.izzzzzi.com",
+      "server_port": 20052,
+      "password": "e56e752c86a640cd",
+      "tls": {
+        "enabled": true,
+        "server_name": "gu232.izzzzzi.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - li007"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - li007",
+        "🇹🇼 中国台湾 (Taiwan) 02 (移动家宽) - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - li007"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - li007",
+        "🇹🇼 中国台湾 (Taiwan) 02 (移动家宽) - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

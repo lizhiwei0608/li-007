@@ -5,15 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - li007
-  server: 130.49.161.70
-  port: 443
+  server: 128.241.25.11
+  port: 30021
   udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+  type: vless
+  uuid: 445202ec-f4dc-40cf-acf3-025f881360c4
+  tls: true
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 02 - li007
   server: 185.253.116.33
   port: 14430
@@ -23,7 +28,34 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
+    headers:
+      Host: 185.253.116.33
 - name: 🇦🇪 阿联酋 (UAE) 03 - li007
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 04 - li007
+  server: 79.137.199.52
+  port: 21
+  udp: true
+  type: vless
+  uuid: e7b1256f-aba7-460e-8246-8d6a5156972a
+  tls: true
+  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 05 - li007
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -34,7 +66,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 04 - li007
+- name: 🇦🇪 阿联酋 (UAE) 06 - li007
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -43,52 +75,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 05 - li007
-  server: 31.57.190.40
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇦🇪 阿联酋 (UAE) 06 - li007
-  server: 31.57.190.40
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇦🇪 阿联酋 (UAE) 07 - li007
-  server: 31.57.190.40
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇦🇪 阿联酋 (UAE) 08 - li007
-  server: 31.57.190.40
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
@@ -100,8 +86,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - li007
   - 🇦🇪 阿联酋 (UAE) 05 - li007
   - 🇦🇪 阿联酋 (UAE) 06 - li007
-  - 🇦🇪 阿联酋 (UAE) 07 - li007
-  - 🇦🇪 阿联酋 (UAE) 08 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -113,7 +97,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - li007
   - 🇦🇪 阿联酋 (UAE) 05 - li007
   - 🇦🇪 阿联酋 (UAE) 06 - li007
-  - 🇦🇪 阿联酋 (UAE) 07 - li007
-  - 🇦🇪 阿联酋 (UAE) 08 - li007
 rules:
 - MATCH,PROXIES

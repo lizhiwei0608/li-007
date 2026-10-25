@@ -11,16 +11,8 @@
       "uuid": "f1e7eafa-0d6f-441e-8565-29f34171aef2"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - li007",
-      "server": "218.237.185.234",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007",
       "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -29,7 +21,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -39,13 +31,38 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽) - li007",
+      "server": "p141.panda001.net",
+      "server_port": 4652,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (移动家宽) - li007",
+      "server": "gu232.izzzzzi.com",
+      "server_port": 20052,
+      "password": "e56e752c86a640cd",
+      "tls": {
+        "enabled": true,
+        "server_name": "gu232.izzzzzi.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 (家宽) R50 - li007",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - li007",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - li007",
+        "🇹🇼 中国台湾 (Taiwan) 04 (移动家宽) - li007"
       ]
     },
     {
@@ -53,8 +70,9 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 (United States) 01 (家宽) R50 - li007",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - li007",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - li007",
+        "🇹🇼 中国台湾 (Taiwan) 04 (移动家宽) - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

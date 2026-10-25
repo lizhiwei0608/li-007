@@ -5,13 +5,91 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - li007
-  server: 57.131.159.212
-  port: 17001
+  server: 162.159.153.4
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL
+  type: vless
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  tls: true
+  servername: rayan-007.maxima.dpdns.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.maxima.dpdns.org
 - name: 🇫🇷 法国 (France) 02 - li007
+  server: 51.77.108.218
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: ozon.ru
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 03 - li007
+  server: 54.37.2.245
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: ozon.ru
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 04 - li007
+  server: 51.77.217.70
+  port: 8446
+  udp: true
+  type: hysteria2
+  password: capadmbd5f18bd:jX4BuciLLIqLvzJZsHpoXtc2
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: ChY5QQQT3ZtUdNT8
+- name: 🇫🇷 法国 (France) 05 - li007
+  server: 51.77.217.70
+  port: 8445
+  udp: true
+  type: hysteria2
+  password: capadmbd5f18bd:jX4BuciLLIqLvzJZsHpoXtc2
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: ChY5QQQT3ZtUdNT8
+- name: 🇫🇷 法国 (France) 06 - li007
+  server: 51.77.217.70
+  port: 8447
+  udp: true
+  type: hysteria2
+  password: capadmbd5f18bd:jX4BuciLLIqLvzJZsHpoXtc2
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: ChY5QQQT3ZtUdNT8
+- name: 🇫🇷 法国 (France) 07 - li007
+  server: 51.44.167.227
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-fr-001.fastervpn.world
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 08 - li007
+  server: 173.212.201.85
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: 173.212.201.85
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 09 - li007
   server: 138.124.70.41
   port: 14430
   udp: true
@@ -22,32 +100,16 @@ proxies:
     path: /vless
     headers:
       Host: 138.124.70.41
-- name: 🇫🇷 法国 (France) 03 - li007
-  server: 51.44.167.227
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-fr-001.fastervpn.world
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 04 - li007
-  server: 62.210.7.139
-  port: 60111
+- name: 🇫🇷 法国 (France) 10 - li007
+  server: 62.210.147.2
+  port: 43115
   udp: true
   type: hysteria2
   password: github.com/Alvin9999-newpac/fanqiang
-  sni: 62.210.7.139
+  sni: www.microsoft.com
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 05 - li007
-  server: 13.36.234.11
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 13.36.234.11
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 06 - li007
-  server: 62.210.91.10
+- name: 🇫🇷 法国 (France) 11 - li007
+  server: 62.210.91.2
   port: 23576
   udp: true
   type: vless
@@ -56,27 +118,22 @@ proxies:
   tls: true
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 07 - li007
-  server: 62.210.147.2
-  port: 43115
+- name: 🇫🇷 法国 (France) 12 - li007
+  server: 54.37.5.203
+  port: 8443
   udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 08 - li007
-  server: 51.77.217.70
-  port: 8447
-  udp: true
-  type: hysteria2
-  password: capadmbd5f18bd:jX4BuciLLIqLvzJZsHpoXtc2
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: ChY5QQQT3ZtUdNT8
-- name: 🇫🇷 法国 (France) 09 - li007
+  type: vless
+  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: ozon.ru
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 13 - li007
   server: 51.77.217.70
   port: 21000
   udp: true
@@ -87,7 +144,19 @@ proxies:
   obfs: salamander
   obfs-password: ChY5QQQT3ZtUdNT8
   ports: 21000-21199,33000-33199
-- name: 🇫🇷 法国 (France) 10 - li007
+- name: 🇫🇷 法国 (France) 14 - li007
+  server: 185.88.173.215
+  port: 443
+  udp: true
+  type: vless
+  uuid: fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: gb.ozon.ru
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 15 - li007
   server: 51.77.217.70
   port: 2053
   udp: true
@@ -99,28 +168,18 @@ proxies:
     short-id: bfe58beb41f1d09f
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 11 - li007
-  server: 51.77.217.70
-  port: 8446
+- name: 🇫🇷 法国 (France) 16 - li007
+  server: 104.21.13.204
+  port: 443
   udp: true
-  type: hysteria2
-  password: capadmbd5f18bd:jX4BuciLLIqLvzJZsHpoXtc2
-  sni: vpn.local
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: ChY5QQQT3ZtUdNT8
-- name: 🇫🇷 法国 (France) 12 - li007
-  server: 152.228.162.19
-  port: 80
-  udp: true
-  type: vless
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
   network: ws
   ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-france1.09vpn.com
-- name: 🇫🇷 法国 (France) 13 - li007
+    path: /assignment
+- name: 🇫🇷 法国 (France) 17 - li007
   server: 152.228.139.33
   port: 35108
   udp: true
@@ -131,18 +190,11 @@ proxies:
     public-key: X_lOw5Zz4SJBa1cRHV4dAq5msYE-ClY5-WNcBmBWRxg
     short-id: 52add08b86a5ccea
   servername: www.nvidia.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-common3
-- name: 🇫🇷 法国 (France) 14 - li007
-  server: 141.227.172.132
-  port: 17001
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL
-- name: 🇫🇷 法国 (France) 15 - li007
+- name: 🇫🇷 法国 (France) 18 - li007
   server: 152.228.139.33
   port: 51671
   udp: true
@@ -157,86 +209,28 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc_common3
-- name: 🇫🇷 法国 (France) 16 - li007
-  server: 137.74.16.237
-  port: 443
-  udp: true
-  type: vless
-  uuid: aaec4e42-a095-44b6-a239-f16d234a0798
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I
-    short-id: b390e0a721d242b0
-  servername: www.icloud.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 17 - li007
-  server: 45.151.71.158
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: ai.ozon.ru
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 18 - li007
-  server: ov-france1.09vpn.com
-  port: 80
-  udp: true
-  type: vless
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: join---i10vpn---join---i10vpn---join---i10vpn---join---i10vpn
 - name: 🇫🇷 法国 (France) 19 - li007
-  server: ov-france1.09vpn.com
-  port: 80
-  udp: true
-  type: vless
-  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇫🇷 法国 (France) 20 - li007
-  server: 51.77.217.70
-  port: 8445
+  server: 13.36.234.11
+  port: 443
   udp: true
   type: hysteria2
-  password: capadmbd5f18bd:jX4BuciLLIqLvzJZsHpoXtc2
-  sni: vpn.local
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 13.36.234.11
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: ChY5QQQT3ZtUdNT8
-- name: 🇫🇷 法国 (France) 21 - li007
-  server: 165.215.250.14
+- name: 🇫🇷 法国 (France) 20 - li007
+  server: 161.97.66.16
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 22 - li007
-  server: 54.37.5.203
-  port: 8443
-  udp: true
   type: vless
-  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
-  flow: xtls-rprx-vision
+  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
   tls: true
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: ozon.ru
+    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
+    short-id: 086bf957
+  servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 23 - li007
-  server: 62.210.91.2
+- name: 🇫🇷 法国 (France) 21 - li007
+  server: 62.210.91.10
   port: 23576
   udp: true
   type: vless
@@ -245,9 +239,18 @@ proxies:
   tls: true
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
   servername: fuck.rkn
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 24 - li007
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 22 - li007
+  server: 62.210.7.139
+  port: 60111
+  udp: true
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: 62.210.7.139
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 23 - li007
   server: 54.37.136.194
   port: 2053
   udp: true
@@ -259,15 +262,108 @@ proxies:
     short-id: 50ba05992b05c1c3
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 25 - li007
-  server: 173.212.201.85
-  port: 443
+- name: 🇫🇷 法国 (France) 24 - li007
+  server: 62.210.124.146
+  port: 22000
   udp: true
   type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: 173.212.201.85
+  password: dongtaiwang.com
+  sni: www.microsoft.com
   skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 25 - li007
+  server: 45.151.71.158
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: ai.ozon.ru
+  client-fingerprint: ''
 - name: 🇫🇷 法国 (France) 26 - li007
+  server: 45.87.41.18
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 27 - li007
+  server: 185.114.72.31
+  port: 2053
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 28 - li007
+  server: 5.253.189.238
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 29 - li007
+  server: 145.239.55.210
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
+- name: 🇫🇷 法国 (France) 30 - li007
+  server: 152.228.162.19
+  port: 80
+  udp: true
+  type: vless
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-france1.09vpn.com
+- name: 🇫🇷 法国 (France) 31 - li007
+  server: 137.74.16.237
+  port: 443
+  udp: true
+  type: vless
+  uuid: aaec4e42-a095-44b6-a239-f16d234a0798
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I
+    short-id: b390e0a721d242b0
+  servername: www.icloud.com
+  client-fingerprint: random
+- name: 🇫🇷 法国 (France) 32 - li007
+  server: 5.44.46.142
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 33 - li007
   server: 104.26.13.235
   port: 443
   udp: true
@@ -282,20 +378,23 @@ proxies:
     path: /saosaosao
     headers:
       Host: nat9.outsidemyheart.space
-- name: 🇫🇷 法国 (France) 27 - li007
-  server: 54.37.2.245
-  port: 8443
+- name: 🇫🇷 法国 (France) 34 - li007
+  server: 178.104.70.11
+  port: 443
   udp: true
   type: vless
-  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
-  flow: xtls-rprx-vision
+  uuid: 64726966-0000-4000-8000-740000000000
   tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: ozon.ru
+  servername: parsa-panel-dy55x.railway1385-2a46.workers.dev
+  skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 28 - li007
-  server: 5.44.46.142
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: parsa-panel-dy55x.railway1385-2a46.workers.dev
+- name: 🇫🇷 法国 (France) 35 - li007
+  server: 185.255.179.166
   port: 443
   udp: true
   type: trojan
@@ -305,7 +404,26 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 29 - li007
+- name: 🇫🇷 法国 (France) 36 - li007
+  server: 143.246.211.163
+  port: 443
+  udp: true
+  type: hysteria2
+  password: b3d079ff-b775-4ffe-bac9-41228b08b15b
+  sni: fr.gorobsub.com
+  skip-cert-verify: false
+- name: 🇫🇷 法国 (France) 37 - li007
+  server: 155.103.71.142
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 38 - li007
   server: ww3.levikogjgfdd.ir
   port: 443
   udp: true
@@ -318,67 +436,7 @@ proxies:
     short-id: e6
   servername: passport.yandex.ru
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 30 - li007
-  server: 185.220.100.168
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 31 - li007
-  server: ai.smrtai.top
-  port: 443
-  udp: true
-  type: vless
-  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
-  tls: true
-  reality-opts:
-    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
-    short-id: 086bf957
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 32 - li007
-  server: 89.150.34.41
-  port: 2053
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 33 - li007
-  server: 145.239.55.210
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 34 - li007
-  server: 45.95.98.135
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2f5cfa10-43e5-4912-800d-557308a26a29
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8MkHK9vGRtOA97_ag2qUoru4ONKe3W6r7SR1UtIKiWU
-    short-id: c1c6c4326b5b
-  servername: 8g6zbdoai3lb.cloudydigital.net
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 35 - li007
+- name: 🇫🇷 法国 (France) 39 - li007
   server: 145.223.68.58
   port: 443
   udp: true
@@ -390,18 +448,7 @@ proxies:
     public-key: qc2DcqT9zPPZr6ePZ7ukxACWrYhRNIBjDIjCK7veyQg
     short-id: a44ff7d2e80213c2
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇫🇷 法国 (France) 36 - li007
-  server: 212.227.144.37
-  port: 8443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -443,6 +490,9 @@ proxy-groups:
   - 🇫🇷 法国 (France) 34 - li007
   - 🇫🇷 法国 (France) 35 - li007
   - 🇫🇷 法国 (France) 36 - li007
+  - 🇫🇷 法国 (France) 37 - li007
+  - 🇫🇷 法国 (France) 38 - li007
+  - 🇫🇷 法国 (France) 39 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -484,5 +534,8 @@ proxy-groups:
   - 🇫🇷 法国 (France) 34 - li007
   - 🇫🇷 法国 (France) 35 - li007
   - 🇫🇷 法国 (France) 36 - li007
+  - 🇫🇷 法国 (France) 37 - li007
+  - 🇫🇷 法国 (France) 38 - li007
+  - 🇫🇷 法国 (France) 39 - li007
 rules:
 - MATCH,PROXIES
