@@ -5,34 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - li007
-  server: 218.237.185.234
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
   server: 49.254.204.133
   port: 1774
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
-- name: 🇺🇸 美国 (United States) 03 (家宽) - li007
-  server: 69.63.221.116
-  port: 25517
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
+  server: 218.237.185.234
+  port: 4652
   udp: true
-  type: vless
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  tls: true
-  servername: wzs.echo.net.eu.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HBRETS1lYDldeEEFRGxhbVloPHhpEVl9AFwxSGQ9bSQ==
-    headers:
-      Host: wzs.echo.net.eu.org
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
+  server: kw119.zxmm.eu.org
+  port: 20031
+  udp: true
+  type: trojan
+  password: 00a72bf349e6479b
+  sni: kw119.zxmm.eu.org
+  skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007
   server: hinet1.2yly.com
   port: 24215
@@ -43,25 +36,7 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: qq
-- name: 🇸🇬 新加坡 (Singapore) 05 (家宽) - li007
-  server: s3.huhiuh.space
-  port: 18642
-  udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇺🇸 美国 (United States) 06 (家宽) - li007
-  server: 155.117.19.17
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,10 +44,8 @@ proxy-groups:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - li007
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
-  - 🇺🇸 美国 (United States) 03 (家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007
-  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - li007
-  - 🇺🇸 美国 (United States) 06 (家宽) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,9 +53,7 @@ proxy-groups:
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - li007
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
-  - 🇺🇸 美国 (United States) 03 (家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007
-  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - li007
-  - 🇺🇸 美国 (United States) 06 (家宽) - li007
 rules:
 - MATCH,PROXIES

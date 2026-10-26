@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - li007
-  server: 79.98.37.106
+  server: ee-central.v8x2b.lol
   port: 443
   udp: true
   type: vless

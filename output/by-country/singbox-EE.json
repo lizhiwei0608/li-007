@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - li007",
-      "server": "79.98.37.106",
+      "server": "ee-central.v8x2b.lol",
       "server_port": 443,
       "uuid": "846cedee-2a52-0001-a0b9-11850ead6a8b",
       "flow": "xtls-rprx-vision",
