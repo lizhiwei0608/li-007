@@ -5,15 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇾 白俄罗斯 (Belarus) 01 - li007
-  server: 95.128.71.79
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 8cef7621-c6f0-486e-b51d-59c30c5b0b25
-  network: ws
-  ws-opts:
-    path: /vless
-- name: 🇧🇾 白俄罗斯 (Belarus) 02 - li007
   server: 178.172.227.228
   port: 14430
   udp: true
@@ -22,7 +13,9 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇧🇾 白俄罗斯 (Belarus) 03 - li007
+    headers:
+      Host: 178.172.227.228
+- name: 🇧🇾 白俄罗斯 (Belarus) 02 - li007
   server: 178.172.227.124
   port: 14430
   udp: true
@@ -33,20 +26,18 @@ proxies:
     path: /vless
     headers:
       Host: 178.172.227.124
-- name: 🇧🇾 白俄罗斯 (Belarus) 04 - li007
+- name: 🇧🇾 白俄罗斯 (Belarus) 03 - li007
   server: 95.128.71.79
-  port: 10444
+  port: 14430
   udp: true
   type: vless
   uuid: 8cef7621-c6f0-486e-b51d-59c30c5b0b25
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: ads.x5.ru
-  client-fingerprint: chrome
-- name: 🇧🇾 白俄罗斯 (Belarus) 05 - li007
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.128.71.79
+- name: 🇧🇾 白俄罗斯 (Belarus) 04 - li007
   server: 178.172.227.228
   port: 10444
   udp: true
@@ -59,6 +50,19 @@ proxies:
     short-id: 8debcf36f1cc69ff
   servername: ads.x5.ru
   client-fingerprint: edge
+- name: 🇧🇾 白俄罗斯 (Belarus) 05 - li007
+  server: 95.128.71.79
+  port: 10444
+  udp: true
+  type: vless
+  uuid: 8cef7621-c6f0-486e-b51d-59c30c5b0b25
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: ads.x5.ru
+  client-fingerprint: chrome
 - name: 🇧🇾 白俄罗斯 (Belarus) 06 - li007
   server: 178.172.227.124
   port: 10444
@@ -71,7 +75,7 @@ proxies:
     public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
     short-id: 8debcf36f1cc69ff
   servername: ads.x5.ru
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

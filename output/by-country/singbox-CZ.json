@@ -6,6 +6,51 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - li007",
+      "server": "188.114.96.9",
+      "server_port": 443,
+      "uuid": "2e305ebe-f6e6-4689-b32f-cd04ab5ff541",
+      "tls": {
+        "enabled": true,
+        "server_name": "idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/9yvcoLdzdOXLUYfH7r5gwJhu1CHrj",
+        "headers": {
+          "Host": "idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02 - li007",
+      "server": "162.159.153.4",
+      "server_port": 443,
+      "uuid": "f2a73750-3087-48ff-a763-1348c15dce68",
+      "tls": {
+        "enabled": true,
+        "server_name": "rayan-007.maxima.dpdns.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "rayan-007.maxima.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 03 - li007",
       "server": "195.123.245.241",
       "server_port": 443,
       "uuid": "7c053ca8-38cc-45e2-930c-eda1fd66f903",
@@ -15,7 +60,7 @@
         "server_name": "gateway.icloud.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -26,22 +71,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02 - li007",
-      "server": "193.124.17.190",
+      "tag": "🇨🇿 捷克 (Czech) 04 - li007",
+      "server": "server.slavkiti.monster",
       "server_port": 443,
-      "uuid": "4d017db2-7655-4276-9557-e2ec25b04ee7",
+      "uuid": "ff40696b-06d6-443b-9481-8d01eddd13e1",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.tradingview.com",
+        "server_name": "www.foxsports.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
           "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "ee1716767f9b"
+          "short_id": "d659da01fb94"
         }
       }
     },
@@ -51,7 +96,9 @@
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - li007",
-        "🇨🇿 捷克 (Czech) 02 - li007"
+        "🇨🇿 捷克 (Czech) 02 - li007",
+        "🇨🇿 捷克 (Czech) 03 - li007",
+        "🇨🇿 捷克 (Czech) 04 - li007"
       ]
     },
     {
@@ -59,7 +106,9 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - li007",
-        "🇨🇿 捷克 (Czech) 02 - li007"
+        "🇨🇿 捷克 (Czech) 02 - li007",
+        "🇨🇿 捷克 (Czech) 03 - li007",
+        "🇨🇿 捷克 (Czech) 04 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
