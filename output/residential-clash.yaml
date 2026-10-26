@@ -12,22 +12,13 @@ proxies:
   cipher: aes-256-cfb
   password: 1234!@#$
 - name: 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
-  server: 218.237.185.234
-  port: 4652
+  server: 112.169.175.199
+  port: 31157
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
+  type: vless
+  uuid: bd2fb303-b4c7-49af-a8e3-5c6f11b005dd
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
-  server: kw119.zxmm.eu.org
-  port: 20031
-  udp: true
-  type: trojan
-  password: 00a72bf349e6479b
-  sni: kw119.zxmm.eu.org
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007
-  server: hinet1.2yly.com
+  server: 118.167.211.77
   port: 24215
   udp: true
   type: vless
@@ -36,7 +27,30 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007
+  server: kw119.zxmm.eu.org
+  port: 20031
+  udp: true
+  type: trojan
+  password: 00a72bf349e6479b
+  sni: kw119.zxmm.eu.org
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 05 (家宽) - li007
+  server: 122.176.216.52
+  port: 443
+  udp: true
+  type: vless
+  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+  tls: true
+  servername: app-6ada5023.deploy.meerasolution.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+    headers:
+      Host: app-6ada5023.deploy.meerasolution.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +60,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007
+  - 🇮🇳 印度 (India) 05 (家宽) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,5 +70,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007
+  - 🇮🇳 印度 (India) 05 (家宽) - li007
 rules:
 - MATCH,PROXIES

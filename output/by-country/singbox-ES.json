@@ -26,6 +26,27 @@
     {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 02 - li007",
+      "server": "46.28.71.247",
+      "server_port": 443,
+      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
+          "short_id": "0dfc23fe80778c00"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - li007",
       "server": "156.252.229.11",
       "server_port": 8443,
       "uuid": "3e21e3d3-6d26-4155-b851-764dd8e8c6b5",
@@ -45,28 +66,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - li007",
-      "server": "46.28.71.247",
-      "server_port": 443,
-      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
+      "tag": "🇪🇸 西班牙 (Spain) 04 - li007",
+      "server": "213.152.165.203",
+      "server_port": 2095,
+      "uuid": "b38712cb-e4aa-4462-b7e3-df20508d2b39",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
-          "short_id": "0dfc23fe80778c00"
+          "public_key": "OKksVHWL5JepTv7if7Ta_L_7vn8OxW0INwV71HJM1jI",
+          "short_id": "3869d49a9a79e06a"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 04 - li007",
+      "tag": "🇪🇸 西班牙 (Spain) 05 - li007",
       "server": "193.238.154.78",
       "server_port": 443,
       "uuid": "897d47f8-4dd5-42a1-bcd0-bef19caff55a",
@@ -93,7 +114,8 @@
         "🇪🇸 西班牙 (Spain) 01 - li007",
         "🇪🇸 西班牙 (Spain) 02 - li007",
         "🇪🇸 西班牙 (Spain) 03 - li007",
-        "🇪🇸 西班牙 (Spain) 04 - li007"
+        "🇪🇸 西班牙 (Spain) 04 - li007",
+        "🇪🇸 西班牙 (Spain) 05 - li007"
       ]
     },
     {
@@ -103,7 +125,8 @@
         "🇪🇸 西班牙 (Spain) 01 - li007",
         "🇪🇸 西班牙 (Spain) 02 - li007",
         "🇪🇸 西班牙 (Spain) 03 - li007",
-        "🇪🇸 西班牙 (Spain) 04 - li007"
+        "🇪🇸 西班牙 (Spain) 04 - li007",
+        "🇪🇸 西班牙 (Spain) 05 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

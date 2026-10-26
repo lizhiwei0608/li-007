@@ -17,18 +17,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: random
 - name: 🇪🇸 西班牙 (Spain) 02 - li007
-  server: 156.252.229.11
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 3e21e3d3-6d26-4155-b851-764dd8e8c6b5
-  tls: true
-  reality-opts:
-    public-key: 7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A
-    short-id: 974f7f8f
-  servername: play.googleapis.com
-  client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 03 - li007
   server: 46.28.71.247
   port: 443
   udp: true
@@ -40,8 +28,33 @@ proxies:
     public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
     short-id: 0dfc23fe80778c00
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 03 - li007
+  server: 156.252.229.11
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 3e21e3d3-6d26-4155-b851-764dd8e8c6b5
+  tls: true
+  reality-opts:
+    public-key: 7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A
+    short-id: 974f7f8f
+  servername: play.googleapis.com
+  client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 04 - li007
+  server: 213.152.165.203
+  port: 2095
+  udp: true
+  type: vless
+  uuid: b38712cb-e4aa-4462-b7e3-df20508d2b39
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: OKksVHWL5JepTv7if7Ta_L_7vn8OxW0INwV71HJM1jI
+    short-id: 3869d49a9a79e06a
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 05 - li007
   server: 193.238.154.78
   port: 443
   udp: true
@@ -63,6 +76,7 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - li007
   - 🇪🇸 西班牙 (Spain) 03 - li007
   - 🇪🇸 西班牙 (Spain) 04 - li007
+  - 🇪🇸 西班牙 (Spain) 05 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,5 +86,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - li007
   - 🇪🇸 西班牙 (Spain) 03 - li007
   - 🇪🇸 西班牙 (Spain) 04 - li007
+  - 🇪🇸 西班牙 (Spain) 05 - li007
 rules:
 - MATCH,PROXIES
