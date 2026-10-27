@@ -4,14 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "anytls",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - li007",
-      "server": "kw119.zxmm.eu.org",
-      "server_port": 20031,
-      "password": "00a72bf349e6479b",
+      "server": "684616s4.df6h451rh.xin",
+      "server_port": 443,
+      "password": "0324fbc29561",
       "tls": {
         "enabled": true,
-        "server_name": "kw119.zxmm.eu.org",
+        "server_name": "px.ads.linkedin.com",
         "insecure": true
       }
     },

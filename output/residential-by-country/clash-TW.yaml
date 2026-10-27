@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - li007
-  server: kw119.zxmm.eu.org
-  port: 20031
+  server: 684616s4.df6h451rh.xin
+  port: 443
   udp: true
-  type: trojan
-  password: 00a72bf349e6479b
-  sni: kw119.zxmm.eu.org
+  type: anytls
+  password: 0324fbc29561
+  sni: px.ads.linkedin.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
