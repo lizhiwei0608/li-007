@@ -4,28 +4,43 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - li007
-  server: 125.227.86.45
-  port: 443
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - li007
+  server: 49.254.204.133
+  port: 1774
   udp: true
-  type: trojan
-  password: 0a9f1f5a397bd427
-  sni: TG.freecodes
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: db
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
+  server: 218.237.185.234
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - li007
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16113
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - li007
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - li007
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
+  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - li007
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - li007
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
+  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - li007
 rules:
 - MATCH,PROXIES
