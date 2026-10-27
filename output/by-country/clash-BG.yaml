@@ -13,11 +13,11 @@ proxies:
   password: aLpQtfEZe445QyHk
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - li007
   server: 213.183.63.60
-  port: 9030
+  port: 9061
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: GeregetR8cvQHzYr
+  password: 4R3hUfZ2FHhDmNcP
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - li007
   server: 213.183.63.60
   port: 9064
@@ -41,11 +41,11 @@ proxies:
   password: 2KUaE2a8NWTvuCZ3
 - name: 🇧🇬 保加利亚 (Bulgaria) 06 - li007
   server: 213.183.63.60
-  port: 9061
+  port: 9054
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 4R3hUfZ2FHhDmNcP
+  password: VcFuyXvND2yQWSFY
 - name: 🇧🇬 保加利亚 (Bulgaria) 07 - li007
   server: 213.183.63.60
   port: 9049
@@ -54,18 +54,24 @@ proxies:
   cipher: aes-256-cfb
   password: PRBf4BS2HvJqtWxY
 - name: 🇧🇬 保加利亚 (Bulgaria) 08 - li007
-  server: 195.123.226.21
-  port: 443
+  server: 213.183.63.60
+  port: 9030
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: GeregetR8cvQHzYr
+- name: 🇧🇬 保加利亚 (Bulgaria) 09 - li007
+  server: nl1.cleanset.net
+  port: 45821
   udp: true
   type: vless
-  uuid: 6589c320-db68-43cd-a273-b46299bab355
+  uuid: f73538f3-737d-41d8-b1e7-8a6bd8d2e7c0
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: rabtI-ymNXBUvYYRwAw8DiR-1pdP7U0WPIaCBHEkgzo
-    short-id: 77bb0d07bddbc832
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
+    public-key: RymFn9pFlHaMQpps5joHsmg0fOeWcaQiMOLR5IIfuWY
+  servername: www.samsung.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -79,6 +85,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 06 - li007
   - 🇧🇬 保加利亚 (Bulgaria) 07 - li007
   - 🇧🇬 保加利亚 (Bulgaria) 08 - li007
+  - 🇧🇬 保加利亚 (Bulgaria) 09 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -92,5 +99,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 06 - li007
   - 🇧🇬 保加利亚 (Bulgaria) 07 - li007
   - 🇧🇬 保加利亚 (Bulgaria) 08 - li007
+  - 🇧🇬 保加利亚 (Bulgaria) 09 - li007
 rules:
 - MATCH,PROXIES

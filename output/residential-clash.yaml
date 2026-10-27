@@ -4,56 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - li007
-  server: 155.117.19.17
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - li007
+  server: 125.227.86.45
   port: 443
   udp: true
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
+  type: trojan
+  password: 0a9f1f5a397bd427
+  sni: TG.freecodes
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - li007
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16113
-  udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - li007
-  server: 218.237.185.234
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007
-  server: 684616s4.df6h451rh.xin
-  port: 443
-  udp: true
-  type: anytls
-  password: 0324fbc29561
-  sni: px.ads.linkedin.com
-  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: db
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - li007
-  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - li007
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - li007
-  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - li007
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - li007
 rules:
 - MATCH,PROXIES

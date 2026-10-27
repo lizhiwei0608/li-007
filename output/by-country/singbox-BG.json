@@ -15,9 +15,9 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - li007",
       "server": "213.183.63.60",
-      "server_port": 9030,
+      "server_port": 9061,
       "method": "aes-256-cfb",
-      "password": "GeregetR8cvQHzYr"
+      "password": "4R3hUfZ2FHhDmNcP"
     },
     {
       "type": "shadowsocks",
@@ -47,9 +47,9 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - li007",
       "server": "213.183.63.60",
-      "server_port": 9061,
+      "server_port": 9054,
       "method": "aes-256-cfb",
-      "password": "4R3hUfZ2FHhDmNcP"
+      "password": "VcFuyXvND2yQWSFY"
     },
     {
       "type": "shadowsocks",
@@ -60,23 +60,31 @@
       "password": "PRBf4BS2HvJqtWxY"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - li007",
-      "server": "195.123.226.21",
-      "server_port": 443,
-      "uuid": "6589c320-db68-43cd-a273-b46299bab355",
+      "server": "213.183.63.60",
+      "server_port": 9030,
+      "method": "aes-256-cfb",
+      "password": "GeregetR8cvQHzYr"
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 09 - li007",
+      "server": "nl1.cleanset.net",
+      "server_port": 45821,
+      "uuid": "f73538f3-737d-41d8-b1e7-8a6bd8d2e7c0",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "gateway.icloud.com",
+        "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "rabtI-ymNXBUvYYRwAw8DiR-1pdP7U0WPIaCBHEkgzo",
-          "short_id": "77bb0d07bddbc832"
+          "public_key": "RymFn9pFlHaMQpps5joHsmg0fOeWcaQiMOLR5IIfuWY",
+          "short_id": ""
         }
       }
     },
@@ -92,7 +100,8 @@
         "🇧🇬 保加利亚 (Bulgaria) 05 - li007",
         "🇧🇬 保加利亚 (Bulgaria) 06 - li007",
         "🇧🇬 保加利亚 (Bulgaria) 07 - li007",
-        "🇧🇬 保加利亚 (Bulgaria) 08 - li007"
+        "🇧🇬 保加利亚 (Bulgaria) 08 - li007",
+        "🇧🇬 保加利亚 (Bulgaria) 09 - li007"
       ]
     },
     {
@@ -106,7 +115,8 @@
         "🇧🇬 保加利亚 (Bulgaria) 05 - li007",
         "🇧🇬 保加利亚 (Bulgaria) 06 - li007",
         "🇧🇬 保加利亚 (Bulgaria) 07 - li007",
-        "🇧🇬 保加利亚 (Bulgaria) 08 - li007"
+        "🇧🇬 保加利亚 (Bulgaria) 08 - li007",
+        "🇧🇬 保加利亚 (Bulgaria) 09 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
