@@ -4,29 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - li007
-  server: ccs2g.pai50288.uk
-  port: 443
+- name: 🇦🇲 亚美尼亚 (Armenia) 01 - li007
+  server: 194.36.37.59
+  port: 10004
   udp: true
   type: vless
-  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
-  tls: true
-  servername: ccs2g.pai50288.uk
-  skip-cert-verify: false
+  uuid: f7376394-cd54-11f1-bb6a-bff6d0326f6a
   network: ws
   ws-opts:
-    path: /pai50288
+    path: /vpnjantit
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - li007
+  - 🇦🇲 亚美尼亚 (Armenia) 01 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - li007
+  - 🇦🇲 亚美尼亚 (Armenia) 01 - li007
 rules:
 - MATCH,PROXIES
