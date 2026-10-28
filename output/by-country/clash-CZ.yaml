@@ -30,7 +30,7 @@ proxies:
   servername: rusbid.de
   client-fingerprint: firefox
 - name: 🇨🇿 捷克 (Czech) 03 - li007
-  server: 193.124.17.190
+  server: server.slavkiti.monster
   port: 443
   udp: true
   type: vless
@@ -41,7 +41,7 @@ proxies:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
     short-id: 2a2ce9e42980
   servername: www.mozilla.org
-  client-fingerprint: firefox
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select

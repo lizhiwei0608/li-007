@@ -48,7 +48,7 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 03 - li007",
-      "server": "193.124.17.190",
+      "server": "server.slavkiti.monster",
       "server_port": 443,
       "uuid": "d84c13b2-c2b9-4a7c-838f-05ac09ee422e",
       "flow": "xtls-rprx-vision",
@@ -57,7 +57,7 @@
         "server_name": "www.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
