@@ -15,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -27,6 +27,29 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 02 - li007",
+      "server": "104.17.187.57",
+      "server_port": 443,
+      "uuid": "600b90fe-6ff5-4b17-8dac-5be55835d0af",
+      "tls": {
+        "enabled": true,
+        "server_name": "ylsl.abcai.online",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ylsl.abcai.online"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 03 - li007",
       "server": "77.91.69.169",
       "server_port": 19226,
       "uuid": "f0b144bd-4c44-440d-b630-d79ec82cad3a",
@@ -51,7 +74,8 @@
       "outbounds": [
         "auto",
         "🇮🇱 以色列 (Israel) 01 - li007",
-        "🇮🇱 以色列 (Israel) 02 - li007"
+        "🇮🇱 以色列 (Israel) 02 - li007",
+        "🇮🇱 以色列 (Israel) 03 - li007"
       ]
     },
     {
@@ -59,7 +83,8 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇱 以色列 (Israel) 01 - li007",
-        "🇮🇱 以色列 (Israel) 02 - li007"
+        "🇮🇱 以色列 (Israel) 02 - li007",
+        "🇮🇱 以色列 (Israel) 03 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

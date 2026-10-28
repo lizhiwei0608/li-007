@@ -4,7 +4,38 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇳 印度 (India) 01 (家宽) - li007
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - li007
+  server: 218.237.185.234
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
+  server: 125.227.86.45
+  port: 443
+  udp: true
+  type: trojan
+  password: 0a9f1f5a397bd427
+  sni: TG.freecodes
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: db
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
+  server: 6aa21c4d-11d4-45bf-ba55-59512593692c.7b63595a-1119-4080-80e1-3f638120be58.smartprivatelink.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2a778078-9f4f-4203-a204-6fb94547b707
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 3nFa_3MSnFQDm9XfVfFHOnMb3FOptREpe1ehXjAbk1c
+    short-id: d369dbc2
+  servername: www.douyin.com
+  client-fingerprint: ios
+- name: 🇮🇳 印度 (India) 04 (家宽) - li007
   server: 122.176.216.52
   port: 443
   udp: true
@@ -13,32 +44,39 @@ proxies:
   tls: true
   servername: app-6ada5023.deploy.meerasolution.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: android
   network: ws
   ws-opts:
     path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
     headers:
       Host: app-6ada5023.deploy.meerasolution.com
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
-  server: p141.panda001.net
-  port: 4652
+- name: 🇸🇬 新加坡 (Singapore) 05 (家宽) - li007
+  server: s3.huhiuh.space
+  port: 18642
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
+  type: hysteria2
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: s3.huhiuh.space
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇳 印度 (India) 01 (家宽) - li007
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
+  - 🇮🇳 印度 (India) 04 (家宽) - li007
+  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇳 印度 (India) 01 (家宽) - li007
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
+  - 🇮🇳 印度 (India) 04 (家宽) - li007
+  - 🇸🇬 新加坡 (Singapore) 05 (家宽) - li007
 rules:
 - MATCH,PROXIES
