@@ -4,8 +4,30 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 01 - li007",
+      "server": "helsinki03.npvnot.com",
+      "server_port": 995,
+      "method": "aes-256-gcm",
+      "password": "MjNhN2QwNmFlYTRlZGMxNWVlOTI0MGI0MTU4MDY1"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - li007",
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "45.144.234.157"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - li007",
       "server": "2.27.13.152",
       "server_port": 8443,
       "uuid": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
@@ -26,46 +48,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - li007",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "45.144.234.157"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - li007",
-      "server": "77.42.12.225",
-      "server_port": 443,
-      "uuid": "056405e8-de9f-4d0d-8145-956f13cc34da",
-      "tls": {
-        "enabled": true,
-        "server_name": "8fc752g.fi3.h1clayd.click",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GJzag9Wrvz_bO9AQaA-Oq0P1kV9btmxxAdzPV-uQB18",
-          "short_id": "09d0a94a1c6fc9d5"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "f345a414c040"
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 04 - li007",
-      "server": "65.109.212.193",
+      "server": "hw3.divarkhaghazi.com",
       "server_port": 465,
       "uuid": "924e20da-fcad-4e7e-8113-c62d27a0d01e",
       "tls": {
@@ -74,7 +58,11 @@
         "insecure": false,
         "alpn": [
           "http/1.1"
-        ]
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
@@ -85,25 +73,12 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 05 - li007",
-      "server": "31.77.199.147",
-      "server_port": 4443,
-      "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "images.unsplash.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A",
-          "short_id": "7da2eae792187ab9"
-        }
-      }
+      "server": "dns22.m3hrzd.ir",
+      "server_port": 1346,
+      "method": "chacha20-ietf-poly1305",
+      "password": "U5Jk0BhRNKjb5wQBBOXx2wwkWZ_yWU0N"
     },
     {
       "type": "selector",

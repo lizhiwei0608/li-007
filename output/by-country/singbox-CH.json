@@ -4,20 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 01 - li007",
-      "server": "140.238.213.114",
-      "server_port": 50160,
-      "password": "84a506ca5aca505696a454d828420b3f",
-      "tls": {
-        "enabled": true,
-        "server_name": "140.238.213.114",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02 - li007",
+      "tag": "🇨🇭 瑞士 (Switzerland) 01 - li007",
       "server": "45.90.59.15",
       "server_port": 443,
       "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
@@ -27,7 +15,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -37,54 +25,10 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 - li007",
-      "server": "45.90.57.119",
-      "server_port": 8443,
-      "uuid": "f5e70ce3-cfb4-4df1-b25c-d19bfae627c0",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "twitch.tv",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "L6DeK_a25_ZjPKFOrQLoCPWuXi5KCIH_EcRpARmCwkI",
-          "short_id": "16036bbef04d0509"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04 - li007",
-      "server": "142.91.101.39",
-      "server_port": 627,
-      "uuid": "23b385cf-02c3-4df8-8402-11f1916418cd",
-      "tls": {
-        "enabled": true,
-        "server_name": "jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 05 - li007",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02 - li007",
       "server": "208.69.78.217",
-      "server_port": 33013,
+      "server_port": 33152,
       "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
       "tls": {
         "enabled": true,
@@ -97,6 +41,91 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - li007",
+      "server": "208.69.78.217",
+      "server_port": 33171,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 - li007",
+      "server": "45.90.57.119",
+      "server_port": 8443,
+      "uuid": "f5e70ce3-cfb4-4df1-b25c-d19bfae627c0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "twitch.tv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "L6DeK_a25_ZjPKFOrQLoCPWuXi5KCIH_EcRpARmCwkI",
+          "short_id": "16036bbef04d0509"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 05 - li007",
+      "server": "208.69.78.217",
+      "server_port": 21047,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 06 - li007",
+      "server": "140.238.213.114",
+      "server_port": 50160,
+      "password": "84a506ca5aca505696a454d828420b3f",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 07 - li007",
+      "server": "swz.proxyplankton.ru",
+      "server_port": 443,
+      "uuid": "054362fb-e485-4a3f-9568-4c5b0f60e074",
+      "tls": {
+        "enabled": true,
+        "server_name": "swz.proxyplankton.ru",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -105,7 +134,9 @@
         "🇨🇭 瑞士 (Switzerland) 02 - li007",
         "🇨🇭 瑞士 (Switzerland) 03 - li007",
         "🇨🇭 瑞士 (Switzerland) 04 - li007",
-        "🇨🇭 瑞士 (Switzerland) 05 - li007"
+        "🇨🇭 瑞士 (Switzerland) 05 - li007",
+        "🇨🇭 瑞士 (Switzerland) 06 - li007",
+        "🇨🇭 瑞士 (Switzerland) 07 - li007"
       ]
     },
     {
@@ -116,7 +147,9 @@
         "🇨🇭 瑞士 (Switzerland) 02 - li007",
         "🇨🇭 瑞士 (Switzerland) 03 - li007",
         "🇨🇭 瑞士 (Switzerland) 04 - li007",
-        "🇨🇭 瑞士 (Switzerland) 05 - li007"
+        "🇨🇭 瑞士 (Switzerland) 05 - li007",
+        "🇨🇭 瑞士 (Switzerland) 06 - li007",
+        "🇨🇭 瑞士 (Switzerland) 07 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

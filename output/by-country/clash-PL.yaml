@@ -5,68 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - li007
-  server: 217.30.10.44
-  port: 9062
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: tkhHVxxfM2QErBWe
-- name: 🇵🇱 波兰 (Poland) 02 - li007
-  server: 217.30.10.44
-  port: 9076
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: S2zDyyPcmZN2h8EC
-- name: 🇵🇱 波兰 (Poland) 03 - li007
   server: 168.222.43.53
   port: 2052
   udp: true
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇵🇱 波兰 (Poland) 04 - li007
+- name: 🇵🇱 波兰 (Poland) 02 - li007
   server: 155.117.5.208
   port: 20001
   udp: true
   type: vless
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 05 - li007
-  server: 82.118.22.161
-  port: 443
-  udp: true
-  type: vless
-  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
-    short-id: fa3ea655619a3e78
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇵🇱 波兰 (Poland) 06 - li007
-  server: poland-new-new.failspace.top
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: poland-new-new.failspace.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 07 - li007
-  server: ru1.radiolumens.uk
-  port: 8445
-  udp: true
-  type: vless
-  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
-  tls: true
-  servername: ru1.radiolumens.uk
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: beru-pl
-- name: 🇵🇱 波兰 (Poland) 08 - li007
+- name: 🇵🇱 波兰 (Poland) 03 - li007
   server: 45.148.119.127
   port: 443
   udp: true
@@ -79,16 +29,28 @@ proxies:
     short-id: '50'
   servername: cloudflare.com
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 09 - li007
-  server: 2.26.6.1
-  port: 2087
+- name: 🇵🇱 波兰 (Poland) 04 - li007
+  server: 82.118.22.161
+  port: 443
   udp: true
   type: vless
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
+  flow: xtls-rprx-vision
   tls: true
-  servername: 2.26.6.1
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 10 - li007
+  reality-opts:
+    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
+    short-id: fa3ea655619a3e78
+  servername: www.cloudflare.com
+  client-fingerprint: safari
+- name: 🇵🇱 波兰 (Poland) 05 - li007
+  server: scrap.halyvanedorogo.ru
+  port: 35076
+  udp: true
+  type: hysteria2
+  password: b4c8ee9caa74b7ba0a61
+  sni: scrap.halyvanedorogo.ru
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 06 - li007
   server: 54.37.131.126
   port: 80
   udp: true
@@ -101,6 +63,34 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 07 - li007
+  server: poland-new-new.failspace.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: poland-new-new.failspace.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 08 - li007
+  server: 2.26.6.1
+  port: 2087
+  udp: true
+  type: vless
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  tls: true
+  servername: 2.26.6.1
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 09 - li007
+  server: 92.118.150.146
+  port: 443
+  udp: true
+  type: trojan
+  password: Trojan@82164024
+  sni: pl.tronsg.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -115,7 +105,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 07 - li007
   - 🇵🇱 波兰 (Poland) 08 - li007
   - 🇵🇱 波兰 (Poland) 09 - li007
-  - 🇵🇱 波兰 (Poland) 10 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -130,6 +119,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 07 - li007
   - 🇵🇱 波兰 (Poland) 08 - li007
   - 🇵🇱 波兰 (Poland) 09 - li007
-  - 🇵🇱 波兰 (Poland) 10 - li007
 rules:
 - MATCH,PROXIES
