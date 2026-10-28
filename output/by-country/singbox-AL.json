@@ -4,26 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - li007",
-      "server": "zfd-hkv2.kunlun01dns.com",
-      "server_port": 16113,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
+      "type": "shadowsocks",
+      "tag": "🇦🇱 AL 01 - li007",
+      "server": "dns22.m3hrzd.ir",
+      "server_port": 1348,
+      "method": "chacha20-ietf-poly1305",
+      "password": "LzEeLj2OP0DQmpPDtVTazdGC0cHcT0Kn"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - li007"
+        "🇦🇱 AL 01 - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - li007"
+        "🇦🇱 AL 01 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

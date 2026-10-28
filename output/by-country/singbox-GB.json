@@ -4,24 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 01 - li007",
-      "server": "46.250.250.149",
-      "server_port": 2053,
-      "uuid": "b4caaf57-ad77-4948-a6f5-51b3513799bf",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M",
-          "short_id": "9922313fffed1c63"
-        }
-      }
+      "server": "146.70.61.18",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
       "type": "shadowsocks",
@@ -34,21 +22,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 03 - li007",
-      "server": "146.70.61.37",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 04 - li007",
-      "server": "155.117.5.208",
-      "server_port": 10002,
-      "uuid": "c6362720-0931-4b91-b187-d8ecf3149734"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 05 - li007",
       "server": "141.98.101.181",
       "server_port": 443,
       "method": "aes-128-gcm",
@@ -56,11 +29,26 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 06 - li007",
-      "server": "146.70.61.18",
+      "tag": "🇬🇧 英国 (United Kingdom) 04 - li007",
+      "server": "146.70.46.199",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 05 - li007",
+      "server": "155.117.5.208",
+      "server_port": 10002,
+      "uuid": "c6362720-0931-4b91-b187-d8ecf3149734"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 06 - li007",
+      "server": "94.156.250.148",
+      "server_port": 7001,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
     },
     {
       "type": "vless",
@@ -85,23 +73,67 @@
     {
       "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 08 - li007",
-      "server": "146.70.46.214",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 09 - li007",
-      "server": "146.70.46.199",
+      "server": "146.70.61.37",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
       "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 09 - li007",
+      "server": "23.81.36.148",
+      "server_port": 1222,
+      "uuid": "36c3dcc2-17b6-4478-b8a7-3978e6d5afe9",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE",
+          "short_id": "a25d0f"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 10 - li007",
-      "server": "uk.2ul.top",
+      "server": "98.98.142.161",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 11 - li007",
+      "server": "node-uk.connectsuite.org",
+      "server_port": 8443,
+      "uuid": "c08f0056-7a6d-4931-813b-aaa3cdd00aed",
+      "tls": {
+        "enabled": true,
+        "server_name": "node-uk.connectsuite.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 12 - li007",
+      "server": "146.70.46.214",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 13 - li007",
+      "server": "217.154.58.196",
       "server_port": 443,
       "uuid": "77479eaf-c35e-4088-ae47-a2beb88a7272",
       "tls": {
@@ -109,7 +141,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -120,7 +152,18 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 11 - li007",
+      "tag": "🇬🇧 英国 (United Kingdom) 14 - li007",
+      "server": "23.81.36.148",
+      "server_port": 8080,
+      "uuid": "36c3dcc2-17b6-4478-b8a7-3978e6d5afe9",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 15 - li007",
       "server": "191.44.108.31",
       "server_port": 443,
       "uuid": "558b26f6-061b-4079-9b84-ca13b3e90ae3",
@@ -140,8 +183,47 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 16 - li007",
+      "server": "98.98.207.163",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 12 - li007",
+      "tag": "🇬🇧 英国 (United Kingdom) 17 - li007",
+      "server": "57.129.130.57",
+      "server_port": 52014,
+      "uuid": "04d2aebd-246f-4348-805f-a8e6840365fc",
+      "tls": {
+        "enabled": true,
+        "server_name": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi ",
+        "headers": {
+          "Host": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 18 - li007",
+      "server": "sql.popmintxo.cc",
+      "server_port": 43385,
+      "method": "chacha20-ietf-poly1305",
+      "password": "AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa"
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 19 - li007",
       "server": "138.124.125.193",
       "server_port": 10444,
       "uuid": "e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4",
@@ -162,58 +244,13 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 13 - li007",
-      "server": "195.72.166.251",
-      "server_port": 443,
-      "uuid": "64c05afc-ce81-4ba0-b697-afa04da1427e",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇬🇧 英国 (United Kingdom) 20 - li007",
+      "server": "57.129.130.34",
+      "server_port": 52014,
+      "uuid": "d1e65d87-c0d1-4265-9242-a56aad927341",
       "tls": {
         "enabled": true,
-        "server_name": "www.lloydsbankinggroup.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "RKDT6fVgcZS8Qfzhv5rbeHRIflA3UTKD_HNLJyOoUwk",
-          "short_id": "25349b36802f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 14 - li007",
-      "server": "51.38.71.147",
-      "server_port": 8443,
-      "uuid": "c08f0056-7a6d-4931-813b-aaa3cdd00aed",
-      "tls": {
-        "enabled": true,
-        "server_name": "node-uk.connectsuite.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 15 - li007",
-      "server": "98.98.142.161",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 16 - li007",
-      "server": "104.21.51.163",
-      "server_port": 443,
-      "uuid": "1aa96574-c28b-4ee9-855d-ebdbbf1f7e90",
-      "tls": {
-        "enabled": true,
-        "server_name": "1-M13.0dCb525D-9bf8-452C-a465-5546541729d1.KdnS.fR",
+        "server_name": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -222,68 +259,32 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/ED3ZQPu7lqyeDGD58KabZ",
+        "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "1-M13.0DcB525d-9Bf8-452c-A465-5546541729d1.KdNs.Fr"
+          "Host": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 17 - li007",
-      "server": "98.98.207.163",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇬🇧 英国 (United Kingdom) 18 - li007",
-      "server": "57.129.132.223",
-      "server_port": 80,
-      "uuid": "a25cbf11-2908-4a1b-a3a8-9a571777dca3",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "57.129.132.223"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 19 - li007",
-      "server": "sql.popmintxo.cc",
-      "server_port": 43385,
-      "method": "chacha20-ietf-poly1305",
-      "password": "AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 20 - li007",
-      "server": "37.153.158.136",
-      "server_port": 56137,
-      "method": "chacha20-ietf-poly1305",
-      "password": "uvKNudV-N8AUCrykPiyznA"
     },
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 21 - li007",
-      "server": "23.81.36.148",
-      "server_port": 1222,
-      "uuid": "36c3dcc2-17b6-4478-b8a7-3978e6d5afe9",
+      "server": "129.151.64.169",
+      "server_port": 31867,
+      "uuid": "d10a56d4-6ec8-47eb-a1f4-42c6e623bcf4",
       "tls": {
         "enabled": true,
-        "server_name": "play.google.com",
+        "server_name": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE",
-          "short_id": "a25d0f"
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
         }
       }
     },
@@ -308,50 +309,129 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇬🇧 英国 (United Kingdom) 23 - li007",
-      "server": "94.156.250.148",
-      "server_port": 7001,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 24 - li007",
-      "server": "193.188.21.253",
-      "server_port": 14430,
-      "uuid": "57f7772d-f5d6-4d8f-992d-5fa5e0d6da55",
+      "server": "57.129.132.223",
+      "server_port": 80,
+      "uuid": "a25cbf11-2908-4a1b-a3a8-9a571777dca3",
+      "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/vless",
+        "path": "/vmess/",
         "headers": {
-          "Host": "193.188.21.253"
+          "Host": "viber.com"
         }
       }
     },
     {
       "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 24 - li007",
+      "server": "57.129.132.223",
+      "server_port": 80,
+      "uuid": "dbb78c94-9f87-4d7d-b945-2000b60352fd",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 25 - li007",
-      "server": "46.250.240.80",
-      "server_port": 2053,
-      "uuid": "948df76f-505d-4608-9c76-a933ee3ccc76",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E",
-          "short_id": "4cc9dc65f7770115"
+      "server": "57.129.132.223",
+      "server_port": 80,
+      "uuid": "9e20b04d-5a81-4e16-b421-01e502f0aac6",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/",
+        "headers": {
+          "Host": "google.com"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 26 - li007",
+      "server": "57.129.132.223",
+      "server_port": 80,
+      "uuid": "9e20b04d-5a81-4e16-b421-01e502f0aac6",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/",
+        "headers": {
+          "Host": "viber.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 27 - li007",
+      "server": "57.129.132.223",
+      "server_port": 80,
+      "uuid": "9e20b04d-5a81-4e16-b421-01e502f0aac6",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 28 - li007",
+      "server": "57.129.132.223",
+      "server_port": 80,
+      "uuid": "dbb78c94-9f87-4d7d-b945-2000b60352fd",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 29 - li007",
+      "server": "193.188.21.253",
+      "server_port": 14430,
+      "uuid": "57f7772d-f5d6-4d8f-992d-5fa5e0d6da55",
+      "transport": {
+        "type": "ws",
+        "path": "/vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 30 - li007",
+      "server": "46.250.250.149",
+      "server_port": 2053,
+      "uuid": "b4caaf57-ad77-4948-a6f5-51b3513799bf",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M",
+          "short_id": "9922313fffed1c63"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 31 - li007",
+      "server": "213.176.92.168",
+      "server_port": 14430,
+      "uuid": "ba52cc43-700d-4040-9444-29214c98e6e0",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "213.176.92.168"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 32 - li007",
       "server": "146.19.143.218",
       "server_port": 443,
       "uuid": "ca14493b-b984-4ffb-bc0e-9cb5da969e15",
@@ -372,21 +452,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 27 - li007",
-      "server": "213.176.92.168",
-      "server_port": 14430,
-      "uuid": "ba52cc43-700d-4040-9444-29214c98e6e0",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "213.176.92.168"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 28 - li007",
+      "tag": "🇬🇧 英国 (United Kingdom) 33 - li007",
       "server": "213.176.92.168",
       "server_port": 10444,
       "uuid": "ba52cc43-700d-4040-9444-29214c98e6e0",
@@ -396,7 +462,7 @@
         "server_name": "video.yandex.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -407,7 +473,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 29 - li007",
+      "tag": "🇬🇧 英国 (United Kingdom) 34 - li007",
       "server": "193.188.21.253",
       "server_port": 10444,
       "uuid": "57f7772d-f5d6-4d8f-992d-5fa5e0d6da55",
@@ -428,7 +494,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 30 - li007",
+      "tag": "🇬🇧 英国 (United Kingdom) 35 - li007",
+      "server": "144.48.11.97",
+      "server_port": 43000,
+      "uuid": "4799abf0-d0d9-4a46-9c31-b1f76ae00e1e",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "144.48.11.97",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lmT0SFJL1A8_ariRWL65dhShaqFbpitjGanv7EFnoR0",
+          "short_id": "725e6ea0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 36 - li007",
       "server": "193.163.203.170",
       "server_port": 443,
       "uuid": "11aabba0-5fd1-4f15-8068-74c1a466cefc",
@@ -438,7 +525,7 @@
         "server_name": "yandex.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -448,27 +535,51 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 31 - li007",
-      "server": "57.129.139.2",
-      "server_port": 56137,
-      "method": "chacha20-ietf-poly1305",
-      "password": "uvKNudV-N8AUCrykPiyznA"
-    },
-    {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 32 - li007",
-      "server": "23.81.36.148",
-      "server_port": 8080,
-      "uuid": "36c3dcc2-17b6-4478-b8a7-3978e6d5afe9",
-      "transport": {
-        "type": "ws",
-        "path": "/"
+      "tag": "🇬🇧 英国 (United Kingdom) 37 - li007",
+      "server": "46.250.240.80",
+      "server_port": 2053,
+      "uuid": "948df76f-505d-4608-9c76-a933ee3ccc76",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E",
+          "short_id": "4cc9dc65f7770115"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 33 - li007",
+      "tag": "🇬🇧 英国 (United Kingdom) 38 - li007",
+      "server": "51.38.71.147",
+      "server_port": 443,
+      "uuid": "fda89998-7e9a-4494-857a-cd0d00661b58",
+      "tls": {
+        "enabled": true,
+        "server_name": "uk1.connectsuite.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/cdn-cgi/ws",
+        "headers": {
+          "Host": "uk1.connectsuite.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 39 - li007",
       "server": "104.239.12.81",
       "server_port": 443,
       "uuid": "d806a58b-33aa-42e0-b170-395e49c16b37",
@@ -489,7 +600,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 34 - li007",
+      "tag": "🇬🇧 英国 (United Kingdom) 40 - li007",
       "server": "87.239.249.137",
       "server_port": 443,
       "uuid": "67eb6b17-7797-4ded-bf52-423c4c5f6cbd",
@@ -499,7 +610,7 @@
         "server_name": "www.foxsports.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -510,14 +621,14 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 35 - li007",
+      "tag": "🇬🇧 英国 (United Kingdom) 41 - li007",
       "server": "107.181.151.128",
       "server_port": 443,
-      "uuid": "73cb2a0d-e2a9-4e61-a343-f2845e8c272e",
+      "uuid": "8cc7d0fc-1b83-4ee3-b51d-8a03a9b19435",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.tradingview.com",
+        "server_name": "www.microsoft.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -525,89 +636,8 @@
         "reality": {
           "enabled": true,
           "public_key": "zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s",
-          "short_id": "611ceeb0ae78"
+          "short_id": "87174b37ce3b"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 36 - li007",
-      "server": "57.129.132.223",
-      "server_port": 80,
-      "uuid": "9e20b04d-5a81-4e16-b421-01e502f0aac6",
-      "transport": {
-        "type": "ws",
-        "path": "/vless/",
-        "headers": {
-          "Host": "google.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 37 - li007",
-      "server": "57.129.132.223",
-      "server_port": 80,
-      "uuid": "dbb78c94-9f87-4d7d-b945-2000b60352fd",
-      "transport": {
-        "type": "ws",
-        "path": "/vless/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 38 - li007",
-      "server": "57.129.132.223",
-      "server_port": 80,
-      "uuid": "dbb78c94-9f87-4d7d-b945-2000b60352fd",
-      "transport": {
-        "type": "ws",
-        "path": "/vless/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 39 - li007",
-      "server": "57.129.132.223",
-      "server_port": 80,
-      "uuid": "9e20b04d-5a81-4e16-b421-01e502f0aac6",
-      "transport": {
-        "type": "ws",
-        "path": "/vless/",
-        "headers": {
-          "Host": "viber.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 40 - li007",
-      "server": "57.129.132.223",
-      "server_port": 80,
-      "uuid": "9e20b04d-5a81-4e16-b421-01e502f0aac6",
-      "transport": {
-        "type": "ws",
-        "path": "/vless/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 41 - li007",
-      "server": "51.38.71.147",
-      "server_port": 443,
-      "uuid": "fda89998-7e9a-4494-857a-cd0d00661b58",
-      "tls": {
-        "enabled": true,
-        "server_name": "uk1.connectsuite.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn-cgi/ws"
       }
     },
     {

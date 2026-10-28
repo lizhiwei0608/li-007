@@ -20,12 +20,27 @@
       "password": "qwerREWQ@@"
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - li007",
-      "server": "zfd-hkv2.kunlun01dns.com",
-      "server_port": 16113,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 03 (家宽) - li007",
+      "server": "144.24.140.37",
+      "server_port": 443,
+      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
+      "tls": {
+        "enabled": true,
+        "server_name": "wzs.echo.net.eu.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HV1ZNVwcHTQsJSgAJVBQUG0dCQEwWAx4AAg4c",
+        "headers": {
+          "Host": "wzs.echo.net.eu.org"
+        }
+      }
     },
     {
       "type": "selector",
@@ -34,7 +49,7 @@
         "auto",
         "🇰🇷 韩国 (South Korea) 01 (家宽) - li007",
         "🇰🇷 韩国 (South Korea) 02 (家宽) - li007",
-        "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - li007"
+        "🇸🇬 新加坡 (Singapore) 03 (家宽) - li007"
       ]
     },
     {
@@ -43,7 +58,7 @@
       "outbounds": [
         "🇰🇷 韩国 (South Korea) 01 (家宽) - li007",
         "🇰🇷 韩国 (South Korea) 02 (家宽) - li007",
-        "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽) - li007"
+        "🇸🇬 新加坡 (Singapore) 03 (家宽) - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

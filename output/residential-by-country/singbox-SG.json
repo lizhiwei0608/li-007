@@ -5,22 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇲🇰 MK 01 - li007",
-      "server": "89.185.82.151",
-      "server_port": 10443,
-      "uuid": "0869a7d7-b8e8-42be-8bca-84b0ab07744a",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇸🇬 新加坡 (Singapore) 01 (家宽) - li007",
+      "server": "144.24.140.37",
+      "server_port": 443,
+      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
       "tls": {
         "enabled": true,
-        "server_name": "stackoverflow.com",
+        "server_name": "wzs.echo.net.eu.org",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "XNfikFybWtjJjWU7-QBGrr-D9YUW0uSK_sR7mDDUmRU",
-          "short_id": "6ba85179"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HV1ZNVwcHTQsJSgAJVBQUG0dCQEwWAx4AAg4c",
+        "headers": {
+          "Host": "wzs.echo.net.eu.org"
         }
       }
     },
@@ -29,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇰 MK 01 - li007"
+        "🇸🇬 新加坡 (Singapore) 01 (家宽) - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇰 MK 01 - li007"
+        "🇸🇬 新加坡 (Singapore) 01 (家宽) - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
