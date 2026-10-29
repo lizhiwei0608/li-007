@@ -5,18 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - li007
-  server: 103.86.49.57
-  port: 80
+  server: 45.154.26.63
+  port: 443
   udp: true
   type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: aIs.SpEeDtEsT.nEt
+  uuid: ff85e702-b605-4109-884d-2c1f065d0954
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MiQ5B4j6In71lWvCi0vO_DkVSDb7sii34bh5efBMswk
+    short-id: 3c032a7e
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇹🇭 泰国 (Thailand) 02 - li007
-  server: th001.zestapp778.com
+  server: 38.60.233.38
   port: 22222
   udp: true
   type: vless
@@ -32,46 +34,6 @@ proxies:
   password: 5t6i121em5lkmsmk
   sni: th001.zestapp778.com
   skip-cert-verify: true
-- name: 🇹🇭 泰国 (Thailand) 04 - li007
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  tls: true
-  servername: v2ray.simspeedup.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 泰国 (Thailand) 05 - li007
-  server: 45.154.26.63
-  port: 443
-  udp: true
-  type: vless
-  uuid: ff85e702-b605-4109-884d-2c1f065d0954
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MiQ5B4j6In71lWvCi0vO_DkVSDb7sii34bh5efBMswk
-    short-id: 3c032a7e
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇹🇭 泰国 (Thailand) 06 - li007
-  server: dghk2610.supertoolify.com
-  port: 21033
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
-    short-id: cbd39bea0805e2
-  servername: www.kaidee.com
-  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -80,9 +42,6 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - li007
   - 🇹🇭 泰国 (Thailand) 02 - li007
   - 🇹🇭 泰国 (Thailand) 03 - li007
-  - 🇹🇭 泰国 (Thailand) 04 - li007
-  - 🇹🇭 泰国 (Thailand) 05 - li007
-  - 🇹🇭 泰国 (Thailand) 06 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -91,8 +50,5 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - li007
   - 🇹🇭 泰国 (Thailand) 02 - li007
   - 🇹🇭 泰国 (Thailand) 03 - li007
-  - 🇹🇭 泰国 (Thailand) 04 - li007
-  - 🇹🇭 泰国 (Thailand) 05 - li007
-  - 🇹🇭 泰国 (Thailand) 06 - li007
 rules:
 - MATCH,PROXIES

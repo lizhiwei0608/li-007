@@ -4,23 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🌐 其他地区 (Other) 01 - li007",
-      "server": "www.gptcloudai.com",
+      "type": "anytls",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - li007",
+      "server": "684616s4.df6h451rh.xin",
       "server_port": 443,
-      "uuid": "e70a5b70-f63c-4450-af8b-94990cdf80c0",
-      "security": "auto",
+      "password": "0324fbc29561",
       "tls": {
         "enabled": true,
-        "server_name": "www.gptcloudai.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/truth",
-        "headers": {
-          "Host": "www.gptcloudai.com"
-        }
+        "server_name": "px.ads.linkedin.com",
+        "insecure": true
       }
     },
     {
@@ -28,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - li007"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - li007"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
