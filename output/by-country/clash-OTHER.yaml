@@ -5,48 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - li007
-  server: or3.sfacg.uk
-  port: 2083
+  server: www.gptcloudai.com
+  port: 443
   udp: true
   type: vmess
-  uuid: ac251237-576f-40c8-a543-554960c958b1
+  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
   alterId: 0
   cipher: auto
   tls: true
-  servername: or3.sfacg.uk
+  servername: www.gptcloudai.com
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /or3
-- name: 🌐 其他地区 (Other) 02 - li007
-  server: or3.sfacg.uk
-  port: 2083
-  udp: true
-  type: vmess
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: or3.sfacg.uk
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /or3
+    path: /truth
     headers:
-      Host: or3.sfacg.uk
+      Host: www.gptcloudai.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - li007
-  - 🌐 其他地区 (Other) 02 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - li007
-  - 🌐 其他地区 (Other) 02 - li007
 rules:
 - MATCH,PROXIES

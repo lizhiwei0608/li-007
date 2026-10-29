@@ -6,37 +6,20 @@
     {
       "type": "vmess",
       "tag": "🌐 其他地区 (Other) 01 - li007",
-      "server": "or3.sfacg.uk",
-      "server_port": 2083,
-      "uuid": "ac251237-576f-40c8-a543-554960c958b1",
+      "server": "www.gptcloudai.com",
+      "server_port": 443,
+      "uuid": "e70a5b70-f63c-4450-af8b-94990cdf80c0",
       "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "or3.sfacg.uk",
+        "server_name": "www.gptcloudai.com",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/or3"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🌐 其他地区 (Other) 02 - li007",
-      "server": "or3.sfacg.uk",
-      "server_port": 2083,
-      "uuid": "ac251237-576f-40c8-a543-554960c958b1",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "or3.sfacg.uk",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/or3",
+        "path": "/truth",
         "headers": {
-          "Host": "or3.sfacg.uk"
+          "Host": "www.gptcloudai.com"
         }
       }
     },
@@ -45,16 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - li007",
-        "🌐 其他地区 (Other) 02 - li007"
+        "🌐 其他地区 (Other) 01 - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - li007",
-        "🌐 其他地区 (Other) 02 - li007"
+        "🌐 其他地区 (Other) 01 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

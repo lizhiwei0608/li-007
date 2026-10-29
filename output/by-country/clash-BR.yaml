@@ -13,16 +13,6 @@ proxies:
   sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
   skip-cert-verify: false
 - name: 🇧🇷 巴西 (Brazil) 02 - li007
-  server: 216.128.173.124
-  port: 15040
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: br001.zestapp778.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇧🇷 巴西 (Brazil) 03 - li007
   server: 147.15.108.14
   port: 20000
   udp: true
@@ -32,6 +22,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
+  ports: 20000-30000,20000-20000
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,7 +30,6 @@ proxy-groups:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 - li007
   - 🇧🇷 巴西 (Brazil) 02 - li007
-  - 🇧🇷 巴西 (Brazil) 03 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -47,6 +37,5 @@ proxy-groups:
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 - li007
   - 🇧🇷 巴西 (Brazil) 02 - li007
-  - 🇧🇷 巴西 (Brazil) 03 - li007
 rules:
 - MATCH,PROXIES
