@@ -22,14 +22,14 @@ proxies:
   port: 443
   udp: true
   type: vless
-  uuid: ed042cf7-efe0-49bd-848b-8d7e655111ff
+  uuid: b60cab55-e7a1-413d-a297-ddd7bad3fb62
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 1036b2383b72
-  servername: www.mozilla.org
-  client-fingerprint: chrome
+    short-id: bbcab8fa80a3
+  servername: www.microsoft.com
+  client-fingerprint: random
 - name: 🇨🇿 捷克 (Czech) 03 - li007
   server: 31.77.13.22
   port: 2063
@@ -41,7 +41,7 @@ proxies:
   reality-opts:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

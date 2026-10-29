@@ -1,0 +1,33 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇦🇲 亚美尼亚 (Armenia) 01 - li007
+  server: ar.zanzelo.ir
+  port: 3022
+  udp: true
+  type: vless
+  uuid: ce334334-3ab8-45a2-8af7-f151f413e402
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: KVrKzcMWnFc8-s2Cre3PUS3ojMvugd1BxS9on54vBW0
+    short-id: f2e1c0296f7f5a8a
+  servername: play.google.com
+  client-fingerprint: chrome
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇦🇲 亚美尼亚 (Armenia) 01 - li007
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇦🇲 亚美尼亚 (Armenia) 01 - li007
+rules:
+- MATCH,PROXIES

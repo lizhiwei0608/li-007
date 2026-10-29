@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - li007
+  server: 684616s4.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 0324fbc29561
+  sni: px.ads.linkedin.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
   server: 125.227.86.45
   port: 443
   udp: true
@@ -15,19 +23,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: db
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
-  server: 6aa21c4d-11d4-45bf-ba55-59512593692c.7b63595a-1119-4080-80e1-3f638120be58.smartprivatelink.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2a778078-9f4f-4203-a204-6fb94547b707
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 3nFa_3MSnFQDm9XfVfFHOnMb3FOptREpe1ehXjAbk1c
-    short-id: d369dbc2
-  servername: www.douyin.com
-  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select

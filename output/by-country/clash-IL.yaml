@@ -16,23 +16,8 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇮🇱 以色列 (Israel) 02 - li007
-  server: 104.17.187.57
-  port: 443
-  udp: true
-  type: vless
-  uuid: 600b90fe-6ff5-4b17-8dac-5be55835d0af
-  tls: true
-  servername: ylsl.abcai.online
-  skip-cert-verify: false
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ylsl.abcai.online
-- name: 🇮🇱 以色列 (Israel) 03 - li007
+- name: 🇮🇱 以色列 (Israel) 02 - li007
   server: 77.91.69.169
   port: 19226
   udp: true
@@ -52,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇮🇱 以色列 (Israel) 01 - li007
   - 🇮🇱 以色列 (Israel) 02 - li007
-  - 🇮🇱 以色列 (Israel) 03 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇮🇱 以色列 (Israel) 01 - li007
   - 🇮🇱 以色列 (Israel) 02 - li007
-  - 🇮🇱 以色列 (Israel) 03 - li007
 rules:
 - MATCH,PROXIES
