@@ -5,259 +5,271 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇱 荷兰 (Netherlands) 01 - li007
-  server: 82.38.31.186
+  server: 82.38.31.220
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
 - name: 🇳🇱 荷兰 (Netherlands) 02 - li007
-  server: 82.38.31.47
+  server: 193.29.139.197
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
 - name: 🇳🇱 荷兰 (Netherlands) 03 - li007
-  server: 82.38.31.191
+  server: 193.29.139.188
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  password: oZIoA69Q8yhcQV8ka3Pa3A
 - name: 🇳🇱 荷兰 (Netherlands) 04 - li007
-  server: 82.38.31.39
+  server: 82.38.31.215
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  password: k1dBOmOB4oqi7Ump37a1bQ
 - name: 🇳🇱 荷兰 (Netherlands) 05 - li007
-  server: 82.38.31.35
+  server: 82.38.31.185
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  password: k1dBOmOB4oqi7Ump37a1bQ
 - name: 🇳🇱 荷兰 (Netherlands) 06 - li007
-  server: 82.38.31.218
+  server: 82.38.31.49
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  password: oZIoA69Q8yhcQV8ka3Pa3A
 - name: 🇳🇱 荷兰 (Netherlands) 07 - li007
-  server: 82.38.31.202
+  server: 82.38.31.62
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  password: oZIoA69Q8yhcQV8ka3Pa3A
 - name: 🇳🇱 荷兰 (Netherlands) 08 - li007
-  server: 193.29.139.202
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 09 - li007
-  server: 82.38.31.155
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 10 - li007
   server: 193.29.139.179
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 11 - li007
-  server: 82.38.31.169
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 12 - li007
-  server: 82.38.31.184
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 (Netherlands) 13 - li007
-  server: 82.38.31.26
+- name: 🇳🇱 荷兰 (Netherlands) 09 - li007
+  server: 82.38.31.17
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 14 - li007
-  server: 82.38.31.210
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 (Netherlands) 15 - li007
-  server: 82.38.31.180
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 (Netherlands) 16 - li007
-  server: 82.38.31.213
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 (Netherlands) 17 - li007
-  server: 158.173.20.208
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇳🇱 荷兰 (Netherlands) 18 - li007
-  server: 82.38.31.217
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 (Netherlands) 19 - li007
-  server: 193.29.139.204
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 20 - li007
+- name: 🇳🇱 荷兰 (Netherlands) 10 - li007
   server: 82.38.31.34
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 21 - li007
-  server: 82.38.31.11
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 22 - li007
-  server: 82.38.31.149
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 23 - li007
-  server: 82.38.31.203
+- name: 🇳🇱 荷兰 (Netherlands) 11 - li007
+  server: 82.38.31.198
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 (Netherlands) 24 - li007
-  server: 82.38.31.162
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 25 - li007
-  server: 193.29.139.151
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 26 - li007
-  server: 82.38.31.208
+- name: 🇳🇱 荷兰 (Netherlands) 12 - li007
+  server: 82.38.31.200
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 (Netherlands) 27 - li007
-  server: 82.38.31.54
+- name: 🇳🇱 荷兰 (Netherlands) 13 - li007
+  server: 193.29.139.234
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+- name: 🇳🇱 荷兰 (Netherlands) 14 - li007
+  server: 82.38.31.183
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 (Netherlands) 15 - li007
+  server: 82.38.31.2
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 28 - li007
-  server: 82.38.31.18
+- name: 🇳🇱 荷兰 (Netherlands) 16 - li007
+  server: 82.38.31.35
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 29 - li007
-  server: 82.38.31.159
+- name: 🇳🇱 荷兰 (Netherlands) 17 - li007
+  server: 82.38.31.155
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 (Netherlands) 18 - li007
+  server: 158.173.20.208
   port: 443
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 30 - li007
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇳🇱 荷兰 (Netherlands) 19 - li007
   server: 193.29.139.223
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 (Netherlands) 31 - li007
-  server: 82.38.31.82
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 32 - li007
-  server: 82.38.31.61
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 33 - li007
-  server: 82.38.31.199
+- name: 🇳🇱 荷兰 (Netherlands) 20 - li007
+  server: 82.38.31.178
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 (Netherlands) 34 - li007
+- name: 🇳🇱 荷兰 (Netherlands) 21 - li007
+  server: 193.29.139.204
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 (Netherlands) 22 - li007
+  server: 82.38.31.179
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 (Netherlands) 23 - li007
+  server: 82.38.31.28
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 (Netherlands) 24 - li007
   server: 82.38.31.66
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 (Netherlands) 25 - li007
+  server: 82.38.31.159
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 (Netherlands) 26 - li007
+  server: 82.38.31.203
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 (Netherlands) 27 - li007
+  server: 82.38.31.169
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 (Netherlands) 28 - li007
+  server: 82.38.31.208
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 (Netherlands) 29 - li007
+  server: 82.38.31.195
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 (Netherlands) 30 - li007
+  server: 82.38.31.61
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 (Netherlands) 31 - li007
+  server: 82.38.31.162
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 (Netherlands) 32 - li007
+  server: 82.38.31.149
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 (Netherlands) 33 - li007
+  server: 82.38.31.193
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 (Netherlands) 34 - li007
+  server: 82.38.31.42
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
 - name: 🇳🇱 荷兰 (Netherlands) 35 - li007
-  server: 82.38.31.3
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 36 - li007
-  server: 82.38.31.9
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 37 - li007
   server: 51.158.206.34
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: ''
+- name: 🇳🇱 荷兰 (Netherlands) 36 - li007
+  server: 51.158.206.8
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 37 - li007
+  server: 51.158.206.19
   port: 23576
   udp: true
   type: vless
@@ -285,69 +297,6 @@ proxies:
   grpc-opts:
     grpc-service-name: neurex
 - name: 🇳🇱 荷兰 (Netherlands) 39 - li007
-  server: 51.158.206.96
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 40 - li007
-  server: 51.158.206.8
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 41 - li007
-  server: 5.149.249.94
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4a140c2f-5b0c-4524-950c-026de74fcf69
-  tls: true
-  reality-opts:
-    public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
-    short-id: 27350908de933e09
-  servername: nlb.kosmosapp.net
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: neurex
-- name: 🇳🇱 荷兰 (Netherlands) 42 - li007
-  server: 51.158.206.80
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 43 - li007
-  server: 51.15.16.68
-  port: 24048
-  udp: true
-  type: hysteria2
-  password: capadm54312235:JdypYweuDQOrFqWTcFAL6aFq
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: ypvL8T4HFIBLoH8q
-- name: 🇳🇱 荷兰 (Netherlands) 44 - li007
   server: 51.158.206.29
   port: 23576
   udp: true
@@ -360,48 +309,7 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 45 - li007
-  server: 109.201.152.181
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-cfb
-  password: shadowsocks
-- name: 🇳🇱 荷兰 (Netherlands) 46 - li007
-  server: 51.158.206.19
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 47 - li007
-  server: 5.129.235.85
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: 5.129.235.85
-  skip-cert-verify: true
-- name: 🇳🇱 荷兰 (Netherlands) 48 - li007
-  server: 187.52.44.20
-  port: 47443
-  udp: true
-  type: vless
-  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: g5am2VhZkx_xH2TSKfUU8OYLxAzFrmcszNQg8AbOenE
-    short-id: ae97223a8f799872
-  servername: nl4.waspnest.space
-  client-fingerprint: firefox
-- name: 🇳🇱 荷兰 (Netherlands) 49 - li007
+- name: 🇳🇱 荷兰 (Netherlands) 40 - li007
   server: 51.158.206.93
   port: 23576
   udp: true
@@ -414,20 +322,21 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 50 - li007
-  server: 2.27.118.10
-  port: 443
+- name: 🇳🇱 荷兰 (Netherlands) 41 - li007
+  server: 51.158.206.96
+  port: 23576
   udp: true
   type: vless
-  uuid: d9fe2431-8351-41eb-b956-75d96dec5d4a
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: goey7Sc4Xm6Nvdukb_DuoUnrkPSV0p4hPWbAmk2_AHc
-    short-id: ecf1d9f7caa6ba67
-  servername: ph-nl-s3784.cybercat.network
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 51 - li007
-  server: 51.158.206.87
+- name: 🇳🇱 荷兰 (Netherlands) 42 - li007
+  server: 51.158.206.20
   port: 23576
   udp: true
   type: vless
@@ -438,7 +347,118 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
   servername: fuck.rkn
   client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 43 - li007
+  server: 51.158.206.12
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 44 - li007
+  server: 109.201.152.181
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-cfb
+  password: shadowsocks
+- name: 🇳🇱 荷兰 (Netherlands) 45 - li007
+  server: 82.38.31.149
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 (Netherlands) 46 - li007
+  server: 51.158.206.26
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 47 - li007
+  server: 5.149.249.94
+  port: 443
+  udp: true
+  type: vless
+  uuid: ed77c1dc-3df2-412b-b855-49286f979c21
+  tls: true
+  reality-opts:
+    public-key: pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ
+    short-id: 27350908de933e09
+  servername: nlb.kosmosapp.net
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: neurex
+- name: 🇳🇱 荷兰 (Netherlands) 48 - li007
+  server: 51.158.206.103
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+  servername: fuck.rkn
+  client-fingerprint: random
+- name: 🇳🇱 荷兰 (Netherlands) 49 - li007
+  server: 51.158.206.80
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 50 - li007
+  server: 51.15.16.68
+  port: 24111
+  udp: true
+  type: hysteria2
+  password: capadm54312235:JdypYweuDQOrFqWTcFAL6aFq
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: ypvL8T4HFIBLoH8q
+- name: 🇳🇱 荷兰 (Netherlands) 51 - li007
+  server: 144.124.245.52
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 6da2c981-8c77-4340-bda3-93399b7aea26
+  sni: store.blog-forme.ru
+  skip-cert-verify: false
 - name: 🇳🇱 荷兰 (Netherlands) 52 - li007
+  server: 51.158.206.87
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 53 - li007
   server: 86.54.28.75
   port: 443
   udp: true
@@ -450,92 +470,21 @@ proxies:
     public-key: PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU
     short-id: 1d86d17709852910
   servername: www.apple.com
-  client-fingerprint: qq
-- name: 🇳🇱 荷兰 (Netherlands) 53 - li007
-  server: 152.70.58.201
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8892e34a-339b-4526-b88d-cf68c516231c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Hg_ivwbClYmR-SEHdoGgq4yEk6ltbjS5c4yiQRa4_28
-    short-id: 52c723e0fad49689
-  servername: www.nvidia.com
   client-fingerprint: chrome
 - name: 🇳🇱 荷兰 (Netherlands) 54 - li007
-  server: 51.158.206.103
-  port: 23576
+  server: 187.52.44.20
+  port: 47443
   udp: true
   type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
+    public-key: g5am2VhZkx_xH2TSKfUU8OYLxAzFrmcszNQg8AbOenE
+    short-id: ae97223a8f799872
+  servername: nl4.waspnest.space
+  client-fingerprint: firefox
 - name: 🇳🇱 荷兰 (Netherlands) 55 - li007
-  server: 51.158.206.26
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-  servername: fuck.rkn
-  client-fingerprint: random
-- name: 🇳🇱 荷兰 (Netherlands) 56 - li007
-  server: 82.38.31.174
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 57 - li007
-  server: 51.158.206.20
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 58 - li007
-  server: 82.38.31.195
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 (Netherlands) 59 - li007
-  server: 144.124.245.52
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 6da2c981-8c77-4340-bda3-93399b7aea26
-  sni: store.blog-forme.ru
-  skip-cert-verify: false
-- name: 🇳🇱 荷兰 (Netherlands) 60 - li007
-  server: 45.128.76.242
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.trusteeforward.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇳🇱 荷兰 (Netherlands) 61 - li007
   server: 130.12.242.106
   port: 443
   udp: true
@@ -548,14 +497,30 @@ proxies:
     short-id: 15affa0af66dfc79
   servername: deepl.com
   client-fingerprint: firefox
-- name: 🇳🇱 荷兰 (Netherlands) 62 - li007
-  server: 82.38.31.175
-  port: 8080
+- name: 🇳🇱 荷兰 (Netherlands) 56 - li007
+  server: sc-thenetherlands1.09vpn.com
+  port: 80
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 63 - li007
+  type: vless
+  uuid: 40cc9b52-25b8-4cd5-8b45-715ae26e6baf
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: sc-thenetherlands1.09vpn.com
+- name: 🇳🇱 荷兰 (Netherlands) 57 - li007
+  server: 2.27.118.10
+  port: 443
+  udp: true
+  type: vless
+  uuid: d9fe2431-8351-41eb-b956-75d96dec5d4a
+  tls: true
+  reality-opts:
+    public-key: goey7Sc4Xm6Nvdukb_DuoUnrkPSV0p4hPWbAmk2_AHc
+    short-id: ecf1d9f7caa6ba67
+  servername: ph-nl-s3784.cybercat.network
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 58 - li007
   server: 153.75.86.200
   port: 8443
   udp: true
@@ -568,7 +533,48 @@ proxies:
     short-id: 7e7434c068cbef5a
   servername: www.apple.com
   client-fingerprint: edge
-- name: 🇳🇱 荷兰 (Netherlands) 64 - li007
+- name: 🇳🇱 荷兰 (Netherlands) 59 - li007
+  server: 152.70.58.201
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8892e34a-339b-4526-b88d-cf68c516231c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Hg_ivwbClYmR-SEHdoGgq4yEk6ltbjS5c4yiQRa4_28
+    short-id: 52c723e0fad49689
+  servername: www.nvidia.com
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 60 - li007
+  server: 77.220.213.244
+  port: 8444
+  udp: true
+  type: vless
+  uuid: a8321cfe-39a2-48a0-a918-f01f7d9006ed
+  tls: true
+  servername: nl11.meshbeat.online
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/v1/devices/d63ac7ea89/telemetry
+    headers:
+      Host: nl11.meshbeat.online
+- name: 🇳🇱 荷兰 (Netherlands) 61 - li007
+  server: 108.61.164.217
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k9srkQedwHsZGJP-R-GGwDOGok05gk23s8d4mtidMC4
+    short-id: 835391010667297d
+  servername: www.samsung.com
+  client-fingerprint: ''
+- name: 🇳🇱 荷兰 (Netherlands) 62 - li007
   server: 2.27.21.15
   port: 443
   udp: true
@@ -581,8 +587,28 @@ proxies:
     short-id: 91079323f5151c91
   servername: envs.net
   client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 63 - li007
+  server: 195.123.221.36
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9c60369d-e5f9-4cec-9e63-1560e88e119a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: dIv6pPS-x6IzbiPyHX8nNdRrwI2yZl4y3YCeRWy9UgE
+    short-id: 3e67326f98ddb407
+  servername: gateway.icloud.com
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 64 - li007
+  server: 82.38.31.39
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
 - name: 🇳🇱 荷兰 (Netherlands) 65 - li007
-  server: 51.158.206.98
+  server: 51.158.206.97
   port: 23576
   udp: true
   type: vless
@@ -591,39 +617,27 @@ proxies:
   tls: true
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
   servername: fuck.rkn
-  client-fingerprint: ''
+  client-fingerprint: chrome
 - name: 🇳🇱 荷兰 (Netherlands) 66 - li007
-  server: 94.249.148.20
+  server: 104.20.55.137
   port: 443
   udp: true
-  type: vless
-  uuid: 7b22dce8-7ebd-425b-8ca4-7b6190321985
-  tls: true
-  servername: a.de-3.bnc-gt.co.uk
+  type: trojan
+  password: humanity
+  sni: www.trusteeforward.com
   skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
+  network: ws
+  ws-opts:
+    path: /assignment
 - name: 🇳🇱 荷兰 (Netherlands) 67 - li007
-  server: 82.38.31.176
+  server: 82.38.31.54
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  password: oZIoA69Q8yhcQV8ka3Pa3A
 - name: 🇳🇱 荷兰 (Netherlands) 68 - li007
-  server: 163.172.214.188
-  port: 80
-  udp: true
-  type: vless
-  uuid: 40cc9b52-25b8-4cd5-8b45-715ae26e6baf
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇳🇱 荷兰 (Netherlands) 69 - li007
   server: 46.30.45.254
   port: 8444
   udp: true
@@ -638,13 +652,23 @@ proxies:
     path: /api/v1/devices/7495606fef/telemetry
     headers:
       Host: nl12.meshbeat.online
-- name: 🇳🇱 荷兰 (Netherlands) 70 - li007
-  server: 82.38.31.171
+- name: 🇳🇱 荷兰 (Netherlands) 69 - li007
+  server: 82.38.31.170
   port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 (Netherlands) 70 - li007
+  server: 51.15.16.68
+  port: 37181
+  udp: true
+  type: hysteria2
+  password: capadm54312235:JdypYweuDQOrFqWTcFAL6aFq
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: ypvL8T4HFIBLoH8q
 - name: 🇳🇱 荷兰 (Netherlands) 71 - li007
   server: 82.38.31.165
   port: 443
@@ -653,76 +677,20 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
 - name: 🇳🇱 荷兰 (Netherlands) 72 - li007
-  server: 51.158.206.12
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 73 - li007
-  server: 193.29.139.235
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 74 - li007
-  server: 108.61.164.217
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k9srkQedwHsZGJP-R-GGwDOGok05gk23s8d4mtidMC4
-    short-id: 835391010667297d
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 75 - li007
-  server: 51.15.16.68
-  port: 24062
-  udp: true
-  type: hysteria2
-  password: capadm54312235:JdypYweuDQOrFqWTcFAL6aFq
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: ypvL8T4HFIBLoH8q
-- name: 🇳🇱 荷兰 (Netherlands) 76 - li007
-  server: 51.158.206.25
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 77 - li007
-  server: 82.38.31.171
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 78 - li007
   server: 82.38.31.46
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 79 - li007
+- name: 🇳🇱 荷兰 (Netherlands) 73 - li007
+  server: 82.38.31.171
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 (Netherlands) 74 - li007
   server: 51.158.206.86
   port: 23576
   udp: true
@@ -735,50 +703,106 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 80 - li007
-  server: 77.238.240.124
-  port: 8443
-  udp: true
-  type: vless
-  uuid: fa0010d9-7060-4abd-956a-76f15f067d0d
-  flow: xtls-rprx-vision
-  tls: true
-  servername: alice.proxyplankton.ru
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇳🇱 荷兰 (Netherlands) 81 - li007
-  server: 82.38.31.42
+- name: 🇳🇱 荷兰 (Netherlands) 75 - li007
+  server: 193.29.139.235
   port: 8080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 82 - li007
-  server: 138.16.141.59
-  port: 7443
-  udp: true
-  type: vless
-  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
-  tls: true
-  reality-opts:
-    public-key: RY7zkFQ01lI92jxNAyCa8T33UBW1fgpJgg8ZEqMA10k
-    short-id: a09ff9f8
-  servername: ibm.com
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 83 - li007
-  server: 208.67.106.154
+- name: 🇳🇱 荷兰 (Netherlands) 76 - li007
+  server: 72.56.38.83
   port: 443
   udp: true
   type: vless
-  uuid: 96ee55ac-d534-4502-878a-468c7896360b
+  uuid: Fluffy_VPN-zKZUa4Ie
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: _0fpFqEEuCso3B8K7AAcMjctwG_xfCxO2PdKzGd_-hg
-    short-id: c9677d3b7dea
-  servername: www.microsoft.com
+    public-key: ZzIetLcQtENjIXQ9XZqFo8p3J81p8Emj0wi51Uy07n8
+  servername: absolute-disaster.org
   client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 77 - li007
+  server: 82.38.31.174
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 (Netherlands) 78 - li007
+  server: 51.15.16.68
+  port: 37030
+  udp: true
+  type: hysteria2
+  password: capadm54312235:JdypYweuDQOrFqWTcFAL6aFq
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: ypvL8T4HFIBLoH8q
+- name: 🇳🇱 荷兰 (Netherlands) 79 - li007
+  server: 82.38.31.10
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 (Netherlands) 80 - li007
+  server: 51.158.206.98
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 81 - li007
+  server: 82.38.31.175
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 荷兰 (Netherlands) 82 - li007
+  server: 5.129.235.85
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: 5.129.235.85
+  skip-cert-verify: true
+- name: 🇳🇱 荷兰 (Netherlands) 83 - li007
+  server: 193.29.139.151
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
 - name: 🇳🇱 荷兰 (Netherlands) 84 - li007
+  server: 51.15.16.68
+  port: 24048
+  udp: true
+  type: hysteria2
+  password: capadm54312235:JdypYweuDQOrFqWTcFAL6aFq
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: ypvL8T4HFIBLoH8q
+- name: 🇳🇱 荷兰 (Netherlands) 85 - li007
+  server: 138.124.39.251
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5254c281-3bc1-40ee-ba89-1aaf8c251402
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: node0aB_7yyVADkeieiBBpxqIlxNLQcvgotRClh0QXQ
+  servername: nl-modx-prime.storagedirectguide.com
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 86 - li007
   server: 94.156.79.93
   port: 443
   udp: true
@@ -791,27 +815,54 @@ proxies:
     short-id: f129dcdbf64f
   servername: www.microsoft.com
   client-fingerprint: firefox
-- name: 🇳🇱 荷兰 (Netherlands) 85 - li007
-  server: 82.38.31.149
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 86 - li007
-  server: 186.246.9.29
+- name: 🇳🇱 荷兰 (Netherlands) 87 - li007
+  server: 208.67.106.154
   port: 443
   udp: true
   type: vless
-  uuid: b2847c3b-5278-4b06-9c66-bc919d2dfec7
+  uuid: 96ee55ac-d534-4502-878a-468c7896360b
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: MPNMomAMn_lu9YMYjD2jAQWrI-rTM4hj9Jgg9d6qzTA
-    short-id: 50ad5564
-  servername: wordpress.com
+    public-key: _0fpFqEEuCso3B8K7AAcMjctwG_xfCxO2PdKzGd_-hg
+    short-id: c9677d3b7dea
+  servername: www.microsoft.com
   client-fingerprint: firefox
-- name: 🇳🇱 荷兰 (Netherlands) 87 - li007
-  server: 51.158.206.97
+- name: 🇳🇱 荷兰 (Netherlands) 88 - li007
+  server: 138.16.141.59
+  port: 7443
+  udp: true
+  type: vless
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  tls: true
+  reality-opts:
+    public-key: RY7zkFQ01lI92jxNAyCa8T33UBW1fgpJgg8ZEqMA10k
+    short-id: a09ff9f8
+  servername: ibm.com
+  client-fingerprint: chrome
+- name: 🇳🇱 荷兰 (Netherlands) 89 - li007
+  server: 46.62.204.134
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇳🇱 荷兰 (Netherlands) 90 - li007
+  server: 51.15.16.68
+  port: 24062
+  udp: true
+  type: hysteria2
+  password: capadm54312235:JdypYweuDQOrFqWTcFAL6aFq
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: ypvL8T4HFIBLoH8q
+- name: 🇳🇱 荷兰 (Netherlands) 91 - li007
+  server: 51.158.206.25
   port: 23576
   udp: true
   type: vless
@@ -820,37 +871,9 @@ proxies:
   tls: true
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
   servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 88 - li007
-  server: 82.38.31.69
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 荷兰 (Netherlands) 89 - li007
-  server: 51.15.19.206
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: HowdyHysteria2023w0W
-  sni: sni-here.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: HysteriaHowdy
-- name: 🇳🇱 荷兰 (Netherlands) 90 - li007
-  server: 147.45.149.88
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: NL2026hy
-  sni: nl.nobelchat.ru
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: SalamanderNL2026
-- name: 🇳🇱 荷兰 (Netherlands) 91 - li007
+  client-fingerprint: random
+- name: 🇳🇱 荷兰 (Netherlands) 92 - li007
   server: 87.199.205.28
   port: 443
   udp: true
@@ -862,21 +885,19 @@ proxies:
     public-key: W-9zyiOq287RtXVTZlTFbSDJ0Mx8joyBLJoA7ZE7eBw
     short-id: ef1d3554c652a436
   servername: vkvd754.okcdn.ru
-  client-fingerprint: chrome
-- name: 🇳🇱 荷兰 (Netherlands) 92 - li007
-  server: 51.15.16.68
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 7d0fd363-16d2-43ce-9d6d-ed2c15d2cb7c
-  tls: true
-  reality-opts:
-    public-key: Zotx4F9CI6_q9yeKCKIHDjwzCv_Aq7WSo7N0Zc1A6Sc
-    short-id: 3c99c85cbb6b3b44
-  servername: www.apple.com
-  client-fingerprint: safari
+  client-fingerprint: random
 - name: 🇳🇱 荷兰 (Netherlands) 93 - li007
-  server: hysteria.udpgw.com
+  server: 51.15.16.68
+  port: 24050
+  udp: true
+  type: hysteria2
+  password: capadm54312235:JdypYweuDQOrFqWTcFAL6aFq
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: ypvL8T4HFIBLoH8q
+- name: 🇳🇱 荷兰 (Netherlands) 94 - li007
+  server: 51.15.19.206
   port: 8443
   udp: true
   type: hysteria2
@@ -885,18 +906,27 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: HysteriaHowdy
-- name: 🇳🇱 荷兰 (Netherlands) 94 - li007
-  server: 72.56.38.83
+- name: 🇳🇱 荷兰 (Netherlands) 95 - li007
+  server: 51.15.16.68
+  port: 24146
+  udp: true
+  type: hysteria2
+  password: capadm54312235:JdypYweuDQOrFqWTcFAL6aFq
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: ypvL8T4HFIBLoH8q
+- name: 🇳🇱 荷兰 (Netherlands) 96 - li007
+  server: 94.158.219.126
   port: 443
   udp: true
-  type: vless
-  uuid: Fluffy_VPN-zKZUa4Ie
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ZzIetLcQtENjIXQ9XZqFo8p3J81p8Emj0wi51Uy07n8
-  servername: absolute-disaster.org
-  client-fingerprint: firefox
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
@@ -996,6 +1026,8 @@ proxy-groups:
   - 🇳🇱 荷兰 (Netherlands) 92 - li007
   - 🇳🇱 荷兰 (Netherlands) 93 - li007
   - 🇳🇱 荷兰 (Netherlands) 94 - li007
+  - 🇳🇱 荷兰 (Netherlands) 95 - li007
+  - 🇳🇱 荷兰 (Netherlands) 96 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -1095,5 +1127,7 @@ proxy-groups:
   - 🇳🇱 荷兰 (Netherlands) 92 - li007
   - 🇳🇱 荷兰 (Netherlands) 93 - li007
   - 🇳🇱 荷兰 (Netherlands) 94 - li007
+  - 🇳🇱 荷兰 (Netherlands) 95 - li007
+  - 🇳🇱 荷兰 (Netherlands) 96 - li007
 rules:
 - MATCH,PROXIES

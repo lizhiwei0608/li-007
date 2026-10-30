@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - li007
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 02 - li007
   server: 31.77.199.147
   port: 4443
   udp: true
@@ -28,8 +17,27 @@ proxies:
     short-id: 7da2eae792187ab9
   servername: images.unsplash.com
   client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 02 - li007
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 03 - li007
-  server: 65.109.210.221
+  server: finland.biznes.lol
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 7d43670b-6b08-45b9-8a24-8f3971abc132
+  sni: finland.biznes.lol
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 04 - li007
+  server: hw3.divarkhaghazi.com.
   port: 465
   udp: true
   type: vless
@@ -41,51 +49,41 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: 🇫🇮 芬兰 (Finland) 05 - li007
+  server: fi-1.bnc-gt.co.uk
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7b22dce8-7ebd-425b-8ca4-7b6190321985
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: CegqLjzOImUmYD9ZdpOOG65UgNTGeQfRmpIni8iraB0
+    short-id: 7be1e9c243451b14
+  servername: b.fi-1.bnc-gt.co.uk
+  client-fingerprint: qq
+- name: 🇫🇮 芬兰 (Finland) 06 - li007
+  server: 65.109.211.81
+  port: 465
+  udp: true
+  type: vless
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  tls: true
+  servername: hw6.divarkhaghazi.com.
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
     headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 04 - li007
+      Host: hw6.divarkhaghazi.com.
+- name: 🇫🇮 芬兰 (Finland) 07 - li007
   server: 65.21.52.113
   port: 53731
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: QoYjvkIZ7-bMIYfVI9IzRXUx5A1o3kj7
-- name: 🇫🇮 芬兰 (Finland) 05 - li007
-  server: 45.144.52.187
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7b22dce8-7ebd-425b-8ca4-7b6190321985
-  tls: true
-  servername: b.fi-1.bnc-gt.co.uk
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇫🇮 芬兰 (Finland) 06 - li007
-  server: 78.17.27.137
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 48d9a277-776b-4ab8-a357-88a1958beed8
-  tls: true
-  reality-opts:
-    public-key: DZ0BYEIHEe9KmJzM_j5EAN0t3_BTcfO63P7x6SRCeQM
-    short-id: a05ccbf2edb5ebd1
-  servername: www.aalto.fi
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 07 - li007
-  server: tr.privatevip.ir
-  port: 448
-  udp: true
-  type: vless
-  uuid: 7c730089-1791-4828-89b2-86e7e1663063
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tr.privatevip.ir
 proxy-groups:
 - name: PROXIES
   type: select

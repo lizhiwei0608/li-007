@@ -6,40 +6,113 @@
     {
       "type": "vmess",
       "tag": "🌐 其他地区 (Other) 01 - li007",
-      "server": "www.ubuntuupdates.com",
+      "server": "www.windowsmsidownloads.com",
       "server_port": 443,
-      "uuid": "83b09a64-1eaf-4c4d-89ed-866d4b6b8115",
+      "uuid": "80be2deb-3b27-4775-9bd1-7f2a2b9c261b",
       "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "www.ubuntuupdates.com",
+        "server_name": "www.windowsmsidownloads.com",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/truth",
-        "headers": {
-          "Host": "www.ubuntuupdates.com"
-        }
+        "path": "/truth"
       }
     },
     {
       "type": "vmess",
       "tag": "🌐 其他地区 (Other) 02 - li007",
-      "server": "www.ubuntuupdates.com",
+      "server": "www.windowssearchtools.com",
       "server_port": 443,
-      "uuid": "83b09a64-1eaf-4c4d-89ed-866d4b6b8115",
+      "uuid": "ba1116e2-8c2f-4e3d-8e50-c954360cf970",
       "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "www.ubuntuupdates.com",
+        "server_name": "www.windowssearchtools.com",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/truth",
+        "path": "/truth"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 03 - li007",
+      "server": "172.64.229.129",
+      "server_port": 2052,
+      "uuid": "5744e593-1cc8-48fa-b8ca-57cd494fe35b",
+      "transport": {
+        "type": "ws",
+        "path": "/rain1226",
         "headers": {
-          "Host": "www.ubuntuupdates.com"
+          "Host": "eu02.123450908.xyz"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 04 - li007",
+      "server": "172.67.187.145",
+      "server_port": 80,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "vmess.lbw666.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 05 - li007",
+      "server": "172.67.187.145",
+      "server_port": 80,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/ws?ed=2048",
+        "headers": {
+          "Host": "vmess.lbw666.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 06 - li007",
+      "server": "172.67.187.145",
+      "server_port": 80,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "vmess.lbw666.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 07 - li007",
+      "server": "172.67.164.184",
+      "server_port": 2083,
+      "uuid": "ac251237-576f-40c8-a543-554960c958b1",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "or3.sfacg.uk",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/or3",
+        "headers": {
+          "Host": "or3.sfacg.uk"
         }
       }
     },
@@ -49,7 +122,12 @@
       "outbounds": [
         "auto",
         "🌐 其他地区 (Other) 01 - li007",
-        "🌐 其他地区 (Other) 02 - li007"
+        "🌐 其他地区 (Other) 02 - li007",
+        "🌐 其他地区 (Other) 03 - li007",
+        "🌐 其他地区 (Other) 04 - li007",
+        "🌐 其他地区 (Other) 05 - li007",
+        "🌐 其他地区 (Other) 06 - li007",
+        "🌐 其他地区 (Other) 07 - li007"
       ]
     },
     {
@@ -57,7 +135,12 @@
       "tag": "auto",
       "outbounds": [
         "🌐 其他地区 (Other) 01 - li007",
-        "🌐 其他地区 (Other) 02 - li007"
+        "🌐 其他地区 (Other) 02 - li007",
+        "🌐 其他地区 (Other) 03 - li007",
+        "🌐 其他地区 (Other) 04 - li007",
+        "🌐 其他地区 (Other) 05 - li007",
+        "🌐 其他地区 (Other) 06 - li007",
+        "🌐 其他地区 (Other) 07 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
