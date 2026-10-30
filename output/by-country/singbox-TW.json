@@ -6,18 +6,34 @@
     {
       "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - li007",
-      "server": "160.187.100.109",
+      "server": "103.115.109.49",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "127.0.0.1",
+        "server_name": "https",
         "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 - li007",
+      "server": "n04.jinggai.online",
+      "server_port": 8443,
+      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
+      "tls": {
+        "enabled": true,
+        "server_name": "n04.jinggai.online",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/nvl-n04-ws/e0577fe8fd7c8823"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - li007",
       "server": "152.32.167.33",
       "server_port": 443,
       "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
@@ -37,26 +53,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - li007",
-      "server": "n04.jinggai.online",
-      "server_port": 8443,
-      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - li007",
+      "server": "vpn-tw-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "n04.jinggai.online",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/nvl-n04-ws/e0577fe8fd7c8823",
-        "headers": {
-          "Host": "n04.jinggai.online"
-        }
+        "server_name": "vpn-tw-002.fastervpn.world",
+        "insecure": true
       }
     },
     {
@@ -66,7 +71,8 @@
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - li007",
         "🇹🇼 中国台湾 (Taiwan) 02 - li007",
-        "🇹🇼 中国台湾 (Taiwan) 03 - li007"
+        "🇹🇼 中国台湾 (Taiwan) 03 - li007",
+        "🇹🇼 中国台湾 (Taiwan) 04 - li007"
       ]
     },
     {
@@ -75,7 +81,8 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - li007",
         "🇹🇼 中国台湾 (Taiwan) 02 - li007",
-        "🇹🇼 中国台湾 (Taiwan) 03 - li007"
+        "🇹🇼 中国台湾 (Taiwan) 03 - li007",
+        "🇹🇼 中国台湾 (Taiwan) 04 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

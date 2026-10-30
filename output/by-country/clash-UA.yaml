@@ -16,7 +16,7 @@ proxies:
     public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
     short-id: 7f1e29593aa94ad1
   servername: www.bing.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇺🇦 乌克兰 (Ukraine) 02 - li007
   server: netx.smrtai.top
   port: 443
@@ -30,32 +30,18 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇺🇦 乌克兰 (Ukraine) 03 - li007
-  server: 216.24.57.225
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 3bcbd7ef-e05b-4745-a1de-5ecf98dd2fb6
-  tls: true
-  servername: pol.netvia.ir
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /wss
-    headers:
-      Host: pol.netvia.ir
-- name: 🇺🇦 乌克兰 (Ukraine) 04 - li007
   server: staging.lastilhame.monster
   port: 443
   udp: true
   type: vless
-  uuid: de38389f-5651-4f2f-8276-5aabf3b861c9
+  uuid: 2ba7f500-017b-4891-87a0-e4e62a4ad52d
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
-    short-id: 225e930cfd4d
-  servername: www.hollywoodreporter.com
-  client-fingerprint: chrome
+    short-id: 9409f73c2fd7
+  servername: www.microsoft.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,7 +50,6 @@ proxy-groups:
   - 🇺🇦 乌克兰 (Ukraine) 01 - li007
   - 🇺🇦 乌克兰 (Ukraine) 02 - li007
   - 🇺🇦 乌克兰 (Ukraine) 03 - li007
-  - 🇺🇦 乌克兰 (Ukraine) 04 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,6 +58,5 @@ proxy-groups:
   - 🇺🇦 乌克兰 (Ukraine) 01 - li007
   - 🇺🇦 乌克兰 (Ukraine) 02 - li007
   - 🇺🇦 乌克兰 (Ukraine) 03 - li007
-  - 🇺🇦 乌克兰 (Ukraine) 04 - li007
 rules:
 - MATCH,PROXIES

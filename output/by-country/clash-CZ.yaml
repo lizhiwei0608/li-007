@@ -5,18 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - li007
-  server: 212.102.38.25
+  server: 162.159.152.4
   port: 443
   udp: true
   type: vless
-  uuid: b34a52cb-cd52-49a8-9362-b8e97c151d49
-  flow: xtls-rprx-vision
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
   tls: true
-  reality-opts:
-    public-key: 23cb4W9THzBKsrECsLh-A_FcKZfkAtUONoDze8-GnQE
-    short-id: e90360ec7cc61b20
-  servername: udemy.com
-  client-fingerprint: firefox
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
 - name: 🇨🇿 捷克 (Czech) 02 - li007
   server: 195.123.245.241
   port: 443
@@ -31,6 +33,19 @@ proxies:
   servername: gateway.icloud.com
   client-fingerprint: chrome
 - name: 🇨🇿 捷克 (Czech) 03 - li007
+  server: 212.102.38.25
+  port: 443
+  udp: true
+  type: vless
+  uuid: b34a52cb-cd52-49a8-9362-b8e97c151d49
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 23cb4W9THzBKsrECsLh-A_FcKZfkAtUONoDze8-GnQE
+    short-id: e90360ec7cc61b20
+  servername: udemy.com
+  client-fingerprint: ios
+- name: 🇨🇿 捷克 (Czech) 04 - li007
   server: 31.77.13.22
   port: 2063
   udp: true
@@ -42,17 +57,17 @@ proxies:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
   client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 04 - li007
+- name: 🇨🇿 捷克 (Czech) 05 - li007
   server: 193.124.17.190
   port: 443
   udp: true
   type: vless
-  uuid: 68cf8d29-5aa0-44b3-88a9-f1a576b6e84c
+  uuid: 1896c6c9-a941-4688-a865-29027bf7f8e6
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 73a9e631a09b
+    short-id: 6c825bc79850
   servername: www.microsoft.com
   client-fingerprint: firefox
 proxy-groups:
@@ -64,6 +79,7 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 02 - li007
   - 🇨🇿 捷克 (Czech) 03 - li007
   - 🇨🇿 捷克 (Czech) 04 - li007
+  - 🇨🇿 捷克 (Czech) 05 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,5 +89,6 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 02 - li007
   - 🇨🇿 捷克 (Czech) 03 - li007
   - 🇨🇿 捷克 (Czech) 04 - li007
+  - 🇨🇿 捷克 (Czech) 05 - li007
 rules:
 - MATCH,PROXIES
