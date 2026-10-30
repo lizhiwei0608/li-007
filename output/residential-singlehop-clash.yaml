@@ -14,37 +14,17 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽·单跳) - li007
-  server: zfd-hkv1.kunlun01dns.com
-  port: 16114
-  udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽·单跳) - li007
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16115
-  udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽·单跳) - li007
-  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽·单跳) - li007
-  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽·单跳) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽·单跳) - li007
-  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽·单跳) - li007
-  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽·单跳) - li007
 rules:
 - MATCH,PROXIES

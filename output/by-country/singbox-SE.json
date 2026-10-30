@@ -28,8 +28,29 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - li007",
+      "server": "171.25.158.163",
+      "server_port": 443,
+      "uuid": "706bce83-91db-4260-b175-cba29145cd56",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "s9se1.newagetechnologies.live",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Dt6OmhEDOi-Y204u5jWdQsHIgof7g8i52NUnTGc-yjM",
+          "short_id": "ecb6f8fb31668176"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - li007",
       "server": "192.142.23.46",
       "server_port": 443,
       "password": "a0052f4f-4c63-0002-a16f-ab2d5d718cd3",
@@ -41,7 +62,21 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - li007",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - li007",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - li007",
       "server": "31.172.65.4",
       "server_port": 8443,
       "uuid": "9c6e83fc-b755-4ad4-9b0a-14b610153d8f",
@@ -61,57 +96,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - li007",
-      "server": "swidenafterlanzerotte.space",
-      "server_port": 443,
-      "uuid": "50a87e21-f0e2-4b53-a787-91adfe748f63",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "swidenafterlanzerotte.space",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - li007",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 - li007",
-      "server": "91.196.33.157",
-      "server_port": 443,
-      "uuid": "7b22dce8-7ebd-425b-8ca4-7b6190321985",
-      "tls": {
-        "enabled": true,
-        "server_name": "b.us-1.bnc-gt.co.uk",
-        "insecure": false
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -121,8 +105,7 @@
         "🇸🇪 瑞典 (Sweden) 03 - li007",
         "🇸🇪 瑞典 (Sweden) 04 - li007",
         "🇸🇪 瑞典 (Sweden) 05 - li007",
-        "🇸🇪 瑞典 (Sweden) 06 - li007",
-        "🇸🇪 瑞典 (Sweden) 07 - li007"
+        "🇸🇪 瑞典 (Sweden) 06 - li007"
       ]
     },
     {
@@ -134,8 +117,7 @@
         "🇸🇪 瑞典 (Sweden) 03 - li007",
         "🇸🇪 瑞典 (Sweden) 04 - li007",
         "🇸🇪 瑞典 (Sweden) 05 - li007",
-        "🇸🇪 瑞典 (Sweden) 06 - li007",
-        "🇸🇪 瑞典 (Sweden) 07 - li007"
+        "🇸🇪 瑞典 (Sweden) 06 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
