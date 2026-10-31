@@ -23,7 +23,20 @@ proxies:
     public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
     short-id: a73f0410d728c823
   servername: www.samsung.com
-  client-fingerprint: edge
+  client-fingerprint: ios
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - li007
+  server: 185.225.205.53
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7a0348d6-55d3-4c23-b22f-6277fcb2264c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 2XyUS3_ONl5REQ7NiwikdJphAe7oJ61-21zuqnN67y8
+    short-id: 2e82d7ac
+  servername: addons.mozilla.org
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +44,7 @@ proxy-groups:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - li007
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - li007
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -38,5 +52,6 @@ proxy-groups:
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - li007
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - li007
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - li007
 rules:
 - MATCH,PROXIES

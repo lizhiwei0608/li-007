@@ -12,11 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "app-6ada5023.deploy.meerasolution.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "android"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",
