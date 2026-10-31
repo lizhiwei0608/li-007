@@ -4,8 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - li007",
+      "server": "ee.h1cloud.net",
+      "server_port": 25895,
+      "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k",
+          "short_id": "a73f0410d728c823"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - li007",
       "server": "13.143.239.127",
       "server_port": 443,
       "password": "2a0fc918-9c61-451b-a9ad-e8f796e70f52",
@@ -13,29 +33,6 @@
         "enabled": true,
         "server_name": "nl1.obxodvpn.us",
         "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - li007",
-      "server": "132.243.66.98",
-      "server_port": 443,
-      "uuid": "c29fa587-b10d-445d-b7e3-eaa6d1bd1330",
-      "tls": {
-        "enabled": true,
-        "server_name": "media.aava.lalibobi.online",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/live/showroom",
-        "headers": {
-          "Host": "media.aava.lalibobi.online"
-        }
       }
     },
     {

@@ -20,7 +20,7 @@
     {
       "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 02 - li007",
-      "server": "finland.biznes.lol",
+      "server": "153.76.194.118",
       "server_port": 8443,
       "password": "7d43670b-6b08-45b9-8a24-8f3971abc132",
       "tls": {
@@ -32,6 +32,26 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 03 - li007",
+      "server": "78.17.27.137",
+      "server_port": 8443,
+      "uuid": "48d9a277-776b-4ab8-a357-88a1958beed8",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.aalto.fi",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "DZ0BYEIHEe9KmJzM_j5EAN0t3_BTcfO63P7x6SRCeQM",
+          "short_id": "a05ccbf2edb5ebd1"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - li007",
       "server": "31.77.199.147",
       "server_port": 4443,
       "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
@@ -52,139 +72,37 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - li007",
-      "server": "hw3.divarkhaghazi.com",
-      "server_port": 465,
-      "uuid": "924e20da-fcad-4e7e-8113-c62d27a0d01e",
-      "tls": {
-        "enabled": true,
-        "server_name": "hw3.divarkhaghazi.com.",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "hw3.divarkhaghazi.com."
-        }
-      }
-    },
-    {
-      "type": "trojan",
       "tag": "🇫🇮 芬兰 (Finland) 05 - li007",
-      "server": "46.62.204.134",
-      "server_port": 443,
-      "password": "humanity",
+      "server": "docs.asasin4.ir",
+      "server_port": 30940,
+      "uuid": "39dc547e-d790-46b9-999b-9600324aba1a",
       "tls": {
         "enabled": true,
-        "server_name": "www.pleadcourt.org",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.pleadcourt.org"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - li007",
-      "server": "46.62.204.134",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.pleadcourt.org",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇫🇮 芬兰 (Finland) 07 - li007",
-      "server": "46.62.204.134",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.pleadcourt.org",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "dl.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "unsafe"
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pu8u1rdI0UHQfAppyMwbKmKQjTIS0HXmGNUG3UzEdy0",
+          "short_id": "d9cc6f4a"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.pleadcourt.org"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇫🇮 芬兰 (Finland) 08 - li007",
-      "server": "46.62.204.134",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.pleadcourt.org",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.pleadcourt.org"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇫🇮 芬兰 (Finland) 09 - li007",
-      "server": "46.62.204.134",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.pleadcourt.org",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws"
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 10 - li007",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - li007",
       "server": "65.109.211.81",
       "server_port": 465,
       "uuid": "09f30c46-3964-41ce-882a-72aee83ddd42",
       "tls": {
         "enabled": true,
-        "server_name": "hw6.divarkhaghazi.com.",
+        "server_name": "hw6.divarkhaghazi.com",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
@@ -197,22 +115,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 11 - li007",
-      "server": "78.17.27.137",
-      "server_port": 8443,
-      "uuid": "48d9a277-776b-4ab8-a357-88a1958beed8",
+      "tag": "🇫🇮 芬兰 (Finland) 07 - li007",
+      "server": "hw3.divarkhaghazi.com.",
+      "server_port": 465,
+      "uuid": "924e20da-fcad-4e7e-8113-c62d27a0d01e",
       "tls": {
         "enabled": true,
-        "server_name": "www.aalto.fi",
+        "server_name": "hw3.divarkhaghazi.com.",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "DZ0BYEIHEe9KmJzM_j5EAN0t3_BTcfO63P7x6SRCeQM",
-          "short_id": "a05ccbf2edb5ebd1"
         }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
@@ -226,11 +144,7 @@
         "🇫🇮 芬兰 (Finland) 04 - li007",
         "🇫🇮 芬兰 (Finland) 05 - li007",
         "🇫🇮 芬兰 (Finland) 06 - li007",
-        "🇫🇮 芬兰 (Finland) 07 - li007",
-        "🇫🇮 芬兰 (Finland) 08 - li007",
-        "🇫🇮 芬兰 (Finland) 09 - li007",
-        "🇫🇮 芬兰 (Finland) 10 - li007",
-        "🇫🇮 芬兰 (Finland) 11 - li007"
+        "🇫🇮 芬兰 (Finland) 07 - li007"
       ]
     },
     {
@@ -243,11 +157,7 @@
         "🇫🇮 芬兰 (Finland) 04 - li007",
         "🇫🇮 芬兰 (Finland) 05 - li007",
         "🇫🇮 芬兰 (Finland) 06 - li007",
-        "🇫🇮 芬兰 (Finland) 07 - li007",
-        "🇫🇮 芬兰 (Finland) 08 - li007",
-        "🇫🇮 芬兰 (Finland) 09 - li007",
-        "🇫🇮 芬兰 (Finland) 10 - li007",
-        "🇫🇮 芬兰 (Finland) 11 - li007"
+        "🇫🇮 芬兰 (Finland) 07 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
