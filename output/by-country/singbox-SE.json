@@ -4,8 +4,31 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - li007",
+      "server": "shuviu.de",
+      "server_port": 443,
+      "uuid": "e818a20d-9bcd-4744-9061-ca51b9c8aeea",
+      "tls": {
+        "enabled": true,
+        "server_name": "wallweb-4ez.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "wallweb-4ez.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - li007",
       "server": "50.7.38.243",
       "server_port": 443,
       "password": "d4ca9415f0eac7897472e1e5b86d2e96",
@@ -16,8 +39,20 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - li007",
+      "server": "70.34.207.14",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - li007",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - li007",
       "server": "5.178.109.174",
       "server_port": 14430,
       "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
@@ -27,30 +62,6 @@
         "headers": {
           "Host": "5.178.109.174"
         }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - li007",
-      "server": "192.142.23.46",
-      "server_port": 443,
-      "password": "a0052f4f-4c63-0002-a16f-ab2d5d718cd3",
-      "tls": {
-        "enabled": true,
-        "server_name": "diffoscope.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - li007",
-      "server": "70.34.207.14",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
-        "insecure": false
       }
     },
     {
@@ -75,6 +86,18 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - li007",
+      "server": "192.142.23.46",
+      "server_port": 443,
+      "password": "a0052f4f-4c63-0002-a16f-ab2d5d718cd3",
+      "tls": {
+        "enabled": true,
+        "server_name": "diffoscope.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -83,7 +106,8 @@
         "🇸🇪 瑞典 (Sweden) 02 - li007",
         "🇸🇪 瑞典 (Sweden) 03 - li007",
         "🇸🇪 瑞典 (Sweden) 04 - li007",
-        "🇸🇪 瑞典 (Sweden) 05 - li007"
+        "🇸🇪 瑞典 (Sweden) 05 - li007",
+        "🇸🇪 瑞典 (Sweden) 06 - li007"
       ]
     },
     {
@@ -94,7 +118,8 @@
         "🇸🇪 瑞典 (Sweden) 02 - li007",
         "🇸🇪 瑞典 (Sweden) 03 - li007",
         "🇸🇪 瑞典 (Sweden) 04 - li007",
-        "🇸🇪 瑞典 (Sweden) 05 - li007"
+        "🇸🇪 瑞典 (Sweden) 05 - li007",
+        "🇸🇪 瑞典 (Sweden) 06 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
