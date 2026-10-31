@@ -17,6 +17,13 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - li007
+  server: p141.panda001.net
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
 proxy-groups:
 - name: PROXIES
   type: select
@@ -24,6 +31,7 @@ proxy-groups:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - li007
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -31,5 +39,6 @@ proxy-groups:
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - li007
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - li007
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - li007
 rules:
 - MATCH,PROXIES

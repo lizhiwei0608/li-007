@@ -13,6 +13,8 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
+    headers:
+      Host: 185.253.116.33
 - name: 🇦🇪 阿联酋 (UAE) 02 - li007
   server: 130.49.161.70
   port: 443
@@ -20,17 +22,29 @@ proxies:
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 03 - li007
-  server: forshynewh.duckdns.org
-  port: 443
+  server: 95.174.68.188
+  port: 14430
   udp: true
-  type: hysteria2
-  password: 69e41e64-a832-471a-b740-94577ca85520
-  sni: forshynewh.duckdns.org
-  skip-cert-verify: false
+  type: vless
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 04 - li007
+  server: uae.unixzone.us
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +53,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - li007
   - 🇦🇪 阿联酋 (UAE) 02 - li007
   - 🇦🇪 阿联酋 (UAE) 03 - li007
+  - 🇦🇪 阿联酋 (UAE) 04 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -47,5 +62,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - li007
   - 🇦🇪 阿联酋 (UAE) 02 - li007
   - 🇦🇪 阿联酋 (UAE) 03 - li007
+  - 🇦🇪 阿联酋 (UAE) 04 - li007
 rules:
 - MATCH,PROXIES
