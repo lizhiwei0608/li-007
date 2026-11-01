@@ -5,27 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - li007
-  server: 31.77.199.147
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  servername: images.unsplash.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 02 - li007
-  server: fi1.obxodvpn.us
+  server: 177.3.220.9
   port: 443
   udp: true
   type: hysteria2
   password: 2a0fc918-9c61-451b-a9ad-e8f796e70f52
   sni: nl1.obxodvpn.us
   skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 03 - li007
+- name: 🇫🇮 芬兰 (Finland) 02 - li007
   server: 153.76.194.118
   port: 8443
   udp: true
@@ -33,8 +20,34 @@ proxies:
   password: 7d43670b-6b08-45b9-8a24-8f3971abc132
   sni: finland.biznes.lol
   skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 03 - li007
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 04 - li007
-  server: hw3.divarkhaghazi.com.
+  server: 65.109.211.81
+  port: 465
+  udp: true
+  type: vless
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  tls: true
+  servername: hw6.divarkhaghazi.com.
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw6.divarkhaghazi.com.
+- name: 🇫🇮 芬兰 (Finland) 05 - li007
+  server: 65.109.210.221
   port: 465
   udp: true
   type: vless
@@ -48,17 +61,41 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 05 - li007
-  server: 45.144.234.157
-  port: 14430
+- name: 🇫🇮 芬兰 (Finland) 06 - li007
+  server: 31.77.199.147
+  port: 4443
   udp: true
   type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 07 - li007
+  server: 179.253.179.109
+  port: 62083
+  udp: true
+  type: vless
+  uuid: ef988d56-9c18-408e-ae1f-a144a332ebce
+  tls: true
+  servername: 177.3.220.159
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 08 - li007
+  server: 78.17.27.137
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 48d9a277-776b-4ab8-a357-88a1958beed8
+  tls: true
+  reality-opts:
+    public-key: DZ0BYEIHEe9KmJzM_j5EAN0t3_BTcfO63P7x6SRCeQM
+    short-id: a05ccbf2edb5ebd1
+  servername: www.aalto.fi
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,6 +106,9 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - li007
   - 🇫🇮 芬兰 (Finland) 04 - li007
   - 🇫🇮 芬兰 (Finland) 05 - li007
+  - 🇫🇮 芬兰 (Finland) 06 - li007
+  - 🇫🇮 芬兰 (Finland) 07 - li007
+  - 🇫🇮 芬兰 (Finland) 08 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,5 +119,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - li007
   - 🇫🇮 芬兰 (Finland) 04 - li007
   - 🇫🇮 芬兰 (Finland) 05 - li007
+  - 🇫🇮 芬兰 (Finland) 06 - li007
+  - 🇫🇮 芬兰 (Finland) 07 - li007
+  - 🇫🇮 芬兰 (Finland) 08 - li007
 rules:
 - MATCH,PROXIES

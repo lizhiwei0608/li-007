@@ -4,22 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇱🇺 卢森堡 (Luxembourg) 01 - li007",
-      "server": "107.189.7.176",
-      "server_port": 32752,
-      "uuid": "4970c1cd-13e1-498a-920a-61d07be2fa65",
+      "type": "trojan",
+      "tag": "🇦🇱 AL 01 - li007",
+      "server": "www.speedtest.net",
+      "server_port": 8443,
+      "password": "uFepQ5r4JSusbY",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "floral-grass-aa1e.dianawpewpek1.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pfFcQxKv4EPhCDUoZMCmTjj4FK7HHQg_me-In3bOejA",
-          "short_id": "d758a643034ad90e"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "floral-grass-aa1e.dianawpewpek1.workers.dev"
         }
       }
     },
@@ -28,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇺 卢森堡 (Luxembourg) 01 - li007"
+        "🇦🇱 AL 01 - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇺 卢森堡 (Luxembourg) 01 - li007"
+        "🇦🇱 AL 01 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
