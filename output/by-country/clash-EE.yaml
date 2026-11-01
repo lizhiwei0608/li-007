@@ -5,24 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - li007
-  server: 13.143.239.127
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 2a0fc918-9c61-451b-a9ad-e8f796e70f52
-  sni: nl1.obxodvpn.us
-  skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - li007
-  server: 179.253.179.109
-  port: 57043
-  udp: true
-  type: vless
-  uuid: da8fab8e-4a25-4eb0-b224-88ab96c753ce
-  tls: true
-  servername: 87.121.86.24
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - li007
   server: ee.h1cloud.net
   port: 25895
   udp: true
@@ -40,15 +22,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - li007
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - li007
-  - 🇪🇪 爱沙尼亚 (Estonia) 03 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - li007
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - li007
-  - 🇪🇪 爱沙尼亚 (Estonia) 03 - li007
 rules:
 - MATCH,PROXIES

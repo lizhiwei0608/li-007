@@ -16,7 +16,7 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: 38.107.234.57
+      Host: viber.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - li007
   server: 46.8.43.125
   port: 443
@@ -29,19 +29,6 @@ proxies:
   servername: kz-central.v8x2b.lol
   client-fingerprint: firefox
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - li007
-  server: 95.56.251.12
-  port: 47443
-  udp: true
-  type: vless
-  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: z1GSwCEACvO9RLcMVpcURiT8er4oeIdeSJhraw_0cGU
-    short-id: ae97223a8f799877
-  servername: kz1.waspnest.space
-  client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - li007
   server: 3h-kazakhstan1.09vpn.com
   port: 8443
   udp: true
@@ -53,7 +40,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless/
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - li007
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - li007
   server: 109.248.170.119
   port: 13447
   udp: true
@@ -65,7 +52,7 @@ proxies:
     short-id: '83'
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - li007
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - li007
   server: 178.236.16.98
   port: 35728
   udp: true
@@ -87,7 +74,6 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - li007
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - li007
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - li007
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -98,6 +84,5 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - li007
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - li007
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - li007
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - li007
 rules:
 - MATCH,PROXIES

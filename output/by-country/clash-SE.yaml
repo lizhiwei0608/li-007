@@ -32,16 +32,6 @@ proxies:
   sni: diffoscope.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 04 - li007
-  server: static.fatcutecat.net
-  port: 443
-  udp: true
-  type: vless
-  uuid: b95eb0b3-a8dc-41ce-8bc0-888f81731e7c
-  tls: true
-  servername: static.fatcutecat.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 05 - li007
   server: 179.253.179.109
   port: 54083
   udp: true
@@ -60,7 +50,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - li007
   - 🇸🇪 瑞典 (Sweden) 03 - li007
   - 🇸🇪 瑞典 (Sweden) 04 - li007
-  - 🇸🇪 瑞典 (Sweden) 05 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -70,6 +59,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - li007
   - 🇸🇪 瑞典 (Sweden) 03 - li007
   - 🇸🇪 瑞典 (Sweden) 04 - li007
-  - 🇸🇪 瑞典 (Sweden) 05 - li007
 rules:
 - MATCH,PROXIES
