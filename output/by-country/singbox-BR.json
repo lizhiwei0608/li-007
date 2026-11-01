@@ -11,8 +11,8 @@
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "findtemporaryworkandfreelancerprojectsonlineplatform.com",
-        "insecure": false,
+        "server_name": "216.238.104.154",
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -22,12 +22,12 @@
     {
       "type": "trojan",
       "tag": "🇧🇷 巴西 (Brazil) 02 - li007",
-      "server": "br001.zestapp778.com",
-      "server_port": 39533,
-      "password": "5t6i121em5lkmsmk",
+      "server": "ench-snet-app.w-ctrip.cn",
+      "server_port": 16932,
+      "password": "b17e9b52db9623bd6c16eea3d7adb5b3",
       "tls": {
         "enabled": true,
-        "server_name": "br001.zestapp778.com",
+        "server_name": "cm.g.doubleclick.net",
         "insecure": true,
         "utls": {
           "enabled": true,
@@ -38,13 +38,13 @@
     {
       "type": "trojan",
       "tag": "🇧🇷 巴西 (Brazil) 03 - li007",
-      "server": "216.238.116.204",
+      "server": "br001.zestapp778.com",
       "server_port": 39533,
       "password": "5t6i121em5lkmsmk",
       "tls": {
         "enabled": true,
         "server_name": "br001.zestapp778.com",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"

@@ -12,7 +12,11 @@
       "tls": {
         "enabled": true,
         "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -58,6 +62,43 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - li007",
+      "server": "swidenafterlanzerotte.space",
+      "server_port": 443,
+      "uuid": "50a87e21-f0e2-4b53-a787-91adfe748f63",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "swidenafterlanzerotte.space",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - li007",
+      "server": "179.253.179.109",
+      "server_port": 54443,
+      "uuid": "0ef03752-c8bf-4482-8710-e563ca4808f9",
+      "tls": {
+        "enabled": true,
+        "server_name": "177.3.215.54",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -65,7 +106,9 @@
         "🇸🇪 瑞典 (Sweden) 01 - li007",
         "🇸🇪 瑞典 (Sweden) 02 - li007",
         "🇸🇪 瑞典 (Sweden) 03 - li007",
-        "🇸🇪 瑞典 (Sweden) 04 - li007"
+        "🇸🇪 瑞典 (Sweden) 04 - li007",
+        "🇸🇪 瑞典 (Sweden) 05 - li007",
+        "🇸🇪 瑞典 (Sweden) 06 - li007"
       ]
     },
     {
@@ -75,7 +118,9 @@
         "🇸🇪 瑞典 (Sweden) 01 - li007",
         "🇸🇪 瑞典 (Sweden) 02 - li007",
         "🇸🇪 瑞典 (Sweden) 03 - li007",
-        "🇸🇪 瑞典 (Sweden) 04 - li007"
+        "🇸🇪 瑞典 (Sweden) 04 - li007",
+        "🇸🇪 瑞典 (Sweden) 05 - li007",
+        "🇸🇪 瑞典 (Sweden) 06 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,7 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - li007
-  server: ee.h1cloud.net
+  server: 141.0.187.15
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 70043bfa-d6fb-4980-b27e-773e9e8b2004
+  sni: crt.onecloudstream.com
+  skip-cert-verify: false
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - li007
+  server: 141.0.187.50
+  port: 443
+  udp: true
+  type: hysteria2
+  password: e5ec2586-59b3-40fa-91b7-bb37a2f7744e
+  sni: crt.onecloudstream.com
+  skip-cert-verify: false
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - li007
+  server: 179.253.179.109
+  port: 57443
+  udp: true
+  type: vless
+  uuid: da8fab8e-4a25-4eb0-b224-88ab96c753ce
+  tls: true
+  servername: 87.121.86.24
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - li007
+  server: 79.182.39.237
   port: 25895
   udp: true
   type: vless
@@ -15,18 +41,24 @@ proxies:
     public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
     short-id: a73f0410d728c823
   servername: www.samsung.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - li007
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - li007
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - li007
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - li007
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - li007
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - li007
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - li007
 rules:
 - MATCH,PROXIES

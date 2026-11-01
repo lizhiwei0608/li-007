@@ -5,24 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 01 (家宽) - li007",
-      "server": "122.176.216.52",
-      "server_port": 443,
-      "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
+      "tag": "🇱🇺 卢森堡 (Luxembourg) 01 - li007",
+      "server": "107.189.7.176",
+      "server_port": 32752,
+      "uuid": "4970c1cd-13e1-498a-920a-61d07be2fa65",
       "tls": {
         "enabled": true,
-        "server_name": "app-6ada5023.deploy.meerasolution.com",
-        "insecure": false,
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
-        "headers": {
-          "Host": "app-6ada5023.deploy.meerasolution.com"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pfFcQxKv4EPhCDUoZMCmTjj4FK7HHQg_me-In3bOejA",
+          "short_id": "d758a643034ad90e"
         }
       }
     },
@@ -31,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 (家宽) - li007"
+        "🇱🇺 卢森堡 (Luxembourg) 01 - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 (家宽) - li007"
+        "🇱🇺 卢森堡 (Luxembourg) 01 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
