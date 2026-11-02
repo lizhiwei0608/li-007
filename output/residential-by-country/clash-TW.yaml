@@ -5,16 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - li007
-  server: 125.227.86.45
-  port: 443
+  server: ench-snet-app.w-ctrip.cn
+  port: 45502
   udp: true
   type: trojan
-  password: 0a9f1f5a397bd427
-  sni: TG.freecodes
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  sni: ench-snet-app.w-ctrip.cn
   skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: db
 proxy-groups:
 - name: PROXIES
   type: select

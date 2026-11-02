@@ -5,54 +5,80 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007
-  server: e0064cf5-tmm5c0-to0mym-z93q.hk3.hyhuawei.com
+  server: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 40639730-e027-11ea-87ad-f23c913c8d2b
-  sni: e0064cf5-tmm5c0-to0mym-z93q.hk3.hyhuawei.com
+  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
+  sni: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007
-  server: b85c7e2f-tmm5c0-tvk1qn-19les.nw4.hyhuawei.com
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽·单跳) - li007
+  server: dog-hk.kunlun01dns.com
+  port: 21019
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽·单跳) - li007
+  server: tr2.h1cloud.net
+  port: 25021
+  udp: true
+  type: vless
+  uuid: 2446e2e2-1ce3-4502-9050-1dd32bacc68c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: od79bUkYtqQtsGrrTdhmkDflx5c9al4vqxwWApvc-Dg
+    short-id: 17fa3af0924c88b3
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 04 (家宽·单跳) - li007
+  server: 178.236.242.254
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c05ec3c7-2784-da2b-aa98-a3c132860fcb
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ZRTNgwFRP8viY4SQOgPTfWlLWJCwY3dr0aawA7vHwhU
+    short-id: a1b2c3d4e5f6a7b8
+  servername: xnod13x.artemida.live
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽·单跳) - li007
+  server: 60.248.219.78
   port: 443
   udp: true
-  type: hysteria2
-  password: d095ecc6-7b69-11eb-b77b-f23c913c8d2b
-  sni: b85c7e2f-tmm5c0-tvk1qn-19les.nw4.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽·单跳) - li007
-  server: ench-snet-app.w-ctrip.cn
-  port: 45502
-  udp: true
-  type: trojan
-  password: b17e9b52db9623bd6c16eea3d7adb5b3
-  sni: cm.g.doubleclick.net
+  type: vless
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  tls: true
+  servername: ty986gfazs.cainiaohub.xyz
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽·单跳) - li007
-  server: ench-snet-app.w-ctrip.cn
-  port: 45503
-  udp: true
-  type: trojan
-  password: b17e9b52db9623bd6c16eea3d7adb5b3
-  sni: cm.g.doubleclick.net
-  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽·单跳) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽·单跳) - li007
+  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽·单跳) - li007
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽·单跳) - li007
+  - 🇺🇸 美国 (United States) 04 (家宽·单跳) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽·单跳) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽·单跳) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽·单跳) - li007
+  - 🇭🇰 中国香港 (Hong Kong) 02 (移动家宽·单跳) - li007
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽·单跳) - li007
+  - 🇺🇸 美国 (United States) 04 (家宽·单跳) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽·单跳) - li007
 rules:
 - MATCH,PROXIES

@@ -34,13 +34,13 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 03 - li007",
-      "server": "hy2-new.aspidnet.xyz",
+      "server": "162.249.125.133",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
       "tls": {
         "enabled": true,
         "server_name": "hy2-new.aspidnet.xyz",
-        "insecure": true
+        "insecure": false
       },
       "obfs": {
         "type": "salamander",
@@ -69,8 +69,20 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 05 - li007",
+      "server": "185.156.44.99",
+      "server_port": 443,
+      "password": "gf1:gfhysteria2024",
+      "tls": {
+        "enabled": true,
+        "server_name": "whatsapp.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - li007",
       "server": "154.46.31.106",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
@@ -85,7 +97,8 @@
         "🇷🇴 罗马尼亚 (Romania) 02 - li007",
         "🇷🇴 罗马尼亚 (Romania) 03 - li007",
         "🇷🇴 罗马尼亚 (Romania) 04 - li007",
-        "🇷🇴 罗马尼亚 (Romania) 05 - li007"
+        "🇷🇴 罗马尼亚 (Romania) 05 - li007",
+        "🇷🇴 罗马尼亚 (Romania) 06 - li007"
       ]
     },
     {
@@ -96,7 +109,8 @@
         "🇷🇴 罗马尼亚 (Romania) 02 - li007",
         "🇷🇴 罗马尼亚 (Romania) 03 - li007",
         "🇷🇴 罗马尼亚 (Romania) 04 - li007",
-        "🇷🇴 罗马尼亚 (Romania) 05 - li007"
+        "🇷🇴 罗马尼亚 (Romania) 05 - li007",
+        "🇷🇴 罗马尼亚 (Romania) 06 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

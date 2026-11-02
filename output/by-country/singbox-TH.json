@@ -4,16 +4,55 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 01 - li007",
+      "server": "panel.frojbrpibj124.workers.dev",
+      "server_port": 443,
+      "uuid": "230ca1c7-75ab-4837-8bdd-c8d935b31753",
+      "tls": {
+        "enabled": true,
+        "server_name": "panel.frojbrpibj124.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "panel.frojbrpibj124.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇭 泰国 (Thailand) 02 - li007",
       "server": "119.46.51.45",
       "server_port": 37515,
       "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
       "security": "auto"
     },
     {
+      "type": "trojan",
+      "tag": "🇹🇭 泰国 (Thailand) 03 - li007",
+      "server": "th001.zestapp778.com",
+      "server_port": 33079,
+      "password": "5t6i121em5lkmsmk",
+      "tls": {
+        "enabled": true,
+        "server_name": "th001.zestapp778.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 02 - li007",
+      "tag": "🇹🇭 泰国 (Thailand) 04 - li007",
       "server": "45.154.26.63",
       "server_port": 443,
       "uuid": "ff85e702-b605-4109-884d-2c1f065d0954",
@@ -33,25 +72,14 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇹🇭 泰国 (Thailand) 03 - li007",
-      "server": "38.60.200.237",
-      "server_port": 33079,
-      "password": "5t6i121em5lkmsmk",
-      "tls": {
-        "enabled": true,
-        "server_name": "th001.zestapp778.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇭 泰国 (Thailand) 01 - li007",
         "🇹🇭 泰国 (Thailand) 02 - li007",
-        "🇹🇭 泰国 (Thailand) 03 - li007"
+        "🇹🇭 泰国 (Thailand) 03 - li007",
+        "🇹🇭 泰国 (Thailand) 04 - li007"
       ]
     },
     {
@@ -60,7 +88,8 @@
       "outbounds": [
         "🇹🇭 泰国 (Thailand) 01 - li007",
         "🇹🇭 泰国 (Thailand) 02 - li007",
-        "🇹🇭 泰国 (Thailand) 03 - li007"
+        "🇹🇭 泰国 (Thailand) 03 - li007",
+        "🇹🇭 泰国 (Thailand) 04 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
