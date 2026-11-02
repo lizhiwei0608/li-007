@@ -5,16 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - li007
-  server: 212.147.238.253
-  port: 19883
-  udp: true
-  type: hysteria2
-  password: 0zy7kb86chk9ktbn
-  sni: dlwww.mymuic.ir
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: otwmdcyqh98idcxv
-- name: 🇫🇮 芬兰 (Finland) 02 - li007
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -26,7 +16,7 @@ proxies:
     short-id: 10351b07c712d2a2
   servername: www.cloudflare.com
   client-fingerprint: ''
-- name: 🇫🇮 芬兰 (Finland) 03 - li007
+- name: 🇫🇮 芬兰 (Finland) 02 - li007
   server: 31.77.199.147
   port: 4443
   udp: true
@@ -39,6 +29,17 @@ proxies:
     short-id: 7da2eae792187ab9
   servername: images.unsplash.com
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 03 - li007
+  server: 172.67.118.45
+  port: 2053
+  udp: true
+  type: trojan
+  password: gHQP0D7D15
+  sni: marvdasht.phonecomparisonblog.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇫🇮 芬兰 (Finland) 04 - li007
   server: 45.144.234.157
   port: 14430
@@ -50,40 +51,6 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 05 - li007
-  server: 65.109.211.81
-  port: 465
-  udp: true
-  type: vless
-  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
-  tls: true
-  servername: hw6.divarkhaghazi.com.
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw6.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 06 - li007
-  server: 172.67.118.45
-  port: 2053
-  udp: true
-  type: trojan
-  password: gHQP0D7D15
-  sni: marvdasht.phonecomparisonblog.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇮 芬兰 (Finland) 07 - li007
-  server: ench-snet-app.w-ctrip.cn
-  port: 41184
-  udp: true
-  type: trojan
-  password: b17e9b52db9623bd6c16eea3d7adb5b3
-  sni: ench-snet-app.w-ctrip.cn
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -93,9 +60,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - li007
   - 🇫🇮 芬兰 (Finland) 03 - li007
   - 🇫🇮 芬兰 (Finland) 04 - li007
-  - 🇫🇮 芬兰 (Finland) 05 - li007
-  - 🇫🇮 芬兰 (Finland) 06 - li007
-  - 🇫🇮 芬兰 (Finland) 07 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -105,8 +69,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - li007
   - 🇫🇮 芬兰 (Finland) 03 - li007
   - 🇫🇮 芬兰 (Finland) 04 - li007
-  - 🇫🇮 芬兰 (Finland) 05 - li007
-  - 🇫🇮 芬兰 (Finland) 06 - li007
-  - 🇫🇮 芬兰 (Finland) 07 - li007
 rules:
 - MATCH,PROXIES

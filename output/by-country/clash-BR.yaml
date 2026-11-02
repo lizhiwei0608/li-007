@@ -13,21 +13,13 @@ proxies:
   sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
   skip-cert-verify: false
 - name: 🇧🇷 巴西 (Brazil) 02 - li007
-  server: ench-snet-app.w-ctrip.cn
-  port: 16932
-  udp: true
-  type: trojan
-  password: b17e9b52db9623bd6c16eea3d7adb5b3
-  sni: cm.g.doubleclick.net
-  skip-cert-verify: true
-- name: 🇧🇷 巴西 (Brazil) 03 - li007
-  server: br001.zestapp778.com
+  server: 216.238.116.204
   port: 39533
   udp: true
   type: trojan
   password: 5t6i121em5lkmsmk
   sni: br001.zestapp778.com
-  skip-cert-verify: true
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,7 +27,6 @@ proxy-groups:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 - li007
   - 🇧🇷 巴西 (Brazil) 02 - li007
-  - 🇧🇷 巴西 (Brazil) 03 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,6 +34,5 @@ proxy-groups:
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 - li007
   - 🇧🇷 巴西 (Brazil) 02 - li007
-  - 🇧🇷 巴西 (Brazil) 03 - li007
 rules:
 - MATCH,PROXIES

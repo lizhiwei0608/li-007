@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - li007
-  server: panel.frojbrpibj124.workers.dev
-  port: 443
-  udp: true
-  type: vless
-  uuid: 230ca1c7-75ab-4837-8bdd-c8d935b31753
-  tls: true
-  servername: panel.frojbrpibj124.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: panel.frojbrpibj124.workers.dev
-- name: 🇹🇭 泰国 (Thailand) 02 - li007
   server: 119.46.51.45
   port: 37515
   udp: true
@@ -27,15 +12,15 @@ proxies:
   uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
   alterId: 0
   cipher: auto
-- name: 🇹🇭 泰国 (Thailand) 03 - li007
-  server: th001.zestapp778.com
+- name: 🇹🇭 泰国 (Thailand) 02 - li007
+  server: 38.60.200.21
   port: 33079
   udp: true
   type: trojan
   password: 5t6i121em5lkmsmk
   sni: th001.zestapp778.com
-  skip-cert-verify: true
-- name: 🇹🇭 泰国 (Thailand) 04 - li007
+  skip-cert-verify: false
+- name: 🇹🇭 泰国 (Thailand) 03 - li007
   server: 45.154.26.63
   port: 443
   udp: true
@@ -56,7 +41,6 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - li007
   - 🇹🇭 泰国 (Thailand) 02 - li007
   - 🇹🇭 泰国 (Thailand) 03 - li007
-  - 🇹🇭 泰国 (Thailand) 04 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -65,6 +49,5 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - li007
   - 🇹🇭 泰国 (Thailand) 02 - li007
   - 🇹🇭 泰国 (Thailand) 03 - li007
-  - 🇹🇭 泰国 (Thailand) 04 - li007
 rules:
 - MATCH,PROXIES

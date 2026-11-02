@@ -6,82 +6,29 @@
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007",
-      "server": "e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com",
+      "server": "e0064cf5-tmm5c0-to0mym-z93q.hk3.hyhuawei.com",
       "server_port": 443,
-      "password": "4eedcde6-d16a-11ef-973a-f23c913c8d2b",
+      "password": "40639730-e027-11ea-87ad-f23c913c8d2b",
       "tls": {
         "enabled": true,
-        "server_name": "e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com",
+        "server_name": "e0064cf5-tmm5c0-to0mym-z93q.hk3.hyhuawei.com",
         "insecure": true
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽·单跳) - li007",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21019,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 (移动家宽·单跳) - li007",
-      "server": "tr2.h1cloud.net",
-      "server_port": 25021,
-      "uuid": "2446e2e2-1ce3-4502-9050-1dd32bacc68c",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 (移动家宽·单跳) - li007",
+      "server": "206.1.96.108",
+      "server_port": 7443,
+      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
       "tls": {
         "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "od79bUkYtqQtsGrrTdhmkDflx5c9al4vqxwWApvc-Dg",
-          "short_id": "17fa3af0924c88b3"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 04 (家宽·单跳) - li007",
-      "server": "178.236.242.254",
-      "server_port": 8443,
-      "uuid": "c05ec3c7-2784-da2b-aa98-a3c132860fcb",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "xnod13x.artemida.live",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ZRTNgwFRP8viY4SQOgPTfWlLWJCwY3dr0aawA7vHwhU",
-          "short_id": "a1b2c3d4e5f6a7b8"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽·单跳) - li007",
-      "server": "60.248.219.78",
-      "server_port": 443,
-      "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
-      "tls": {
-        "enabled": true,
-        "server_name": "ty986gfazs.cainiaohub.xyz",
-        "insecure": true
+        "server_name": "me17.msjia8844.site",
+        "insecure": false
       },
-      "transport": {
-        "type": "ws",
-        "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
-        "headers": {
-          "Host": "ty986gfazs.cainiaohub.xyz"
-        }
+      "obfs": {
+        "type": "salamander",
+        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
       }
     },
     {
@@ -90,10 +37,7 @@
       "outbounds": [
         "auto",
         "🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007",
-        "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽·单跳) - li007",
-        "🇹🇷 土耳其 (Turkey) 03 (移动家宽·单跳) - li007",
-        "🇺🇸 美国 (United States) 04 (家宽·单跳) - li007",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽·单跳) - li007"
+        "🇹🇷 土耳其 (Turkey) 02 (移动家宽·单跳) - li007"
       ]
     },
     {
@@ -101,10 +45,7 @@
       "tag": "auto",
       "outbounds": [
         "🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007",
-        "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽·单跳) - li007",
-        "🇹🇷 土耳其 (Turkey) 03 (移动家宽·单跳) - li007",
-        "🇺🇸 美国 (United States) 04 (家宽·单跳) - li007",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽·单跳) - li007"
+        "🇹🇷 土耳其 (Turkey) 02 (移动家宽·单跳) - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,30 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇾 塞浦路斯 (Cyprus) 01 - li007
-  server: 45.86.60.102
+- name: 🇶🇦 卡塔尔 (Qatar) 01 - li007
+  server: 149.104.121.174
   port: 8443
   udp: true
   type: vless
-  uuid: a52fd54b-ba4d-4d11-8e00-301e2646cd66
-  flow: xtls-rprx-vision
+  uuid: 1506f2e0-ae12-4718-b5ab-c5609161300e
   tls: true
   reality-opts:
-    public-key: 1H1DiBCBB7fpALV71pH1q66ePybBFlVOcxftdlQimQ8
-    short-id: 385cb18df0892069
-  servername: ee1.vpngold.ru
+    public-key: EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8
+  servername: as10.cdn77.icu
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇾 塞浦路斯 (Cyprus) 01 - li007
+  - 🇶🇦 卡塔尔 (Qatar) 01 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇾 塞浦路斯 (Cyprus) 01 - li007
+  - 🇶🇦 卡塔尔 (Qatar) 01 - li007
 rules:
 - MATCH,PROXIES
