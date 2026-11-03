@@ -5,31 +5,39 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007
-  server: 8a10b982-tmm5c0-truoje-1uni.nw4.hyhuawei.com
+  server: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: adbd0a82-3336-11ed-bd7c-f23c913c8d2b
-  sni: 8a10b982-tmm5c0-truoje-1uni.nw4.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007
-  server: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
-  sni: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
+  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
+  sni: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽·单跳) - li007
-  server: er8u54dh.df6h451rh.xin
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007
+  server: baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 40639730-e027-11ea-87ad-f23c913c8d2b
+  sni: baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽·单跳) - li007
+  server: 56481.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 0324fbc29561
+  sni: images.ctfassets.net
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽·单跳) - li007
+  server: 684616s4.df6h451rh.xin
   port: 443
   udp: true
   type: anytls
   password: 0324fbc29561
   sni: px.ads.linkedin.com
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽·单跳) - li007
-  server: 684616s4.df6h451rh.xin
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽·单跳) - li007
+  server: er8u54dh.df6h451rh.xin
   port: 443
   udp: true
   type: anytls
@@ -43,8 +51,9 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽·单跳) - li007
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽·单跳) - li007
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽·单跳) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽·单跳) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,7 +61,8 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽·单跳) - li007
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽·单跳) - li007
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽·单跳) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽·单跳) - li007
 rules:
 - MATCH,PROXIES
