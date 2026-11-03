@@ -5,70 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - li007
-  server: 104.21.108.4
-  port: 443
-  udp: true
-  type: vless
-  uuid: fa45096d-bed0-ad80-c773-23c300000018
-  tls: true
-  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 02 - li007
   server: 130.49.161.70
   port: 443
   udp: true
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 02 - li007
+  server: 95.174.68.188
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  network: ws
+  ws-opts:
+    path: /vless
 - name: 🇦🇪 阿联酋 (UAE) 03 - li007
-  server: 217.60.73.56
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 69e41e64-a832-471a-b740-94577ca85520
-  sni: forshynewh.duckdns.org
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 04 - li007
-  server: 57.129.130.200
-  port: 52014
-  udp: true
-  type: vless
-  uuid: b1ecd06b-a931-47a2-8f48-d1d133d2b4f3
-  tls: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 05 - li007
-  server: 23.27.20.142
-  port: 48537
-  udp: true
-  type: vless
-  uuid: b9e11dc2-03b6-4bab-a14d-c48369febdc1
-  tls: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 06 - li007
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -78,30 +34,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 - li007
-  server: 109.120.155.155
-  port: 444
-  udp: true
-  type: vless
-  uuid: 99ab6748-3d57-4562-9451-843c15960b9b
-  tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 08 - li007
-  server: 95.174.68.188
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  network: ws
-  ws-opts:
-    path: /vless
 proxy-groups:
 - name: PROXIES
   type: select
@@ -110,11 +42,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - li007
   - 🇦🇪 阿联酋 (UAE) 02 - li007
   - 🇦🇪 阿联酋 (UAE) 03 - li007
-  - 🇦🇪 阿联酋 (UAE) 04 - li007
-  - 🇦🇪 阿联酋 (UAE) 05 - li007
-  - 🇦🇪 阿联酋 (UAE) 06 - li007
-  - 🇦🇪 阿联酋 (UAE) 07 - li007
-  - 🇦🇪 阿联酋 (UAE) 08 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -123,10 +50,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - li007
   - 🇦🇪 阿联酋 (UAE) 02 - li007
   - 🇦🇪 阿联酋 (UAE) 03 - li007
-  - 🇦🇪 阿联酋 (UAE) 04 - li007
-  - 🇦🇪 阿联酋 (UAE) 05 - li007
-  - 🇦🇪 阿联酋 (UAE) 06 - li007
-  - 🇦🇪 阿联酋 (UAE) 07 - li007
-  - 🇦🇪 阿联酋 (UAE) 08 - li007
 rules:
 - MATCH,PROXIES

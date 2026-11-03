@@ -6,46 +6,49 @@
     {
       "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - li007",
-      "server": "103.115.109.49",
+      "server": "160.187.100.109",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/wangcai2🇨🇳",
+        "server_name": "vpn-tw-002.fastervpn.world",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 - li007",
-      "server": "160.187.100.109",
+      "server": "103.115.109.49",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "off",
+        "server_name": "https://t.me/oneclickvpnkeys",
         "insecure": true
       }
     },
     {
-      "type": "vless",
+      "type": "anytls",
       "tag": "🇹🇼 中国台湾 (Taiwan) 03 - li007",
-      "server": "152.32.167.33",
+      "server": "684616s4.df6h451rh.xin",
       "server_port": 443,
-      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
-      "flow": "xtls-rprx-vision",
+      "password": "0324fbc29561",
       "tls": {
         "enabled": true,
-        "server_name": "www.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Q8QwBSGN6J-FqgDV1pYNm0VThS_xNRyQ3DPPa9YZ3j4",
-          "short_id": "cff998a4"
-        }
+        "server_name": "px.ads.linkedin.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - li007",
+      "server": "er8u54dh.df6h451rh.xin",
+      "server_port": 443,
+      "password": "0324fbc29561",
+      "tls": {
+        "enabled": true,
+        "server_name": "px.ads.linkedin.com",
+        "insecure": true
       }
     },
     {
@@ -55,7 +58,8 @@
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - li007",
         "🇹🇼 中国台湾 (Taiwan) 02 - li007",
-        "🇹🇼 中国台湾 (Taiwan) 03 - li007"
+        "🇹🇼 中国台湾 (Taiwan) 03 - li007",
+        "🇹🇼 中国台湾 (Taiwan) 04 - li007"
       ]
     },
     {
@@ -64,7 +68,8 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - li007",
         "🇹🇼 中国台湾 (Taiwan) 02 - li007",
-        "🇹🇼 中国台湾 (Taiwan) 03 - li007"
+        "🇹🇼 中国台湾 (Taiwan) 03 - li007",
+        "🇹🇼 中国台湾 (Taiwan) 04 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

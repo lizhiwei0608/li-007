@@ -26,6 +26,27 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02 - li007",
+      "server": "201.58.177.35",
+      "server_port": 443,
+      "uuid": "5adb25b6-b41a-46ac-a481-71651deb60c5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "xb1.huinaduok.fans",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "DA1kJXSsIsN8H-kZ51jEYHafTx50X-2RGG8KNZuCISg",
+          "short_id": "da4d87fa"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - li007",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
@@ -38,43 +59,56 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - li007",
-      "server": "31.77.199.147",
-      "server_port": 4443,
-      "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
-      "flow": "xtls-rprx-vision",
+      "type": "shadowsocks",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - li007",
+      "server": "dns22.m3hrzd.ir",
+      "server_port": 1346,
+      "method": "chacha20-ietf-poly1305",
+      "password": "v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - li007",
+      "server": "104.24.0.1",
+      "server_port": 2053,
+      "password": "gHQP0D7D15",
       "tls": {
         "enabled": true,
-        "server_name": "images.unsplash.com",
+        "server_name": "marvdasht.phonecomparisonblog.org",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A",
-          "short_id": "7da2eae792187ab9"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "marvdasht.phonecomparisonblog.org"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - li007",
-      "server": "areal1.greewebservices.ir",
-      "server_port": 2425,
-      "uuid": "dfb070bf-0b53-43eb-be2b-4b34f7e1644d",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - li007",
+      "server": "iproxyland.beshdash.ir",
+      "server_port": 58545,
+      "uuid": "6324c880-9fe5-49f9-9e19-85c7961310e6",
       "tls": {
         "enabled": true,
-        "server_name": "play.googleapis.com",
+        "server_name": "lamssettings-pa.googleapis.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "MnPGY1Vo4ZbYdpLRTYHoolv5s_pwO41karyJfnQ0F3o",
-          "short_id": "9b60d3"
+          "public_key": "Hm9C1tP40Uc-a8e2NQBUUM_uCkKVts3Fcedoo8EI8xU",
+          "short_id": "9c2042"
         }
       }
     },
@@ -86,7 +120,9 @@
         "🇫🇮 芬兰 (Finland) 01 - li007",
         "🇫🇮 芬兰 (Finland) 02 - li007",
         "🇫🇮 芬兰 (Finland) 03 - li007",
-        "🇫🇮 芬兰 (Finland) 04 - li007"
+        "🇫🇮 芬兰 (Finland) 04 - li007",
+        "🇫🇮 芬兰 (Finland) 05 - li007",
+        "🇫🇮 芬兰 (Finland) 06 - li007"
       ]
     },
     {
@@ -96,7 +132,9 @@
         "🇫🇮 芬兰 (Finland) 01 - li007",
         "🇫🇮 芬兰 (Finland) 02 - li007",
         "🇫🇮 芬兰 (Finland) 03 - li007",
-        "🇫🇮 芬兰 (Finland) 04 - li007"
+        "🇫🇮 芬兰 (Finland) 04 - li007",
+        "🇫🇮 芬兰 (Finland) 05 - li007",
+        "🇫🇮 芬兰 (Finland) 06 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
