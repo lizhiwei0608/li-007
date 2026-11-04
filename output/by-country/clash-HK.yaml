@@ -5,94 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - li007
-  server: 103.149.182.79
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - li007
-  server: dog-hk.kunlun01dns.com
-  port: 21019
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - li007
-  server: 152.32.254.68
-  port: 5010
-  udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - li007
-  server: 31.57.248.176
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: b0917015b656b3dd2286b5633af0c5c1
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - li007
-  server: 154.83.87.6
-  port: 8443
+  server: 165.154.63.139
+  port: 443
   udp: true
   type: vless
-  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
-    short-id: 4ad2e4e660550e43
-  servername: github.githubassets.com
+    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
+    short-id: ca4aedd4
+  servername: www.amazon.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - li007
-  server: 210.0.244.227
-  port: 443
-  udp: true
-  type: vless
-  uuid: ebc368f4-c13c-4bd2-849b-4d245615728f
-  tls: true
-  reality-opts:
-    public-key: HhYjpNgNw0X_Qrjv9R5aHfV92hHbZmlY1u12DMTPrVw
-  servername: cloudflare.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - li007
-  server: 9969bb96-tmm5c0-twuk0i-1hzyr.hk3.hyhuawei.com
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - li007
+  server: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
-  sni: 9969bb96-tmm5c0-twuk0i-1hzyr.hk3.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - li007
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: httpst.mewangcai2
+  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
+  sni: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - li007
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - li007
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - li007
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8🇨🇳
+  sni: https%3a%2f%2ft.me%2fclashv8%f0%9f%87%a8%f0%9f%87%b3
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - li007
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - li007
   server: 210.0.244.157
   port: 443
   udp: true
@@ -103,6 +44,48 @@ proxies:
     public-key: T239VP3HbJ2KJCur7hDHJtrs6eKmKQfU_X1Xg6NmPgI
   servername: cloudflare.com
   client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - li007
+  server: vpn-hk-004.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-hk-004.fastervpn.world
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - li007
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.29
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - li007
+  server: d0f180c2-tmm5c0-tphvvu-gacy.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
+  sni: d0f180c2-tmm5c0-tphvvu-gacy.nw4.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - li007
+  server: 56481.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 0324fbc29561
+  sni: images.ctfassets.net
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - li007
+  server: 152.32.254.68
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 proxy-groups:
 - name: PROXIES
   type: select
@@ -117,8 +100,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 07 - li007
   - 🇭🇰 中国香港 (Hong Kong) 08 - li007
   - 🇭🇰 中国香港 (Hong Kong) 09 - li007
-  - 🇭🇰 中国香港 (Hong Kong) 10 - li007
-  - 🇭🇰 中国香港 (Hong Kong) 11 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -133,7 +114,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 07 - li007
   - 🇭🇰 中国香港 (Hong Kong) 08 - li007
   - 🇭🇰 中国香港 (Hong Kong) 09 - li007
-  - 🇭🇰 中国香港 (Hong Kong) 10 - li007
-  - 🇭🇰 中国香港 (Hong Kong) 11 - li007
 rules:
 - MATCH,PROXIES

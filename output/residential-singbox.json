@@ -4,16 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - li007",
-      "server": "baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com",
-      "server_port": 443,
-      "password": "40639730-e027-11ea-87ad-f23c913c8d2b",
-      "tls": {
-        "enabled": true,
-        "server_name": "baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com",
-        "insecure": true
-      }
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - li007",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
     },
     {
       "type": "trojan",
@@ -39,7 +35,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - li007",
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - li007",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007"
       ]
     },
@@ -47,7 +43,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - li007",
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - li007",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"

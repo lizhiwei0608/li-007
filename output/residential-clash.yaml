@@ -4,14 +4,13 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - li007
-  server: baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com
-  port: 443
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - li007
+  server: 49.254.204.133
+  port: 1774
   udp: true
-  type: hysteria2
-  password: 40639730-e027-11ea-87ad-f23c913c8d2b
-  sni: baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
   server: 125.227.86.45
   port: 443
@@ -28,14 +27,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - li007
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - li007
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - li007
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - li007
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
 rules:
 - MATCH,PROXIES
