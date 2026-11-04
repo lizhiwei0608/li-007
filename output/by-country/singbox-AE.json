@@ -4,8 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - li007",
+      "server": "151.241.19.36",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - li007",
+      "server": "151.241.19.29",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - li007",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
@@ -21,7 +37,21 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - li007",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - li007",
+      "server": "84.235.244.108",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - li007",
       "server": "95.174.68.188",
       "server_port": 14430,
       "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
@@ -35,12 +65,25 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - li007",
-      "server": "uae.unixzone.us",
-      "server_port": 22573,
-      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - li007",
+      "server": "142.91.101.39",
+      "server_port": 627,
+      "uuid": "8199228b-e84b-42a2-9268-e400391e483a",
+      "tls": {
+        "enabled": true,
+        "server_name": "9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev"
+        }
       }
     },
     {
@@ -50,7 +93,10 @@
         "auto",
         "🇦🇪 阿联酋 (UAE) 01 - li007",
         "🇦🇪 阿联酋 (UAE) 02 - li007",
-        "🇦🇪 阿联酋 (UAE) 03 - li007"
+        "🇦🇪 阿联酋 (UAE) 03 - li007",
+        "🇦🇪 阿联酋 (UAE) 04 - li007",
+        "🇦🇪 阿联酋 (UAE) 05 - li007",
+        "🇦🇪 阿联酋 (UAE) 06 - li007"
       ]
     },
     {
@@ -59,7 +105,10 @@
       "outbounds": [
         "🇦🇪 阿联酋 (UAE) 01 - li007",
         "🇦🇪 阿联酋 (UAE) 02 - li007",
-        "🇦🇪 阿联酋 (UAE) 03 - li007"
+        "🇦🇪 阿联酋 (UAE) 03 - li007",
+        "🇦🇪 阿联酋 (UAE) 04 - li007",
+        "🇦🇪 阿联酋 (UAE) 05 - li007",
+        "🇦🇪 阿联酋 (UAE) 06 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

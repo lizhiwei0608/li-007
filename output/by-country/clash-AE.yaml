@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - li007
+  server: 151.241.19.36
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇦🇪 阿联酋 (UAE) 02 - li007
+  server: 151.241.19.29
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇦🇪 阿联酋 (UAE) 03 - li007
   server: 130.49.161.70
   port: 443
   udp: true
@@ -14,7 +28,18 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 02 - li007
+- name: 🇦🇪 阿联酋 (UAE) 04 - li007
+  server: 84.235.244.108
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - li007
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -25,15 +50,21 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 03 - li007
-  server: uae.unixzone.us
-  port: 22573
+- name: 🇦🇪 阿联酋 (UAE) 06 - li007
+  server: 142.91.101.39
+  port: 627
   udp: true
   type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  uuid: 8199228b-e84b-42a2-9268-e400391e483a
+  tls: true
+  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /@Marisa_kristi
+    headers:
+      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,6 +73,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - li007
   - 🇦🇪 阿联酋 (UAE) 02 - li007
   - 🇦🇪 阿联酋 (UAE) 03 - li007
+  - 🇦🇪 阿联酋 (UAE) 04 - li007
+  - 🇦🇪 阿联酋 (UAE) 05 - li007
+  - 🇦🇪 阿联酋 (UAE) 06 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,5 +84,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - li007
   - 🇦🇪 阿联酋 (UAE) 02 - li007
   - 🇦🇪 阿联酋 (UAE) 03 - li007
+  - 🇦🇪 阿联酋 (UAE) 04 - li007
+  - 🇦🇪 阿联酋 (UAE) 05 - li007
+  - 🇦🇪 阿联酋 (UAE) 06 - li007
 rules:
 - MATCH,PROXIES
