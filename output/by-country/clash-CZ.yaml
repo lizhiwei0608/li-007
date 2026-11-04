@@ -46,6 +46,19 @@ proxies:
   port: 443
   udp: true
   type: vless
+  uuid: 68cf8d29-5aa0-44b3-88a9-f1a576b6e84c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: 73a9e631a09b
+  servername: www.microsoft.com
+  client-fingerprint: firefox
+- name: 🇨🇿 捷克 (Czech) 05 - li007
+  server: server.slavkiti.monster
+  port: 443
+  udp: true
+  type: vless
   uuid: fad0b9a6-187d-4fcc-96fc-498bc5b3135a
   flow: xtls-rprx-vision
   tls: true
@@ -53,7 +66,111 @@ proxies:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
     short-id: 8325360e8bd2
   servername: www.foxsports.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 06 - li007
+  server: server.slavkiti.monster
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4d017db2-7655-4276-9557-e2ec25b04ee7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: ee1716767f9b
+  servername: www.tradingview.com
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 07 - li007
+  server: server.slavkiti.monster
+  port: 443
+  udp: true
+  type: vless
+  uuid: b60cab55-e7a1-413d-a297-ddd7bad3fb62
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: bbcab8fa80a3
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 08 - li007
+  server: server.slavkiti.monster
+  port: 443
+  udp: true
+  type: vless
+  uuid: d84c13b2-c2b9-4a7c-838f-05ac09ee422e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: 2a2ce9e42980
+  servername: www.mozilla.org
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 09 - li007
+  server: server.slavkiti.monster
+  port: 443
+  udp: true
+  type: vless
+  uuid: ed042cf7-efe0-49bd-848b-8d7e655111ff
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: 1036b2383b72
+  servername: www.mozilla.org
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 10 - li007
+  server: server.slavkiti.monster
+  port: 443
+  udp: true
+  type: vless
+  uuid: ff40696b-06d6-443b-9481-8d01eddd13e1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: d659da01fb94
+  servername: www.foxsports.com
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 11 - li007
+  server: server.slavkiti.monster
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6dfc9149-1ff9-41c3-8563-0ef284381731
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: 1374bddeb25d
+  servername: www.tradingview.com
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 12 - li007
+  server: server.slavkiti.monster
+  port: 443
+  udp: true
+  type: vless
+  uuid: 68cf8d29-5aa0-44b3-88a9-f1a576b6e84c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: 73a9e631a09b
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 13 - li007
+  server: server.slavkiti.monster
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1896c6c9-a941-4688-a865-29027bf7f8e6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: 6c825bc79850
+  servername: www.microsoft.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,6 +180,15 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 02 - li007
   - 🇨🇿 捷克 (Czech) 03 - li007
   - 🇨🇿 捷克 (Czech) 04 - li007
+  - 🇨🇿 捷克 (Czech) 05 - li007
+  - 🇨🇿 捷克 (Czech) 06 - li007
+  - 🇨🇿 捷克 (Czech) 07 - li007
+  - 🇨🇿 捷克 (Czech) 08 - li007
+  - 🇨🇿 捷克 (Czech) 09 - li007
+  - 🇨🇿 捷克 (Czech) 10 - li007
+  - 🇨🇿 捷克 (Czech) 11 - li007
+  - 🇨🇿 捷克 (Czech) 12 - li007
+  - 🇨🇿 捷克 (Czech) 13 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,5 +198,14 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 02 - li007
   - 🇨🇿 捷克 (Czech) 03 - li007
   - 🇨🇿 捷克 (Czech) 04 - li007
+  - 🇨🇿 捷克 (Czech) 05 - li007
+  - 🇨🇿 捷克 (Czech) 06 - li007
+  - 🇨🇿 捷克 (Czech) 07 - li007
+  - 🇨🇿 捷克 (Czech) 08 - li007
+  - 🇨🇿 捷克 (Czech) 09 - li007
+  - 🇨🇿 捷克 (Czech) 10 - li007
+  - 🇨🇿 捷克 (Czech) 11 - li007
+  - 🇨🇿 捷克 (Czech) 12 - li007
+  - 🇨🇿 捷克 (Czech) 13 - li007
 rules:
 - MATCH,PROXIES
