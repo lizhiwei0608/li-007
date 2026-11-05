@@ -5,28 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007
-  server: 3eb19e9f-tmm5c0-u10a65-1os43.hk3.hyhuawei.com
+  server: dc5d989c-tmm5c0-tzxeoy-hns7.nw4.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 96c798f6-4645-11ee-b8a1-f23c9164ca5d
-  sni: 3eb19e9f-tmm5c0-u10a65-1os43.hk3.hyhuawei.com
+  password: 6857f1bc-f27b-11ea-87ad-f23c913c8d2b
+  sni: dc5d989c-tmm5c0-tzxeoy-hns7.nw4.hyhuawei.com
   skip-cert-verify: false
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007
-  server: baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com
+  server: e0064cf5-tmm5c0-to0mym-z93q.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
   password: 40639730-e027-11ea-87ad-f23c913c8d2b
-  sni: baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽·单跳) - li007
-  server: er8u54dh.df6h451rh.xin
-  port: 443
-  udp: true
-  type: anytls
-  password: 0324fbc29561
-  sni: px.ads.linkedin.com
+  sni: e0064cf5-tmm5c0-to0mym-z93q.hk3.hyhuawei.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -35,7 +27,6 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽·单跳) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,6 +34,5 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽·单跳) - li007
 rules:
 - MATCH,PROXIES

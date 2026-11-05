@@ -6,36 +6,24 @@
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007",
-      "server": "3eb19e9f-tmm5c0-u10a65-1os43.hk3.hyhuawei.com",
+      "server": "dc5d989c-tmm5c0-tzxeoy-hns7.nw4.hyhuawei.com",
       "server_port": 443,
-      "password": "96c798f6-4645-11ee-b8a1-f23c9164ca5d",
+      "password": "6857f1bc-f27b-11ea-87ad-f23c913c8d2b",
       "tls": {
         "enabled": true,
-        "server_name": "3eb19e9f-tmm5c0-u10a65-1os43.hk3.hyhuawei.com",
+        "server_name": "dc5d989c-tmm5c0-tzxeoy-hns7.nw4.hyhuawei.com",
         "insecure": false
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007",
-      "server": "baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com",
+      "server": "e0064cf5-tmm5c0-to0mym-z93q.hk3.hyhuawei.com",
       "server_port": 443,
       "password": "40639730-e027-11ea-87ad-f23c913c8d2b",
       "tls": {
         "enabled": true,
-        "server_name": "baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "anytls",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽·单跳) - li007",
-      "server": "er8u54dh.df6h451rh.xin",
-      "server_port": 443,
-      "password": "0324fbc29561",
-      "tls": {
-        "enabled": true,
-        "server_name": "px.ads.linkedin.com",
+        "server_name": "e0064cf5-tmm5c0-to0mym-z93q.hk3.hyhuawei.com",
         "insecure": true
       }
     },
@@ -45,8 +33,7 @@
       "outbounds": [
         "auto",
         "🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽·单跳) - li007"
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007"
       ]
     },
     {
@@ -54,8 +41,7 @@
       "tag": "auto",
       "outbounds": [
         "🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽·单跳) - li007"
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

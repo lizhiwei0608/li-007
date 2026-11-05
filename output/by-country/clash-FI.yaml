@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - li007
-  server: 65.108.240.210
-  port: 39018
-  udp: true
-  type: vmess
-  uuid: fa15684a-81e6-4ba7-bc4b-f601c0d998e9
-  alterId: 0
-  cipher: auto
-- name: 🇫🇮 芬兰 (Finland) 02 - li007
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -24,20 +16,33 @@ proxies:
     short-id: 10351b07c712d2a2
   servername: www.cloudflare.com
   client-fingerprint: ''
+- name: 🇫🇮 芬兰 (Finland) 02 - li007
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 03 - li007
-  server: 217.144.188.185
+  server: 146.103.118.189
   port: 443
   udp: true
   type: vless
-  uuid: 8d954cbe-7ca9-402d-bfaf-aca6c92c04c3
-  flow: xtls-rprx-vision
+  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
   tls: true
-  reality-opts:
-    public-key: _ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk
-  servername: www.nordea.fi
-  client-fingerprint: chrome
+  servername: nl2.574ck.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /574ck-finland
+    headers:
+      Host: nl2.574ck.xyz
 - name: 🇫🇮 芬兰 (Finland) 04 - li007
-  server: 104.24.0.1
+  server: 172.66.0.1
   port: 2053
   udp: true
   type: trojan
@@ -47,19 +52,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇫🇮 芬兰 (Finland) 05 - li007
-  server: webdisk.jaggyslawa.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: b62e3646-b84d-443c-9c94-718b646502e0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
-    short-id: dda5f542d835
-  servername: www.foxsports.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,7 +61,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - li007
   - 🇫🇮 芬兰 (Finland) 03 - li007
   - 🇫🇮 芬兰 (Finland) 04 - li007
-  - 🇫🇮 芬兰 (Finland) 05 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,6 +70,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - li007
   - 🇫🇮 芬兰 (Finland) 03 - li007
   - 🇫🇮 芬兰 (Finland) 04 - li007
-  - 🇫🇮 芬兰 (Finland) 05 - li007
 rules:
 - MATCH,PROXIES

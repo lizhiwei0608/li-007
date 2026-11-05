@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - li007",
-      "server": "65.108.240.210",
-      "server_port": 39018,
-      "uuid": "fa15684a-81e6-4ba7-bc4b-f601c0d998e9",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - li007",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - li007",
       "server": "95.216.27.15",
       "server_port": 2053,
       "uuid": "b79d736d-0f10-4169-b626-362059d18204",
@@ -33,29 +25,41 @@
     },
     {
       "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - li007",
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "45.144.234.157"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 03 - li007",
-      "server": "217.144.188.185",
+      "server": "146.103.118.189",
       "server_port": 443,
-      "uuid": "8d954cbe-7ca9-402d-bfaf-aca6c92c04c3",
-      "flow": "xtls-rprx-vision",
+      "uuid": "ce698f0c-a8ec-474a-b5d8-3be8032deeb8",
       "tls": {
         "enabled": true,
-        "server_name": "www.nordea.fi",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk",
-          "short_id": ""
+        "server_name": "nl2.574ck.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/574ck-finland",
+        "headers": {
+          "Host": "nl2.574ck.xyz"
         }
       }
     },
     {
       "type": "trojan",
       "tag": "🇫🇮 芬兰 (Finland) 04 - li007",
-      "server": "104.24.0.1",
+      "server": "172.66.0.1",
       "server_port": 2053,
       "password": "gHQP0D7D15",
       "tls": {
@@ -79,27 +83,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - li007",
-      "server": "webdisk.jaggyslawa.org",
-      "server_port": 443,
-      "uuid": "b62e3646-b84d-443c-9c94-718b646502e0",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.foxsports.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s",
-          "short_id": "dda5f542d835"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -107,8 +90,7 @@
         "🇫🇮 芬兰 (Finland) 01 - li007",
         "🇫🇮 芬兰 (Finland) 02 - li007",
         "🇫🇮 芬兰 (Finland) 03 - li007",
-        "🇫🇮 芬兰 (Finland) 04 - li007",
-        "🇫🇮 芬兰 (Finland) 05 - li007"
+        "🇫🇮 芬兰 (Finland) 04 - li007"
       ]
     },
     {
@@ -118,8 +100,7 @@
         "🇫🇮 芬兰 (Finland) 01 - li007",
         "🇫🇮 芬兰 (Finland) 02 - li007",
         "🇫🇮 芬兰 (Finland) 03 - li007",
-        "🇫🇮 芬兰 (Finland) 04 - li007",
-        "🇫🇮 芬兰 (Finland) 05 - li007"
+        "🇫🇮 芬兰 (Finland) 04 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - li007
-  server: 125.227.86.46
+  server: 125.227.86.45
   port: 443
   udp: true
   type: trojan
@@ -29,6 +29,14 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
+  server: er8u54dh.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 0324fbc29561
+  sni: px.ads.linkedin.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +44,7 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - li007
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +52,6 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - li007
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007
 rules:
 - MATCH,PROXIES
