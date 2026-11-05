@@ -15,23 +15,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: db
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - li007
-  server: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
-  sni: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - li007
-  server: 112.120.123.140
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
-  sni: 9fc34650-tmm5c0-tmj4pk-1kcpe.nw4.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
   server: 60.248.219.78
   port: 443
   udp: true
@@ -51,17 +35,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - li007
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - li007
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - li007
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - li007
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - li007
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007
 rules:
 - MATCH,PROXIES

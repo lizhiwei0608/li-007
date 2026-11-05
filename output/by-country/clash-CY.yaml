@@ -11,7 +11,7 @@ proxies:
   type: vless
   uuid: 13e541f3-d09d-4633-89df-8513db0ced20
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - li007
-  server: hydra.yokkastars.com
+  server: 5.253.28.240
   port: 40443
   udp: true
   type: vless
@@ -22,9 +22,9 @@ proxies:
     public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
     short-id: 88b6
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: firefox
 - name: 🇨🇾 塞浦路斯 (Cyprus) 03 - li007
-  server: hydra.yokkastars.com
+  server: 5.253.28.240
   port: 2443
   udp: true
   type: vless

@@ -12,8 +12,16 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇦🇪 阿联酋 (UAE) 02 - li007",
+      "server": "151.241.19.29",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - li007",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
@@ -28,30 +36,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - li007",
-      "server": "151.241.19.29",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 04 - li007",
-      "server": "84.235.244.108",
-      "server_port": 22573,
-      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "uae.unixzone.us"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - li007",
       "server": "95.174.68.188",
       "server_port": 14430,
       "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
@@ -64,10 +50,24 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - li007",
+      "server": "uae.unixzone.us",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
+      }
+    },
+    {
       "type": "trojan",
       "tag": "🇦🇪 阿联酋 (UAE) 06 - li007",
-      "server": "Sclass-C1.catcat321.com",
-      "server_port": 20086,
+      "server": "Sclass-00.catcat321.com",
+      "server_port": 20123,
       "password": "d9064589-74af-432a-9390-5d8a9da281bf",
       "tls": {
         "enabled": true,
@@ -82,13 +82,13 @@
     {
       "type": "trojan",
       "tag": "🇦🇪 阿联酋 (UAE) 07 - li007",
-      "server": "Sclass-00.catcat321.com",
-      "server_port": 20123,
+      "server": "sclass-c1.catcat321.com",
+      "server_port": 20086,
       "password": "d9064589-74af-432a-9390-5d8a9da281bf",
       "tls": {
         "enabled": true,
         "server_name": "hk.catxstar.com",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
