@@ -4,16 +4,49 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - li007",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21019,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
+      "server": "103.204.174.80",
+      "server_port": 443,
+      "uuid": "91a538f2-e8d6-4fd1-b00a-d39522f20c35",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "c8xReeCgCTOZ2snvR7I4sPtSYAJquSC-_pAIuZG3rVQ",
+          "short_id": "9b1813e63f474741"
+        }
+      }
     },
     {
       "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 - li007",
+      "server": "210.0.244.227",
+      "server_port": 443,
+      "uuid": "ebc368f4-c13c-4bd2-849b-4d245615728f",
+      "tls": {
+        "enabled": true,
+        "server_name": "cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HhYjpNgNw0X_Qrjv9R5aHfV92hHbZmlY1u12DMTPrVw",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - li007",
       "server": "210.0.244.157",
       "server_port": 443,
       "uuid": "f3ff9bac-2904-4f38-bae1-54ab1a72891b",
@@ -33,31 +66,67 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - li007",
-      "server": "39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - li007",
+      "server": "202.146.222.89",
       "server_port": 443,
-      "password": "367e233c-2f54-11ee-9ae1-f23c9164ca5d",
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com",
+        "server_name": "https://t.me/clashv8🇨🇳",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - li007",
+      "server": "202.146.222.29",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "202.146.222.29",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - li007",
+      "server": "3eb19e9f-tmm5c0-u10a65-1os43.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "96c798f6-4645-11ee-b8a1-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "3eb19e9f-tmm5c0-u10a65-1os43.hk3.hyhuawei.com",
         "insecure": false
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - li007",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - li007",
+      "server": "baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com",
+      "server_port": 443,
+      "password": "40639730-e027-11ea-87ad-f23c913c8d2b",
+      "tls": {
+        "enabled": true,
+        "server_name": "baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - li007",
       "server": "202.146.222.174",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
+        "server_name": "202.146.222.174",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - li007",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - li007",
       "server": "165.154.63.139",
       "server_port": 443,
       "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
@@ -77,71 +146,39 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - li007",
-      "server": "aecfea9b-tmm5c0-tpw4i4-1pckg.nw4.hyhuawei.com",
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - li007",
+      "server": "vipccc.cc",
       "server_port": 443,
-      "password": "526a1128-7487-11ee-9bca-f23c913c8d2b",
+      "uuid": "5bead32f-a987-4f57-b1a8-6698778facda",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "aecfea9b-tmm5c0-tpw4i4-1pckg.nw4.hyhuawei.com",
+        "server_name": "vipccc.cc",
         "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ray_proxy",
+        "headers": {
+          "Host": "vipccc.cc"
+        }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - li007",
-      "server": "202.146.222.89",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vk.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - li007",
-      "server": "202.146.222.29",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "202.146.222.29",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - li007",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 11 - li007",
       "server": "152.32.254.68",
       "server_port": 5010,
       "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
       "tls": {
         "enabled": true,
-        "server_name": "127.0.0.1",
-        "insecure": true
+        "server_name": "nas.aizhzo.com",
+        "insecure": false
       },
       "obfs": {
         "type": "salamander",
         "password": "7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - li007",
-      "server": "152.175.6.229",
-      "server_port": 31884,
-      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk010.zestapp778.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
       }
     },
     {
@@ -158,7 +195,8 @@
         "🇭🇰 中国香港 (Hong Kong) 07 - li007",
         "🇭🇰 中国香港 (Hong Kong) 08 - li007",
         "🇭🇰 中国香港 (Hong Kong) 09 - li007",
-        "🇭🇰 中国香港 (Hong Kong) 10 - li007"
+        "🇭🇰 中国香港 (Hong Kong) 10 - li007",
+        "🇭🇰 中国香港 (Hong Kong) 11 - li007"
       ]
     },
     {
@@ -174,7 +212,8 @@
         "🇭🇰 中国香港 (Hong Kong) 07 - li007",
         "🇭🇰 中国香港 (Hong Kong) 08 - li007",
         "🇭🇰 中国香港 (Hong Kong) 09 - li007",
-        "🇭🇰 中国香港 (Hong Kong) 10 - li007"
+        "🇭🇰 中国香港 (Hong Kong) 10 - li007",
+        "🇭🇰 中国香港 (Hong Kong) 11 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

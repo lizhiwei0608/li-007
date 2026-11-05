@@ -5,14 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - li007
-  server: dog-hk.kunlun01dns.com
-  port: 21019
+  server: 103.204.174.80
+  port: 443
   udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 91a538f2-e8d6-4fd1-b00a-d39522f20c35
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: c8xReeCgCTOZ2snvR7I4sPtSYAJquSC-_pAIuZG3rVQ
+    short-id: 9b1813e63f474741
+  servername: gateway.icloud.com
+  client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - li007
+  server: 210.0.244.227
+  port: 443
+  udp: true
+  type: vless
+  uuid: ebc368f4-c13c-4bd2-849b-4d245615728f
+  tls: true
+  reality-opts:
+    public-key: HhYjpNgNw0X_Qrjv9R5aHfV92hHbZmlY1u12DMTPrVw
+  servername: cloudflare.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - li007
   server: 210.0.244.157
   port: 443
   udp: true
@@ -23,23 +39,47 @@ proxies:
     public-key: T239VP3HbJ2KJCur7hDHJtrs6eKmKQfU_X1Xg6NmPgI
   servername: cloudflare.com
   client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - li007
-  server: 39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - li007
+  server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
-  password: 367e233c-2f54-11ee-9ae1-f23c9164ca5d
-  sni: 39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/clashv8🇨🇳
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - li007
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.29
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - li007
+  server: 3eb19e9f-tmm5c0-u10a65-1os43.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 96c798f6-4645-11ee-b8a1-f23c9164ca5d
+  sni: 3eb19e9f-tmm5c0-u10a65-1os43.hk3.hyhuawei.com
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - li007
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - li007
+  server: baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 40639730-e027-11ea-87ad-f23c913c8d2b
+  sni: baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - li007
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
+  sni: 202.146.222.174
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - li007
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - li007
   server: 165.154.63.139
   port: 443
   udp: true
@@ -52,50 +92,32 @@ proxies:
     short-id: ca4aedd4
   servername: www.amazon.com
   client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - li007
-  server: aecfea9b-tmm5c0-tpw4i4-1pckg.nw4.hyhuawei.com
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - li007
+  server: vipccc.cc
   port: 443
   udp: true
-  type: hysteria2
-  password: 526a1128-7487-11ee-9bca-f23c913c8d2b
-  sni: aecfea9b-tmm5c0-tpw4i4-1pckg.nw4.hyhuawei.com
+  type: vmess
+  uuid: 5bead32f-a987-4f57-b1a8-6698778facda
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vipccc.cc
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - li007
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - li007
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.29
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - li007
+  network: ws
+  ws-opts:
+    path: /ray_proxy
+    headers:
+      Host: vipccc.cc
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - li007
   server: 152.32.254.68
   port: 5010
   udp: true
   type: hysteria2
   password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: 127.0.0.1
-  skip-cert-verify: true
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - li007
-  server: 152.175.6.229
-  port: 31884
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: hk010.zestapp778.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -111,6 +133,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - li007
   - 🇭🇰 中国香港 (Hong Kong) 09 - li007
   - 🇭🇰 中国香港 (Hong Kong) 10 - li007
+  - 🇭🇰 中国香港 (Hong Kong) 11 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -126,5 +149,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - li007
   - 🇭🇰 中国香港 (Hong Kong) 09 - li007
   - 🇭🇰 中国香港 (Hong Kong) 10 - li007
+  - 🇭🇰 中国香港 (Hong Kong) 11 - li007
 rules:
 - MATCH,PROXIES

@@ -6,56 +6,37 @@
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007",
-      "server": "39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com",
+      "server": "3eb19e9f-tmm5c0-u10a65-1os43.hk3.hyhuawei.com",
       "server_port": 443,
-      "password": "367e233c-2f54-11ee-9ae1-f23c9164ca5d",
+      "password": "96c798f6-4645-11ee-b8a1-f23c9164ca5d",
       "tls": {
         "enabled": true,
-        "server_name": "39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com",
+        "server_name": "3eb19e9f-tmm5c0-u10a65-1os43.hk3.hyhuawei.com",
         "insecure": false
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007",
-      "server": "aecfea9b-tmm5c0-tpw4i4-1pckg.nw4.hyhuawei.com",
+      "server": "baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com",
       "server_port": 443,
-      "password": "526a1128-7487-11ee-9bca-f23c913c8d2b",
+      "password": "40639730-e027-11ea-87ad-f23c913c8d2b",
       "tls": {
         "enabled": true,
-        "server_name": "aecfea9b-tmm5c0-tpw4i4-1pckg.nw4.hyhuawei.com",
-        "insecure": false
+        "server_name": "baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com",
+        "insecure": true
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽·单跳) - li007",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21019,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 04 (家宽·单跳) - li007",
-      "server": "103.247.28.203",
+      "type": "anytls",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽·单跳) - li007",
+      "server": "er8u54dh.df6h451rh.xin",
       "server_port": 443,
-      "uuid": "64726966-0000-4000-8000-740000000000",
+      "password": "0324fbc29561",
       "tls": {
         "enabled": true,
-        "server_name": "parsa-panel-dy55x.railway1385-2a46.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "parsa-panel-dy55x.railway1385-2a46.workers.dev"
-        }
+        "server_name": "px.ads.linkedin.com",
+        "insecure": true
       }
     },
     {
@@ -65,8 +46,7 @@
         "auto",
         "🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007",
         "🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007",
-        "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽·单跳) - li007",
-        "🇺🇸 美国 (United States) 04 (家宽·单跳) - li007"
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽·单跳) - li007"
       ]
     },
     {
@@ -75,8 +55,7 @@
       "outbounds": [
         "🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007",
         "🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007",
-        "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽·单跳) - li007",
-        "🇺🇸 美国 (United States) 04 (家宽·单跳) - li007"
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽·单跳) - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
