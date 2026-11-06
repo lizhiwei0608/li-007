@@ -5,13 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - li007
+  server: 194.68.44.42
+  port: 64546
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: U83u9OGpvSatIUW7LsWffr
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - li007
   server: 82.152.132.211
   port: 8044
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: dCamglzrORaopqbpBlptzbt9QdiH4CSN
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - li007
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - li007
   server: 46.28.67.55
   port: 443
   udp: true
@@ -23,14 +30,7 @@ proxies:
     public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - li007
-  server: 194.68.44.42
-  port: 64546
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: U83u9OGpvSatIUW7LsWffr
+  client-fingerprint: chrome
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - li007
   server: 154.46.31.106
   port: 443
