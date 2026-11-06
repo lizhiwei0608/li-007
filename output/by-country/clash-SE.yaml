@@ -31,6 +31,17 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 04 - li007
+  server: 5.178.109.174
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 瑞典 (Sweden) 05 - li007
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -43,7 +54,20 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 05 - li007
+- name: 🇸🇪 瑞典 (Sweden) 06 - li007
+  server: sw.golangwikito.cfd
+  port: 443
+  udp: true
+  type: vless
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
+    short-id: a1037b25dcef6aa7
+  servername: sw.golangwikito.cfd
+  client-fingerprint: ios
+- name: 🇸🇪 瑞典 (Sweden) 07 - li007
   server: 138.199.55.230
   port: 1270
   udp: true
@@ -54,7 +78,7 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 06 - li007
+- name: 🇸🇪 瑞典 (Sweden) 08 - li007
   server: 95.143.196.97
   port: 443
   udp: true
@@ -62,7 +86,7 @@ proxies:
   password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
   sni: connect-se.mimowhat.online
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 07 - li007
+- name: 🇸🇪 瑞典 (Sweden) 09 - li007
   server: se3.shtil.io
   port: 443
   udp: true
@@ -71,17 +95,22 @@ proxies:
   tls: true
   servername: se3.shtil.io
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 08 - li007
-  server: 5.178.109.174
-  port: 14430
+  client-fingerprint: chrome
+- name: 🇸🇪 瑞典 (Sweden) 10 - li007
+  server: 89.22.224.146
+  port: 43788
   udp: true
   type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  uuid: 6fbd9bd1-ccd4-4e2f-a918-a0f871965763
+  tls: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vless
+    path: /@Marisa_kristi
     headers:
-      Host: 5.178.109.174
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -95,6 +124,8 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 06 - li007
   - 🇸🇪 瑞典 (Sweden) 07 - li007
   - 🇸🇪 瑞典 (Sweden) 08 - li007
+  - 🇸🇪 瑞典 (Sweden) 09 - li007
+  - 🇸🇪 瑞典 (Sweden) 10 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -108,5 +139,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 06 - li007
   - 🇸🇪 瑞典 (Sweden) 07 - li007
   - 🇸🇪 瑞典 (Sweden) 08 - li007
+  - 🇸🇪 瑞典 (Sweden) 09 - li007
+  - 🇸🇪 瑞典 (Sweden) 10 - li007
 rules:
 - MATCH,PROXIES
