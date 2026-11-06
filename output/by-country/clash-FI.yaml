@@ -28,20 +28,29 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 03 - li007
-  server: sw.golangwikito.cfd
-  port: 443
+  server: 129.6.29.252
+  port: 80
+  udp: true
+  type: vmess
+  uuid: fe4d2b3e-965f-4389-a6e4-05887ef5fd2b
+  alterId: 0
+  cipher: auto
+  network: httpupgrade
+- name: 🇫🇮 芬兰 (Finland) 04 - li007
+  server: 6.bmi.ir.asopardaz.ir
+  port: 8443
   udp: true
   type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  uuid: fe4d2b3e-965f-4389-a6e4-05887ef5fd2b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
-    short-id: a1037b25dcef6aa7
-  servername: sw.golangwikito.cfd
-  client-fingerprint: ios
-- name: 🇫🇮 芬兰 (Finland) 04 - li007
-  server: 172.66.0.1
+    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
+    short-id: e915
+  servername: hostgator.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 05 - li007
+  server: 188.114.96.3
   port: 2053
   udp: true
   type: trojan
@@ -60,6 +69,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - li007
   - 🇫🇮 芬兰 (Finland) 03 - li007
   - 🇫🇮 芬兰 (Finland) 04 - li007
+  - 🇫🇮 芬兰 (Finland) 05 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,5 +79,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - li007
   - 🇫🇮 芬兰 (Finland) 03 - li007
   - 🇫🇮 芬兰 (Finland) 04 - li007
+  - 🇫🇮 芬兰 (Finland) 05 - li007
 rules:
 - MATCH,PROXIES
