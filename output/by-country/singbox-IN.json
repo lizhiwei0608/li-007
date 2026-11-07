@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇳 印度 (India) 01 - li007",
-      "server": "172.105.39.124",
-      "server_port": 7002,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02 - li007",
+      "tag": "🇮🇳 印度 (India) 01 - li007",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -22,7 +14,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -33,8 +25,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 - li007",
-      "server": "178.212.35.198",
+      "tag": "🇮🇳 印度 (India) 02 - li007",
+      "server": "in.smrtai.top",
       "server_port": 443,
       "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
       "tls": {
@@ -42,7 +34,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -53,8 +45,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 04 - li007",
-      "server": "in1.japancase.site",
+      "tag": "🇮🇳 印度 (India) 03 - li007",
+      "server": "107.181.139.144",
       "server_port": 443,
       "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
       "flow": "xtls-rprx-vision",
@@ -63,7 +55,7 @@
         "server_name": "in1.japancase.site",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -74,7 +66,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 05 - li007",
+      "tag": "🇮🇳 印度 (India) 04 - li007",
       "server": "13.140.56.100",
       "server_port": 14430,
       "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
@@ -94,8 +86,7 @@
         "🇮🇳 印度 (India) 01 - li007",
         "🇮🇳 印度 (India) 02 - li007",
         "🇮🇳 印度 (India) 03 - li007",
-        "🇮🇳 印度 (India) 04 - li007",
-        "🇮🇳 印度 (India) 05 - li007"
+        "🇮🇳 印度 (India) 04 - li007"
       ]
     },
     {
@@ -105,8 +96,7 @@
         "🇮🇳 印度 (India) 01 - li007",
         "🇮🇳 印度 (India) 02 - li007",
         "🇮🇳 印度 (India) 03 - li007",
-        "🇮🇳 印度 (India) 04 - li007",
-        "🇮🇳 印度 (India) 05 - li007"
+        "🇮🇳 印度 (India) 04 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -20,17 +20,15 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - li007",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
+      "server": "70.34.207.14",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
+        "insecure": false
       }
     },
     {
@@ -42,7 +40,11 @@
       "tls": {
         "enabled": true,
         "server_name": "138-124-86-230.sslip.io",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       },
       "transport": {
         "type": "grpc",
@@ -76,27 +78,38 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 07 - li007",
-      "server": "70.34.207.14",
+      "server": "193.25.216.88",
       "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
-        "insecure": false
+        "server_name": "sw.golangwikito.cfd",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg",
+          "short_id": "a1037b25dcef6aa7"
+        }
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 08 - li007",
-      "server": "95.143.196.97",
-      "server_port": 443,
-      "password": "769f34f0-1500-488f-b414-03bc90666502",
-      "tls": {
-        "enabled": true,
-        "server_name": "se.mimowhat.online",
-        "insecure": false
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
       }
     },
     {
@@ -115,29 +128,24 @@
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇸🇪 瑞典 (Sweden) 10 - li007",
-      "server": "193.25.216.31",
+      "server": "95.143.196.32",
       "server_port": 443,
-      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
-      "flow": "xtls-rprx-vision",
+      "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
       "tls": {
         "enabled": true,
-        "server_name": "sw.golangwikito.cfd",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg",
-          "short_id": "a1037b25dcef6aa7"
-        }
+        "server_name": "connect-se.mimowhat.online",
+        "insecure": true,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ]
       }
     },
     {

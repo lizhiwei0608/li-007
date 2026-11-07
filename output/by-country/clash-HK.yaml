@@ -5,46 +5,42 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - li007
-  server: 202.146.222.29
-  port: 443
+  server: 209.33.160.122
+  port: 39098
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2рҹүҹү
-  skip-cert-verify: true
+  type: vless
+  uuid: 7852e4df-db54-4f75-a35e-3b8fbe89e56d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: DtOZ39u6MyQMG96tl13-M7-HeaqQzW2RLBVPk9py-Vg
+  servername: dash.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - li007
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
+  sni: 202.146.222.174
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - li007
+  server: 50dc16b5-tmm5c0-tmj4pk-1kcpe.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
+  sni: 50dc16b5-tmm5c0-tmj4pk-1kcpe.hk3.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - li007
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - li007
-  server: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
-  sni: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
+  sni: https://t.me/clashv8
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - li007
-  server: 112.120.123.140
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
-  sni: 9fc34650-tmm5c0-tmj4pk-1kcpe.nw4.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - li007
   server: 85.155.149.190
   port: 443
   udp: true
@@ -57,27 +53,25 @@ proxies:
     short-id: bee10b047804c637
   servername: hk1.japancase.site
   client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - li007
+  server: aecfea9b-tmm5c0-tpw4i4-1pckg.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 526a1128-7487-11ee-9bca-f23c913c8d2b
+  sni: aecfea9b-tmm5c0-tpw4i4-1pckg.nw4.hyhuawei.com
+  skip-cert-verify: false
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - li007
   server: 152.32.254.68
   port: 5010
   udp: true
   type: hysteria2
   password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: false
+  sni: 127.0.0.1
+  skip-cert-verify: true
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - li007
-  server: 152.175.6.229
-  port: 31884
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: hk010.zestapp778.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - li007
   server: 165.154.63.139
   port: 443
   udp: true
@@ -103,7 +97,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 06 - li007
   - 🇭🇰 中国香港 (Hong Kong) 07 - li007
   - 🇭🇰 中国香港 (Hong Kong) 08 - li007
-  - 🇭🇰 中国香港 (Hong Kong) 09 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -117,6 +110,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 06 - li007
   - 🇭🇰 中国香港 (Hong Kong) 07 - li007
   - 🇭🇰 中国香港 (Hong Kong) 08 - li007
-  - 🇭🇰 中国香港 (Hong Kong) 09 - li007
 rules:
 - MATCH,PROXIES
