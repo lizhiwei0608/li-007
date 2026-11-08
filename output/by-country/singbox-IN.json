@@ -6,27 +6,7 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - li007",
-      "server": "194.61.31.126",
-      "server_port": 2053,
-      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
-          "short_id": "9980e0609b0d3891"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02 - li007",
-      "server": "in.smrtai.top",
+      "server": "178.212.35.198",
       "server_port": 443,
       "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
       "tls": {
@@ -34,7 +14,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -45,7 +25,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 - li007",
+      "tag": "🇮🇳 印度 (India) 02 - li007",
       "server": "107.181.139.144",
       "server_port": 443,
       "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
@@ -66,7 +46,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 04 - li007",
+      "tag": "🇮🇳 印度 (India) 03 - li007",
       "server": "13.140.56.100",
       "server_port": 14430,
       "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
@@ -85,8 +65,7 @@
         "auto",
         "🇮🇳 印度 (India) 01 - li007",
         "🇮🇳 印度 (India) 02 - li007",
-        "🇮🇳 印度 (India) 03 - li007",
-        "🇮🇳 印度 (India) 04 - li007"
+        "🇮🇳 印度 (India) 03 - li007"
       ]
     },
     {
@@ -95,8 +74,7 @@
       "outbounds": [
         "🇮🇳 印度 (India) 01 - li007",
         "🇮🇳 印度 (India) 02 - li007",
-        "🇮🇳 印度 (India) 03 - li007",
-        "🇮🇳 印度 (India) 04 - li007"
+        "🇮🇳 印度 (India) 03 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

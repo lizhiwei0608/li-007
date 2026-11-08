@@ -4,31 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - li007
-  server: 104.16.10.48
-  port: 443
+- name: 🇷🇸 塞尔维亚 (Serbia) 01 - li007
+  server: 208.103.161.16
+  port: 2096
   udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
+  type: trojan
+  password: hWsj5AwIRPF8
+  sni: rayAnconfIg3-Bhl0ai7j-t2.raYan-coNfig-3.woRKers.dEV
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
+    path: /?ed=2560
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - li007
+  - 🇷🇸 塞尔维亚 (Serbia) 01 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - li007
+  - 🇷🇸 塞尔维亚 (Serbia) 01 - li007
 rules:
 - MATCH,PROXIES
