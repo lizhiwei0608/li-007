@@ -5,24 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - li007",
-      "server": "104.21.13.229",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - li007",
+      "server": "5.129.202.80",
       "server_port": 443,
-      "uuid": "5f11c240-89df-494c-9c81-8b619023bb58",
+      "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "789156.xyz",
-        "insecure": false,
+        "server_name": "mirror-50.topp-con.xyz",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "789156.xyz"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "NY2bvH4IFKTstWkBWwyU5MmlzuKk0nU08cBoHlti2S8",
+          "short_id": "2ef2b10d5143d798"
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - li007"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - li007"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
