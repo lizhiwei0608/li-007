@@ -27,21 +27,42 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 02 - li007",
-      "server": "193.124.17.190",
+      "server": "129.101.103.211",
       "server_port": 443,
-      "uuid": "d84c13b2-c2b9-4a7c-838f-05ac09ee422e",
+      "uuid": "3f5e89d5-591f-4ac9-b071-b05680b573c3",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.mozilla.org",
+        "server_name": "de2.gacvpn.site",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8fSwTqCwJ2HWGxcTQsZs8Sx0hRk2Ru7HFdu-iLnesGg",
+          "short_id": "53d0d0611a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 03 - li007",
+      "server": "193.124.17.190",
+      "server_port": 443,
+      "uuid": "68cf8d29-5aa0-44b3-88a9-f1a576b6e84c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
           "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "2a2ce9e42980"
+          "short_id": "73a9e631a09b"
         }
       }
     },
@@ -51,7 +72,8 @@
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - li007",
-        "🇨🇿 捷克 (Czech) 02 - li007"
+        "🇨🇿 捷克 (Czech) 02 - li007",
+        "🇨🇿 捷克 (Czech) 03 - li007"
       ]
     },
     {
@@ -59,7 +81,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - li007",
-        "🇨🇿 捷克 (Czech) 02 - li007"
+        "🇨🇿 捷克 (Czech) 02 - li007",
+        "🇨🇿 捷克 (Czech) 03 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

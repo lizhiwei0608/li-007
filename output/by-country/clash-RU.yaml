@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - li007
-  server: 89.105.218.133
-  port: 443
-  udp: true
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: golos.mail.ru
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 02 - li007
   server: 89.105.218.143
   port: 443
   udp: true
@@ -30,7 +17,7 @@ proxies:
     short-id: 428ef87fd47a3a32
   servername: golos.mail.ru
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 03 - li007
+- name: 🇷🇺 俄罗斯 (Russia) 02 - li007
   server: 50.7.227.77
   port: 443
   udp: true
@@ -42,37 +29,9 @@ proxies:
     public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
     short-id: 428ef87fd47a3a32
   servername: bizorg.su
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 04 - li007
-  server: 179.43.166.190
-  port: 443
-  udp: true
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: perevodchiki.su
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 05 - li007
-  server: steel7.hadsvpn.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 23c82941-70f4-4381-90db-bd28e9a902e9
-  sni: steel7.hadsvpn.com
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 06 - li007
-  server: 38.60.223.125
-  port: 13108
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: 8722de56b6c0b3f6a4d01cf91c07e6aa
-- name: 🇷🇺 俄罗斯 (Russia) 07 - li007
-  server: 185.215.184.53
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 03 - li007
+  server: 185.215.184.49
   port: 443
   udp: true
   type: vless
@@ -83,15 +42,28 @@ proxies:
     public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
     short-id: 428ef87fd47a3a32
   servername: dvizhok.su
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 08 - li007
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 04 - li007
   server: 46.17.47.58
   port: 18443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-- name: 🇷🇺 俄罗斯 (Russia) 09 - li007
+- name: 🇷🇺 俄罗斯 (Russia) 05 - li007
+  server: fduknew.titun.su
+  port: 443
+  udp: true
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: bizorg.su
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 06 - li007
   server: 193.233.253.180
   port: 8444
   udp: true
@@ -105,7 +77,15 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇷🇺 俄罗斯 (Russia) 10 - li007
+- name: 🇷🇺 俄罗斯 (Russia) 07 - li007
+  server: steel7.hadsvpn.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 23c82941-70f4-4381-90db-bd28e9a902e9
+  sni: steel7.hadsvpn.com
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 08 - li007
   server: 201.24.121.243
   port: 443
   udp: true
@@ -118,48 +98,22 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vlgrpc
-- name: 🇷🇺 俄罗斯 (Russia) 11 - li007
-  server: xsru1.ddnsfree.com
+- name: 🇷🇺 俄罗斯 (Russia) 09 - li007
+  server: 9e72bbg.msk2.h1clayd.click
   port: 443
   udp: true
   type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  uuid: 13e6bdfd-d51b-4e57-a40e-b88784cba8bd
   tls: true
-  servername: xsru1.ddnsfree.com
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 12 - li007
-  server: xssite.webredirect.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  tls: true
-  servername: xssite.webredirect.org
-  skip-cert-verify: false
+  reality-opts:
+    public-key: 0R5QIf2DFXNgISIYDQdoWIdbNoImaJHrwOkc2tzRPyQ
+    short-id: cc07501e28b18687
+  servername: 9e72bbg.msk2.h1clayd.click
   client-fingerprint: chrome
   network: grpc
   grpc-opts:
-    grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 13 - li007
-  server: 147.45.175.81
-  port: 443
-  udp: true
-  type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  tls: true
-  servername: xsru1.ddnsfree.com
-  skip-cert-verify: false
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /wsru
-    headers:
-      Host: xsru1.ddnsfree.com
-- name: 🇷🇺 俄罗斯 (Russia) 14 - li007
+    grpc-service-name: 93013a569b78
+- name: 🇷🇺 俄罗斯 (Russia) 10 - li007
   server: ee.subv.ru
   port: 443
   udp: true
@@ -172,6 +126,13 @@ proxies:
     short-id: 428ef87fd47a3a32
   servername: dvizhok.su
   client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 11 - li007
+  server: 38.60.223.125
+  port: 13108
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: 8722de56b6c0b3f6a4d01cf91c07e6aa
 proxy-groups:
 - name: PROXIES
   type: select
@@ -188,9 +149,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 09 - li007
   - 🇷🇺 俄罗斯 (Russia) 10 - li007
   - 🇷🇺 俄罗斯 (Russia) 11 - li007
-  - 🇷🇺 俄罗斯 (Russia) 12 - li007
-  - 🇷🇺 俄罗斯 (Russia) 13 - li007
-  - 🇷🇺 俄罗斯 (Russia) 14 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -207,8 +165,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 09 - li007
   - 🇷🇺 俄罗斯 (Russia) 10 - li007
   - 🇷🇺 俄罗斯 (Russia) 11 - li007
-  - 🇷🇺 俄罗斯 (Russia) 12 - li007
-  - 🇷🇺 俄罗斯 (Russia) 13 - li007
-  - 🇷🇺 俄罗斯 (Russia) 14 - li007
 rules:
 - MATCH,PROXIES

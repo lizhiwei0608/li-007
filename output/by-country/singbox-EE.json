@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇷 希腊 (Greece) 01 - li007",
-      "server": "85.90.197.220",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - li007",
+      "server": "esso-music-coroborito.keno.su",
       "server_port": 443,
-      "uuid": "8f704ed6-9a1a-4d04-94dd-1bff501716de",
+      "uuid": "dc95c1dd-2cd3-414c-8cf1-71ae86dad666",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "esso-music-coroborito.keno.su",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4",
-          "short_id": "94acb54627612d43"
+          "public_key": "_MeP-WwmolUvi6wMXNoSs_zo6miG_OW7xk4ibzADiHY",
+          "short_id": ""
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇷 希腊 (Greece) 01 - li007"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇷 希腊 (Greece) 01 - li007"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
