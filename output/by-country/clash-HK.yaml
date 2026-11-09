@@ -5,58 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - li007
-  server: 209.33.160.122
-  port: 39098
+  server: fc6ffc71-tmm5c0-ts3rye-mrtr.hk3.hyhuawei.com
+  port: 443
   udp: true
-  type: vless
-  uuid: 7852e4df-db54-4f75-a35e-3b8fbe89e56d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: DtOZ39u6MyQMG96tl13-M7-HeaqQzW2RLBVPk9py-Vg
-  servername: dash.cloudflare.com
-  client-fingerprint: chrome
+  type: hysteria2
+  password: 28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9
+  sni: fc6ffc71-tmm5c0-ts3rye-mrtr.hk3.hyhuawei.com
+  skip-cert-verify: false
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - li007
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - li007
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - li007
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2ⁿß
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - li007
-  server: c39e9624-tmm5c0-twnp5a-ahsb.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 2e42c1ee-aaaa-11ec-bb74-f23c9164ca5d
-  sni: c39e9624-tmm5c0-twnp5a-ahsb.nw4.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - li007
-  server: 633b0024-tmm5c0-ttx5yr-1j0y6.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 1cce7df2-251c-11ee-9409-f23c9164ca5d
-  sni: 633b0024-tmm5c0-ttx5yr-1j0y6.hk3.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - li007
   server: 152.32.254.68
   port: 5010
   udp: true
@@ -66,6 +22,46 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - li007
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - li007
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2🇨🇳
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - li007
+  server: vpn-hk-004.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-hk-004.fastervpn.world
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - li007
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/clashv8🇨🇳
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - li007
+  server: 193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
+  sni: 193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select

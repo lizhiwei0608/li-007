@@ -4,8 +4,34 @@
   },
   "outbounds": [
     {
+      "type": "trojan",
+      "tag": "🇳🇱 荷兰 (Netherlands) 01 (移动家宽) - li007",
+      "server": "151.101.36.7",
+      "server_port": 443,
+      "password": "MiTiVPN",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.akamai.steamstatic.com",
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/---@MiTiVPN---@MiTiVPN",
+        "headers": {
+          "Host": "Abu.ac.ir"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - li007",
+      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - li007",
       "server": "49.254.204.133",
       "server_port": 1774,
       "method": "aes-256-cfb",
@@ -13,7 +39,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -31,20 +57,32 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇸🇬 新加坡 (Singapore) 04 (家宽) - li007",
+      "server": "116.88.224.217",
+      "server_port": 8080,
+      "uuid": "6f4f0eb5-fe86-41ca-eccb-a6ca68f88d9b",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - li007",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007"
+        "🇳🇱 荷兰 (Netherlands) 01 (移动家宽) - li007",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - li007",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007",
+        "🇸🇬 新加坡 (Singapore) 04 (家宽) - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - li007",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - li007"
+        "🇳🇱 荷兰 (Netherlands) 01 (移动家宽) - li007",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - li007",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - li007",
+        "🇸🇬 新加坡 (Singapore) 04 (家宽) - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

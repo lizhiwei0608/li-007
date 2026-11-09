@@ -6,32 +6,32 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - li007
   server: 217.30.10.44
-  port: 9076
+  port: 9062
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: S2zDyyPcmZN2h8EC
+  password: tkhHVxxfM2QErBWe
 - name: 🇵🇱 波兰 (Poland) 02 - li007
   server: 217.30.10.44
-  port: 9006
+  port: 9063
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: FAdUvMJUq5vDgKEq
+  password: aQqJbtwFGcCCaeL3
 - name: 🇵🇱 波兰 (Poland) 03 - li007
   server: 217.30.10.44
-  port: 9071
+  port: 9099
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: mENfxTFQpRKKh4As
+  password: 7heRqkPG3hg4UnRm
 - name: 🇵🇱 波兰 (Poland) 04 - li007
   server: 217.30.10.44
-  port: 9052
+  port: 9042
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: jt2ekBNc9HuVtm2a
+  password: S7KwUu7yBy58S3Ga
 - name: 🇵🇱 波兰 (Poland) 05 - li007
   server: 217.30.10.44
   port: 9095
@@ -41,33 +41,41 @@ proxies:
   password: N7j3pdTYkKmsy8CR
 - name: 🇵🇱 波兰 (Poland) 06 - li007
   server: 217.30.10.44
-  port: 9063
+  port: 9006
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: aQqJbtwFGcCCaeL3
+  password: FAdUvMJUq5vDgKEq
 - name: 🇵🇱 波兰 (Poland) 07 - li007
   server: 217.30.10.44
-  port: 9062
+  port: 9052
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: tkhHVxxfM2QErBWe
+  password: jt2ekBNc9HuVtm2a
 - name: 🇵🇱 波兰 (Poland) 08 - li007
   server: 217.30.10.44
-  port: 9042
+  port: 9071
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: S7KwUu7yBy58S3Ga
+  password: mENfxTFQpRKKh4As
 - name: 🇵🇱 波兰 (Poland) 09 - li007
   server: 217.30.10.44
-  port: 9099
+  port: 9076
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 7heRqkPG3hg4UnRm
+  password: S2zDyyPcmZN2h8EC
 - name: 🇵🇱 波兰 (Poland) 10 - li007
+  server: 70.34.252.255
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 11 - li007
   server: 2.26.6.1
   port: 2087
   udp: true
@@ -77,27 +85,19 @@ proxies:
   servername: 2.26.6.1
   skip-cert-verify: true
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 11 - li007
-  server: 70.34.252.255
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
-  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 12 - li007
-  server: 150.251.113.34
+  server: 80.47.13.182
   port: 443
   udp: true
   type: vless
-  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
-  flow: xtls-rprx-vision
+  uuid: 95f85937-7b95-45c4-8d69-95da6a978569
   tls: true
-  reality-opts:
-    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
-    short-id: 150a627d15154cf2
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: dl.megadrishto.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: stats.v2.StreamService
 - name: 🇵🇱 波兰 (Poland) 13 - li007
   server: 82.118.22.161
   port: 443
@@ -110,7 +110,7 @@ proxies:
     public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
     short-id: fa3ea655619a3e78
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
