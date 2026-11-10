@@ -29,7 +29,7 @@ proxies:
     public-key: 23cb4W9THzBKsrECsLh-A_FcKZfkAtUONoDze8-GnQE
     short-id: e90360ec7cc61b20
   servername: udemy.com
-  client-fingerprint: chrome
+  client-fingerprint: ios
 - name: 🇨🇿 捷克 (Czech) 03 - li007
   server: 216.106.191.201
   port: 10303
@@ -43,19 +43,6 @@ proxies:
     short-id: 6aa50b0cc8d23464
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 04 - li007
-  server: 193.124.17.190
-  port: 443
-  udp: true
-  type: vless
-  uuid: ff40696b-06d6-443b-9481-8d01eddd13e1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: d659da01fb94
-  servername: www.foxsports.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,7 +51,6 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - li007
   - 🇨🇿 捷克 (Czech) 02 - li007
   - 🇨🇿 捷克 (Czech) 03 - li007
-  - 🇨🇿 捷克 (Czech) 04 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,6 +59,5 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - li007
   - 🇨🇿 捷克 (Czech) 02 - li007
   - 🇨🇿 捷克 (Czech) 03 - li007
-  - 🇨🇿 捷克 (Czech) 04 - li007
 rules:
 - MATCH,PROXIES
