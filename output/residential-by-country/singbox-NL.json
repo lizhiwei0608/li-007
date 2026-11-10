@@ -4,28 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇳🇱 荷兰 (Netherlands) 01 (移动家宽) - li007",
-      "server": "151.101.36.7",
-      "server_port": 443,
-      "password": "MiTiVPN",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.akamai.steamstatic.com",
-        "insecure": true,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "radar.cloudflare.com",
+      "server_port": 8080,
+      "uuid": "cfa71937-73d5-4eb8-9b25-eadecd944803",
       "transport": {
         "type": "ws",
-        "path": "/---@MiTiVPN---@MiTiVPN",
+        "path": "/",
         "headers": {
-          "Host": "Abu.ac.ir"
+          "Host": "sh-harand.shcharand00.workers.dev"
         }
       }
     },

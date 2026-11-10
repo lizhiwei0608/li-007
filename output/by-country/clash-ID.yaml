@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - li007
-  server: 104.16.10.72
+- name: 🇮🇩 印尼 (Indonesia) 01 - li007
+  server: 188.114.97.6
   port: 443
   udp: true
   type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 1246e51a-97cd-4d5c-9842-76dd3420bbe2
   tls: true
-  servername: jp3.yohototo.top
+  servername: investor.fb.com.r3xxe.eu.cc
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /id-tksi
     headers:
-      Host: jp3.yohototo.top
+      Host: investor.fb.com.r3xxe.eu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - li007
+  - 🇮🇩 印尼 (Indonesia) 01 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - li007
+  - 🇮🇩 印尼 (Indonesia) 01 - li007
 rules:
 - MATCH,PROXIES

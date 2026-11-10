@@ -5,16 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇱 荷兰 (Netherlands) 01 (移动家宽) - li007
-  server: 151.101.36.7
-  port: 443
+  server: radar.cloudflare.com
+  port: 8080
   udp: true
-  type: trojan
-  password: MiTiVPN
-  sni: cdn.akamai.steamstatic.com
-  skip-cert-verify: true
+  type: vless
+  uuid: cfa71937-73d5-4eb8-9b25-eadecd944803
   network: ws
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN
+    path: /
+    headers:
+      Host: sh-harand.shcharand00.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

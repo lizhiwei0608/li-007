@@ -4,35 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇸🇬 新加坡 (Singapore) 01 (家宽·单跳) - li007",
-      "server": "195.133.135.238",
-      "server_port": 10086,
-      "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
-      "security": "auto"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007",
-      "server": "fc6ffc71-tmm5c0-ts3rye-mrtr.hk3.hyhuawei.com",
-      "server_port": 443,
-      "password": "28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9",
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽·单跳) - li007",
+      "server": "104.18.42.54",
+      "server_port": 2083,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "fc6ffc71-tmm5c0-ts3rye-mrtr.hk3.hyhuawei.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽·单跳) - li007",
-      "server": "193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com",
-      "server_port": 443,
-      "password": "c12f73f6-e8c7-11ed-9246-f23c9164ca5d",
-      "tls": {
-        "enabled": true,
-        "server_name": "193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com",
-        "insecure": false
+        "server_name": "newwk1.f1w.de5.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "newwk1.f1w.de5.net"
+        }
       }
     },
     {
@@ -40,18 +30,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 新加坡 (Singapore) 01 (家宽·单跳) - li007",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽·单跳) - li007"
+        "🇺🇸 美国 (United States) 01 (家宽·单跳) - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 新加坡 (Singapore) 01 (家宽·单跳) - li007",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽·单跳) - li007"
+        "🇺🇸 美国 (United States) 01 (家宽·单跳) - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
