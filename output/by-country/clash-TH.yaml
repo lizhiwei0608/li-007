@@ -13,26 +13,26 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇭 泰国 (Thailand) 02 - li007
-  server: th001.zestapp778.com
+  server: 38.60.233.126
   port: 33079
   udp: true
   type: trojan
   password: 5t6i121em5lkmsmk
   sni: th001.zestapp778.com
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇹🇭 泰国 (Thailand) 03 - li007
-  server: 23.95.72.244
-  port: 5459
+  server: zfapi.zalolink.com
+  port: 11802
   udp: true
   type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: Von3W6smD_9vmKScjCG9ex6xw4_sG9MFfBk-9zbrbzs
-    short-id: 3fdc9f533b3fb068
-  servername: api.adidas.com
-  client-fingerprint: firefox
+    public-key: FUBjYwXlKIVwF7IuJf5dt_HU2sUnrEt10s4TIlTe8Q4
+    short-id: 6c84fbac2d
+  servername: psstatic.cdn.bcebos.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select

@@ -5,15 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - li007
-  server: 152.32.254.68
-  port: 5010
+  server: 202.146.222.174
+  port: 443
   udp: true
   type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: 127.0.0.1
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.174
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - li007
   server: 3de2432e-tmm5c0-tonrqx-1khwf.hk3.hyhuawei.com
   port: 443
@@ -28,17 +26,9 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8\u0001f1e8\u0001f1f3
+  sni: https://t.me/clashv8🇨🇳
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - li007
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - li007
   server: 39.109.111.23
   port: 39675
   udp: true
@@ -51,13 +41,23 @@ proxies:
     short-id: 551a216445
   servername: www.lamer.com.hk
   client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - li007
+  server: 152.32.254.68
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - li007
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2ôøωôøωôøωôøω
+  sni: https3a2f2ft.me2fwangcai2efa3bfc3bcc3a1
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - li007
   server: doghkzf.zalolink.com
@@ -72,6 +72,14 @@ proxies:
     short-id: 9a79807253c040
   servername: www.lamer.com.hk
   client-fingerprint: ios
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - li007
+  server: vpn-hk-004.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-hk-004.fastervpn.world
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,6 +92,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - li007
   - 🇭🇰 中国香港 (Hong Kong) 06 - li007
   - 🇭🇰 中国香港 (Hong Kong) 07 - li007
+  - 🇭🇰 中国香港 (Hong Kong) 08 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -96,5 +105,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - li007
   - 🇭🇰 中国香港 (Hong Kong) 06 - li007
   - 🇭🇰 中国香港 (Hong Kong) 07 - li007
+  - 🇭🇰 中国香港 (Hong Kong) 08 - li007
 rules:
 - MATCH,PROXIES

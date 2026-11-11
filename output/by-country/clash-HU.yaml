@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - li007
-  server: 170.114.45.6
-  port: 2096
+- name: 🇭🇺 匈牙利 (Hungary) 01 - li007
+  server: 172.67.131.125
+  port: 2083
   udp: true
   type: vless
-  uuid: efd11a89-7506-44ce-95b6-6654859f155b
+  uuid: f418674e-f518-4318-8ff9-e10000000046
   tls: true
-  servername: pcloud.z-tas.com
+  servername: smart-edge-424.arti98399-1905.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /sync
     headers:
-      Host: pcloud.z-tas.com
+      Host: smart-edge-424.arti98399-1905.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - li007
+  - 🇭🇺 匈牙利 (Hungary) 01 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - li007
+  - 🇭🇺 匈牙利 (Hungary) 01 - li007
 rules:
 - MATCH,PROXIES
