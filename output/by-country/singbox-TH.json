@@ -4,45 +4,49 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇹🇭 泰国 (Thailand) 01 - li007",
-      "server": "119.46.51.45",
-      "server_port": 37515,
-      "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
-      "security": "auto"
-    },
-    {
       "type": "trojan",
-      "tag": "🇹🇭 泰国 (Thailand) 02 - li007",
+      "tag": "🇹🇭 泰国 (Thailand) 01 - li007",
       "server": "38.60.233.126",
       "server_port": 33079,
       "password": "5t6i121em5lkmsmk",
       "tls": {
         "enabled": true,
         "server_name": "th001.zestapp778.com",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 03 - li007",
-      "server": "zfapi.zalolink.com",
-      "server_port": 11802,
-      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "tag": "🇹🇭 泰国 (Thailand) 02 - li007",
+      "server": "23.95.72.244",
+      "server_port": 5459,
+      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "psstatic.cdn.bcebos.com",
+        "server_name": "api.adidas.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "FUBjYwXlKIVwF7IuJf5dt_HU2sUnrEt10s4TIlTe8Q4",
-          "short_id": "6c84fbac2d"
+          "public_key": "Von3W6smD_9vmKScjCG9ex6xw4_sG9MFfBk-9zbrbzs",
+          "short_id": "3fdc9f533b3fb068"
         }
       }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇭 泰国 (Thailand) 03 - li007",
+      "server": "119.46.51.45",
+      "server_port": 37515,
+      "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
+      "security": "auto"
     },
     {
       "type": "selector",

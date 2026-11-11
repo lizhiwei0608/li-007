@@ -4,26 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 01 - li007",
-      "server": "146.70.90.198",
-      "server_port": 17456,
-      "method": "aes-128-gcm",
-      "password": "881cf39affc5286799a585f1acd24d11"
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 01 - li007",
+      "server": "172.64.229.129",
+      "server_port": 2052,
+      "uuid": "5744e593-1cc8-48fa-b8ca-57cd494fe35b",
+      "transport": {
+        "type": "ws",
+        "path": "/rain1226",
+        "headers": {
+          "Host": "eu02.123450908.xyz"
+        }
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 爱尔兰 (Ireland) 01 - li007"
+        "🌐 其他地区 (Other) 01 - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 爱尔兰 (Ireland) 01 - li007"
+        "🌐 其他地区 (Other) 01 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

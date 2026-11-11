@@ -29,7 +29,7 @@ proxies:
     public-key: suK-MYTtZhJ9IJgsxPLTHLQadNotDqYslQcd5BNV_EQ
     short-id: 6aa50b0cc8d23464
   servername: www.apple.com
-  client-fingerprint: ''
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

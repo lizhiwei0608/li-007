@@ -5,24 +5,39 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007
-  server: 3de2432e-tmm5c0-tonrqx-1khwf.hk3.hyhuawei.com
+  server: ac91889e-tmm5c0-u3xqxa-1q91p.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
-  sni: 3de2432e-tmm5c0-tonrqx-1khwf.hk3.hyhuawei.com
+  password: c11ff50c-f582-11ee-94df-f23c9164ca5d
+  sni: ac91889e-tmm5c0-u3xqxa-1q91p.hk3.hyhuawei.com
   skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 02 (移动家宽·单跳) - li007
+  server: 23.95.72.244
+  port: 5467
+  udp: true
+  type: vless
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wMLrAweVXsOzwV-Uc_7t7OZBycbjVrgPp0ukPjuXA2U
+    short-id: 6e47891d
+  servername: api.adidas.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007
+  - 🇺🇸 美国 (United States) 02 (移动家宽·单跳) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007
+  - 🇺🇸 美国 (United States) 02 (移动家宽·单跳) - li007
 rules:
 - MATCH,PROXIES

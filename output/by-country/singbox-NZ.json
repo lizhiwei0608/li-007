@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - li007",
-      "server": "38.244.155.67",
-      "server_port": 443,
-      "uuid": "d651c9ab-b844-4420-b3d0-20d201ef5f55",
+      "tag": "🇳🇿 新西兰 (New Zealand) 01 - li007",
+      "server": "23.95.72.244",
+      "server_port": 55419,
+      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "node-eu-1.nztpro.com",
+        "server_name": "api.adidas.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
-          "public_key": "NLXltMEkWIxv9bL2J4XkPGb4oVwGbCkITCTXF-jVxAE",
-          "short_id": "2976f793571fb671"
+          "public_key": "4-zwh3OxBO8mnUu0G9nEAP56veE-F6-wzF87hNLOIyY",
+          "short_id": "2f745f3c3c"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 爱沙尼亚 (Estonia) 01 - li007"
+        "🇳🇿 新西兰 (New Zealand) 01 - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 爱沙尼亚 (Estonia) 01 - li007"
+        "🇳🇿 新西兰 (New Zealand) 01 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
