@@ -6,32 +6,32 @@ log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - li007
   server: 185.135.86.175
-  port: 9033
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: UTJA57ypk2XKQpnm
-- name: 🇱🇻 拉脱维亚 (Latvia) 02 - li007
-  server: 185.135.86.175
-  port: 9086
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - li007
-  server: 185.135.86.175
   port: 9017
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: HAVAdE3nXhqA5nHp
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - li007
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - li007
   server: 185.135.86.175
   port: 9094
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: rpgbNnU9rDDU4aWZ
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - li007
+  server: 185.135.86.175
+  port: 9036
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: hbtvgUz5uNYyB3Rf
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - li007
+  server: 185.135.86.175
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
 - name: 🇱🇻 拉脱维亚 (Latvia) 05 - li007
   server: 195.123.213.28
   port: 443
@@ -57,7 +57,7 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇱🇻 拉脱维亚 (Latvia) 07 - li007
   server: 104.165.205.42
   port: 8443

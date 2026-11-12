@@ -7,53 +7,29 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - li007",
       "server": "195.238.126.20",
-      "server_port": 9086,
-      "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - li007",
-      "server": "195.238.126.20",
-      "server_port": 9078,
-      "method": "aes-256-cfb",
-      "password": "JCJpbRbQZNw9XFZG"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - li007",
-      "server": "195.238.126.20",
-      "server_port": 9011,
-      "method": "aes-256-cfb",
-      "password": "M3t2ZEQcMGRWBjRa"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - li007",
-      "server": "195.238.126.20",
-      "server_port": 9068,
-      "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - li007",
-      "server": "195.238.126.20",
-      "server_port": 9008,
-      "method": "aes-256-cfb",
-      "password": "y9VURyNzJWNRYEGQ"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 06 - li007",
-      "server": "195.238.126.20",
       "server_port": 9002,
       "method": "aes-256-cfb",
       "password": "b8KkNDjEd5QqFyRm"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 07 - li007",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - li007",
+      "server": "195.238.126.20",
+      "server_port": 9012,
+      "method": "aes-256-cfb",
+      "password": "xaupMUvhptwxdDUg"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - li007",
+      "server": "195.238.126.20",
+      "server_port": 9086,
+      "method": "aes-256-cfb",
+      "password": "37Z4TFCYhfxcpc9Q"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - li007",
       "server": "195.238.126.20",
       "server_port": 9045,
       "method": "aes-256-cfb",
@@ -61,31 +37,27 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 08 - li007",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - li007",
       "server": "195.238.126.20",
-      "server_port": 9012,
+      "server_port": 9068,
       "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
+      "password": "mwgRg9hRq3b4Qnwb"
     },
     {
-      "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 09 - li007",
-      "server": "84.32.209.103",
-      "server_port": 443,
-      "uuid": "3f25b15b-1777-4c08-9ade-60336ac92a82",
-      "tls": {
-        "enabled": true,
-        "server_name": "edge-lt.lindenpixel.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 06 - li007",
+      "server": "195.238.126.20",
+      "server_port": 9008,
+      "method": "aes-256-cfb",
+      "password": "y9VURyNzJWNRYEGQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 07 - li007",
+      "server": "195.238.126.20",
+      "server_port": 9011,
+      "method": "aes-256-cfb",
+      "password": "M3t2ZEQcMGRWBjRa"
     },
     {
       "type": "selector",
@@ -98,9 +70,7 @@
         "🇱🇹 立陶宛 (Lithuania) 04 - li007",
         "🇱🇹 立陶宛 (Lithuania) 05 - li007",
         "🇱🇹 立陶宛 (Lithuania) 06 - li007",
-        "🇱🇹 立陶宛 (Lithuania) 07 - li007",
-        "🇱🇹 立陶宛 (Lithuania) 08 - li007",
-        "🇱🇹 立陶宛 (Lithuania) 09 - li007"
+        "🇱🇹 立陶宛 (Lithuania) 07 - li007"
       ]
     },
     {
@@ -113,9 +83,7 @@
         "🇱🇹 立陶宛 (Lithuania) 04 - li007",
         "🇱🇹 立陶宛 (Lithuania) 05 - li007",
         "🇱🇹 立陶宛 (Lithuania) 06 - li007",
-        "🇱🇹 立陶宛 (Lithuania) 07 - li007",
-        "🇱🇹 立陶宛 (Lithuania) 08 - li007",
-        "🇱🇹 立陶宛 (Lithuania) 09 - li007"
+        "🇱🇹 立陶宛 (Lithuania) 07 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

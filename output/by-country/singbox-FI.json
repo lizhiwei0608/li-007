@@ -25,20 +25,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - li007",
-      "server": "177.202.75.56",
-      "server_port": 443,
-      "password": "146d567c-6335-4e63-a8aa-7ec068642440",
-      "tls": {
-        "enabled": true,
-        "server_name": "fi1.obxodvpn.us",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - li007",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - li007",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
@@ -52,7 +40,52 @@
     },
     {
       "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - li007",
+      "server": "65.109.208.183",
+      "server_port": 443,
+      "uuid": "5f07a2a1-82a5-494d-847b-b882e6903192",
+      "tls": {
+        "enabled": true,
+        "server_name": "free.for.member.iiproxy.com",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 04 - li007",
+      "server": "177.202.75.56",
+      "server_port": 443,
+      "password": "146d567c-6335-4e63-a8aa-7ec068642440",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi1.obxodvpn.us",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - li007",
+      "server": "bmi.ir.kolman.com.de",
+      "server_port": 80,
+      "uuid": "da59eb92-6077-4d9c-9cfc-2153e7c7c680",
+      "security": "auto",
+      "transport": {
+        "type": "httpupgrade",
+        "path": "/f9bGbG7ZNy5L0tzXKZNxSX4q",
+        "host": "FXGv1yUp.6.server.marandcity.com.de."
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - li007",
       "server": "95.216.27.15",
       "server_port": 2053,
       "uuid": "b79d736d-0f10-4169-b626-362059d18204",
@@ -72,7 +105,59 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - li007",
+      "tag": "🇫🇮 芬兰 (Finland) 07 - li007",
+      "server": "146.103.118.189",
+      "server_port": 443,
+      "uuid": "ce698f0c-a8ec-474a-b5d8-3be8032deeb8",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl2.574ck.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/574ck-finland",
+        "headers": {
+          "Host": "nl2.574ck.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 08 - li007",
+      "server": "66.bmi.ir.asopardaz.ir",
+      "server_port": 8443,
+      "uuid": "a564987a-380a-4c21-a462-a011863ca9be",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hostgator.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs",
+          "short_id": "e915"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇫🇮 芬兰 (Finland) 09 - li007",
+      "server": "65.108.240.210",
+      "server_port": 39018,
+      "uuid": "fa15684a-81e6-4ba7-bc4b-f601c0d998e9",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 10 - li007",
       "server": "72.35.246.39",
       "server_port": 2053,
       "uuid": "b6c29ae7-4748-4049-b642-b695c0d2c776",
@@ -92,20 +177,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - li007",
-      "server": "193.188.21.253",
-      "server_port": 14430,
-      "uuid": "57f7772d-f5d6-4d8f-992d-5fa5e0d6da55",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "193.188.21.253"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -115,7 +186,11 @@
         "🇫🇮 芬兰 (Finland) 03 - li007",
         "🇫🇮 芬兰 (Finland) 04 - li007",
         "🇫🇮 芬兰 (Finland) 05 - li007",
-        "🇫🇮 芬兰 (Finland) 06 - li007"
+        "🇫🇮 芬兰 (Finland) 06 - li007",
+        "🇫🇮 芬兰 (Finland) 07 - li007",
+        "🇫🇮 芬兰 (Finland) 08 - li007",
+        "🇫🇮 芬兰 (Finland) 09 - li007",
+        "🇫🇮 芬兰 (Finland) 10 - li007"
       ]
     },
     {
@@ -127,7 +202,11 @@
         "🇫🇮 芬兰 (Finland) 03 - li007",
         "🇫🇮 芬兰 (Finland) 04 - li007",
         "🇫🇮 芬兰 (Finland) 05 - li007",
-        "🇫🇮 芬兰 (Finland) 06 - li007"
+        "🇫🇮 芬兰 (Finland) 06 - li007",
+        "🇫🇮 芬兰 (Finland) 07 - li007",
+        "🇫🇮 芬兰 (Finland) 08 - li007",
+        "🇫🇮 芬兰 (Finland) 09 - li007",
+        "🇫🇮 芬兰 (Finland) 10 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
