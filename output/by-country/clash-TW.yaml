@@ -17,7 +17,7 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 103.115.109.49
+  sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - li007
   server: 160.187.100.109
@@ -25,20 +25,29 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
+  sni: 160.187.100.109
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - li007
-  server: 83.147.13.74
-  port: 8443
+  server: 161.114.15.215
+  port: 30502
+  udp: true
+  type: trojan
+  password: 5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 05 - li007
+  server: 23.95.72.244
+  port: 5463
   udp: true
   type: vless
-  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
-    short-id: 4ad2e4e660550e43
-  servername: github.githubassets.com
-  client-fingerprint: chrome
+    public-key: 8kZm9gW7saiRPuqXppCTlOAx_dIsqZUbNOBERMvMDVw
+    short-id: be33ecc1975c
+  servername: api.adidas.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,6 +57,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 - li007
   - 🇹🇼 中国台湾 (Taiwan) 03 - li007
   - 🇹🇼 中国台湾 (Taiwan) 04 - li007
+  - 🇹🇼 中国台湾 (Taiwan) 05 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -57,5 +67,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 - li007
   - 🇹🇼 中国台湾 (Taiwan) 03 - li007
   - 🇹🇼 中国台湾 (Taiwan) 04 - li007
+  - 🇹🇼 中国台湾 (Taiwan) 05 - li007
 rules:
 - MATCH,PROXIES
