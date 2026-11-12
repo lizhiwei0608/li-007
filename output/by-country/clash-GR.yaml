@@ -16,33 +16,18 @@ proxies:
     public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
     short-id: 94acb54627612d43
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇬🇷 希腊 (Greece) 02 - li007
-  server: 23.95.72.244
-  port: 50121
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: wwVM0-8EUXMZthXS6SAGpu3xSPbf2kjWB_A3i-TCOS0
-    short-id: 888cb24cb698
-  servername: api.adidas.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇬🇷 希腊 (Greece) 01 - li007
-  - 🇬🇷 希腊 (Greece) 02 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇬🇷 希腊 (Greece) 01 - li007
-  - 🇬🇷 希腊 (Greece) 02 - li007
 rules:
 - MATCH,PROXIES

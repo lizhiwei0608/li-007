@@ -5,94 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007
-  server: 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com
+  server: 88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 5f091cbe-fb34-11ea-9777-f23c9164ca5d
-  sni: 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com
+  password: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
+  sni: 88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007
-  server: 23.95.72.244
-  port: 10000
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zbxwe24LRKKKjXccD1t_yJ3WDFXXY_y9j7SqbkPMIRw
-    short-id: 99aa2eb4f2c77af5
-  servername: sellercentral.amazon.com
-  client-fingerprint: safari
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽·单跳) - li007
-  server: 23.95.72.244
-  port: 5463
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8kZm9gW7saiRPuqXppCTlOAx_dIsqZUbNOBERMvMDVw
-    short-id: be33ecc1975c
-  servername: api.adidas.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 04 (移动家宽·单跳) - li007
-  server: 23.95.72.244
-  port: 5467
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: wMLrAweVXsOzwV-Uc_7t7OZBycbjVrgPp0ukPjuXA2U
-    short-id: 6e47891d
-  servername: api.adidas.com
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽·单跳) - li007
-  server: 161.114.15.215
-  port: 30502
-  udp: true
-  type: trojan
-  password: 5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 (家宽·单跳) - li007
-  server: 6d889de6-tly2o0-tn28ki-mv7m.nw4.hyhuawei.com
+  server: ac91889e-tmm5c0-u3xqxa-1q91p.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 94d40708-8273-11ea-8fc9-f23c913c8d2b
-  sni: 6d889de6-tly2o0-tn28ki-mv7m.nw4.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 07 (家宽·单跳) - li007
-  server: 23.95.72.244
-  port: 52541
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _DBQoND5nxcCxxCU0tO0b-h0E10ZFtPTwSp8CJ-f-gs
-    short-id: ce5793a7ad9594
-  servername: api.adidas.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 08 (移动家宽·单跳) - li007
-  server: 23.95.72.244
-  port: 5465
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GaZo6ZlyOUxhems08m3fhEc-0j3IYppLUpjNmMqNjlk
-    short-id: 7024258fb07f5eb5
-  servername: api.adidas.com
-  client-fingerprint: edge
+  password: c11ff50c-f582-11ee-94df-f23c9164ca5d
+  sni: ac91889e-tmm5c0-u3xqxa-1q91p.hk3.hyhuawei.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -100,12 +27,6 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽·单跳) - li007
-  - 🇺🇸 美国 (United States) 04 (移动家宽·单跳) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽·单跳) - li007
-  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽·单跳) - li007
-  - 🇯🇵 日本 (Japan) 07 (家宽·单跳) - li007
-  - 🇺🇸 美国 (United States) 08 (移动家宽·单跳) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -113,11 +34,5 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽·单跳) - li007
-  - 🇺🇸 美国 (United States) 04 (移动家宽·单跳) - li007
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽·单跳) - li007
-  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽·单跳) - li007
-  - 🇯🇵 日本 (Japan) 07 (家宽·单跳) - li007
-  - 🇺🇸 美国 (United States) 08 (移动家宽·单跳) - li007
 rules:
 - MATCH,PROXIES

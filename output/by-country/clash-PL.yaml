@@ -5,19 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - li007
-  server: 217.30.10.70
-  port: 9010
+  server: 217.30.10.44
+  port: 9062
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: f63gg8EruDnUrmz4
+  password: tkhHVxxfM2QErBWe
 - name: 🇵🇱 波兰 (Poland) 02 - li007
   server: 217.30.10.44
-  port: 9095
+  port: 9076
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: N7j3pdTYkKmsy8CR
+  password: S2zDyyPcmZN2h8EC
 - name: 🇵🇱 波兰 (Poland) 03 - li007
   server: 217.30.10.44
   port: 9071
@@ -27,56 +27,48 @@ proxies:
   password: mENfxTFQpRKKh4As
 - name: 🇵🇱 波兰 (Poland) 04 - li007
   server: 217.30.10.44
-  port: 9052
+  port: 9095
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: jt2ekBNc9HuVtm2a
+  password: N7j3pdTYkKmsy8CR
 - name: 🇵🇱 波兰 (Poland) 05 - li007
-  server: 217.30.10.44
-  port: 9006
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: FAdUvMJUq5vDgKEq
-- name: 🇵🇱 波兰 (Poland) 06 - li007
-  server: 217.30.10.44
-  port: 9076
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: S2zDyyPcmZN2h8EC
-- name: 🇵🇱 波兰 (Poland) 07 - li007
-  server: 217.30.10.44
-  port: 9099
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 7heRqkPG3hg4UnRm
-- name: 🇵🇱 波兰 (Poland) 08 - li007
   server: 217.30.10.44
   port: 9042
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: S7KwUu7yBy58S3Ga
-- name: 🇵🇱 波兰 (Poland) 09 - li007
+- name: 🇵🇱 波兰 (Poland) 06 - li007
   server: 217.30.10.44
-  port: 9062
+  port: 9052
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: tkhHVxxfM2QErBWe
-- name: 🇵🇱 波兰 (Poland) 10 - li007
-  server: 213.21.232.4
-  port: 443
+  password: jt2ekBNc9HuVtm2a
+- name: 🇵🇱 波兰 (Poland) 07 - li007
+  server: 217.30.10.44
+  port: 9063
   udp: true
-  type: hysteria2
-  password: 4b13c29ebe735e47
-  sni: mytubeproxy10.duckdns.org
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 11 - li007
-  server: 201.58.189.104
+  type: ss
+  cipher: aes-256-cfb
+  password: aQqJbtwFGcCCaeL3
+- name: 🇵🇱 波兰 (Poland) 08 - li007
+  server: 217.30.10.44
+  port: 9099
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 7heRqkPG3hg4UnRm
+- name: 🇵🇱 波兰 (Poland) 09 - li007
+  server: 217.30.10.44
+  port: 9006
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: FAdUvMJUq5vDgKEq
+- name: 🇵🇱 波兰 (Poland) 10 - li007
+  server: 201.58.189.105
   port: 2083
   udp: true
   type: vless
@@ -90,17 +82,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: google.storage.v2.Storage
-- name: 🇵🇱 波兰 (Poland) 12 - li007
-  server: 2.26.6.1
-  port: 2087
-  udp: true
-  type: vless
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  tls: true
-  servername: 2.26.6.1
-  skip-cert-verify: true
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 13 - li007
+- name: 🇵🇱 波兰 (Poland) 11 - li007
   server: 150.251.113.34
   port: 443
   udp: true
@@ -113,20 +95,7 @@ proxies:
     short-id: 150a627d15154cf2
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 14 - li007
-  server: 23.95.72.244
-  port: 58749
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: cG3XTVTPSxNTGwnQqzkwwTCkf1Bb4znRU13_En3hOls
-    short-id: d2e6c6c5
-  servername: api.adidas.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 15 - li007
+- name: 🇵🇱 波兰 (Poland) 12 - li007
   server: 54.37.131.126
   port: 80
   udp: true
@@ -139,7 +108,19 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 16 - li007
+- name: 🇵🇱 波兰 (Poland) 13 - li007
+  server: 201.58.139.66
+  port: 443
+  udp: true
+  type: vless
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  tls: true
+  reality-opts:
+    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
+    short-id: 6c5c7900406a1ae7
+  servername: 57aac2t.pl7.h1clayd.click
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 14 - li007
   server: 20.215.66.17
   port: 2083
   udp: true
@@ -152,17 +133,18 @@ proxies:
     short-id: 0123456789abcdef
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 17 - li007
-  server: 201.58.139.66
+- name: 🇵🇱 波兰 (Poland) 15 - li007
+  server: 82.118.22.161
   port: 443
   udp: true
   type: vless
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
-    short-id: 6c5c7900406a1ae7
-  servername: 57aac2t.pl7.h1clayd.click
+    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
+    short-id: fa3ea655619a3e78
+  servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -184,8 +166,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 13 - li007
   - 🇵🇱 波兰 (Poland) 14 - li007
   - 🇵🇱 波兰 (Poland) 15 - li007
-  - 🇵🇱 波兰 (Poland) 16 - li007
-  - 🇵🇱 波兰 (Poland) 17 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -206,7 +186,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 13 - li007
   - 🇵🇱 波兰 (Poland) 14 - li007
   - 🇵🇱 波兰 (Poland) 15 - li007
-  - 🇵🇱 波兰 (Poland) 16 - li007
-  - 🇵🇱 波兰 (Poland) 17 - li007
 rules:
 - MATCH,PROXIES

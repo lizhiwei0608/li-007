@@ -28,7 +28,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -40,7 +40,7 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 03 - li007",
-      "server": "in.smrtai.top",
+      "server": "178.212.35.198",
       "server_port": 443,
       "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
       "tls": {
@@ -48,7 +48,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -60,7 +60,7 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 04 - li007",
-      "server": "103.172.116.191",
+      "server": "103.172.116.201",
       "server_port": 10303,
       "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
       "flow": "xtls-rprx-vision",
@@ -81,12 +81,12 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 05 - li007",
-      "server": "13.140.253.35",
+      "server": "xray-bprkdwje-clever-comet-4.cloady.io",
       "server_port": 443,
-      "uuid": "f1d3c8af71c4ef75625fcf446aa2c15b",
+      "uuid": "f1a7e2c8-b140-50d1-8acf-e62090f96599",
       "tls": {
         "enabled": true,
-        "server_name": "xray-h0urp9tx-rapid-summit-2.cloady.io",
+        "server_name": "xray-bprkdwje-clever-comet-4.cloady.io",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -95,19 +95,11 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/050334203cc522a3",
+        "path": "/27dbf143acdd7bca",
         "headers": {
-          "Host": "xray-h0urp9tx-rapid-summit-2.cloady.io"
+          "Host": "xray-bprkdwje-clever-comet-4.cloady.io"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇳 印度 (India) 06 - li007",
-      "server": "172.105.39.124",
-      "server_port": 7002,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
     },
     {
       "type": "selector",
@@ -118,8 +110,7 @@
         "🇮🇳 印度 (India) 02 - li007",
         "🇮🇳 印度 (India) 03 - li007",
         "🇮🇳 印度 (India) 04 - li007",
-        "🇮🇳 印度 (India) 05 - li007",
-        "🇮🇳 印度 (India) 06 - li007"
+        "🇮🇳 印度 (India) 05 - li007"
       ]
     },
     {
@@ -130,8 +121,7 @@
         "🇮🇳 印度 (India) 02 - li007",
         "🇮🇳 印度 (India) 03 - li007",
         "🇮🇳 印度 (India) 04 - li007",
-        "🇮🇳 印度 (India) 05 - li007",
-        "🇮🇳 印度 (India) 06 - li007"
+        "🇮🇳 印度 (India) 05 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

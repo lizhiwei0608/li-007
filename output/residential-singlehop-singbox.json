@@ -6,146 +6,25 @@
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007",
-      "server": "2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com",
+      "server": "88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com",
       "server_port": 443,
-      "password": "5f091cbe-fb34-11ea-9777-f23c9164ca5d",
+      "password": "92bd8c68-6434-11ee-b644-f23c91cfbbc9",
       "tls": {
         "enabled": true,
-        "server_name": "2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com",
+        "server_name": "88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com",
         "insecure": true
       }
     },
     {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007",
-      "server": "23.95.72.244",
-      "server_port": 10000,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "sellercentral.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zbxwe24LRKKKjXccD1t_yJ3WDFXXY_y9j7SqbkPMIRw",
-          "short_id": "99aa2eb4f2c77af5"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽·单跳) - li007",
-      "server": "23.95.72.244",
-      "server_port": 5463,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.adidas.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8kZm9gW7saiRPuqXppCTlOAx_dIsqZUbNOBERMvMDVw",
-          "short_id": "be33ecc1975c"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 04 (移动家宽·单跳) - li007",
-      "server": "23.95.72.244",
-      "server_port": 5467,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.adidas.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wMLrAweVXsOzwV-Uc_7t7OZBycbjVrgPp0ukPjuXA2U",
-          "short_id": "6e47891d"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽·单跳) - li007",
-      "server": "161.114.15.215",
-      "server_port": 30502,
-      "password": "5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06 (家宽·单跳) - li007",
-      "server": "6d889de6-tly2o0-tn28ki-mv7m.nw4.hyhuawei.com",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007",
+      "server": "ac91889e-tmm5c0-u3xqxa-1q91p.hk3.hyhuawei.com",
       "server_port": 443,
-      "password": "94d40708-8273-11ea-8fc9-f23c913c8d2b",
+      "password": "c11ff50c-f582-11ee-94df-f23c9164ca5d",
       "tls": {
         "enabled": true,
-        "server_name": "6d889de6-tly2o0-tn28ki-mv7m.nw4.hyhuawei.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 07 (家宽·单跳) - li007",
-      "server": "23.95.72.244",
-      "server_port": 52541,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.adidas.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_DBQoND5nxcCxxCU0tO0b-h0E10ZFtPTwSp8CJ-f-gs",
-          "short_id": "ce5793a7ad9594"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 08 (移动家宽·单跳) - li007",
-      "server": "23.95.72.244",
-      "server_port": 5465,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.adidas.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GaZo6ZlyOUxhems08m3fhEc-0j3IYppLUpjNmMqNjlk",
-          "short_id": "7024258fb07f5eb5"
-        }
+        "server_name": "ac91889e-tmm5c0-u3xqxa-1q91p.hk3.hyhuawei.com",
+        "insecure": true
       }
     },
     {
@@ -154,13 +33,7 @@
       "outbounds": [
         "auto",
         "🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽·单跳) - li007",
-        "🇺🇸 美国 (United States) 04 (移动家宽·单跳) - li007",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽·单跳) - li007",
-        "🇭🇰 中国香港 (Hong Kong) 06 (家宽·单跳) - li007",
-        "🇯🇵 日本 (Japan) 07 (家宽·单跳) - li007",
-        "🇺🇸 美国 (United States) 08 (移动家宽·单跳) - li007"
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007"
       ]
     },
     {
@@ -168,13 +41,7 @@
       "tag": "auto",
       "outbounds": [
         "🇭🇰 中国香港 (Hong Kong) 01 (家宽·单跳) - li007",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽·单跳) - li007",
-        "🇺🇸 美国 (United States) 04 (移动家宽·单跳) - li007",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽·单跳) - li007",
-        "🇭🇰 中国香港 (Hong Kong) 06 (家宽·单跳) - li007",
-        "🇯🇵 日本 (Japan) 07 (家宽·单跳) - li007",
-        "🇺🇸 美国 (United States) 08 (移动家宽·单跳) - li007"
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽·单跳) - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

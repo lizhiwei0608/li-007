@@ -5,13 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - li007
+  server: 149.22.87.241
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 02 - li007
   server: 168.138.205.100
   port: 53758
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: Bwlqh7GcFB
-- name: 🇯🇵 日本 (Japan) 02 - li007
+- name: 🇯🇵 日本 (Japan) 03 - li007
+  server: 8.211.175.236
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 04 - li007
   server: 193.123.160.109
   port: 8443
   udp: true
@@ -19,7 +34,7 @@ proxies:
   password: F3NzMNuYnG7akU2mSlBY
   sni: www.microsoft.com
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 03 - li007
+- name: 🇯🇵 日本 (Japan) 05 - li007
   server: 158.101.140.31
   port: 1985
   udp: true
@@ -27,7 +42,53 @@ proxies:
   password: 4ab7d1e3-f2a7-44ca-91bd-45d3c5f423d2
   sni: 158.101.140.31
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 04 - li007
+- name: 🇯🇵 日本 (Japan) 06 - li007
+  server: 158.101.151.157
+  port: 443
+  udp: true
+  type: vless
+  uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
+    short-id: 684c7531e599dec0
+  servername: www.microsoft.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 07 - li007
+  server: 152.69.195.67
+  port: 47878
+  udp: true
+  type: vless
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+- name: 🇯🇵 日本 (Japan) 08 - li007
+  server: 168.110.48.252
+  port: 1987
+  udp: true
+  type: hysteria2
+  password: 4d9bc232-dde6-47d0-9d7b-e453ac8e4130
+  sni: 168.110.48.252
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 09 - li007
+  server: 168.110.45.41
+  port: 21443
+  udp: true
+  type: hysteria2
+  password: pnKhsG5E1hH1VglAXmT9cq1
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 10 - li007
+  server: 155.248.175.201
+  port: 23169
+  udp: true
+  type: vless
+  uuid: 9da605d3-f5f7-4135-f806-450f036f9351
+  flow: xtls-rprx-vision
+  tls: true
+  servername: djj.zjlo.top
+  skip-cert-verify: true
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 11 - li007
   server: 103.75.118.228
   port: 12683
   udp: true
@@ -40,20 +101,19 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 05 - li007
-  server: 3.114.220.22
-  port: 18007
+- name: 🇯🇵 日本 (Japan) 12 - li007
+  server: 168.110.48.252
+  port: 10018
   udp: true
   type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  uuid: d8fc873b-860d-4490-b2f0-300d6ae3c2d3
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 06 - li007
+    public-key: YxoFVB0NhCx4BJCgq5Ey5jdteRU2H2toGa-ZKW5XV3c
+  servername: www.ebay.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 13 - li007
   server: 3.114.220.22
   port: 19645
   udp: true
@@ -66,14 +126,68 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 07 - li007
+- name: 🇯🇵 日本 (Japan) 14 - li007
   server: 84.247.155.196
   port: 443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 08 - li007
+- name: 🇯🇵 日本 (Japan) 15 - li007
+  server: 3.114.220.22
+  port: 10583
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 16 - li007
+  server: 138.3.208.26
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: 'off'
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 17 - li007
+  server: 3.114.220.22
+  port: 18007
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 18 - li007
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 19 - li007
+  server: jp.yi-yi.xyz
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 36c06e11-028b-40a1-a91f-c8f38f03e829
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: g3T4dVyrbNixv7HvSMlh91cYBa5kEsZCEInB7Xc_AEY
+    short-id: 956d8072a694ff37
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 20 - li007
   server: 103.172.116.201
   port: 10403
   udp: true
@@ -86,117 +200,22 @@ proxies:
     short-id: f96b3b17a0f5b1fe
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 09 - li007
-  server: 23.95.72.244
-  port: 55569
+- name: 🇯🇵 日本 (Japan) 21 - li007
+  server: 162.159.130.234
+  port: 2083
   udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
+  type: vmess
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
   tls: true
-  reality-opts:
-    public-key: DPhViTQH8MZ2cPKNtB4_UNAq1_a32PlPHtQX49Yew1M
-    short-id: 4c5a975455f02a
-  servername: api.adidas.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 10 - li007
-  server: 8.211.175.236
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: 8.211.175.236
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 11 - li007
-  server: 138.3.208.26
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 12 - li007
-  server: 23.95.72.244
-  port: 52541
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _DBQoND5nxcCxxCU0tO0b-h0E10ZFtPTwSp8CJ-f-gs
-    short-id: ce5793a7ad9594
-  servername: api.adidas.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 13 - li007
-  server: 168.138.43.75
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
+  servername: cdn.sfacg.uk
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /cctv13.m3u8
+    path: /or3
     headers:
-      Host: None
-- name: 🇯🇵 日本 (Japan) 14 - li007
-  server: 168.138.43.75
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: none
-- name: 🇯🇵 日本 (Japan) 15 - li007
-  server: 168.138.43.75
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-- name: 🇯🇵 日本 (Japan) 16 - li007
-  server: 168.138.43.75
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 168.138.43.75
-- name: 🇯🇵 日本 (Japan) 17 - li007
-  server: 168.138.43.75
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-- name: 🇯🇵 日本 (Japan) 18 - li007
-  server: 168.110.45.41
-  port: 21443
-  udp: true
-  type: hysteria2
-  password: pnKhsG5E1hH1VglAXmT9cq1
-  sni: www.bing.com
-  skip-cert-verify: true
+      Host: or3.sfacg.uk
 proxy-groups:
 - name: PROXIES
   type: select
@@ -220,6 +239,9 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 16 - li007
   - 🇯🇵 日本 (Japan) 17 - li007
   - 🇯🇵 日本 (Japan) 18 - li007
+  - 🇯🇵 日本 (Japan) 19 - li007
+  - 🇯🇵 日本 (Japan) 20 - li007
+  - 🇯🇵 日本 (Japan) 21 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -243,5 +265,8 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 16 - li007
   - 🇯🇵 日本 (Japan) 17 - li007
   - 🇯🇵 日本 (Japan) 18 - li007
+  - 🇯🇵 日本 (Japan) 19 - li007
+  - 🇯🇵 日本 (Japan) 20 - li007
+  - 🇯🇵 日本 (Japan) 21 - li007
 rules:
 - MATCH,PROXIES
