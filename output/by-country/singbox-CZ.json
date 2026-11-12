@@ -6,22 +6,26 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - li007",
-      "server": "153.52.69.249",
+      "server": "94.247.142.1",
       "server_port": 443,
-      "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
-      "flow": "xtls-rprx-vision",
+      "uuid": "fd62968a-2e97-41ea-9aa0-aa61aed78955",
       "tls": {
         "enabled": true,
-        "server_name": "cache-78.topp-con.xyz",
+        "server_name": "simIlarcaTerpillarPvet-j5H6x4-1.simIlar-caterPillar-pVet.worKers.deV",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "WVfpQqoeOrTtCq052_IOxvMv7RCWfLlAOxEfsH1aa2U",
-          "short_id": "d5492c7a39515c65"
+          "fingerprint": "chrome"
         }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "simIlarcaTerpillarPvet-j5H6x4-1.simIlar-caterPillar-pVet.worKers.deV"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
       }
     },
     {
@@ -46,12 +50,34 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 03 - li007",
+      "server": "153.52.69.249",
+      "server_port": 443,
+      "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cache-78.topp-con.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "WVfpQqoeOrTtCq052_IOxvMv7RCWfLlAOxEfsH1aa2U",
+          "short_id": "d5492c7a39515c65"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - li007",
-        "🇨🇿 捷克 (Czech) 02 - li007"
+        "🇨🇿 捷克 (Czech) 02 - li007",
+        "🇨🇿 捷克 (Czech) 03 - li007"
       ]
     },
     {
@@ -59,7 +85,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - li007",
-        "🇨🇿 捷克 (Czech) 02 - li007"
+        "🇨🇿 捷克 (Czech) 02 - li007",
+        "🇨🇿 捷克 (Czech) 03 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

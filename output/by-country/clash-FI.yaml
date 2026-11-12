@@ -47,14 +47,16 @@ proxies:
   sni: fi1.obxodvpn.us
   skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 05 - li007
-  server: bmi.ir.kolman.com.de
-  port: 80
+  server: 193.188.21.253
+  port: 14430
   udp: true
-  type: vmess
-  uuid: da59eb92-6077-4d9c-9cfc-2153e7c7c680
-  alterId: 0
-  cipher: auto
-  network: httpupgrade
+  type: vless
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 193.188.21.253
 - name: 🇫🇮 芬兰 (Finland) 06 - li007
   server: 95.216.27.15
   port: 2053
@@ -83,39 +85,16 @@ proxies:
     headers:
       Host: nl2.574ck.xyz
 - name: 🇫🇮 芬兰 (Finland) 08 - li007
-  server: 66.bmi.ir.asopardaz.ir
-  port: 8443
+  server: 213.176.92.168
+  port: 14430
   udp: true
   type: vless
-  uuid: a564987a-380a-4c21-a462-a011863ca9be
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
-    short-id: e915
-  servername: hostgator.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 09 - li007
-  server: 65.108.240.210
-  port: 39018
-  udp: true
-  type: vmess
-  uuid: fa15684a-81e6-4ba7-bc4b-f601c0d998e9
-  alterId: 0
-  cipher: auto
-- name: 🇫🇮 芬兰 (Finland) 10 - li007
-  server: 72.35.246.39
-  port: 2053
-  udp: true
-  type: vless
-  uuid: b6c29ae7-4748-4049-b642-b695c0d2c776
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: TSOm7XIZvGzYoCbh_lFFA9PTQJqI-JU5kKIAffGmUWg
-    short-id: 5e39e518bfac6392
-  servername: vk.ru
-  client-fingerprint: ''
+  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 213.176.92.168
 proxy-groups:
 - name: PROXIES
   type: select
@@ -129,8 +108,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 06 - li007
   - 🇫🇮 芬兰 (Finland) 07 - li007
   - 🇫🇮 芬兰 (Finland) 08 - li007
-  - 🇫🇮 芬兰 (Finland) 09 - li007
-  - 🇫🇮 芬兰 (Finland) 10 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -144,7 +121,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 06 - li007
   - 🇫🇮 芬兰 (Finland) 07 - li007
   - 🇫🇮 芬兰 (Finland) 08 - li007
-  - 🇫🇮 芬兰 (Finland) 09 - li007
-  - 🇫🇮 芬兰 (Finland) 10 - li007
 rules:
 - MATCH,PROXIES

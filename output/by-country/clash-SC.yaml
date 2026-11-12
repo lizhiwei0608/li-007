@@ -30,19 +30,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇸🇨 塞舌尔 (Seychelles) 03 - li007
-  server: 23.95.72.244
-  port: 54468
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: lzrZgPuEIioo0ZRjytB59mywVRsQzIAvuhqiMRUIsQU
-    short-id: 853c1d768b
-  servername: api.adidas.com
-  client-fingerprint: chrome
-- name: 🇸🇨 塞舌尔 (Seychelles) 04 - li007
   server: 156.239.224.107
   port: 57278
   udp: true
@@ -61,7 +48,6 @@ proxy-groups:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - li007
   - 🇸🇨 塞舌尔 (Seychelles) 02 - li007
   - 🇸🇨 塞舌尔 (Seychelles) 03 - li007
-  - 🇸🇨 塞舌尔 (Seychelles) 04 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -70,6 +56,5 @@ proxy-groups:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - li007
   - 🇸🇨 塞舌尔 (Seychelles) 02 - li007
   - 🇸🇨 塞舌尔 (Seychelles) 03 - li007
-  - 🇸🇨 塞舌尔 (Seychelles) 04 - li007
 rules:
 - MATCH,PROXIES
