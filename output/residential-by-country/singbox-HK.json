@@ -4,14 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇳🇬 尼日利亚 (Nigeria) 01 - li007",
-      "server": "sclass-c2.catcat321.com",
-      "server_port": 20051,
-      "password": "d9064589-74af-432a-9390-5d8a9da281bf",
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - li007",
+      "server": "112.120.123.140",
+      "server_port": 443,
+      "password": "c11ff50c-f582-11ee-94df-f23c9164ca5d",
       "tls": {
         "enabled": true,
-        "server_name": "hk.catxstar.com",
+        "server_name": "11158b9a-tmm5c0-u3xqxa-1q91p.nw4.hyhuawei.com",
         "insecure": false
       }
     },
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇬 尼日利亚 (Nigeria) 01 - li007"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇬 尼日利亚 (Nigeria) 01 - li007"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,89 +4,41 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - li007",
-      "server": "206.237.11.17",
-      "server_port": 50376,
-      "uuid": "9091fd64-7e8e-4b7a-8ae7-84474f234926",
-      "security": "auto"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - li007",
-      "server": "152.32.254.68",
-      "server_port": 5010,
-      "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
-      "tls": {
-        "enabled": true,
-        "server_name": "nas.aizhzo.com",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - li007",
-      "server": "ac91889e-tmm5c0-u3xqxa-1q91p.hk3.hyhuawei.com",
-      "server_port": 443,
-      "password": "c11ff50c-f582-11ee-94df-f23c9164ca5d",
-      "tls": {
-        "enabled": true,
-        "server_name": "ac91889e-tmm5c0-u3xqxa-1q91p.hk3.hyhuawei.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - li007",
       "server": "202.146.222.89",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/clashv8",
+        "server_name": "vk.com",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - li007",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - li007",
       "server": "202.146.222.174",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/wangcai2",
+        "server_name": "https://t.me/wangcai2🇨🇳",
         "insecure": true
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - li007",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - li007",
       "server": "213.176.92.148",
       "server_port": 40647,
       "method": "aes-256-gcm",
       "password": "DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY="
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - li007",
-      "server": "88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com",
-      "server_port": 443,
-      "password": "92bd8c68-6434-11ee-b644-f23c91cfbbc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "88f7008b-tmm5c0-tonrqx-1khwf.nw4.hyhuawei.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - li007",
-      "server": "103.172.116.191",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - li007",
+      "server": "103.172.116.201",
       "server_port": 10103,
       "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
       "flow": "xtls-rprx-vision",
@@ -105,6 +57,22 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - li007",
+      "server": "152.32.254.68",
+      "server_port": 5010,
+      "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
+      "tls": {
+        "enabled": true,
+        "server_name": "nas.aizhzo.com",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -113,10 +81,7 @@
         "🇭🇰 中国香港 (Hong Kong) 02 - li007",
         "🇭🇰 中国香港 (Hong Kong) 03 - li007",
         "🇭🇰 中国香港 (Hong Kong) 04 - li007",
-        "🇭🇰 中国香港 (Hong Kong) 05 - li007",
-        "🇭🇰 中国香港 (Hong Kong) 06 - li007",
-        "🇭🇰 中国香港 (Hong Kong) 07 - li007",
-        "🇭🇰 中国香港 (Hong Kong) 08 - li007"
+        "🇭🇰 中国香港 (Hong Kong) 05 - li007"
       ]
     },
     {
@@ -127,10 +92,7 @@
         "🇭🇰 中国香港 (Hong Kong) 02 - li007",
         "🇭🇰 中国香港 (Hong Kong) 03 - li007",
         "🇭🇰 中国香港 (Hong Kong) 04 - li007",
-        "🇭🇰 中国香港 (Hong Kong) 05 - li007",
-        "🇭🇰 中国香港 (Hong Kong) 06 - li007",
-        "🇭🇰 中国香港 (Hong Kong) 07 - li007",
-        "🇭🇰 中国香港 (Hong Kong) 08 - li007"
+        "🇭🇰 中国香港 (Hong Kong) 05 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
