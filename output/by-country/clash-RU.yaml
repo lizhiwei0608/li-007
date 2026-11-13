@@ -31,101 +31,28 @@ proxies:
   grpc-opts:
     grpc-service-name: qi8ws15c7jv5q2fa
 - name: 🇷🇺 俄罗斯 (Russia) 03 - li007
-  server: 185.215.184.54
+  server: 193.228.128.230
   port: 443
   udp: true
   type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
+  uuid: de404269-a97c-4f49-9efb-43509c2afa09
   tls: true
   reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: 185.215.184.54
-  client-fingerprint: ''
+    public-key: rS6r3PZQHZp31tnOmJAuCme4xJgsak_JsZ5hTPwpuiY
+    short-id: 8b8dd8a1c0c468d3
+  servername: ch.primarymaster.online
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
 - name: 🇷🇺 俄罗斯 (Russia) 04 - li007
-  server: 185.215.184.86
-  port: 443
-  udp: true
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: 185.215.184.86
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 05 - li007
   server: 185.22.153.117
   port: 18443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-- name: 🇷🇺 俄罗斯 (Russia) 06 - li007
-  server: novonl.subv.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: golos.mail.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 07 - li007
-  server: fduknew.titun.su
-  port: 443
-  udp: true
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: bizorg.su
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 08 - li007
-  server: 200.169.179.233
-  port: 443
-  udp: true
-  type: vless
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  tls: true
-  servername: vps3.nemnogogo.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: mobile.api.Event
-- name: 🇷🇺 俄罗斯 (Russia) 09 - li007
-  server: srv-17e124.21freedom.net
-  port: 11592
-  udp: true
-  type: hysteria2
-  password: 41edb44c8e
-  sni: srv-17e124
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 10 - li007
-  server: 185.178.208.167
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4662bf2b-af58-0001-ae5f-ef3d7d3a624f
-  tls: true
-  servername: mbr.rkn-pediki.site
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /session
-    headers:
-      Host: mbr.rkn-pediki.site
-- name: 🇷🇺 俄罗斯 (Russia) 11 - li007
+- name: 🇷🇺 俄罗斯 (Russia) 05 - li007
   server: 201.24.121.243
   port: 443
   udp: true
@@ -148,12 +75,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - li007
   - 🇷🇺 俄罗斯 (Russia) 04 - li007
   - 🇷🇺 俄罗斯 (Russia) 05 - li007
-  - 🇷🇺 俄罗斯 (Russia) 06 - li007
-  - 🇷🇺 俄罗斯 (Russia) 07 - li007
-  - 🇷🇺 俄罗斯 (Russia) 08 - li007
-  - 🇷🇺 俄罗斯 (Russia) 09 - li007
-  - 🇷🇺 俄罗斯 (Russia) 10 - li007
-  - 🇷🇺 俄罗斯 (Russia) 11 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -164,11 +85,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - li007
   - 🇷🇺 俄罗斯 (Russia) 04 - li007
   - 🇷🇺 俄罗斯 (Russia) 05 - li007
-  - 🇷🇺 俄罗斯 (Russia) 06 - li007
-  - 🇷🇺 俄罗斯 (Russia) 07 - li007
-  - 🇷🇺 俄罗斯 (Russia) 08 - li007
-  - 🇷🇺 俄罗斯 (Russia) 09 - li007
-  - 🇷🇺 俄罗斯 (Russia) 10 - li007
-  - 🇷🇺 俄罗斯 (Russia) 11 - li007
 rules:
 - MATCH,PROXIES
