@@ -7,21 +7,29 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 - li007",
       "server": "217.30.10.44",
-      "server_port": 9076,
-      "method": "aes-256-cfb",
-      "password": "S2zDyyPcmZN2h8EC"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 02 - li007",
-      "server": "217.30.10.44",
       "server_port": 9071,
       "method": "aes-256-cfb",
       "password": "mENfxTFQpRKKh4As"
     },
     {
       "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 02 - li007",
+      "server": "217.30.10.44",
+      "server_port": 9006,
+      "method": "aes-256-cfb",
+      "password": "FAdUvMJUq5vDgKEq"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 03 - li007",
+      "server": "217.30.10.44",
+      "server_port": 9062,
+      "method": "aes-256-cfb",
+      "password": "tkhHVxxfM2QErBWe"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 04 - li007",
       "server": "217.30.10.44",
       "server_port": 9042,
       "method": "aes-256-cfb",
@@ -29,19 +37,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 04 - li007",
-      "server": "217.30.10.44",
-      "server_port": 9063,
-      "method": "aes-256-cfb",
-      "password": "aQqJbtwFGcCCaeL3"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 05 - li007",
       "server": "217.30.10.44",
-      "server_port": 9062,
+      "server_port": 9076,
       "method": "aes-256-cfb",
-      "password": "tkhHVxxfM2QErBWe"
+      "password": "S2zDyyPcmZN2h8EC"
     },
     {
       "type": "shadowsocks",
@@ -55,9 +55,9 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 07 - li007",
       "server": "217.30.10.44",
-      "server_port": 9006,
+      "server_port": 9095,
       "method": "aes-256-cfb",
-      "password": "FAdUvMJUq5vDgKEq"
+      "password": "N7j3pdTYkKmsy8CR"
     },
     {
       "type": "shadowsocks",
@@ -70,23 +70,24 @@
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 09 - li007",
-      "server": "217.30.10.44",
-      "server_port": 9095,
+      "server": "217.30.10.70",
+      "server_port": 9053,
       "method": "aes-256-cfb",
-      "password": "N7j3pdTYkKmsy8CR"
+      "password": "SBM7R883jBmnqe6C"
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 10 - li007",
-      "server": "54.37.131.126",
-      "server_port": 80,
-      "uuid": "1e55beca-3c69-4fa7-fb1f-15c1b767435f",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
+      "server": "2.26.6.1",
+      "server_port": 2087,
+      "uuid": "b9fdc03f-389b-4cda-9be4-155b623bee15",
+      "tls": {
+        "enabled": true,
+        "server_name": "2.26.6.1",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     },
@@ -115,23 +116,17 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇵🇱 波兰 (Poland) 12 - li007",
-      "server": "20.215.66.17",
-      "server_port": 2083,
-      "uuid": "52a5a29f-c162-411a-8a37-a3f11b0dc537",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4",
-          "short_id": "0123456789abcdef"
+      "server": "54.37.131.126",
+      "server_port": 80,
+      "uuid": "1e55beca-3c69-4fa7-fb1f-15c1b767435f",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
         }
       }
     },
@@ -157,6 +152,48 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 14 - li007",
+      "server": "20.215.66.17",
+      "server_port": 2083,
+      "uuid": "52a5a29f-c162-411a-8a37-a3f11b0dc537",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4",
+          "short_id": "0123456789abcdef"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 15 - li007",
+      "server": "82.118.22.161",
+      "server_port": 443,
+      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
+          "short_id": "fa3ea655619a3e78"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -173,7 +210,9 @@
         "🇵🇱 波兰 (Poland) 10 - li007",
         "🇵🇱 波兰 (Poland) 11 - li007",
         "🇵🇱 波兰 (Poland) 12 - li007",
-        "🇵🇱 波兰 (Poland) 13 - li007"
+        "🇵🇱 波兰 (Poland) 13 - li007",
+        "🇵🇱 波兰 (Poland) 14 - li007",
+        "🇵🇱 波兰 (Poland) 15 - li007"
       ]
     },
     {
@@ -192,7 +231,9 @@
         "🇵🇱 波兰 (Poland) 10 - li007",
         "🇵🇱 波兰 (Poland) 11 - li007",
         "🇵🇱 波兰 (Poland) 12 - li007",
-        "🇵🇱 波兰 (Poland) 13 - li007"
+        "🇵🇱 波兰 (Poland) 13 - li007",
+        "🇵🇱 波兰 (Poland) 14 - li007",
+        "🇵🇱 波兰 (Poland) 15 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

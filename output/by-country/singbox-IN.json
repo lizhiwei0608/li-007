@@ -6,6 +6,26 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - li007",
+      "server": "in.smrtai.top",
+      "server_port": 443,
+      "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q",
+          "short_id": "6bdc8320"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 02 - li007",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -25,7 +45,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02 - li007",
+      "tag": "🇮🇳 印度 (India) 03 - li007",
       "server": "13.140.56.100",
       "server_port": 14430,
       "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
@@ -39,42 +59,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 - li007",
-      "server": "178.212.35.198",
-      "server_port": 443,
-      "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q",
-          "short_id": "6bdc8320"
-        }
-      }
-    },
-    {
-      "type": "vmess",
       "tag": "🇮🇳 印度 (India) 04 - li007",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "152.67.8.205"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 05 - li007",
       "server": "13.140.253.35",
       "server_port": 443,
       "uuid": "f1a7e2c8-b140-50d1-8acf-e62090f96599",
@@ -84,7 +69,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
@@ -96,25 +81,17 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 06 - li007",
-      "server": "xray-bprkdwje-clever-comet-4.cloady.io",
-      "server_port": 443,
-      "uuid": "f1a7e2c8-b140-50d1-8acf-e62090f96599",
-      "tls": {
-        "enabled": true,
-        "server_name": "xray-bprkdwje-clever-comet-4.cloady.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "type": "vmess",
+      "tag": "🇮🇳 印度 (India) 05 - li007",
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/27dbf143acdd7bca",
+        "path": "/",
         "headers": {
-          "Host": "xray-bprkdwje-clever-comet-4.cloady.io"
+          "Host": "in-152.67.8.205-0242"
         }
       }
     },
@@ -127,8 +104,7 @@
         "🇮🇳 印度 (India) 02 - li007",
         "🇮🇳 印度 (India) 03 - li007",
         "🇮🇳 印度 (India) 04 - li007",
-        "🇮🇳 印度 (India) 05 - li007",
-        "🇮🇳 印度 (India) 06 - li007"
+        "🇮🇳 印度 (India) 05 - li007"
       ]
     },
     {
@@ -139,8 +115,7 @@
         "🇮🇳 印度 (India) 02 - li007",
         "🇮🇳 印度 (India) 03 - li007",
         "🇮🇳 印度 (India) 04 - li007",
-        "🇮🇳 印度 (India) 05 - li007",
-        "🇮🇳 印度 (India) 06 - li007"
+        "🇮🇳 印度 (India) 05 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
