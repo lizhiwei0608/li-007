@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - li007
-  server: 151.241.226.201
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 02 - li007
   server: 62.133.63.45
   port: 8444
   udp: true
@@ -31,19 +19,35 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇹🇷 土耳其 (Turkey) 03 - li007
-  server: 45.92.219.47
-  port: 443
+- name: 🇹🇷 土耳其 (Turkey) 02 - li007
+  server: 151.241.226.201
+  port: 2053
   udp: true
   type: vless
-  uuid: ecc0e60a-f2cc-4266-8353-b228df89730a
-  flow: xtls-rprx-vision
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
   tls: true
   reality-opts:
-    public-key: GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4
-  servername: ty.galactichub.online
-  client-fingerprint: chrome
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 03 - li007
+  server: 157.254.38.210
+  port: 20028
+  udp: true
+  type: trojan
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  sni: hk.catxstar.com
+  skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 04 - li007
+  server: 157.254.38.210
+  port: 20027
+  udp: true
+  type: trojan
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  sni: hk.catxstar.com
+  skip-cert-verify: false
+- name: 🇹🇷 土耳其 (Turkey) 05 - li007
   server: 185.246.155.91
   port: 10103
   udp: true
@@ -56,7 +60,7 @@ proxies:
     short-id: 6859f5b59e55aa30
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 05 - li007
+- name: 🇹🇷 土耳其 (Turkey) 06 - li007
   server: 78.135.73.47
   port: 443
   udp: true
@@ -68,23 +72,7 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 06 - li007
-  server: 157.254.38.210
-  port: 20027
-  udp: true
-  type: trojan
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  sni: hk.catxstar.com
-  skip-cert-verify: false
-- name: 🇹🇷 土耳其 (Turkey) 07 - li007
-  server: 157.254.38.210
-  port: 20028
-  udp: true
-  type: trojan
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  sni: hk.catxstar.com
-  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -96,7 +84,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 04 - li007
   - 🇹🇷 土耳其 (Turkey) 05 - li007
   - 🇹🇷 土耳其 (Turkey) 06 - li007
-  - 🇹🇷 土耳其 (Turkey) 07 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -108,6 +95,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 04 - li007
   - 🇹🇷 土耳其 (Turkey) 05 - li007
   - 🇹🇷 土耳其 (Turkey) 06 - li007
-  - 🇹🇷 土耳其 (Turkey) 07 - li007
 rules:
 - MATCH,PROXIES
