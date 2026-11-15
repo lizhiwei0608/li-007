@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - li007
+  server: 172.105.39.124
+  port: 7002
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇮🇳 印度 (India) 02 - li007
   server: 178.212.35.198
   port: 443
   udp: true
@@ -15,19 +22,6 @@ proxies:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
     short-id: 6bdc8320
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 02 - li007
-  server: 103.111.114.136
-  port: 443
-  udp: true
-  type: vless
-  uuid: 555b35c4-30f9-40c6-a61a-7f53ab1bea45
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
-    short-id: 1a2b3c4d
-  servername: videos.porsche.com
   client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 03 - li007
   server: 13.140.56.100
@@ -51,9 +45,9 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 05 - li007
-  server: xray-dmr3b3hy-calm-maple-7.cloady.io
+  server: 13.140.253.35
   port: 443
   udp: true
   type: vless

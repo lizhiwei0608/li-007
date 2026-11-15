@@ -52,16 +52,20 @@ proxies:
   grpc-opts:
     grpc-service-name: vlgrpc
 - name: 🇷🇺 俄罗斯 (Russia) 05 - li007
-  server: 5.59.204.81
-  port: 8443
+  server: 212.41.8.76
+  port: 13443
   udp: true
   type: vless
-  uuid: 97fd7807-7e2b-49da-8a0e-e40197088f97
-  flow: xtls-rprx-vision
+  uuid: a628c583-24a8-4ce5-98ad-c6458abf1cc4
   tls: true
-  servername: id-6af3f40b.adhil.uk
-  skip-cert-verify: false
-  client-fingerprint: edge
+  reality-opts:
+    public-key: d2B_vurRVKXLrK0ib-0sTtQuI3VDdaj8ZKTXgEPwAlc
+    short-id: 9de815e2
+  servername: s3.storage.selcloud.ru
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
 proxy-groups:
 - name: PROXIES
   type: select
