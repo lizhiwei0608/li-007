@@ -26,12 +26,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 03 - li007",
+      "server": "assets.opensignal.com",
+      "server_port": 80,
+      "uuid": "0c85001b-ad48-4f43-bdc9-b2b5c626a26e",
+      "transport": {
+        "type": "ws",
+        "path": "/logout",
+        "headers": {
+          "Host": "d36lt9hzl2ug3d.cloudfront.net:assets.opensignal.com"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇭 泰国 (Thailand) 01 - li007",
-        "🇹🇭 泰国 (Thailand) 02 - li007"
+        "🇹🇭 泰国 (Thailand) 02 - li007",
+        "🇹🇭 泰国 (Thailand) 03 - li007"
       ]
     },
     {
@@ -39,7 +54,8 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇭 泰国 (Thailand) 01 - li007",
-        "🇹🇭 泰国 (Thailand) 02 - li007"
+        "🇹🇭 泰国 (Thailand) 02 - li007",
+        "🇹🇭 泰国 (Thailand) 03 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

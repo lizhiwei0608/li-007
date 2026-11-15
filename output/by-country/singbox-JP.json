@@ -6,23 +6,23 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 01 - li007",
-      "server": "149.22.87.241",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 02 - li007",
-      "server": "jpa.123069.xyz",
+      "server": "168.138.205.100",
       "server_port": 53758,
       "method": "aes-128-gcm",
       "password": "Bwlqh7GcFB"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 02 - li007",
+      "server": "84.247.155.196",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
+    },
+    {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 03 - li007",
-      "server": "31.76.91.70",
+      "server": "31.76.91.98",
       "server_port": 443,
       "uuid": "7072eeba-94fd-4fb3-92f2-a4506dd84cd8",
       "flow": "xtls-rprx-vision",
@@ -31,7 +31,7 @@
         "server_name": "fuji.etherhub.cc",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -43,27 +43,6 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 04 - li007",
-      "server": "158.101.151.157",
-      "server_port": 443,
-      "uuid": "66171cbe-0b4b-4b24-99f6-d5a822f4dc9a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8",
-          "short_id": "684c7531e599dec0"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 05 - li007",
       "server": "103.75.118.228",
       "server_port": 11452,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -83,6 +62,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 05 - li007",
+      "server": "43.130.234.128",
+      "server_port": 443,
+      "uuid": "a2d4ddd8-4d3f-49f5-b78b-bdb3eebab9a6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "DLYP4CSy4Ey15aYSzcYdwfW4XIuiw3_DuKunNLEDgS4",
+          "short_id": ""
+        }
+      }
+    },
+    {
       "type": "hysteria2",
       "tag": "🇯🇵 日本 (Japan) 06 - li007",
       "server": "8.211.175.236",
@@ -90,13 +90,70 @@
       "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
       "tls": {
         "enabled": true,
+        "server_name": "8.211.175.236",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 07 - li007",
+      "server": "158.101.151.157",
+      "server_port": 443,
+      "uuid": "66171cbe-0b4b-4b24-99f6-d5a822f4dc9a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8",
+          "short_id": "684c7531e599dec0"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇯🇵 日本 (Japan) 08 - li007",
+      "server": "8.209.247.109",
+      "server_port": 443,
+      "password": "usqmqUKJFIlCmvkCNSY64L3k",
+      "tls": {
+        "enabled": true,
         "server_name": "bing.com",
         "insecure": true
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇯🇵 日本 (Japan) 09 - li007",
+      "server": "193.123.160.109",
+      "server_port": 8443,
+      "password": "F3NzMNuYnG7akU2mSlBY",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 10 - li007",
+      "server": "84.247.155.196",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 07 - li007",
+      "tag": "🇯🇵 日本 (Japan) 11 - li007",
       "server": "138.3.208.26",
       "server_port": 50160,
       "password": "184cdec28da5a09450803c8debcd2cc9",
@@ -107,8 +164,20 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 12 - li007",
+      "server": "168.138.43.75",
+      "server_port": 80,
+      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/cctv13.m3u8"
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 08 - li007",
+      "tag": "🇯🇵 日本 (Japan) 13 - li007",
       "server": "43.130.234.128",
       "server_port": 8443,
       "password": "Yuike2026cat",
@@ -120,36 +189,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 09 - li007",
-      "server": "zfapi.zalolink.com",
-      "server_port": 43149,
-      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "tag": "🇯🇵 日本 (Japan) 14 - li007",
+      "server": "155.248.175.201",
+      "server_port": 23169,
+      "uuid": "3eb053cb-d6f8-4b31-8180-222e1cc6f8ff",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "psstatic.cdn.bcebos.com",
+        "server_name": "djj.zjlo.top",
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE",
-          "short_id": "15aa0ad4"
         }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 10 - li007",
-      "server": "84.247.155.196",
-      "server_port": 80,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
-    },
-    {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 11 - li007",
+      "tag": "🇯🇵 日本 (Japan) 15 - li007",
       "server": "155.248.175.201",
       "server_port": 23169,
       "uuid": "7318caa1-93d1-4a9d-c481-504599902700",
@@ -157,7 +214,7 @@
       "tls": {
         "enabled": true,
         "server_name": "djj.zjlo.top",
-        "insecure": true,
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -179,7 +236,11 @@
         "🇯🇵 日本 (Japan) 08 - li007",
         "🇯🇵 日本 (Japan) 09 - li007",
         "🇯🇵 日本 (Japan) 10 - li007",
-        "🇯🇵 日本 (Japan) 11 - li007"
+        "🇯🇵 日本 (Japan) 11 - li007",
+        "🇯🇵 日本 (Japan) 12 - li007",
+        "🇯🇵 日本 (Japan) 13 - li007",
+        "🇯🇵 日本 (Japan) 14 - li007",
+        "🇯🇵 日本 (Japan) 15 - li007"
       ]
     },
     {
@@ -196,7 +257,11 @@
         "🇯🇵 日本 (Japan) 08 - li007",
         "🇯🇵 日本 (Japan) 09 - li007",
         "🇯🇵 日本 (Japan) 10 - li007",
-        "🇯🇵 日本 (Japan) 11 - li007"
+        "🇯🇵 日本 (Japan) 11 - li007",
+        "🇯🇵 日本 (Japan) 12 - li007",
+        "🇯🇵 日本 (Japan) 13 - li007",
+        "🇯🇵 日本 (Japan) 14 - li007",
+        "🇯🇵 日本 (Japan) 15 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
