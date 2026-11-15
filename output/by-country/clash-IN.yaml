@@ -17,6 +17,19 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 02 - li007
+  server: 103.111.114.136
+  port: 443
+  udp: true
+  type: vless
+  uuid: 555b35c4-30f9-40c6-a61a-7f53ab1bea45
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
+    short-id: 1a2b3c4d
+  servername: videos.porsche.com
+  client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 03 - li007
   server: 13.140.56.100
   port: 14430
   udp: true
@@ -27,7 +40,7 @@ proxies:
     path: /vless
     headers:
       Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 03 - li007
+- name: 🇮🇳 印度 (India) 04 - li007
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -39,7 +52,7 @@ proxies:
     short-id: 9980e0609b0d3891
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇮🇳 印度 (India) 04 - li007
+- name: 🇮🇳 印度 (India) 05 - li007
   server: xray-dmr3b3hy-calm-maple-7.cloady.io
   port: 443
   udp: true
@@ -54,17 +67,6 @@ proxies:
     path: /0175469f14317d82
     headers:
       Host: xray-dmr3b3hy-calm-maple-7.cloady.io
-- name: 🇮🇳 印度 (India) 05 - li007
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: PROXIES
   type: select
