@@ -13,13 +13,49 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - li007
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.89
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - li007
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - li007
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2рҹүёрҹүі
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - li007
   server: 213.176.92.148
   port: 40647
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - li007
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - li007
+  server: 91.213.186.45
+  port: 46986
+  udp: true
+  type: vless
+  uuid: 71327a90-b9c4-4385-b850-4d3c5832d9cc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5Uk63lFOn1Z3gmImXWrXbvQ0b9gXTOiY_VWuI898Vmk
+  servername: www.paypal.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - li007
   server: 152.32.254.68
   port: 5010
   udp: true
@@ -29,38 +65,6 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - li007
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8\u0001f1e8\u0001f1f3
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - li007
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - li007
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: speedtest.tinkoff.ru
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - li007
-  server: vpn-hk-004.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-hk-004.fastervpn.world
-  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - li007
   server: 45.192.193.54
   port: 35600
@@ -73,6 +77,18 @@ proxies:
     public-key: fJwbUNPAxu-CcoWnzWrvtDkX7QMDvJwFGWzJ3lDcFC4
   servername: www.iij.ad.jp
   client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - li007
+  server: 45.192.194.104
+  port: 35600
+  udp: true
+  type: vless
+  uuid: d34c4e7c-3eac-4a26-adb9-9004b6981ad8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zHmC_LkSMSrRHcetzsRJZvu6irqviiG3vf9VuXRL6FE
+  servername: www.iij.ad.jp
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -86,6 +102,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 06 - li007
   - 🇭🇰 中国香港 (Hong Kong) 07 - li007
   - 🇭🇰 中国香港 (Hong Kong) 08 - li007
+  - 🇭🇰 中国香港 (Hong Kong) 09 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -99,5 +116,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 06 - li007
   - 🇭🇰 中国香港 (Hong Kong) 07 - li007
   - 🇭🇰 中国香港 (Hong Kong) 08 - li007
+  - 🇭🇰 中国香港 (Hong Kong) 09 - li007
 rules:
 - MATCH,PROXIES

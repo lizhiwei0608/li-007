@@ -4,26 +4,41 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇸🇬 新加坡 (Singapore) 01 (家宽·单跳) - li007",
-      "server": "195.133.135.238",
-      "server_port": 10086,
-      "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
-      "security": "auto"
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 01 (移动家宽·单跳) - li007",
+      "server": "172.66.167.186",
+      "server_port": 2053,
+      "password": "IDgAbZbs8cZw",
+      "tls": {
+        "enabled": true,
+        "server_name": "rAyan02-1d7cmk9v-t3.rayAn-02.worKers.dEV",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "rAyan02-1d7cmk9v-t3.rayAn-02.worKers.dEV"
+        }
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇬 新加坡 (Singapore) 01 (家宽·单跳) - li007"
+        "🇺🇸 美国 (United States) 01 (移动家宽·单跳) - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇬 新加坡 (Singapore) 01 (家宽·单跳) - li007"
+        "🇺🇸 美国 (United States) 01 (移动家宽·单跳) - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
