@@ -6,14 +6,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - li007",
-      "server": "151.241.19.29",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - li007",
       "server": "151.241.19.36",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -21,7 +13,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - li007",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - li007",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
@@ -34,6 +26,14 @@
         "type": "salamander",
         "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - li007",
+      "server": "151.241.19.29",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "vless",
@@ -50,6 +50,41 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - li007",
+      "server": "45.86.228.39",
+      "server_port": 443,
+      "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ae1.gofizzin.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6_gm-7Bn-4wN79POTNyDJrJvPh1I5SSiO85zMKpKRUI",
+          "short_id": "29967a52"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - li007",
+      "server": "95.174.68.188",
+      "server_port": 14430,
+      "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "95.174.68.188"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -57,7 +92,9 @@
         "🇦🇪 阿联酋 (UAE) 01 - li007",
         "🇦🇪 阿联酋 (UAE) 02 - li007",
         "🇦🇪 阿联酋 (UAE) 03 - li007",
-        "🇦🇪 阿联酋 (UAE) 04 - li007"
+        "🇦🇪 阿联酋 (UAE) 04 - li007",
+        "🇦🇪 阿联酋 (UAE) 05 - li007",
+        "🇦🇪 阿联酋 (UAE) 06 - li007"
       ]
     },
     {
@@ -67,7 +104,9 @@
         "🇦🇪 阿联酋 (UAE) 01 - li007",
         "🇦🇪 阿联酋 (UAE) 02 - li007",
         "🇦🇪 阿联酋 (UAE) 03 - li007",
-        "🇦🇪 阿联酋 (UAE) 04 - li007"
+        "🇦🇪 阿联酋 (UAE) 04 - li007",
+        "🇦🇪 阿联酋 (UAE) 05 - li007",
+        "🇦🇪 阿联酋 (UAE) 06 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

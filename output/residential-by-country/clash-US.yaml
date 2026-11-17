@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - li007
-  server: 170.114.45.6
-  port: 2096
+- name: 🇺🇸 美国 (United States) 01 (移动家宽) - li007
+  server: 104.24.30.89
+  port: 443
   udp: true
   type: vless
-  uuid: efd11a89-7506-44ce-95b6-6654859f155b
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
   tls: true
-  servername: pcloud.z-tas.com
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: pcloud.z-tas.com
+      Host: rayan-007.nastaran.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - li007
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - li007
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - li007
 rules:
 - MATCH,PROXIES
