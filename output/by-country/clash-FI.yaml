@@ -5,27 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - li007
-  server: 65.108.240.210
-  port: 39018
-  udp: true
-  type: vmess
-  uuid: 77fb7a80-4724-4e33-9558-4f20c1634c5a
-  alterId: 0
-  cipher: auto
-- name: 🇫🇮 芬兰 (Finland) 02 - li007
-  server: 85.192.49.126
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ATdIZVxBUo5bVQJtcoWBU1k8qlHdNniJ2gF1iDc8rEQ
-    short-id: 76efb045
-  servername: fi3.gofizzin.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 03 - li007
   server: 157.180.98.124
   port: 49659
   udp: true
@@ -38,6 +17,22 @@ proxies:
     short-id: 81959fce
   servername: apple.com
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 02 - li007
+  server: 94.183.164.119
+  port: 24433
+  udp: true
+  type: hysteria2
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: 94.183.164.119
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 03 - li007
+  server: 177.202.75.56
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: fi1.obxodvpn.us
+  skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 04 - li007
   server: 45.144.234.157
   port: 14430
@@ -50,21 +45,28 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 05 - li007
-  server: 94.183.164.119
-  port: 24433
+  server: 198.202.24.142
+  port: 2083
   udp: true
-  type: hysteria2
-  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  sni: lakes.blog-forme.ru
+  type: vless
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  tls: true
+  servername: vipfree.dr-ping.ir
   skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vipfree.dr-ping.ir
 - name: 🇫🇮 芬兰 (Finland) 06 - li007
-  server: fi1.obxodvpn.us
-  port: 443
+  server: 65.108.240.210
+  port: 39018
   udp: true
-  type: hysteria2
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  sni: fi1.obxodvpn.us
-  skip-cert-verify: false
+  type: vmess
+  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
