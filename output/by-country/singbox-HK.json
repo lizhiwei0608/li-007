@@ -12,27 +12,27 @@
       "security": "auto"
     },
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 - li007",
-      "server": "213.176.92.148",
-      "server_port": 40647,
-      "method": "aes-256-gcm",
-      "password": "DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY="
+      "server": "202.146.222.89",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/clashv8\\u0001f1e8\\u0001f1f3",
+        "insecure": true
+      }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 03 - li007",
-      "server": "152.32.254.68",
-      "server_port": 5010,
-      "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
+      "server": "202.146.222.29",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "nas.aizhzo.com",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9"
+        "server_name": "https://t.me/wangcai2ð¨ð³",
+        "insecure": true
       }
     },
     {
@@ -57,84 +57,12 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇭🇰 中国香港 (Hong Kong) 05 - li007",
-      "server": "202.146.222.174",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https://t.me/oneclickvpnkeys",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - li007",
-      "server": "202.146.222.89",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https://t.me/clashv8🇨🇳",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - li007",
-      "server": "202.146.222.29",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af%d1%80%d2%b9%d2%af",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - li007",
-      "server": "skk.moe",
-      "server_port": 443,
-      "uuid": "a25a71d1-10ed-4383-855a-f269a34ca691",
-      "tls": {
-        "enabled": true,
-        "server_name": "ave-qualifications-choices-populations.trycloudflare.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/a8b8606819ef",
-        "headers": {
-          "Host": "ave-qualifications-choices-populations.trycloudflare.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - li007",
-      "server": "185.71.216.177",
-      "server_port": 2091,
-      "uuid": "c4d6567e-c46e-410f-95ab-ac3a61e030f3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k",
-          "short_id": "08a4b1f473932632"
-        }
-      }
+      "server": "213.176.92.148",
+      "server_port": 40647,
+      "method": "aes-256-gcm",
+      "password": "DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY="
     },
     {
       "type": "selector",
@@ -145,11 +73,7 @@
         "🇭🇰 中国香港 (Hong Kong) 02 - li007",
         "🇭🇰 中国香港 (Hong Kong) 03 - li007",
         "🇭🇰 中国香港 (Hong Kong) 04 - li007",
-        "🇭🇰 中国香港 (Hong Kong) 05 - li007",
-        "🇭🇰 中国香港 (Hong Kong) 06 - li007",
-        "🇭🇰 中国香港 (Hong Kong) 07 - li007",
-        "🇭🇰 中国香港 (Hong Kong) 08 - li007",
-        "🇭🇰 中国香港 (Hong Kong) 09 - li007"
+        "🇭🇰 中国香港 (Hong Kong) 05 - li007"
       ]
     },
     {
@@ -160,11 +84,7 @@
         "🇭🇰 中国香港 (Hong Kong) 02 - li007",
         "🇭🇰 中国香港 (Hong Kong) 03 - li007",
         "🇭🇰 中国香港 (Hong Kong) 04 - li007",
-        "🇭🇰 中国香港 (Hong Kong) 05 - li007",
-        "🇭🇰 中国香港 (Hong Kong) 06 - li007",
-        "🇭🇰 中国香港 (Hong Kong) 07 - li007",
-        "🇭🇰 中国香港 (Hong Kong) 08 - li007",
-        "🇭🇰 中国香港 (Hong Kong) 09 - li007"
+        "🇭🇰 中国香港 (Hong Kong) 05 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

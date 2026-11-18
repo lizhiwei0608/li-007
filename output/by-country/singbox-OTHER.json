@@ -1,0 +1,119 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 01 - li007",
+      "server": "ujp.xn--ghqu5fm27b67w.com",
+      "server_port": 443,
+      "uuid": "debafe5b-6760-4b00-b0b2-ee30cbf769f0",
+      "tls": {
+        "enabled": true,
+        "server_name": "portland-wins-robbie-skirt.trycloudflare.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/e0843c8ad581",
+        "headers": {
+          "Host": "portland-wins-robbie-skirt.trycloudflare.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 02 - li007",
+      "server": "skk.moe",
+      "server_port": 443,
+      "uuid": "a25a71d1-10ed-4383-855a-f269a34ca691",
+      "tls": {
+        "enabled": true,
+        "server_name": "ave-qualifications-choices-populations.trycloudflare.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/a8b8606819ef",
+        "headers": {
+          "Host": "ave-qualifications-choices-populations.trycloudflare.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 03 - li007",
+      "server": "172.64.80.1",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lMnsZUN4/",
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 04 - li007",
+      "server": "172.64.80.1",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lMnsZUN4/",
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🌐 其他地区 (Other) 01 - li007",
+        "🌐 其他地区 (Other) 02 - li007",
+        "🌐 其他地区 (Other) 03 - li007",
+        "🌐 其他地区 (Other) 04 - li007"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🌐 其他地区 (Other) 01 - li007",
+        "🌐 其他地区 (Other) 02 - li007",
+        "🌐 其他地区 (Other) 03 - li007",
+        "🌐 其他地区 (Other) 04 - li007"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
