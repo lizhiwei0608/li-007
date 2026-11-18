@@ -13,25 +13,25 @@ proxies:
   password: xaupMUvhptwxdDUg
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - li007
   server: 195.238.126.20
+  port: 9001
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: UkXRsXvR6buDMG2Y
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - li007
+  server: 195.238.126.20
   port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - li007
-  server: 195.238.126.84
-  port: 9039
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qYEN5HX4JKeVCdEC
 - name: 🇱🇹 立陶宛 (Lithuania) 04 - li007
   server: 195.238.126.20
-  port: 9008
+  port: 9045
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: y9VURyNzJWNRYEGQ
+  password: Lp27rqyJq72bZsqX
 - name: 🇱🇹 立陶宛 (Lithuania) 05 - li007
   server: 195.238.126.20
   port: 9011
@@ -48,19 +48,12 @@ proxies:
   password: mwgRg9hRq3b4Qnwb
 - name: 🇱🇹 立陶宛 (Lithuania) 07 - li007
   server: 195.238.126.20
-  port: 9078
+  port: 9008
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: JCJpbRbQZNw9XFZG
+  password: y9VURyNzJWNRYEGQ
 - name: 🇱🇹 立陶宛 (Lithuania) 08 - li007
-  server: 195.238.126.20
-  port: 9045
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Lp27rqyJq72bZsqX
-- name: 🇱🇹 立陶宛 (Lithuania) 09 - li007
   server: 84.32.248.124
   port: 443
   udp: true
@@ -72,7 +65,7 @@ proxies:
     short-id: a7d309e4c16b825f
   servername: net-io-api.galioncc.com
   client-fingerprint: firefox
-- name: 🇱🇹 立陶宛 (Lithuania) 10 - li007
+- name: 🇱🇹 立陶宛 (Lithuania) 09 - li007
   server: 84.32.83.197
   port: 443
   udp: true
@@ -98,7 +91,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 07 - li007
   - 🇱🇹 立陶宛 (Lithuania) 08 - li007
   - 🇱🇹 立陶宛 (Lithuania) 09 - li007
-  - 🇱🇹 立陶宛 (Lithuania) 10 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -113,6 +105,5 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 07 - li007
   - 🇱🇹 立陶宛 (Lithuania) 08 - li007
   - 🇱🇹 立陶宛 (Lithuania) 09 - li007
-  - 🇱🇹 立陶宛 (Lithuania) 10 - li007
 rules:
 - MATCH,PROXIES

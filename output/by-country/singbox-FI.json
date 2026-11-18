@@ -25,32 +25,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - li007",
-      "server": "94.183.164.119",
-      "server_port": 24433,
-      "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
-      "tls": {
-        "enabled": true,
-        "server_name": "94.183.164.119",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - li007",
-      "server": "177.202.75.56",
-      "server_port": 443,
-      "password": "146d567c-6335-4e63-a8aa-7ec068642440",
-      "tls": {
-        "enabled": true,
-        "server_name": "fi1.obxodvpn.us",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - li007",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - li007",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
@@ -63,35 +39,16 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - li007",
-      "server": "198.202.24.142",
-      "server_port": 2083,
-      "uuid": "a6ad7987-f17e-41fa-a752-72db9a725eb2",
+      "type": "hysteria2",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - li007",
+      "server": "94.183.164.119",
+      "server_port": 24433,
+      "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
       "tls": {
         "enabled": true,
-        "server_name": "vipfree.dr-ping.ir",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vipfree.dr-ping.ir"
-        }
+        "server_name": "lakes.blog-forme.ru",
+        "insecure": false
       }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - li007",
-      "server": "65.108.240.210",
-      "server_port": 39018,
-      "uuid": "8ca123a8-720b-47c5-bd0c-637431418b09",
-      "security": "auto"
     },
     {
       "type": "selector",
@@ -100,10 +57,7 @@
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - li007",
         "🇫🇮 芬兰 (Finland) 02 - li007",
-        "🇫🇮 芬兰 (Finland) 03 - li007",
-        "🇫🇮 芬兰 (Finland) 04 - li007",
-        "🇫🇮 芬兰 (Finland) 05 - li007",
-        "🇫🇮 芬兰 (Finland) 06 - li007"
+        "🇫🇮 芬兰 (Finland) 03 - li007"
       ]
     },
     {
@@ -112,10 +66,7 @@
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - li007",
         "🇫🇮 芬兰 (Finland) 02 - li007",
-        "🇫🇮 芬兰 (Finland) 03 - li007",
-        "🇫🇮 芬兰 (Finland) 04 - li007",
-        "🇫🇮 芬兰 (Finland) 05 - li007",
-        "🇫🇮 芬兰 (Finland) 06 - li007"
+        "🇫🇮 芬兰 (Finland) 03 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
