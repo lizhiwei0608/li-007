@@ -5,66 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - li007
-  server: ujp.xn--ghqu5fm27b67w.com
-  port: 443
+  server: eu02.123450908.xyz
+  port: 2052
   udp: true
   type: vless
-  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
-  tls: true
-  servername: portland-wins-robbie-skirt.trycloudflare.com
-  skip-cert-verify: false
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
   network: ws
   ws-opts:
-    path: /e0843c8ad581
+    path: /rain1226
     headers:
-      Host: portland-wins-robbie-skirt.trycloudflare.com
+      Host: eu02.123450908.xyz
 - name: 🌐 其他地区 (Other) 02 - li007
-  server: skk.moe
-  port: 443
+  server: 172.67.199.126
+  port: 2053
   udp: true
   type: vless
-  uuid: a25a71d1-10ed-4383-855a-f269a34ca691
+  uuid: c83f15bf-1817-4ec8-a19f-6393d226434c
   tls: true
-  servername: ave-qualifications-choices-populations.trycloudflare.com
+  servername: fast.145779.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /a8b8606819ef
+    path: /ws-tesla
     headers:
-      Host: ave-qualifications-choices-populations.trycloudflare.com
-- name: 🌐 其他地区 (Other) 03 - li007
-  server: 172.64.80.1
-  port: 8443
-  udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: 🌐 其他地区 (Other) 04 - li007
-  server: 172.64.80.1
-  port: 8443
-  udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
+      Host: fast.145779.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,8 +37,6 @@ proxy-groups:
   - AUTO
   - 🌐 其他地区 (Other) 01 - li007
   - 🌐 其他地区 (Other) 02 - li007
-  - 🌐 其他地区 (Other) 03 - li007
-  - 🌐 其他地区 (Other) 04 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -81,7 +44,5 @@ proxy-groups:
   proxies:
   - 🌐 其他地区 (Other) 01 - li007
   - 🌐 其他地区 (Other) 02 - li007
-  - 🌐 其他地区 (Other) 03 - li007
-  - 🌐 其他地区 (Other) 04 - li007
 rules:
 - MATCH,PROXIES

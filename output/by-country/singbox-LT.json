@@ -6,46 +6,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - li007",
-      "server": "195.238.126.20",
-      "server_port": 9008,
-      "method": "aes-256-cfb",
-      "password": "y9VURyNzJWNRYEGQ"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - li007",
-      "server": "195.238.126.20",
-      "server_port": 9045,
-      "method": "aes-256-cfb",
-      "password": "Lp27rqyJq72bZsqX"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - li007",
-      "server": "195.238.126.20",
-      "server_port": 9086,
-      "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - li007",
-      "server": "195.238.126.20",
-      "server_port": 9001,
-      "method": "aes-256-cfb",
-      "password": "UkXRsXvR6buDMG2Y"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - li007",
-      "server": "195.238.126.20",
-      "server_port": 9011,
-      "method": "aes-256-cfb",
-      "password": "M3t2ZEQcMGRWBjRa"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 06 - li007",
       "server": "195.238.126.84",
       "server_port": 9039,
       "method": "aes-256-cfb",
@@ -53,15 +13,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 07 - li007",
-      "server": "195.238.126.20",
-      "server_port": 9002,
-      "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 08 - li007",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - li007",
       "server": "195.238.126.20",
       "server_port": 9078,
       "method": "aes-256-cfb",
@@ -69,32 +21,56 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 09 - li007",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - li007",
       "server": "195.238.126.20",
-      "server_port": 9068,
+      "server_port": 9002,
       "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
+      "password": "b8KkNDjEd5QqFyRm"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 10 - li007",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - li007",
       "server": "195.238.126.20",
       "server_port": 9012,
       "method": "aes-256-cfb",
       "password": "xaupMUvhptwxdDUg"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - li007",
+      "server": "195.238.126.20",
+      "server_port": 9001,
+      "method": "aes-256-cfb",
+      "password": "UkXRsXvR6buDMG2Y"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 06 - li007",
+      "server": "195.238.126.20",
+      "server_port": 9008,
+      "method": "aes-256-cfb",
+      "password": "y9VURyNzJWNRYEGQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 07 - li007",
+      "server": "195.238.126.20",
+      "server_port": 9011,
+      "method": "aes-256-cfb",
+      "password": "M3t2ZEQcMGRWBjRa"
+    },
+    {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 11 - li007",
-      "server": "84.32.51.135",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 08 - li007",
+      "server": "84.32.83.197",
       "server_port": 443,
       "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
       "tls": {
         "enabled": true,
-        "server_name": "svc-io-mgr.galioncc.com",
+        "server_name": "api-dns-gw.galioncc.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -105,16 +81,16 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 12 - li007",
-      "server": "84.32.83.197",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 09 - li007",
+      "server": "84.32.51.135",
       "server_port": 443,
       "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
       "tls": {
         "enabled": true,
-        "server_name": "api-dns-gw.galioncc.com",
+        "server_name": "svc-io-mgr.galioncc.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -136,10 +112,7 @@
         "🇱🇹 立陶宛 (Lithuania) 06 - li007",
         "🇱🇹 立陶宛 (Lithuania) 07 - li007",
         "🇱🇹 立陶宛 (Lithuania) 08 - li007",
-        "🇱🇹 立陶宛 (Lithuania) 09 - li007",
-        "🇱🇹 立陶宛 (Lithuania) 10 - li007",
-        "🇱🇹 立陶宛 (Lithuania) 11 - li007",
-        "🇱🇹 立陶宛 (Lithuania) 12 - li007"
+        "🇱🇹 立陶宛 (Lithuania) 09 - li007"
       ]
     },
     {
@@ -154,10 +127,7 @@
         "🇱🇹 立陶宛 (Lithuania) 06 - li007",
         "🇱🇹 立陶宛 (Lithuania) 07 - li007",
         "🇱🇹 立陶宛 (Lithuania) 08 - li007",
-        "🇱🇹 立陶宛 (Lithuania) 09 - li007",
-        "🇱🇹 立陶宛 (Lithuania) 10 - li007",
-        "🇱🇹 立陶宛 (Lithuania) 11 - li007",
-        "🇱🇹 立陶宛 (Lithuania) 12 - li007"
+        "🇱🇹 立陶宛 (Lithuania) 09 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

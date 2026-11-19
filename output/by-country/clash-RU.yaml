@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - li007
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+- name: 🇷🇺 俄罗斯 (Russia) 02 - li007
   server: 147.45.47.101
   port: 8443
   udp: true
@@ -17,25 +24,19 @@ proxies:
     short-id: 6ba85179e30d4fc2
   servername: apple.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 02 - li007
-  server: 94.139.250.226
-  port: 443
+- name: 🇷🇺 俄罗斯 (Russia) 03 - li007
+  server: 37.235.247.81
+  port: 8443
   udp: true
   type: vless
-  uuid: a30903dc-1bf0-0001-8b1b-603a3a56211c
+  uuid: 2ae0670d-0bdf-409e-9a55-4e970252d378
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: 6d2f8a41c9e705b3
-  servername: net-api-ctl.galioncc.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 03 - li007
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  servername: apple.com
+  client-fingerprint: ''
 - name: 🇷🇺 俄罗斯 (Russia) 04 - li007
   server: 193.233.199.94
   port: 443
@@ -49,15 +50,34 @@ proxies:
   servername: fin4-r.bankai.party
   client-fingerprint: qq
 - name: 🇷🇺 俄罗斯 (Russia) 05 - li007
+  server: 178.130.46.188
+  port: 443
+  udp: true
+  type: vless
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: nl16-r.bankai.party
+  client-fingerprint: qq
+- name: 🇷🇺 俄罗斯 (Russia) 06 - li007
+  server: 46.17.47.194
+  port: 18443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+- name: 🇷🇺 俄罗斯 (Russia) 07 - li007
   server: 103.88.243.142
   port: 11592
   udp: true
   type: hysteria2
   password: 41edb44c8e
   sni: srv-17e124.21freedom.net
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 06 - li007
-  server: 200.169.179.233
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 08 - li007
+  server: 201.51.12.98
   port: 443
   udp: true
   type: vless
@@ -65,43 +85,11 @@ proxies:
   tls: true
   servername: vps3.nemnogogo.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: mobile.api.Event
-- name: 🇷🇺 俄罗斯 (Russia) 07 - li007
-  server: 81.200.152.153
-  port: 443
-  udp: true
-  type: vless
-  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: t2iopaZn9-fADmIi4taXbGUV6wFTFku4eGi8KISuZAM
-  servername: gmbasdasd.wey-land.net
-  client-fingerprint: edge
-- name: 🇷🇺 俄罗斯 (Russia) 08 - li007
-  server: 46.17.47.194
-  port: 18443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
 - name: 🇷🇺 俄罗斯 (Russia) 09 - li007
-  server: 37.235.247.81
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 2ae0670d-0bdf-409e-9a55-4e970252d378
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-  servername: apple.com
-  client-fingerprint: ''
-- name: 🇷🇺 俄罗斯 (Russia) 10 - li007
   server: 201.24.121.243
   port: 443
   udp: true
@@ -128,7 +116,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - li007
   - 🇷🇺 俄罗斯 (Russia) 08 - li007
   - 🇷🇺 俄罗斯 (Russia) 09 - li007
-  - 🇷🇺 俄罗斯 (Russia) 10 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -143,6 +130,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 07 - li007
   - 🇷🇺 俄罗斯 (Russia) 08 - li007
   - 🇷🇺 俄罗斯 (Russia) 09 - li007
-  - 🇷🇺 俄罗斯 (Russia) 10 - li007
 rules:
 - MATCH,PROXIES

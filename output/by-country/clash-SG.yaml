@@ -12,55 +12,62 @@ proxies:
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 (Singapore) 02 - li007
-  server: 149.88.106.74
-  port: 19999
+  server: 68.183.235.240
+  port: 8080
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 (Singapore) 03 - li007
-  server: 149.88.107.74
-  port: 19999
+  server: 68.183.227.45
+  port: 8080
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 (Singapore) 04 - li007
-  server: 149.88.106.73
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 05 - li007
   server: 149.88.107.47
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇸🇬 新加坡 (Singapore) 05 - li007
+  server: 149.88.106.74
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇬 新加坡 (Singapore) 06 - li007
-  server: 15.235.164.133
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 07 - li007
-  server: 51.79.228.131
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 08 - li007
   server: 15.235.182.183
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇸🇬 新加坡 (Singapore) 07 - li007
+  server: 149.88.106.73
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇸🇬 新加坡 (Singapore) 08 - li007
+  server: 68.183.227.236
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 (Singapore) 09 - li007
+  server: 68.183.227.4
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 10 - li007
   server: 149.88.23.202
   port: 18000
   udp: true
@@ -68,50 +75,36 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 10 - li007
-  server: 68.183.227.45
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 (Singapore) 11 - li007
-  server: 68.183.227.4
-  port: 8080
+  server: 15.235.164.133
+  port: 19999
   udp: true
   type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇬 新加坡 (Singapore) 12 - li007
-  server: 68.183.235.122
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 13 - li007
-  server: 149.88.23.207
+  server: ww11.levikogjgfdd.ir
   port: 18000
   udp: true
   type: vmess
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
+- name: 🇸🇬 新加坡 (Singapore) 13 - li007
+  server: 129.150.59.74
+  port: 14384
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
 - name: 🇸🇬 新加坡 (Singapore) 14 - li007
-  server: 68.183.235.240
-  port: 8080
+  server: 51.79.228.131
+  port: 19999
   udp: true
   type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇬 新加坡 (Singapore) 15 - li007
-  server: 68.183.227.236
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 16 - li007
   server: 54.179.113.70
   port: 443
   udp: true
@@ -119,7 +112,7 @@ proxies:
   password: qQe1z5kU8kN6SlKnDt9Ru3Qp
   sni: vpn-sg-001.fastervpn.world
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 17 - li007
+- name: 🇸🇬 新加坡 (Singapore) 16 - li007
   server: 47.129.241.99
   port: 443
   udp: true
@@ -127,75 +120,32 @@ proxies:
   password: qQe1z5kU8kN6SlKnDt9Ru3Qp
   sni: 127.0.0.1
   skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 17 - li007
+  server: 149.88.107.74
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇬 新加坡 (Singapore) 18 - li007
-  server: 128.1.186.73
+  server: 68.183.235.122
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 (Singapore) 19 - li007
-  server: 128.1.186.132
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 20 - li007
-  server: 140.245.113.33
-  port: 443
+  server: 104.17.3.81
+  port: 80
   udp: true
   type: vless
-  uuid: f4ca59b2-767d-3425-8dfc-95a96a0e6802
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: tF9nKF6amexok5wKbieQ2QRKQI5_ZTFE6MUj1hUBBkY
-    short-id: c940a3b6d60b8611
-  servername: learn.microsoft.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 21 - li007
-  server: 129.150.59.74
-  port: 14384
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
-- name: 🇸🇬 新加坡 (Singapore) 22 - li007
-  server: 178.94.25.73
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 2dacc738-5720-4824-b8bc-e3db57596ba7
+  uuid: fdd8f4d0-4500-11ef-8227-1577c1651679
   network: ws
   ws-opts:
-    path: /vless
+    path: /worryfree
     headers:
-      Host: 178.94.25.73
-- name: 🇸🇬 新加坡 (Singapore) 23 - li007
-  server: 172.255.210.24
-  port: 443
-  udp: true
-  type: vless
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  tls: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: 868419504747f6de
-  servername: net-cfg-api.galioncc.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 24 - li007
-  server: 140.245.62.225
-  port: 36442
-  udp: true
-  type: vless
-  uuid: 2633cbab-e901-4f5a-9a0f-18ff319d0d70
-  flow: xtls-rprx-vision
-  tls: true
-  servername: xjpp.zjlo.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 25 - li007
+      Host: sg-vless-ws.bypass.id
+- name: 🇸🇬 新加坡 (Singapore) 20 - li007
   server: sg.fasti.win
   port: 443
   udp: true
@@ -208,7 +158,67 @@ proxies:
     short-id: feedbacc
   servername: sg.fasti.win
   client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 21 - li007
+  server: 128.1.186.73
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 22 - li007
+  server: 128.1.186.132
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 23 - li007
+  server: 138.2.73.238
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: f87376e17da040ed04c9665ce8972930
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 24 - li007
+  server: 140.245.113.33
+  port: 443
+  udp: true
+  type: vless
+  uuid: f4ca59b2-767d-3425-8dfc-95a96a0e6802
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: tF9nKF6amexok5wKbieQ2QRKQI5_ZTFE6MUj1hUBBkY
+    short-id: c940a3b6d60b8611
+  servername: learn.microsoft.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 25 - li007
+  server: 172.255.210.24
+  port: 443
+  udp: true
+  type: vless
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  servername: net-cfg-api.galioncc.com
+  client-fingerprint: firefox
 - name: 🇸🇬 新加坡 (Singapore) 26 - li007
+  server: 170.205.36.116
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c9bf7875-6722-43cd-91d8-d0528a57e426
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5Oh9-P6sO_Fly4XU_sN0JOb4Ek3FgoMznhDExI70GEk
+    short-id: ab96
+  servername: dl.google.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 27 - li007
   server: 15.235.144.92
   port: 1270
   udp: true
@@ -219,39 +229,26 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 27 - li007
-  server: 139.162.20.241
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7f0270f9-1abc-4c4f-960d-0a23e32f1eb8
-  tls: true
-  reality-opts:
-    public-key: fG1u2AZj5pgSNWO3MBmkoY6K61xBwnuYX3_z1fSeR0o
-    short-id: 640c807d
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
 - name: 🇸🇬 新加坡 (Singapore) 28 - li007
-  server: 172.104.186.205
-  port: 443
+  server: 173.234.15.84
+  port: 48994
+  udp: true
+  type: trojan
+  password: Z5lvhmLqSc
+  sni: m.microsoft.com
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 29 - li007
+  server: 140.245.62.225
+  port: 36442
   udp: true
   type: vless
-  uuid: eafa7d0d-db1c-4c91-8fd8-587cd218008e
+  uuid: 2633cbab-e901-4f5a-9a0f-18ff319d0d70
+  flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: dT50iKOzQz2utAi1tcwsU86hbaS78JeDY_xST0nP5D4
-    short-id: aea01663
-  servername: itunes.apple.com
+  servername: xjpp.zjlo.top
+  skip-cert-verify: false
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇸🇬 新加坡 (Singapore) 29 - li007
+- name: 🇸🇬 新加坡 (Singapore) 30 - li007
   server: 172.104.48.194
   port: 443
   udp: true
@@ -268,7 +265,24 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇸🇬 新加坡 (Singapore) 30 - li007
+- name: 🇸🇬 新加坡 (Singapore) 31 - li007
+  server: 172.104.186.205
+  port: 443
+  udp: true
+  type: vless
+  uuid: eafa7d0d-db1c-4c91-8fd8-587cd218008e
+  tls: true
+  reality-opts:
+    public-key: dT50iKOzQz2utAi1tcwsU86hbaS78JeDY_xST0nP5D4
+    short-id: aea01663
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇸🇬 新加坡 (Singapore) 32 - li007
   server: 139.162.27.96
   port: 2096
   udp: true
@@ -283,67 +297,16 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 31 - li007
-  server: 147.93.173.45
-  port: 10444
-  udp: true
-  type: vless
-  uuid: 75c5f51b-d548-4eab-a26e-aa10fc3dbc7b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: video.yandex.ru
-  client-fingerprint: safari
-- name: 🇸🇬 新加坡 (Singapore) 32 - li007
-  server: 45.76.191.30
-  port: 443
-  udp: true
-  type: vless
-  uuid: d8aaaf9a-cea4-4c5a-975b-68ddc26f9891
-  tls: true
-  reality-opts:
-    public-key: -KlJUCwLvYy2pz5jR2RgmYMEhacPNPhwvlbdiKkAh1Y
-    short-id: 6cc51755
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
 - name: 🇸🇬 新加坡 (Singapore) 33 - li007
-  server: 138.2.73.238
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: f87376e17da040ed04c9665ce8972930
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 34 - li007
-  server: 170.205.36.116
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c9bf7875-6722-43cd-91d8-d0528a57e426
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5Oh9-P6sO_Fly4XU_sN0JOb4Ek3FgoMznhDExI70GEk
-    short-id: ab96
-  servername: dl.google.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 35 - li007
-  server: 139.180.215.25
+  server: 139.162.20.241
   port: 443
   udp: true
   type: vless
-  uuid: bbc20d3e-0391-48f1-ad72-90a6802f728e
+  uuid: 7f0270f9-1abc-4c4f-960d-0a23e32f1eb8
   tls: true
   reality-opts:
-    public-key: ybu5pFdSV23WsnMNhbpa8TwV6TJd6NLZ6HX-ggww61A
-    short-id: 83f673ba
+    public-key: fG1u2AZj5pgSNWO3MBmkoY6K61xBwnuYX3_z1fSeR0o
+    short-id: 640c807d
   servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
@@ -351,7 +314,20 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇸🇬 新加坡 (Singapore) 36 - li007
+- name: 🇸🇬 新加坡 (Singapore) 34 - li007
+  server: 5.34.177.164
+  port: 443
+  udp: true
+  type: vless
+  uuid: ca678d26-5435-4d13-b378-06c4c3b070ff
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: cwWhNuekusD1iPZZ--7G891dU9PCacxyCYwsZxOApHA
+    short-id: b2efed6d157e7bb0
+  servername: gateway.icloud.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 35 - li007
   server: 139.180.221.53
   port: 443
   udp: true
@@ -368,7 +344,7 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇸🇬 新加坡 (Singapore) 37 - li007
+- name: 🇸🇬 新加坡 (Singapore) 36 - li007
   server: 149.28.152.20
   port: 443
   udp: true
@@ -385,6 +361,61 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
+- name: 🇸🇬 新加坡 (Singapore) 37 - li007
+  server: 45.76.191.30
+  port: 443
+  udp: true
+  type: vless
+  uuid: d8aaaf9a-cea4-4c5a-975b-68ddc26f9891
+  tls: true
+  reality-opts:
+    public-key: -KlJUCwLvYy2pz5jR2RgmYMEhacPNPhwvlbdiKkAh1Y
+    short-id: 6cc51755
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇸🇬 新加坡 (Singapore) 38 - li007
+  server: 139.180.215.25
+  port: 443
+  udp: true
+  type: vless
+  uuid: bbc20d3e-0391-48f1-ad72-90a6802f728e
+  tls: true
+  reality-opts:
+    public-key: ybu5pFdSV23WsnMNhbpa8TwV6TJd6NLZ6HX-ggww61A
+    short-id: 83f673ba
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇸🇬 新加坡 (Singapore) 39 - li007
+  server: 15.235.184.127
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: exploredigitaljobplatformandfindonlinework.com
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 40 - li007
+  server: 178.94.25.73
+  port: 10444
+  udp: true
+  type: vless
+  uuid: 2dacc738-5720-4824-b8bc-e3db57596ba7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: video.yandex.ru
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -427,6 +458,9 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 35 - li007
   - 🇸🇬 新加坡 (Singapore) 36 - li007
   - 🇸🇬 新加坡 (Singapore) 37 - li007
+  - 🇸🇬 新加坡 (Singapore) 38 - li007
+  - 🇸🇬 新加坡 (Singapore) 39 - li007
+  - 🇸🇬 新加坡 (Singapore) 40 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -469,5 +503,8 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 35 - li007
   - 🇸🇬 新加坡 (Singapore) 36 - li007
   - 🇸🇬 新加坡 (Singapore) 37 - li007
+  - 🇸🇬 新加坡 (Singapore) 38 - li007
+  - 🇸🇬 新加坡 (Singapore) 39 - li007
+  - 🇸🇬 新加坡 (Singapore) 40 - li007
 rules:
 - MATCH,PROXIES

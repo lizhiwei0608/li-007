@@ -5,18 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇪 比利时 (Belgium) 01 - li007",
-      "server": "93.88.206.70",
+      "tag": "🇬🇪 格鲁吉亚 (Georgia) 01 - li007",
+      "server": "94.183.234.245",
       "server_port": 443,
-      "uuid": "44ddb84a-f152-47ef-a970-fd63f2df9b30",
+      "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pulse.sevka.xyz",
-        "insecure": false,
+        "server_name": "www.bing.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc",
+          "short_id": "7f1e29593aa94ad1"
         }
       }
     },
@@ -25,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 比利时 (Belgium) 01 - li007"
+        "🇬🇪 格鲁吉亚 (Georgia) 01 - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 比利时 (Belgium) 01 - li007"
+        "🇬🇪 格鲁吉亚 (Georgia) 01 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
