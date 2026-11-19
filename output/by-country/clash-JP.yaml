@@ -5,338 +5,62 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - li007
-  server: 129.153.71.28
-  port: 28863
-  udp: true
-  type: vless
-  uuid: b3a15df4-c8ad-4e98-b427-7a679aee2b18
-  tls: true
-  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-- name: 🇯🇵 日本 (Japan) 02 - li007
-  server: 129.153.71.28
-  port: 28863
-  udp: true
-  type: vless
-  uuid: 6c7c10f8-2387-4756-ab4b-64c9c6981f0e
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇯🇵 日本 (Japan) 03 - li007
-  server: 57.129.130.57
-  port: 52014
-  udp: true
-  type: vless
-  uuid: 98286408-b683-4c0f-96c5-7e00da649d90
-  tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇯🇵 日本 (Japan) 04 - li007
-  server: 57.129.130.34
-  port: 52014
-  udp: true
-  type: vless
-  uuid: 95c305fa-6ede-4eb5-b391-0869ddeb27f7
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇯🇵 日本 (Japan) 05 - li007
   server: 149.22.87.204
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 06 - li007
-  server: 57.129.130.57
-  port: 52014
-  udp: true
-  type: vless
-  uuid: 201e0019-2e79-4147-8a09-e510d630abeb
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 07 - li007
-  server: 129.153.71.28
-  port: 28863
-  udp: true
-  type: vless
-  uuid: 3e956106-7f92-4cbf-bf77-715d3890fa84
-  tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇯🇵 日本 (Japan) 08 - li007
-  server: 168.138.205.100
-  port: 53758
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: Bwlqh7GcFB
-- name: 🇯🇵 日本 (Japan) 09 - li007
+- name: 🇯🇵 日本 (Japan) 02 - li007
   server: 149.22.87.241
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 10 - li007
-  server: 57.129.130.200
-  port: 52014
+- name: 🇯🇵 日本 (Japan) 03 - li007
+  server: 149.22.87.240
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 04 - li007
+  server: 168.138.205.100
+  port: 53758
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: Bwlqh7GcFB
+- name: 🇯🇵 日本 (Japan) 05 - li007
+  server: 64.176.57.251
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: YKwDz3mFpT9vGcL8nBs5dHrA2sxM
+- name: 🇯🇵 日本 (Japan) 06 - li007
+  server: 158.101.151.157
+  port: 443
   udp: true
   type: vless
-  uuid: c8b0617e-010f-43a8-b3d0-d5358febf0c9
+  uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
+  flow: xtls-rprx-vision
   tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇯🇵 日本 (Japan) 11 - li007
-  server: 129.153.71.28
-  port: 28863
+  reality-opts:
+    public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
+    short-id: 684c7531e599dec0
+  servername: www.microsoft.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 07 - li007
+  server: 8.211.175.236
+  port: 8443
   udp: true
-  type: vless
-  uuid: 4f1f5604-a256-4432-a477-52c3dce7dded
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 12 - li007
-  server: 185.125.103.62
-  port: 8082
-  udp: true
-  type: vless
-  uuid: 0a27dc3c-4c39-497c-8753-92bff7a8e3a9
-  tls: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇯🇵 日本 (Japan) 13 - li007
-  server: 185.125.103.62
-  port: 8082
-  udp: true
-  type: vless
-  uuid: 3dbf58d7-53fc-4fad-8779-1c867e024fd0
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 14 - li007
-  server: 80.240.18.227
-  port: 10051
-  udp: true
-  type: vless
-  uuid: 73996ef7-544c-45e7-abc0-973218c727e2
-  tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇯🇵 日本 (Japan) 15 - li007
-  server: 37.120.222.70
-  port: 8082
-  udp: true
-  type: vless
-  uuid: f3481e31-2fe2-4545-89b6-e7b566699ba4
-  tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇯🇵 日本 (Japan) 16 - li007
-  server: 80.240.18.227
-  port: 10051
-  udp: true
-  type: vless
-  uuid: f4d859eb-abc6-4c57-9eee-8fe9e2ef0f94
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇯🇵 日本 (Japan) 17 - li007
-  server: 80.240.18.227
-  port: 10051
-  udp: true
-  type: vless
-  uuid: 711b6476-63fc-4f01-b4e0-d44e17d79383
-  tls: true
-  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
-- name: 🇯🇵 日本 (Japan) 18 - li007
-  server: 5.75.195.83
-  port: 56879
-  udp: true
-  type: vless
-  uuid: dc3a7f2f-90e0-49e8-b6d7-2a9938e6271a
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇯🇵 日本 (Japan) 19 - li007
-  server: 185.125.103.62
-  port: 8082
-  udp: true
-  type: vless
-  uuid: 72af1965-ec91-4376-82b1-75be51885506
-  tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇯🇵 日本 (Japan) 20 - li007
-  server: 178.105.133.160
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 93a35a9c-103d-493b-8445-2fd9760810a3
-  tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇯🇵 日本 (Japan) 21 - li007
-  server: 5.75.195.83
-  port: 56879
-  udp: true
-  type: vless
-  uuid: dc156965-e152-4df6-9743-9c1f38d82cf3
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇯🇵 日本 (Japan) 22 - li007
-  server: 178.105.133.160
-  port: 4443
-  udp: true
-  type: vless
-  uuid: c80b10b6-11e1-4f71-85e2-93bdccb367ef
-  tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇯🇵 日本 (Japan) 23 - li007
-  server: 5.75.195.83
-  port: 56879
-  udp: true
-  type: vless
-  uuid: 1520f8db-26d7-4fa0-b800-0db473e78f71
-  tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇯🇵 日本 (Japan) 24 - li007
-  server: 168.110.63.247
-  port: 8081
-  udp: true
-  type: vmess
-  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vless
-- name: 🇯🇵 日本 (Japan) 25 - li007
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: 8.211.175.236
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 08 - li007
   server: 103.75.118.228
   port: 11452
   udp: true
@@ -349,177 +73,7 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 26 - li007
-  server: 158.101.151.157
-  port: 443
-  udp: true
-  type: vless
-  uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
-    short-id: 684c7531e599dec0
-  servername: www.microsoft.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 27 - li007
-  server: 149.22.87.240
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 28 - li007
-  server: 147.45.42.73
-  port: 20443
-  udp: true
-  type: vless
-  uuid: f293db4d-7ab1-4faf-bb15-89540d8709cb
-  tls: true
-  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-- name: 🇯🇵 日本 (Japan) 29 - li007
-  server: 138.3.208.26
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: 138.3.208.26
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 30 - li007
-  server: 8.211.175.236
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: 8.211.175.236
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 31 - li007
-  server: 139.162.125.126
-  port: 443
-  udp: true
-  type: vless
-  uuid: eb6cf336-03bd-4dac-9f2a-3e456389279e
-  tls: true
-  reality-opts:
-    public-key: mMLchVbQzhQ2bGV6wkg1LP5Q7eqL2hCVHHMT0B03dwg
-    short-id: bd6e3e70
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 32 - li007
-  server: 172.105.197.24
-  port: 443
-  udp: true
-  type: vless
-  uuid: 81f4e114-5a60-41b5-9038-8d742380c84f
-  tls: true
-  reality-opts:
-    public-key: EfNOl6-YAuW-WSg7Op-1YOqKZV9emIuLwH8YPhzc7ms
-    short-id: 772bef67
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 33 - li007
-  server: 172.105.212.91
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1f08d52f-126e-46e3-929a-4b6a58e21168
-  tls: true
-  reality-opts:
-    public-key: jb8kqeM_3z0NW3huxWLD0ma2eUCFRsiwapF9I_O3Ei8
-    short-id: '17676229'
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 34 - li007
-  server: 139.162.101.74
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1e709d98-d4c3-45c1-bdcc-4268cf83eff8
-  tls: true
-  reality-opts:
-    public-key: jd8UNLpim43LVV-iEzIXlUgTVuvi9Pf7E0kgQb3o0CI
-    short-id: 7e1e09f4
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 35 - li007
-  server: 45.76.106.69
-  port: 443
-  udp: true
-  type: vless
-  uuid: db102c51-5f7f-4283-b9c1-942c5c6e2616
-  tls: true
-  reality-opts:
-    public-key: nZzY--8K_-mm8x4JDzkUFt1be1SQzriGIOmYkbpq1C8
-    short-id: 034f5d5a
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 36 - li007
-  server: 172.237.14.205
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4796e022-f377-4a97-bc03-fbf525d7913c
-  tls: true
-  reality-opts:
-    public-key: dllB1KTn7oiEqa6OlmZl-j2kF5GN9bAQeoBinYV2cUQ
-    short-id: da26e5a2
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 37 - li007
-  server: 172.104.86.181
-  port: 443
-  udp: true
-  type: vless
-  uuid: 010431f3-04f6-4404-a801-b93bf2e3c2b2
-  tls: true
-  reality-opts:
-    public-key: ujYDprigWFLxcj4BtitDNa-hoPjIbpSzrnEcqp3cgjk
-    short-id: c8559ca1
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 38 - li007
+- name: 🇯🇵 日本 (Japan) 09 - li007
   server: 139.162.89.151
   port: 443
   udp: true
@@ -536,75 +90,7 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 39 - li007
-  server: 139.162.91.200
-  port: 443
-  udp: true
-  type: vless
-  uuid: 847bdd83-9e2f-4708-81ed-729a2ca6eeec
-  tls: true
-  reality-opts:
-    public-key: -g20lzrrmgQb5wbq0vJ2OkZo_-j4KcFq_JDGVp5n_TQ
-    short-id: 7bae4b22
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 40 - li007
-  server: 172.105.203.15
-  port: 443
-  udp: true
-  type: vless
-  uuid: c8c9b995-b4b9-4915-9c7d-dee94aa733ba
-  tls: true
-  reality-opts:
-    public-key: HyAx05nhCz5mXxVxWXU1TrWRKdpYE0MHF4-V-LtyhTA
-    short-id: 0784b134
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 41 - li007
-  server: 45.77.8.233
-  port: 443
-  udp: true
-  type: vless
-  uuid: 242212a6-200b-4c09-b2e5-86a8dd490331
-  tls: true
-  reality-opts:
-    public-key: JSC_NT5_PEEbNCQIJjSSlpwkWWF94o0XAP3iboF6nlY
-    short-id: de193635
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 42 - li007
-  server: 139.162.91.137
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5e6575a1-459c-4077-ac3d-92dea966ad7c
-  tls: true
-  reality-opts:
-    public-key: 4LfX16VwHkHQzoZ04o2VnO85N1o_Y8OcoJwfYdfaIGw
-    short-id: 0c0c806b
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 43 - li007
+- name: 🇯🇵 日本 (Japan) 10 - li007
   server: 139.162.91.224
   port: 443
   udp: true
@@ -621,190 +107,7 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 44 - li007
-  server: 109.120.155.155
-  port: 444
-  udp: true
-  type: vless
-  uuid: 99ab6748-3d57-4562-9451-843c15960b9b
-  tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇯🇵 日本 (Japan) 45 - li007
-  server: 154.31.112.237
-  port: 26418
-  udp: true
-  type: vless
-  uuid: 77ac90fe-09fb-4b43-a177-d4309355351a
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇯🇵 日本 (Japan) 46 - li007
-  server: 154.31.112.237
-  port: 26418
-  udp: true
-  type: vless
-  uuid: c6132790-8a67-42e7-94fc-7a3fe651bb04
-  tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇯🇵 日本 (Japan) 47 - li007
-  server: 84.22.150.39
-  port: 7443
-  udp: true
-  type: vless
-  uuid: 9d5cbb90-876b-448d-9874-27ab35bae6e7
-  tls: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇯🇵 日本 (Japan) 48 - li007
-  server: 89.22.224.146
-  port: 43788
-  udp: true
-  type: vless
-  uuid: 6fbd9bd1-ccd4-4e2f-a918-a0f871965763
-  tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇯🇵 日本 (Japan) 49 - li007
-  server: 154.31.112.237
-  port: 26418
-  udp: true
-  type: vless
-  uuid: 1e61d1c5-383d-406f-9230-1edd3e9449c5
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇯🇵 日本 (Japan) 50 - li007
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: 980df025-74b9-4853-93e8-fb813006d7e5
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇯🇵 日本 (Japan) 51 - li007
-  server: 84.247.155.196
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 52 - li007
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: 9c7501fb-4e23-44d8-9a9e-973807ae4f35
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 53 - li007
-  server: 107.191.53.86
-  port: 4798
-  udp: true
-  type: vless
-  uuid: 51dfdf6f-4e83-4502-8cfb-29f4ae60f191
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristifp=chrome
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇯🇵 日本 (Japan) 54 - li007
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: 0985e268-5c1c-4141-9d96-139f8046c47c
-  tls: true
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-- name: 🇯🇵 日本 (Japan) 55 - li007
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: fb4c1c39-2204-43bb-853c-f8579a77feb4
-  tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇯🇵 日本 (Japan) 56 - li007
-  server: djj.zjlo.top
-  port: 23169
-  udp: true
-  type: vless
-  uuid: 7318caa1-93d1-4a9d-c481-504599902700
-  flow: xtls-rprx-vision
-  tls: true
-  servername: djj.zjlo.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 57 - li007
+- name: 🇯🇵 日本 (Japan) 11 - li007
   server: 45.76.222.108
   port: 443
   udp: true
@@ -821,308 +124,209 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 58 - li007
-  server: 45.77.241.190
-  port: 8441
+- name: 🇯🇵 日本 (Japan) 12 - li007
+  server: 172.105.212.91
+  port: 443
   udp: true
   type: vless
-  uuid: 66b076d4-519d-4b05-872e-d0366d15bace
+  uuid: 1f08d52f-126e-46e3-929a-4b6a58e21168
   tls: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: false
+  reality-opts:
+    public-key: jb8kqeM_3z0NW3huxWLD0ma2eUCFRsiwapF9I_O3Ei8
+    short-id: '17676229'
+  servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /ws
     headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇯🇵 日本 (Japan) 59 - li007
-  server: 142.91.101.39
-  port: 627
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 13 - li007
+  server: 139.162.101.74
+  port: 443
   udp: true
   type: vless
-  uuid: aff1ffd0-594c-44c9-9f79-4096fde005ea
+  uuid: 1e709d98-d4c3-45c1-bdcc-4268cf83eff8
   tls: true
-  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-  skip-cert-verify: false
+  reality-opts:
+    public-key: jd8UNLpim43LVV-iEzIXlUgTVuvi9Pf7E0kgQb3o0CI
+    short-id: 7e1e09f4
+  servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /ws
     headers:
-      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-- name: 🇯🇵 日本 (Japan) 60 - li007
-  server: 142.91.101.39
-  port: 627
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 14 - li007
+  server: 45.77.8.233
+  port: 443
   udp: true
   type: vless
-  uuid: e27ffb19-314e-449b-ac9b-44b28cf50ef5
+  uuid: 242212a6-200b-4c09-b2e5-86a8dd490331
   tls: true
-  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-  skip-cert-verify: false
+  reality-opts:
+    public-key: JSC_NT5_PEEbNCQIJjSSlpwkWWF94o0XAP3iboF6nlY
+    short-id: de193635
+  servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /ws
     headers:
-      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-- name: 🇯🇵 日本 (Japan) 61 - li007
-  server: 142.91.101.39
-  port: 627
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 15 - li007
+  server: 172.105.197.24
+  port: 443
   udp: true
   type: vless
-  uuid: 17701bb3-3edc-4087-8b2f-c7b2066a4318
+  uuid: 81f4e114-5a60-41b5-9038-8d742380c84f
   tls: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: false
+  reality-opts:
+    public-key: EfNOl6-YAuW-WSg7Op-1YOqKZV9emIuLwH8YPhzc7ms
+    short-id: 772bef67
+  servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /ws
     headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇯🇵 日本 (Japan) 62 - li007
-  server: 45.77.241.190
-  port: 8441
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 16 - li007
+  server: 139.162.91.137
+  port: 443
   udp: true
   type: vless
-  uuid: c6e09f95-bf02-4854-bcba-7a977a0f8ecd
+  uuid: 5e6575a1-459c-4077-ac3d-92dea966ad7c
   tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  skip-cert-verify: false
+  reality-opts:
+    public-key: 4LfX16VwHkHQzoZ04o2VnO85N1o_Y8OcoJwfYdfaIGw
+    short-id: 0c0c806b
+  servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /ws
     headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇯🇵 日本 (Japan) 63 - li007
-  server: 142.91.101.39
-  port: 627
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 17 - li007
+  server: 172.105.203.15
+  port: 443
   udp: true
   type: vless
-  uuid: f46b1020-5a7c-49d7-9b0f-d9a9f3c3b22e
+  uuid: c8c9b995-b4b9-4915-9c7d-dee94aa733ba
   tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
+  reality-opts:
+    public-key: HyAx05nhCz5mXxVxWXU1TrWRKdpYE0MHF4-V-LtyhTA
+    short-id: 0784b134
+  servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /ws
     headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇯🇵 日本 (Japan) 64 - li007
-  server: 142.91.101.39
-  port: 627
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 18 - li007
+  server: 172.237.14.205
+  port: 443
   udp: true
   type: vless
-  uuid: a32f3ec6-d776-450e-9d97-9e2deb6c8421
+  uuid: 4796e022-f377-4a97-bc03-fbf525d7913c
   tls: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-  skip-cert-verify: false
+  reality-opts:
+    public-key: dllB1KTn7oiEqa6OlmZl-j2kF5GN9bAQeoBinYV2cUQ
+    short-id: da26e5a2
+  servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /ws
     headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-- name: 🇯🇵 日本 (Japan) 65 - li007
-  server: 142.91.101.39
-  port: 627
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 19 - li007
+  server: 172.104.86.181
+  port: 443
   udp: true
   type: vless
-  uuid: 30b40928-f431-4c83-bfed-44f1243d16ff
+  uuid: 010431f3-04f6-4404-a801-b93bf2e3c2b2
   tls: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-  skip-cert-verify: false
+  reality-opts:
+    public-key: ujYDprigWFLxcj4BtitDNa-hoPjIbpSzrnEcqp3cgjk
+    short-id: c8559ca1
+  servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /ws
     headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-- name: 🇯🇵 日本 (Japan) 66 - li007
-  server: 142.91.101.39
-  port: 627
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 20 - li007
+  server: 45.76.106.69
+  port: 443
   udp: true
   type: vless
-  uuid: 3f87daa8-3af8-40a0-b655-127911e008dc
+  uuid: db102c51-5f7f-4283-b9c1-942c5c6e2616
   tls: true
-  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-  skip-cert-verify: false
+  reality-opts:
+    public-key: nZzY--8K_-mm8x4JDzkUFt1be1SQzriGIOmYkbpq1C8
+    short-id: 034f5d5a
+  servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /ws
     headers:
-      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-- name: 🇯🇵 日本 (Japan) 67 - li007
-  server: 142.91.101.39
-  port: 627
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 21 - li007
+  server: 139.162.91.200
+  port: 443
   udp: true
   type: vless
-  uuid: 2949e720-4588-4edc-8642-ff2b7b368c78
+  uuid: 847bdd83-9e2f-4708-81ed-729a2ca6eeec
   tls: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-  skip-cert-verify: false
+  reality-opts:
+    public-key: -g20lzrrmgQb5wbq0vJ2OkZo_-j4KcFq_JDGVp5n_TQ
+    short-id: 7bae4b22
+  servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /ws
     headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-- name: 🇯🇵 日本 (Japan) 68 - li007
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 22 - li007
+  server: 139.162.125.126
+  port: 443
+  udp: true
+  type: vless
+  uuid: eb6cf336-03bd-4dac-9f2a-3e456389279e
+  tls: true
+  reality-opts:
+    public-key: mMLchVbQzhQ2bGV6wkg1LP5Q7eqL2hCVHHMT0B03dwg
+    short-id: bd6e3e70
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 23 - li007
   server: 84.247.155.196
   port: 443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 69 - li007
-  server: 142.91.101.39
-  port: 627
+- name: 🇯🇵 日本 (Japan) 24 - li007
+  server: 84.247.155.196
+  port: 80
   udp: true
-  type: vless
-  uuid: 796a9d06-1dca-4729-88cb-7c3e36153e84
-  tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇯🇵 日本 (Japan) 70 - li007
-  server: 142.91.101.39
-  port: 627
-  udp: true
-  type: vless
-  uuid: 23b385cf-02c3-4df8-8402-11f1916418cd
-  tls: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-- name: 🇯🇵 日本 (Japan) 71 - li007
-  server: 142.91.101.39
-  port: 627
-  udp: true
-  type: vless
-  uuid: 50f7f0fe-32be-4d5a-9432-095160ff7775
-  tls: true
-  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-- name: 🇯🇵 日本 (Japan) 72 - li007
-  server: 142.91.101.39
-  port: 627
-  udp: true
-  type: vless
-  uuid: 8199228b-e84b-42a2-9268-e400391e483a
-  tls: true
-  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-- name: 🇯🇵 日本 (Japan) 73 - li007
-  server: 172.105.241.119
-  port: 1916
-  udp: true
-  type: vless
-  uuid: df54bb48-921e-446a-9b10-1a2a0bef680b
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇯🇵 日本 (Japan) 74 - li007
-  server: 172.105.241.119
-  port: 1916
-  udp: true
-  type: vless
-  uuid: e121912d-2931-4326-a7f8-2c1db8376b18
-  tls: true
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-- name: 🇯🇵 日本 (Japan) 75 - li007
-  server: 172.105.241.119
-  port: 1916
-  udp: true
-  type: vless
-  uuid: bb5988f1-7e0a-4b6d-acdf-aac2a47d5dd4
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇯🇵 日本 (Japan) 76 - li007
-  server: 172.105.241.119
-  port: 1916
-  udp: true
-  type: vless
-  uuid: a245b092-9209-4aa5-800b-42030cee376d
-  tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇯🇵 日本 (Japan) 77 - li007
-  server: 172.105.241.119
-  port: 1916
-  udp: true
-  type: vless
-  uuid: 60dad3e5-86b7-437b-b42b-64e882955132
-  tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇯🇵 日本 (Japan) 78 - li007
-  server: 193.123.160.109
-  port: 8443
-  udp: true
-  type: trojan
-  password: F3NzMNuYnG7akU2mSlBY
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 79 - li007
-  server: 104.19.164.155
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 25 - li007
+  server: 104.16.10.185
   port: 443
   udp: true
   type: vless
@@ -1130,45 +334,24 @@ proxies:
   tls: true
   servername: jp3.yohototo.top
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 80 - li007
-  server: 168.138.43.75
-  port: 80
+- name: 🇯🇵 日本 (Japan) 26 - li007
+  server: 168.110.63.247
+  port: 8081
   udp: true
   type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
-    path: /cctv13.m3u8
-- name: 🇯🇵 日本 (Japan) 81 - li007
-  server: 162.159.130.234
-  port: 2083
-  udp: true
-  type: vmess
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: cdn.sfacg.uk
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or3.sfacg.uk
-- name: 🇯🇵 日本 (Japan) 82 - li007
-  server: 168.110.21.56
-  port: 18453
-  udp: true
-  type: vless
-  uuid: 1751bebc-1bf1-420c-8b9d-97157aad179b
-- name: 🇯🇵 日本 (Japan) 83 - li007
+    path: /vless
+- name: 🇯🇵 日本 (Japan) 27 - li007
   server: 155.248.175.201
   port: 23169
   udp: true
@@ -1179,6 +362,27 @@ proxies:
   servername: djj.zjlo.top
   skip-cert-verify: true
   client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 28 - li007
+  server: jpa.123069.xyz
+  port: 53758
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: Bwlqh7GcFB
+- name: 🇯🇵 日本 (Japan) 29 - li007
+  server: jpa.123069.xyz
+  port: 53758
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: Bwlqh7GcFB
+- name: 🇯🇵 日本 (Japan) 30 - li007
+  server: jpa.123069.xyz
+  port: 53758
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: Bwlqh7GcFB
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1214,59 +418,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 28 - li007
   - 🇯🇵 日本 (Japan) 29 - li007
   - 🇯🇵 日本 (Japan) 30 - li007
-  - 🇯🇵 日本 (Japan) 31 - li007
-  - 🇯🇵 日本 (Japan) 32 - li007
-  - 🇯🇵 日本 (Japan) 33 - li007
-  - 🇯🇵 日本 (Japan) 34 - li007
-  - 🇯🇵 日本 (Japan) 35 - li007
-  - 🇯🇵 日本 (Japan) 36 - li007
-  - 🇯🇵 日本 (Japan) 37 - li007
-  - 🇯🇵 日本 (Japan) 38 - li007
-  - 🇯🇵 日本 (Japan) 39 - li007
-  - 🇯🇵 日本 (Japan) 40 - li007
-  - 🇯🇵 日本 (Japan) 41 - li007
-  - 🇯🇵 日本 (Japan) 42 - li007
-  - 🇯🇵 日本 (Japan) 43 - li007
-  - 🇯🇵 日本 (Japan) 44 - li007
-  - 🇯🇵 日本 (Japan) 45 - li007
-  - 🇯🇵 日本 (Japan) 46 - li007
-  - 🇯🇵 日本 (Japan) 47 - li007
-  - 🇯🇵 日本 (Japan) 48 - li007
-  - 🇯🇵 日本 (Japan) 49 - li007
-  - 🇯🇵 日本 (Japan) 50 - li007
-  - 🇯🇵 日本 (Japan) 51 - li007
-  - 🇯🇵 日本 (Japan) 52 - li007
-  - 🇯🇵 日本 (Japan) 53 - li007
-  - 🇯🇵 日本 (Japan) 54 - li007
-  - 🇯🇵 日本 (Japan) 55 - li007
-  - 🇯🇵 日本 (Japan) 56 - li007
-  - 🇯🇵 日本 (Japan) 57 - li007
-  - 🇯🇵 日本 (Japan) 58 - li007
-  - 🇯🇵 日本 (Japan) 59 - li007
-  - 🇯🇵 日本 (Japan) 60 - li007
-  - 🇯🇵 日本 (Japan) 61 - li007
-  - 🇯🇵 日本 (Japan) 62 - li007
-  - 🇯🇵 日本 (Japan) 63 - li007
-  - 🇯🇵 日本 (Japan) 64 - li007
-  - 🇯🇵 日本 (Japan) 65 - li007
-  - 🇯🇵 日本 (Japan) 66 - li007
-  - 🇯🇵 日本 (Japan) 67 - li007
-  - 🇯🇵 日本 (Japan) 68 - li007
-  - 🇯🇵 日本 (Japan) 69 - li007
-  - 🇯🇵 日本 (Japan) 70 - li007
-  - 🇯🇵 日本 (Japan) 71 - li007
-  - 🇯🇵 日本 (Japan) 72 - li007
-  - 🇯🇵 日本 (Japan) 73 - li007
-  - 🇯🇵 日本 (Japan) 74 - li007
-  - 🇯🇵 日本 (Japan) 75 - li007
-  - 🇯🇵 日本 (Japan) 76 - li007
-  - 🇯🇵 日本 (Japan) 77 - li007
-  - 🇯🇵 日本 (Japan) 78 - li007
-  - 🇯🇵 日本 (Japan) 79 - li007
-  - 🇯🇵 日本 (Japan) 80 - li007
-  - 🇯🇵 日本 (Japan) 81 - li007
-  - 🇯🇵 日本 (Japan) 82 - li007
-  - 🇯🇵 日本 (Japan) 83 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -1302,58 +453,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 28 - li007
   - 🇯🇵 日本 (Japan) 29 - li007
   - 🇯🇵 日本 (Japan) 30 - li007
-  - 🇯🇵 日本 (Japan) 31 - li007
-  - 🇯🇵 日本 (Japan) 32 - li007
-  - 🇯🇵 日本 (Japan) 33 - li007
-  - 🇯🇵 日本 (Japan) 34 - li007
-  - 🇯🇵 日本 (Japan) 35 - li007
-  - 🇯🇵 日本 (Japan) 36 - li007
-  - 🇯🇵 日本 (Japan) 37 - li007
-  - 🇯🇵 日本 (Japan) 38 - li007
-  - 🇯🇵 日本 (Japan) 39 - li007
-  - 🇯🇵 日本 (Japan) 40 - li007
-  - 🇯🇵 日本 (Japan) 41 - li007
-  - 🇯🇵 日本 (Japan) 42 - li007
-  - 🇯🇵 日本 (Japan) 43 - li007
-  - 🇯🇵 日本 (Japan) 44 - li007
-  - 🇯🇵 日本 (Japan) 45 - li007
-  - 🇯🇵 日本 (Japan) 46 - li007
-  - 🇯🇵 日本 (Japan) 47 - li007
-  - 🇯🇵 日本 (Japan) 48 - li007
-  - 🇯🇵 日本 (Japan) 49 - li007
-  - 🇯🇵 日本 (Japan) 50 - li007
-  - 🇯🇵 日本 (Japan) 51 - li007
-  - 🇯🇵 日本 (Japan) 52 - li007
-  - 🇯🇵 日本 (Japan) 53 - li007
-  - 🇯🇵 日本 (Japan) 54 - li007
-  - 🇯🇵 日本 (Japan) 55 - li007
-  - 🇯🇵 日本 (Japan) 56 - li007
-  - 🇯🇵 日本 (Japan) 57 - li007
-  - 🇯🇵 日本 (Japan) 58 - li007
-  - 🇯🇵 日本 (Japan) 59 - li007
-  - 🇯🇵 日本 (Japan) 60 - li007
-  - 🇯🇵 日本 (Japan) 61 - li007
-  - 🇯🇵 日本 (Japan) 62 - li007
-  - 🇯🇵 日本 (Japan) 63 - li007
-  - 🇯🇵 日本 (Japan) 64 - li007
-  - 🇯🇵 日本 (Japan) 65 - li007
-  - 🇯🇵 日本 (Japan) 66 - li007
-  - 🇯🇵 日本 (Japan) 67 - li007
-  - 🇯🇵 日本 (Japan) 68 - li007
-  - 🇯🇵 日本 (Japan) 69 - li007
-  - 🇯🇵 日本 (Japan) 70 - li007
-  - 🇯🇵 日本 (Japan) 71 - li007
-  - 🇯🇵 日本 (Japan) 72 - li007
-  - 🇯🇵 日本 (Japan) 73 - li007
-  - 🇯🇵 日本 (Japan) 74 - li007
-  - 🇯🇵 日本 (Japan) 75 - li007
-  - 🇯🇵 日本 (Japan) 76 - li007
-  - 🇯🇵 日本 (Japan) 77 - li007
-  - 🇯🇵 日本 (Japan) 78 - li007
-  - 🇯🇵 日本 (Japan) 79 - li007
-  - 🇯🇵 日本 (Japan) 80 - li007
-  - 🇯🇵 日本 (Japan) 81 - li007
-  - 🇯🇵 日本 (Japan) 82 - li007
-  - 🇯🇵 日本 (Japan) 83 - li007
 rules:
 - MATCH,PROXIES

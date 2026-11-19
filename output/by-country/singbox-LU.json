@@ -4,15 +4,18 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - li007",
-      "server": "104.21.23.29",
-      "server_port": 443,
-      "uuid": "48eb716d-6121-43c1-9dd2-9a2a25bf3178",
+      "type": "trojan",
+      "tag": "🇱🇺 卢森堡 (Luxembourg) 01 - li007",
+      "server": "193.57.88.100",
+      "server_port": 16200,
+      "password": "4mq9w5ckqw3ewbdg",
       "tls": {
         "enabled": true,
-        "server_name": "ws137.mydosss.ccwu.cc",
+        "server_name": "staticxfastline.taymaztest.ir",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -20,9 +23,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/3b575ddc8596",
+        "path": "/biyasd",
         "headers": {
-          "Host": "ws137.mydosss.ccwu.cc"
+          "Host": "staticxfastline.taymaztest.ir"
         }
       }
     },
@@ -31,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - li007"
+        "🇱🇺 卢森堡 (Luxembourg) 01 - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - li007"
+        "🇱🇺 卢森堡 (Luxembourg) 01 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
