@@ -6,46 +6,46 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - li007
   server: 217.30.10.44
-  port: 9099
+  port: 9042
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 7heRqkPG3hg4UnRm
+  password: S7KwUu7yBy58S3Ga
 - name: 🇵🇱 波兰 (Poland) 02 - li007
-  server: 217.30.10.44
-  port: 9071
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mENfxTFQpRKKh4As
-- name: 🇵🇱 波兰 (Poland) 03 - li007
   server: 217.30.10.44
   port: 9063
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: aQqJbtwFGcCCaeL3
-- name: 🇵🇱 波兰 (Poland) 04 - li007
-  server: 217.30.10.70
-  port: 9098
+- name: 🇵🇱 波兰 (Poland) 03 - li007
+  server: 217.30.10.44
+  port: 9071
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: aLpQtfEZe445QyHk
+  password: mENfxTFQpRKKh4As
+- name: 🇵🇱 波兰 (Poland) 04 - li007
+  server: 217.30.10.44
+  port: 9006
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: FAdUvMJUq5vDgKEq
 - name: 🇵🇱 波兰 (Poland) 05 - li007
+  server: 217.30.10.70
+  port: 9059
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9XwYyZsK8SNzQDtY
+- name: 🇵🇱 波兰 (Poland) 06 - li007
   server: 217.30.10.44
   port: 9095
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: N7j3pdTYkKmsy8CR
-- name: 🇵🇱 波兰 (Poland) 06 - li007
-  server: 217.30.10.44
-  port: 9076
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: S2zDyyPcmZN2h8EC
 - name: 🇵🇱 波兰 (Poland) 07 - li007
   server: 217.30.10.44
   port: 9052
@@ -55,24 +55,12 @@ proxies:
   password: jt2ekBNc9HuVtm2a
 - name: 🇵🇱 波兰 (Poland) 08 - li007
   server: 217.30.10.70
-  port: 9005
+  port: 9057
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: ZET59LF6DvCC8KVt
+  password: wjTugX3ZtHMB9c3Z
 - name: 🇵🇱 波兰 (Poland) 09 - li007
-  server: 80.47.10.106
-  port: 443
-  udp: true
-  type: vless
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  tls: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: a7c92e4b10d6f835
-  servername: pl8.galioncc.com
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 10 - li007
   server: 54.37.131.126
   port: 80
   udp: true
@@ -85,18 +73,17 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 11 - li007
-  server: pl.galacticworld.online
+- name: 🇵🇱 波兰 (Poland) 10 - li007
+  server: 45.194.66.177
   port: 443
   udp: true
   type: vless
-  uuid: ecc0e60a-f2cc-4266-8353-b228df89730a
+  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4
-  servername: pl.galacticworld.online
-  client-fingerprint: qq
+  servername: 31tawwo0.virtual-network.lol
+  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -112,7 +99,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 08 - li007
   - 🇵🇱 波兰 (Poland) 09 - li007
   - 🇵🇱 波兰 (Poland) 10 - li007
-  - 🇵🇱 波兰 (Poland) 11 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -128,6 +114,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 08 - li007
   - 🇵🇱 波兰 (Poland) 09 - li007
   - 🇵🇱 波兰 (Poland) 10 - li007
-  - 🇵🇱 波兰 (Poland) 11 - li007
 rules:
 - MATCH,PROXIES
