@@ -22,7 +22,7 @@
         "server_name": "api-svc-mgr.galioncc.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -32,12 +32,18 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - li007",
-      "server": "creator.morteza1388m1122.ir",
-      "server_port": 29206,
-      "method": "chacha20-ietf-poly1305",
-      "password": "fQUUCljoCc"
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
+      }
     },
     {
       "type": "vmess",
@@ -66,28 +72,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - li007",
-      "server": "95.143.196.97",
-      "server_port": 443,
-      "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
-      "tls": {
-        "enabled": true,
-        "server_name": "connect-se.mimowhat.online",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 - li007",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - li007",
       "server": "138.124.86.230",
       "server_port": 48115,
       "uuid": "b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b",
@@ -106,39 +92,22 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 08 - li007",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 09 - li007",
-      "server": "92.223.84.254",
+      "type": "trojan",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 - li007",
+      "server": "95.143.196.97",
       "server_port": 443,
-      "uuid": "740b2630-b42d-425c-bacd-37e7e30d78f1",
+      "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
       "tls": {
         "enabled": true,
-        "server_name": "subgift.gcorecdn.com",
+        "server_name": "connect-se.mimowhat.online",
         "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/t.me-SubGift",
-        "headers": {
-          "Host": "subgift.gcorecdn.com"
+          "fingerprint": "chrome"
         }
       }
     },
@@ -153,9 +122,7 @@
         "🇸🇪 瑞典 (Sweden) 04 - li007",
         "🇸🇪 瑞典 (Sweden) 05 - li007",
         "🇸🇪 瑞典 (Sweden) 06 - li007",
-        "🇸🇪 瑞典 (Sweden) 07 - li007",
-        "🇸🇪 瑞典 (Sweden) 08 - li007",
-        "🇸🇪 瑞典 (Sweden) 09 - li007"
+        "🇸🇪 瑞典 (Sweden) 07 - li007"
       ]
     },
     {
@@ -168,9 +135,7 @@
         "🇸🇪 瑞典 (Sweden) 04 - li007",
         "🇸🇪 瑞典 (Sweden) 05 - li007",
         "🇸🇪 瑞典 (Sweden) 06 - li007",
-        "🇸🇪 瑞典 (Sweden) 07 - li007",
-        "🇸🇪 瑞典 (Sweden) 08 - li007",
-        "🇸🇪 瑞典 (Sweden) 09 - li007"
+        "🇸🇪 瑞典 (Sweden) 07 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

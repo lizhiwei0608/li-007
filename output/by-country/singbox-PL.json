@@ -7,17 +7,17 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 - li007",
       "server": "217.30.10.44",
-      "server_port": 9042,
+      "server_port": 9006,
       "method": "aes-256-cfb",
-      "password": "S7KwUu7yBy58S3Ga"
+      "password": "FAdUvMJUq5vDgKEq"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 02 - li007",
       "server": "217.30.10.44",
-      "server_port": 9063,
+      "server_port": 9052,
       "method": "aes-256-cfb",
-      "password": "aQqJbtwFGcCCaeL3"
+      "password": "jt2ekBNc9HuVtm2a"
     },
     {
       "type": "shadowsocks",
@@ -31,41 +31,57 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 04 - li007",
       "server": "217.30.10.44",
-      "server_port": 9006,
+      "server_port": 9099,
       "method": "aes-256-cfb",
-      "password": "FAdUvMJUq5vDgKEq"
+      "password": "7heRqkPG3hg4UnRm"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 05 - li007",
-      "server": "217.30.10.70",
-      "server_port": 9059,
+      "server": "217.30.10.44",
+      "server_port": 9062,
       "method": "aes-256-cfb",
-      "password": "9XwYyZsK8SNzQDtY"
+      "password": "tkhHVxxfM2QErBWe"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 06 - li007",
       "server": "217.30.10.44",
-      "server_port": 9095,
+      "server_port": 9076,
       "method": "aes-256-cfb",
-      "password": "N7j3pdTYkKmsy8CR"
+      "password": "S2zDyyPcmZN2h8EC"
     },
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇵🇱 波兰 (Poland) 07 - li007",
-      "server": "217.30.10.44",
-      "server_port": 9052,
-      "method": "aes-256-cfb",
-      "password": "jt2ekBNc9HuVtm2a"
+      "server": "82.40.63.138",
+      "server_port": 443,
+      "password": "ca60984f-b1f0-4073-bd33-4c75168f749a",
+      "tls": {
+        "enabled": true,
+        "server_name": "kraw-pl-4.fantoff.online",
+        "insecure": true
+      }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 08 - li007",
-      "server": "217.30.10.70",
-      "server_port": 9057,
-      "method": "aes-256-cfb",
-      "password": "wjTugX3ZtHMB9c3Z"
+      "server": "143.246.41.214",
+      "server_port": 443,
+      "uuid": "be146d46-ae50-4691-838c-b6c87dbaec8f",
+      "tls": {
+        "enabled": true,
+        "server_name": "702e56t.pl5.h1clayd.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8OI8rEgAiWxH-cG03xgzuz7XTFHrbA1MY9HnPHcgSUA",
+          "short_id": "1d5ac21e988c571f"
+        }
+      }
     },
     {
       "type": "vmess",
@@ -83,23 +99,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 10 - li007",
-      "server": "45.194.66.177",
-      "server_port": 443,
-      "uuid": "352a250d-080b-47b5-b7db-f9f8fa31c551",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "31tawwo0.virtual-network.lol",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -112,8 +111,7 @@
         "🇵🇱 波兰 (Poland) 06 - li007",
         "🇵🇱 波兰 (Poland) 07 - li007",
         "🇵🇱 波兰 (Poland) 08 - li007",
-        "🇵🇱 波兰 (Poland) 09 - li007",
-        "🇵🇱 波兰 (Poland) 10 - li007"
+        "🇵🇱 波兰 (Poland) 09 - li007"
       ]
     },
     {
@@ -128,8 +126,7 @@
         "🇵🇱 波兰 (Poland) 06 - li007",
         "🇵🇱 波兰 (Poland) 07 - li007",
         "🇵🇱 波兰 (Poland) 08 - li007",
-        "🇵🇱 波兰 (Poland) 09 - li007",
-        "🇵🇱 波兰 (Poland) 10 - li007"
+        "🇵🇱 波兰 (Poland) 09 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -22,14 +22,18 @@ proxies:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
     short-id: a7c92e4b10d6f835
   servername: api-svc-mgr.galioncc.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇸🇪 瑞典 (Sweden) 03 - li007
-  server: creator.morteza1388m1122.ir
-  port: 29206
+  server: 5.178.109.174
+  port: 14430
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: fQUUCljoCc
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 04 - li007
   server: 62.93.166.184
   port: 1270
@@ -53,14 +57,6 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 06 - li007
-  server: 95.143.196.97
-  port: 443
-  udp: true
-  type: trojan
-  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
-  sni: connect-se.mimowhat.online
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 07 - li007
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -73,32 +69,14 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 08 - li007
-  server: 5.178.109.174
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 09 - li007
-  server: 92.223.84.254
+- name: 🇸🇪 瑞典 (Sweden) 07 - li007
+  server: 95.143.196.97
   port: 443
   udp: true
-  type: vless
-  uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
-  tls: true
-  servername: subgift.gcorecdn.com
+  type: trojan
+  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
+  sni: connect-se.mimowhat.online
   skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /t.me-SubGift
-    headers:
-      Host: subgift.gcorecdn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -111,8 +89,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 05 - li007
   - 🇸🇪 瑞典 (Sweden) 06 - li007
   - 🇸🇪 瑞典 (Sweden) 07 - li007
-  - 🇸🇪 瑞典 (Sweden) 08 - li007
-  - 🇸🇪 瑞典 (Sweden) 09 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -125,7 +101,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 05 - li007
   - 🇸🇪 瑞典 (Sweden) 06 - li007
   - 🇸🇪 瑞典 (Sweden) 07 - li007
-  - 🇸🇪 瑞典 (Sweden) 08 - li007
-  - 🇸🇪 瑞典 (Sweden) 09 - li007
 rules:
 - MATCH,PROXIES

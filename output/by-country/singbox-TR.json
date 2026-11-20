@@ -6,13 +6,6 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - li007",
-      "server": "87.76.154.28",
-      "server_port": 57231,
-      "uuid": "c34a41b6-598f-46ac-bea3-8b39a906f922"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - li007",
       "server": "77.83.245.79",
       "server_port": 443,
       "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
@@ -32,16 +25,28 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - li007",
-      "server": "tr.subscriptionservice.ir",
-      "server_port": 2089,
-      "method": "chacha20-ietf-poly1305",
-      "password": "lZZzfo1mqH7PqnloAogdi2XBhlgiofMy"
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - li007",
+      "server": "198.105.123.253",
+      "server_port": 2058,
+      "uuid": "83be8a03-cbed-4fca-8403-37fc21793159",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "Tx1.qoqnusradio.top",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - li007",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - li007",
       "server": "185.246.155.91",
       "server_port": 10103,
       "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
@@ -61,6 +66,34 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - li007",
+      "server": "185.71.216.95",
+      "server_port": 2194,
+      "uuid": "128bd8ad-4f6c-4d70-af13-15a2cec331d2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs",
+          "short_id": "55986a94e2228791"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - li007",
+      "server": "87.76.154.28",
+      "server_port": 57231,
+      "uuid": "c34a41b6-598f-46ac-bea3-8b39a906f922"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -68,7 +101,8 @@
         "🇹🇷 土耳其 (Turkey) 01 - li007",
         "🇹🇷 土耳其 (Turkey) 02 - li007",
         "🇹🇷 土耳其 (Turkey) 03 - li007",
-        "🇹🇷 土耳其 (Turkey) 04 - li007"
+        "🇹🇷 土耳其 (Turkey) 04 - li007",
+        "🇹🇷 土耳其 (Turkey) 05 - li007"
       ]
     },
     {
@@ -78,7 +112,8 @@
         "🇹🇷 土耳其 (Turkey) 01 - li007",
         "🇹🇷 土耳其 (Turkey) 02 - li007",
         "🇹🇷 土耳其 (Turkey) 03 - li007",
-        "🇹🇷 土耳其 (Turkey) 04 - li007"
+        "🇹🇷 土耳其 (Turkey) 04 - li007",
+        "🇹🇷 土耳其 (Turkey) 05 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
