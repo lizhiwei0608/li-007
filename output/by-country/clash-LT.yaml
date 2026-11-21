@@ -5,33 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - li007
-  server: 195.238.126.84
-  port: 9039
+  server: 195.238.126.20
+  port: 9001
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: qYEN5HX4JKeVCdEC
+  password: UkXRsXvR6buDMG2Y
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - li007
   server: 195.238.126.20
-  port: 9012
+  port: 9011
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
+  password: M3t2ZEQcMGRWBjRa
 - name: 🇱🇹 立陶宛 (Lithuania) 03 - li007
-  server: 195.238.126.20
-  port: 9086
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - li007
   server: 195.238.126.20
   port: 9068
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: mwgRg9hRq3b4Qnwb
+- name: 🇱🇹 立陶宛 (Lithuania) 04 - li007
+  server: 195.238.126.84
+  port: 9039
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qYEN5HX4JKeVCdEC
 - name: 🇱🇹 立陶宛 (Lithuania) 05 - li007
   server: 195.238.126.20
   port: 9045
@@ -41,37 +41,35 @@ proxies:
   password: Lp27rqyJq72bZsqX
 - name: 🇱🇹 立陶宛 (Lithuania) 06 - li007
   server: 195.238.126.20
-  port: 9011
+  port: 9078
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
+  password: JCJpbRbQZNw9XFZG
 - name: 🇱🇹 立陶宛 (Lithuania) 07 - li007
-  server: 94.183.234.245
-  port: 443
+  server: 195.238.126.20
+  port: 9002
   udp: true
-  type: vless
-  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
-    short-id: 7f1e29593aa94ad1
-  servername: www.bing.com
-  client-fingerprint: qq
+  type: ss
+  cipher: aes-256-cfb
+  password: b8KkNDjEd5QqFyRm
 - name: 🇱🇹 立陶宛 (Lithuania) 08 - li007
-  server: 87.228.101.3
-  port: 443
+  server: 195.238.126.20
+  port: 9008
   udp: true
-  type: vless
-  uuid: a71d6c6d-c95e-4ec1-a892-22e21733bf09
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Rw_ypcQ3am5gspVW2PegJBm3fszjCIj8JYHvSAUPBkY
-    short-id: 50c987749602bcb5
-  servername: www.vk.com
-  client-fingerprint: firefox
+  type: ss
+  cipher: aes-256-cfb
+  password: y9VURyNzJWNRYEGQ
+- name: 🇱🇹 立陶宛 (Lithuania) 09 - li007
+  server: 46.8.210.33
+  port: 8446
+  udp: true
+  type: hysteria2
+  password: b7941807-1f4d-4bda-a878-92d708b84494
+  sni: litelitvalitter.rooferz.surf
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: nTm4oBa6QCpWoAFDVtF6mpMpfMfN8CM6
 proxy-groups:
 - name: PROXIES
   type: select
@@ -85,6 +83,7 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 06 - li007
   - 🇱🇹 立陶宛 (Lithuania) 07 - li007
   - 🇱🇹 立陶宛 (Lithuania) 08 - li007
+  - 🇱🇹 立陶宛 (Lithuania) 09 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -98,5 +97,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 06 - li007
   - 🇱🇹 立陶宛 (Lithuania) 07 - li007
   - 🇱🇹 立陶宛 (Lithuania) 08 - li007
+  - 🇱🇹 立陶宛 (Lithuania) 09 - li007
 rules:
 - MATCH,PROXIES
