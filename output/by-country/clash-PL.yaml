@@ -6,25 +6,25 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - li007
   server: 217.30.10.44
-  port: 9042
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: S7KwUu7yBy58S3Ga
-- name: 🇵🇱 波兰 (Poland) 02 - li007
-  server: 217.30.10.44
   port: 9071
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: mENfxTFQpRKKh4As
-- name: 🇵🇱 波兰 (Poland) 03 - li007
-  server: 217.30.10.44
-  port: 9095
+- name: 🇵🇱 波兰 (Poland) 02 - li007
+  server: 217.30.10.70
+  port: 9098
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: N7j3pdTYkKmsy8CR
+  password: aLpQtfEZe445QyHk
+- name: 🇵🇱 波兰 (Poland) 03 - li007
+  server: 217.30.10.44
+  port: 9099
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 7heRqkPG3hg4UnRm
 - name: 🇵🇱 波兰 (Poland) 04 - li007
   server: 217.30.10.44
   port: 9063
@@ -33,55 +33,76 @@ proxies:
   cipher: aes-256-cfb
   password: aQqJbtwFGcCCaeL3
 - name: 🇵🇱 波兰 (Poland) 05 - li007
-  server: 217.30.10.44
-  port: 9099
+  server: 217.30.10.70
+  port: 9040
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 7heRqkPG3hg4UnRm
+  password: p9z5BVADH2YFs3MN
 - name: 🇵🇱 波兰 (Poland) 06 - li007
   server: 217.30.10.44
-  port: 9076
+  port: 9095
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: S2zDyyPcmZN2h8EC
+  password: N7j3pdTYkKmsy8CR
 - name: 🇵🇱 波兰 (Poland) 07 - li007
-  server: 217.30.10.44
-  port: 9006
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: FAdUvMJUq5vDgKEq
-- name: 🇵🇱 波兰 (Poland) 08 - li007
-  server: 217.30.10.70
-  port: 9041
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: U6qnYRhfyDmn8sgn
-- name: 🇵🇱 波兰 (Poland) 09 - li007
   server: 217.30.10.70
   port: 9088
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: f8npKgNzdkss2ytn
+- name: 🇵🇱 波兰 (Poland) 08 - li007
+  server: 217.30.10.44
+  port: 9076
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: S2zDyyPcmZN2h8EC
+- name: 🇵🇱 波兰 (Poland) 09 - li007
+  server: 217.30.10.70
+  port: 9059
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9XwYyZsK8SNzQDtY
 - name: 🇵🇱 波兰 (Poland) 10 - li007
+  server: 217.30.10.44
+  port: 9042
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: S7KwUu7yBy58S3Ga
+- name: 🇵🇱 波兰 (Poland) 11 - li007
+  server: 217.30.10.70
+  port: 9045
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: Lp27rqyJq72bZsqX
+- name: 🇵🇱 波兰 (Poland) 12 - li007
   server: 217.30.10.44
   port: 9052
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: jt2ekBNc9HuVtm2a
-- name: 🇵🇱 波兰 (Poland) 11 - li007
+- name: 🇵🇱 波兰 (Poland) 13 - li007
   server: 217.30.10.70
-  port: 9018
+  port: 9020
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: fG2artUmHfNT2cX7
-- name: 🇵🇱 波兰 (Poland) 12 - li007
+  password: BNmAXXxAHYpTRdzu
+- name: 🇵🇱 波兰 (Poland) 14 - li007
+  server: 217.30.10.44
+  port: 9006
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: FAdUvMJUq5vDgKEq
+- name: 🇵🇱 波兰 (Poland) 15 - li007
   server: 45.194.66.177
   port: 443
   udp: true
@@ -91,8 +112,8 @@ proxies:
   tls: true
   servername: 31tawwo0.virtual-network.lol
   skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 13 - li007
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 16 - li007
   server: 54.37.131.126
   port: 80
   udp: true
@@ -105,7 +126,7 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 14 - li007
+- name: 🇵🇱 波兰 (Poland) 17 - li007
   server: 144.31.3.89
   port: 443
   udp: true
@@ -118,19 +139,6 @@ proxies:
   network: ws
   ws-opts:
     path: /media/ws/
-- name: 🇵🇱 波兰 (Poland) 15 - li007
-  server: 150.251.113.34
-  port: 443
-  udp: true
-  type: vless
-  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
-    short-id: 150a627d15154cf2
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -151,6 +159,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 13 - li007
   - 🇵🇱 波兰 (Poland) 14 - li007
   - 🇵🇱 波兰 (Poland) 15 - li007
+  - 🇵🇱 波兰 (Poland) 16 - li007
+  - 🇵🇱 波兰 (Poland) 17 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -171,5 +181,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 13 - li007
   - 🇵🇱 波兰 (Poland) 14 - li007
   - 🇵🇱 波兰 (Poland) 15 - li007
+  - 🇵🇱 波兰 (Poland) 16 - li007
+  - 🇵🇱 波兰 (Poland) 17 - li007
 rules:
 - MATCH,PROXIES

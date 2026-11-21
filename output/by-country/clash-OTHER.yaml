@@ -5,50 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - li007
-  server: cf.090227.xyz
+  server: 104.18.10.153
   port: 443
   udp: true
-  type: vmess
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
   tls: true
-  servername: vmess.lbw666.dpdns.org
+  servername: portland-wins-robbie-skirt.trycloudflare.com
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws
+    path: /e0843c8ad581
     headers:
-      Host: vmess.lbw666.dpdns.org
-- name: 🌐 其他地区 (Other) 02 - li007
-  server: cf.090227.xyz
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: sgal.dagrate.eu.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sgal.dagrate.eu.org
+      Host: portland-wins-robbie-skirt.trycloudflare.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - li007
-  - 🌐 其他地区 (Other) 02 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - li007
-  - 🌐 其他地区 (Other) 02 - li007
 rules:
 - MATCH,PROXIES
