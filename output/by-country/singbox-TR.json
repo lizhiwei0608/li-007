@@ -34,7 +34,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇹🇷 土耳其 (Turkey) 03 - li007",
-      "server": "tr.subscriptionservice.ir",
+      "server": "64.49.13.12",
       "server_port": 2089,
       "method": "chacha20-ietf-poly1305",
       "password": "lZZzfo1mqH7PqnloAogdi2XBhlgiofMy"

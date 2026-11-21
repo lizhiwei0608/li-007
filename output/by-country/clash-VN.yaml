@@ -5,12 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇻🇳 越南 (Vietnam) 01 - li007
-  server: 150.95.109.109
-  port: 2086
-  udp: true
-  type: vless
-  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
-- name: 🇻🇳 越南 (Vietnam) 02 - li007
   server: 103.163.24.22
   port: 56026
   udp: true
@@ -21,7 +15,13 @@ proxies:
     public-key: gjOKbmRb5cGDPbdz3x8xkBFL43pn3xqL-I6sALHO7ls
     short-id: 99676967e6867063
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇻🇳 越南 (Vietnam) 02 - li007
+  server: 150.95.109.109
+  port: 2086
+  udp: true
+  type: vless
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
 proxy-groups:
 - name: PROXIES
   type: select

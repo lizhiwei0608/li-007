@@ -17,19 +17,21 @@ proxies:
   udp: true
   type: hysteria2
   password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  sni: lakes.blog-forme.ru
-  skip-cert-verify: false
+  sni: 94.183.164.119
+  skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 03 - li007
-  server: 45.144.234.157
-  port: 14430
+  server: 157.180.98.124
+  port: 49659
   udp: true
   type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
+  uuid: 88a558b1-9645-42f3-89e5-341570d8486d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
+    short-id: 81959fce
+  servername: apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

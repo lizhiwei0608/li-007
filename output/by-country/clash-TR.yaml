@@ -24,7 +24,7 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 03 - li007
-  server: tr.subscriptionservice.ir
+  server: 64.49.13.12
   port: 2089
   udp: true
   type: ss

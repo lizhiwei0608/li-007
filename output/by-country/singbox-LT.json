@@ -23,25 +23,75 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 03 - li007",
       "server": "195.238.126.20",
-      "server_port": 9078,
+      "server_port": 9086,
       "method": "aes-256-cfb",
-      "password": "JCJpbRbQZNw9XFZG"
+      "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 04 - li007",
+      "server": "195.238.126.20",
+      "server_port": 9068,
+      "method": "aes-256-cfb",
+      "password": "mwgRg9hRq3b4Qnwb"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - li007",
+      "server": "195.238.126.20",
+      "server_port": 9045,
+      "method": "aes-256-cfb",
+      "password": "Lp27rqyJq72bZsqX"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 06 - li007",
       "server": "195.238.126.20",
       "server_port": 9011,
       "method": "aes-256-cfb",
       "password": "M3t2ZEQcMGRWBjRa"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - li007",
-      "server": "195.238.126.20",
-      "server_port": 9068,
-      "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 07 - li007",
+      "server": "94.183.234.245",
+      "server_port": 443,
+      "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc",
+          "short_id": "7f1e29593aa94ad1"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 08 - li007",
+      "server": "87.228.101.3",
+      "server_port": 443,
+      "uuid": "a71d6c6d-c95e-4ec1-a892-22e21733bf09",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Rw_ypcQ3am5gspVW2PegJBm3fszjCIj8JYHvSAUPBkY",
+          "short_id": "50c987749602bcb5"
+        }
+      }
     },
     {
       "type": "selector",
@@ -52,7 +102,10 @@
         "🇱🇹 立陶宛 (Lithuania) 02 - li007",
         "🇱🇹 立陶宛 (Lithuania) 03 - li007",
         "🇱🇹 立陶宛 (Lithuania) 04 - li007",
-        "🇱🇹 立陶宛 (Lithuania) 05 - li007"
+        "🇱🇹 立陶宛 (Lithuania) 05 - li007",
+        "🇱🇹 立陶宛 (Lithuania) 06 - li007",
+        "🇱🇹 立陶宛 (Lithuania) 07 - li007",
+        "🇱🇹 立陶宛 (Lithuania) 08 - li007"
       ]
     },
     {
@@ -63,7 +116,10 @@
         "🇱🇹 立陶宛 (Lithuania) 02 - li007",
         "🇱🇹 立陶宛 (Lithuania) 03 - li007",
         "🇱🇹 立陶宛 (Lithuania) 04 - li007",
-        "🇱🇹 立陶宛 (Lithuania) 05 - li007"
+        "🇱🇹 立陶宛 (Lithuania) 05 - li007",
+        "🇱🇹 立陶宛 (Lithuania) 06 - li007",
+        "🇱🇹 立陶宛 (Lithuania) 07 - li007",
+        "🇱🇹 立陶宛 (Lithuania) 08 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
