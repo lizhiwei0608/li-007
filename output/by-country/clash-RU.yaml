@@ -5,11 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - li007
-  server: 147.45.47.101
+  server: 48.103.133.47
   port: 8443
   udp: true
   type: vless
-  uuid: 27f26dee-9cf1-4cca-93f8-9ac23d311408
+  uuid: 2ed34e7c-45c5-4e0e-bcab-42fe99a7bd25
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -18,37 +18,28 @@ proxies:
   servername: apple.com
   client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 02 - li007
-  server: 37.235.247.81
-  port: 8443
+  server: 48.103.218.77
+  port: 18443
   udp: true
-  type: vless
-  uuid: 2ae0670d-0bdf-409e-9a55-4e970252d378
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-  servername: apple.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-gcm
+  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
 - name: 🇷🇺 俄罗斯 (Russia) 03 - li007
+  server: 176.32.33.126
+  port: 18443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+- name: 🇷🇺 俄罗斯 (Russia) 04 - li007
   server: 130.49.189.158
   port: 43558
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
-- name: 🇷🇺 俄罗斯 (Russia) 04 - li007
-  server: 168.113.253.178
-  port: 443
-  udp: true
-  type: vless
-  uuid: d6d40100-9442-0001-b5b9-6d259318c421
-  tls: true
-  servername: uzndiuvzvqqljdyhzs.fcloudservices.site
-  skip-cert-verify: false
-  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 05 - li007
-  server: 201.51.12.98
+  server: 200.169.179.233
   port: 443
   udp: true
   type: vless
@@ -56,6 +47,7 @@ proxies:
   tls: true
   servername: vps3.nemnogogo.com
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: mobile.api.Event
@@ -73,28 +65,22 @@ proxies:
   servername: gw-721bd5.dobry.monster
   client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 07 - li007
-  server: 103.88.243.142
+  server: srv-17e124.21freedom.net
   port: 11592
   udp: true
   type: hysteria2
   password: 41edb44c8e
-  sni: srv-17e124.21freedom.net
+  sni: srv-17e124
   skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 08 - li007
-  server: 185.178.208.167
+  server: 168.113.253.178
   port: 443
   udp: true
   type: vless
-  uuid: ffb2c504-2c6c-49f3-b4bd-9fd3ff6ce454
+  uuid: 58708e38-dd5a-0001-902d-93621ee2bd83
   tls: true
-  servername: unlik.club
+  servername: uzndiuvzvqqljdyhzs.fcloudservices.site
   skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /static/telemetry/3c9aaef00005/
-    headers:
-      Host: tochkacdn.top
 - name: 🇷🇺 俄罗斯 (Russia) 09 - li007
   server: 147.45.175.81
   port: 443
@@ -104,36 +90,66 @@ proxies:
   tls: true
   servername: xsru2.freeddns.org
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /wsru
     headers:
       Host: xsru2.freeddns.org
 - name: 🇷🇺 俄罗斯 (Russia) 10 - li007
-  server: 104.171.135.229
+  server: 147.45.221.225
   port: 443
   udp: true
   type: vless
-  uuid: Fluffy_VPN-Oth8rOq3
-  flow: xtls-rprx-vision
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
   tls: true
-  reality-opts:
-    public-key: mpo4BIcoWiMXAQGt5a8IJ4MFkPJQyLC50dO_bXzC7z0
-  servername: absolute-disaster.org
-  client-fingerprint: chrome
+  servername: nl.lucheeebezlimitnoekino.stream
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /media/ws/
 - name: 🇷🇺 俄罗斯 (Russia) 11 - li007
-  server: 104.171.135.229
+  server: 168.113.253.178
   port: 443
   udp: true
   type: vless
-  uuid: Fluffy_VPN-Oth8rOq3
+  uuid: 608172ed-68e4-0001-85dc-f92c25d0eb92
+  tls: true
+  servername: uzndiuvzvqqljdyhzs.fcloudservices.site
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 12 - li007
+  server: 168.113.253.178
+  port: 443
+  udp: true
+  type: vless
+  uuid: eb88bb1a-7bf0-0001-b9cd-4f97c89f0e9b
+  tls: true
+  servername: uzndiuvzvqqljdyhzs.fcloudservices.site
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 13 - li007
+  server: 168.113.253.178
+  port: 443
+  udp: true
+  type: vless
+  uuid: d6d40100-9442-0001-b5b9-6d259318c421
+  tls: true
+  servername: uzndiuvzvqqljdyhzs.fcloudservices.site
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 14 - li007
+  server: 212.233.90.78
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9548ef84-b54d-41dc-b17c-9da21d52ba82
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: mpo4BIcoWiMXAQGt5a8IJ4MFkPJQyLC50dO_bXzC7z0
-  servername: absolute-disaster.org
-  client-fingerprint: chrome
+    public-key: FwPphm8xGAKY6u74WDRVrcVye3A7GdLDfJoNSDWFsFQ
+    short-id: 2c6df23e
+  servername: birch-ledger.justext.space
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -150,6 +166,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 09 - li007
   - 🇷🇺 俄罗斯 (Russia) 10 - li007
   - 🇷🇺 俄罗斯 (Russia) 11 - li007
+  - 🇷🇺 俄罗斯 (Russia) 12 - li007
+  - 🇷🇺 俄罗斯 (Russia) 13 - li007
+  - 🇷🇺 俄罗斯 (Russia) 14 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -166,5 +185,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 09 - li007
   - 🇷🇺 俄罗斯 (Russia) 10 - li007
   - 🇷🇺 俄罗斯 (Russia) 11 - li007
+  - 🇷🇺 俄罗斯 (Russia) 12 - li007
+  - 🇷🇺 俄罗斯 (Russia) 13 - li007
+  - 🇷🇺 俄罗斯 (Russia) 14 - li007
 rules:
 - MATCH,PROXIES
