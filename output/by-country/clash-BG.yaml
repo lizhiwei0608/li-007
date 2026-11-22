@@ -6,11 +6,11 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - li007
   server: 213.183.63.60
-  port: 9029
+  port: 9064
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: dU3DSNS8wYPXzEKw
+  password: cp8pRSUAyLhTfVWH
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - li007
   server: 213.183.63.60
   port: 9098
@@ -20,47 +20,32 @@ proxies:
   password: aLpQtfEZe445QyHk
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - li007
   server: 213.183.63.60
-  port: 9054
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: VcFuyXvND2yQWSFY
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - li007
-  server: 213.183.63.60
-  port: 9049
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: PRBf4BS2HvJqtWxY
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - li007
-  server: 213.183.63.60
-  port: 9064
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: cp8pRSUAyLhTfVWH
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - li007
-  server: 213.183.63.60
-  port: 9028
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9eeJ2fwnZA5Fxgz8
-- name: 🇧🇬 保加利亚 (Bulgaria) 07 - li007
-  server: 213.183.63.60
   port: 9066
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 2KUaE2a8NWTvuCZ3
-- name: 🇧🇬 保加利亚 (Bulgaria) 08 - li007
-  server: 87.121.112.83
-  port: 443
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - li007
+  server: 213.183.63.60
+  port: 9029
   udp: true
-  type: hysteria2
-  password: 9a9f167d-b461-466f-be50-f0ffd598a6f8
-  sni: bulghys.live
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-cfb
+  password: dU3DSNS8wYPXzEKw
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - li007
+  server: 213.183.63.60
+  port: 9054
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: VcFuyXvND2yQWSFY
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - li007
+  server: 213.183.63.60
+  port: 9061
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 4R3hUfZ2FHhDmNcP
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,8 +57,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 04 - li007
   - 🇧🇬 保加利亚 (Bulgaria) 05 - li007
   - 🇧🇬 保加利亚 (Bulgaria) 06 - li007
-  - 🇧🇬 保加利亚 (Bulgaria) 07 - li007
-  - 🇧🇬 保加利亚 (Bulgaria) 08 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -85,7 +68,5 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 04 - li007
   - 🇧🇬 保加利亚 (Bulgaria) 05 - li007
   - 🇧🇬 保加利亚 (Bulgaria) 06 - li007
-  - 🇧🇬 保加利亚 (Bulgaria) 07 - li007
-  - 🇧🇬 保加利亚 (Bulgaria) 08 - li007
 rules:
 - MATCH,PROXIES
