@@ -4,25 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🌐 其他地区 (Other) 01 - li007",
-      "server": "104.18.10.153",
-      "server_port": 443,
-      "uuid": "debafe5b-6760-4b00-b0b2-ee30cbf769f0",
+      "server": "104.17.77.77",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "portland-wins-robbie-skirt.trycloudflare.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/e0843c8ad581",
+        "path": "/lMnsZUN4/",
         "headers": {
-          "Host": "portland-wins-robbie-skirt.trycloudflare.com"
+          "Host": "v2ray1.dozapp.xyz"
         }
       }
     },

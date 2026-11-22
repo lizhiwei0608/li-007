@@ -20,32 +20,18 @@ proxies:
   password: JCJpbRbQZNw9XFZG
 - name: 🇱🇹 立陶宛 (Lithuania) 03 - li007
   server: 195.238.126.20
-  port: 9045
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Lp27rqyJq72bZsqX
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - li007
-  server: 195.238.126.20
   port: 9001
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: UkXRsXvR6buDMG2Y
-- name: 🇱🇹 立陶宛 (Lithuania) 05 - li007
+- name: 🇱🇹 立陶宛 (Lithuania) 04 - li007
   server: 195.238.126.20
-  port: 9008
+  port: 9045
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: y9VURyNzJWNRYEGQ
-- name: 🇱🇹 立陶宛 (Lithuania) 06 - li007
-  server: 195.238.126.20
-  port: 9011
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
+  password: Lp27rqyJq72bZsqX
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,8 +41,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 02 - li007
   - 🇱🇹 立陶宛 (Lithuania) 03 - li007
   - 🇱🇹 立陶宛 (Lithuania) 04 - li007
-  - 🇱🇹 立陶宛 (Lithuania) 05 - li007
-  - 🇱🇹 立陶宛 (Lithuania) 06 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,7 +50,5 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 02 - li007
   - 🇱🇹 立陶宛 (Lithuania) 03 - li007
   - 🇱🇹 立陶宛 (Lithuania) 04 - li007
-  - 🇱🇹 立陶宛 (Lithuania) 05 - li007
-  - 🇱🇹 立陶宛 (Lithuania) 06 - li007
 rules:
 - MATCH,PROXIES

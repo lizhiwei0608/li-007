@@ -5,33 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - li007
-  server: 217.30.10.44
-  port: 9071
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mENfxTFQpRKKh4As
-- name: 🇵🇱 波兰 (Poland) 02 - li007
   server: 217.30.10.70
-  port: 9098
+  port: 9059
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: aLpQtfEZe445QyHk
+  password: 9XwYyZsK8SNzQDtY
+- name: 🇵🇱 波兰 (Poland) 02 - li007
+  server: 217.30.10.44
+  port: 9052
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: jt2ekBNc9HuVtm2a
 - name: 🇵🇱 波兰 (Poland) 03 - li007
+  server: 217.30.10.70
+  port: 9031
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: BwcAUZk8hUFAkDGN
+- name: 🇵🇱 波兰 (Poland) 04 - li007
   server: 217.30.10.44
   port: 9099
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 7heRqkPG3hg4UnRm
-- name: 🇵🇱 波兰 (Poland) 04 - li007
-  server: 217.30.10.44
-  port: 9063
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aQqJbtwFGcCCaeL3
 - name: 🇵🇱 波兰 (Poland) 05 - li007
   server: 217.30.10.70
   port: 9040
@@ -48,72 +48,96 @@ proxies:
   password: N7j3pdTYkKmsy8CR
 - name: 🇵🇱 波兰 (Poland) 07 - li007
   server: 217.30.10.70
-  port: 9088
+  port: 9027
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: f8npKgNzdkss2ytn
+  password: EXN3S3eQpjE7EJu8
 - name: 🇵🇱 波兰 (Poland) 08 - li007
-  server: 217.30.10.44
-  port: 9076
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: S2zDyyPcmZN2h8EC
-- name: 🇵🇱 波兰 (Poland) 09 - li007
-  server: 217.30.10.70
-  port: 9059
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9XwYyZsK8SNzQDtY
-- name: 🇵🇱 波兰 (Poland) 10 - li007
-  server: 217.30.10.44
-  port: 9042
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: S7KwUu7yBy58S3Ga
-- name: 🇵🇱 波兰 (Poland) 11 - li007
-  server: 217.30.10.70
-  port: 9045
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Lp27rqyJq72bZsqX
-- name: 🇵🇱 波兰 (Poland) 12 - li007
-  server: 217.30.10.44
-  port: 9052
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: jt2ekBNc9HuVtm2a
-- name: 🇵🇱 波兰 (Poland) 13 - li007
-  server: 217.30.10.70
-  port: 9020
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: BNmAXXxAHYpTRdzu
-- name: 🇵🇱 波兰 (Poland) 14 - li007
   server: 217.30.10.44
   port: 9006
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: FAdUvMJUq5vDgKEq
-- name: 🇵🇱 波兰 (Poland) 15 - li007
-  server: 45.194.66.177
-  port: 443
+- name: 🇵🇱 波兰 (Poland) 09 - li007
+  server: 217.30.10.70
+  port: 9098
   udp: true
-  type: vless
-  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
-  flow: xtls-rprx-vision
-  tls: true
-  servername: 31tawwo0.virtual-network.lol
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: aLpQtfEZe445QyHk
+- name: 🇵🇱 波兰 (Poland) 10 - li007
+  server: 217.30.10.70
+  port: 9044
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: KBGjZYcy4SyRShmA
+- name: 🇵🇱 波兰 (Poland) 11 - li007
+  server: 217.30.10.70
+  port: 9088
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: f8npKgNzdkss2ytn
+- name: 🇵🇱 波兰 (Poland) 12 - li007
+  server: 217.30.10.70
+  port: 9018
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: fG2artUmHfNT2cX7
+- name: 🇵🇱 波兰 (Poland) 13 - li007
+  server: 217.30.10.70
+  port: 9084
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: c3NtHJ5ujV2tGDfj
+- name: 🇵🇱 波兰 (Poland) 14 - li007
+  server: 217.30.10.44
+  port: 9062
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: tkhHVxxfM2QErBWe
+- name: 🇵🇱 波兰 (Poland) 15 - li007
+  server: 217.30.10.44
+  port: 9042
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: S7KwUu7yBy58S3Ga
 - name: 🇵🇱 波兰 (Poland) 16 - li007
+  server: 217.30.10.70
+  port: 9015
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: ZpNDDKRu9MagNvaf
+- name: 🇵🇱 波兰 (Poland) 17 - li007
+  server: 217.30.10.44
+  port: 9076
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: S2zDyyPcmZN2h8EC
+- name: 🇵🇱 波兰 (Poland) 18 - li007
+  server: 217.30.10.44
+  port: 9063
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aQqJbtwFGcCCaeL3
+- name: 🇵🇱 波兰 (Poland) 19 - li007
+  server: 217.30.10.44
+  port: 9071
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mENfxTFQpRKKh4As
+- name: 🇵🇱 波兰 (Poland) 20 - li007
   server: 54.37.131.126
   port: 80
   udp: true
@@ -126,19 +150,6 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 17 - li007
-  server: 144.31.3.89
-  port: 443
-  udp: true
-  type: vless
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  tls: true
-  servername: clearingmatch.melodramaonline.net
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /media/ws/
 proxy-groups:
 - name: PROXIES
   type: select
@@ -161,6 +172,9 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 15 - li007
   - 🇵🇱 波兰 (Poland) 16 - li007
   - 🇵🇱 波兰 (Poland) 17 - li007
+  - 🇵🇱 波兰 (Poland) 18 - li007
+  - 🇵🇱 波兰 (Poland) 19 - li007
+  - 🇵🇱 波兰 (Poland) 20 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -183,5 +197,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 15 - li007
   - 🇵🇱 波兰 (Poland) 16 - li007
   - 🇵🇱 波兰 (Poland) 17 - li007
+  - 🇵🇱 波兰 (Poland) 18 - li007
+  - 🇵🇱 波兰 (Poland) 19 - li007
+  - 🇵🇱 波兰 (Poland) 20 - li007
 rules:
 - MATCH,PROXIES
