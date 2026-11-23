@@ -5,79 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - li007
-  server: 172.67.139.189
-  port: 443
+  server: 188.114.96.3
+  port: 8443
   udp: true
-  type: vless
-  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
+  type: vmess
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: fr-free.fastestrelay.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /700gvl
-    headers:
-      Host: fr-free.fastestrelay.com
-- name: 🌐 其他地区 (Other) 02 - li007
-  server: 104.16.10.56
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
+  servername: v2ray1.dozapp.xyz
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /lMnsZUN4/
     headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 03 - li007
-  server: 104.16.10.56
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 04 - li007
-  server: 104.19.33.25
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
+      Host: v2ray1.dozapp.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - li007
-  - 🌐 其他地区 (Other) 02 - li007
-  - 🌐 其他地区 (Other) 03 - li007
-  - 🌐 其他地区 (Other) 04 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - li007
-  - 🌐 其他地区 (Other) 02 - li007
-  - 🌐 其他地区 (Other) 03 - li007
-  - 🌐 其他地区 (Other) 04 - li007
 rules:
 - MATCH,PROXIES

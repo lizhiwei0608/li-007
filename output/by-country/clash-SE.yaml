@@ -34,17 +34,6 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 04 - li007
-  server: 5.178.109.174
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 05 - li007
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -53,61 +42,11 @@ proxies:
   tls: true
   servername: 138-124-86-230.sslip.io
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 06 - li007
-  server: sajed.kdns.fr
-  port: 443
-  udp: true
-  type: vless
-  uuid: cffa0e31-7cce-4541-8a2e-4e115873090b
-  network: ws
-  ws-opts:
-    path: /@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe
-    headers:
-      Host: sajed.kdns.fr
-- name: 🇸🇪 瑞典 (Sweden) 07 - li007
-  server: 77.232.143.142
-  port: 443
-  udp: true
-  type: vless
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  tls: true
-  servername: volumestyle.komediyatorg.net
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /media/ws/
-- name: 🇸🇪 瑞典 (Sweden) 08 - li007
-  server: 92.223.84.254
-  port: 443
-  udp: true
-  type: vless
-  uuid: 63242a2a-7bdb-4775-bc3f-65c2f260f224
-  tls: true
-  servername: subgift.gcorecdn.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /t.me-SubGift
-    headers:
-      Host: subgift.gcorecdn.com
-- name: 🇸🇪 瑞典 (Sweden) 09 - li007
-  server: 2.26.93.106
-  port: 443
-  udp: true
-  type: vless
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  tls: true
-  servername: depotchannel.lucheeebezlimitnoekino.stream
-  skip-cert-verify: false
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /media/ws/
-- name: 🇸🇪 瑞典 (Sweden) 10 - li007
+- name: 🇸🇪 瑞典 (Sweden) 05 - li007
   server: 185.117.88.9
   port: 8443
   udp: true
@@ -120,6 +59,53 @@ proxies:
     short-id: f8d0271b4b5f9efc
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇸🇪 瑞典 (Sweden) 06 - li007
+  server: 5.178.109.174
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 瑞典 (Sweden) 07 - li007
+  server: sajed.kdns.fr
+  port: 443
+  udp: true
+  type: vless
+  uuid: cffa0e31-7cce-4541-8a2e-4e115873090b
+  network: ws
+  ws-opts:
+    path: /@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe
+    headers:
+      Host: sajed.kdns.fr
+- name: 🇸🇪 瑞典 (Sweden) 08 - li007
+  server: 77.232.143.142
+  port: 443
+  udp: true
+  type: vless
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  tls: true
+  servername: volumestyle.komediyatorg.net
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /media/ws/
+- name: 🇸🇪 瑞典 (Sweden) 09 - li007
+  server: 2.26.93.106
+  port: 443
+  udp: true
+  type: vless
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  tls: true
+  servername: depotchannel.lucheeebezlimitnoekino.stream
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /media/ws/
 proxy-groups:
 - name: PROXIES
   type: select
@@ -134,7 +120,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 07 - li007
   - 🇸🇪 瑞典 (Sweden) 08 - li007
   - 🇸🇪 瑞典 (Sweden) 09 - li007
-  - 🇸🇪 瑞典 (Sweden) 10 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -149,6 +134,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 07 - li007
   - 🇸🇪 瑞典 (Sweden) 08 - li007
   - 🇸🇪 瑞典 (Sweden) 09 - li007
-  - 🇸🇪 瑞典 (Sweden) 10 - li007
 rules:
 - MATCH,PROXIES

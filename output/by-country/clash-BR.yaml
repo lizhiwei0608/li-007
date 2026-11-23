@@ -15,6 +15,17 @@ proxies:
   obfs: salamander
   obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
 - name: 🇧🇷 巴西 (Brazil) 02 - li007
+  server: 103.88.232.55
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇧🇷 巴西 (Brazil) 03 - li007
   server: 103.14.27.207
   port: 1270
   udp: true
@@ -32,6 +43,7 @@ proxy-groups:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 - li007
   - 🇧🇷 巴西 (Brazil) 02 - li007
+  - 🇧🇷 巴西 (Brazil) 03 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +51,6 @@ proxy-groups:
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 - li007
   - 🇧🇷 巴西 (Brazil) 02 - li007
+  - 🇧🇷 巴西 (Brazil) 03 - li007
 rules:
 - MATCH,PROXIES
