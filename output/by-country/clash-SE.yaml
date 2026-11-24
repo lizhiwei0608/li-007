@@ -12,18 +12,17 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 02 - li007
-  server: 138.124.86.230
-  port: 48115
+  server: 88.216.60.73
+  port: 443
   udp: true
   type: vless
-  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
   tls: true
-  servername: 138-124-86-230.sslip.io
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 138-124-86-230-sslip-io
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: a7c92e4b10d6f835
+  servername: ns-api-gw.galioncc.com
+  client-fingerprint: chrome
 - name: 🇸🇪 瑞典 (Sweden) 03 - li007
   server: 62.93.166.184
   port: 1270
@@ -47,17 +46,6 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 05 - li007
-  server: sajed.kdns.fr
-  port: 443
-  udp: true
-  type: vless
-  uuid: cffa0e31-7cce-4541-8a2e-4e115873090b
-  network: ws
-  ws-opts:
-    path: /@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe
-    headers:
-      Host: sajed.kdns.fr
-- name: 🇸🇪 瑞典 (Sweden) 06 - li007
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -68,30 +56,41 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 07 - li007
-  server: 185.117.88.9
-  port: 8443
+- name: 🇸🇪 瑞典 (Sweden) 06 - li007
+  server: 138.124.86.230
+  port: 48115
   udp: true
   type: vless
-  uuid: 9a597d68-6688-4046-bf24-a5a541e115e0
-  flow: xtls-rprx-vision
+  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
   tls: true
-  reality-opts:
-    public-key: 6FI4VM9WlQEGVjyCvLDQLz1jOkrzzhtfGl9eQTBn6HU
-    short-id: f8d0271b4b5f9efc
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 08 - li007
-  server: president.ir
-  port: 80
+  servername: 138-124-86-230.sslip.io
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 138-124-86-230-sslip-io
+- name: 🇸🇪 瑞典 (Sweden) 07 - li007
+  server: sajed.kdns.fr
+  port: 443
   udp: true
   type: vless
-  uuid: a03e513f-840a-4e13-adc5-16716ab28d36
+  uuid: cffa0e31-7cce-4541-8a2e-4e115873090b
   network: ws
   ws-opts:
-    path: /ws
+    path: /@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe
     headers:
-      Host: cdn.flatron.ir
+      Host: sajed.kdns.fr
+- name: 🇸🇪 瑞典 (Sweden) 08 - li007
+  server: 188.225.46.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: a077dc9a-712f-48ea-b75c-d94af64011ec
+  flow: xtls-rprx-vision
+  tls: true
+  servername: spb.b2ai.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
