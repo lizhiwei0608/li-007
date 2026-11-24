@@ -5,14 +5,41 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - li007
-  server: 65.108.240.210
-  port: 39018
+  server: 65.21.247.47
+  port: 443
   udp: true
-  type: vmess
-  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: ca74ad0f-c384-4362-96bb-0123b852b346
+  flow: xtls-rprx-vision
+  tls: true
+  servername: static.47.247.21.65.clients.your-server.de
+  skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 02 - li007
+  server: 157.180.98.124
+  port: 49659
+  udp: true
+  type: vless
+  uuid: 88a558b1-9645-42f3-89e5-341570d8486d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
+    short-id: 81959fce
+  servername: apple.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 03 - li007
+  server: 188.225.46.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: a077dc9a-712f-48ea-b75c-d94af64011ec
+  flow: xtls-rprx-vision
+  tls: true
+  servername: spb.b2ai.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 04 - li007
   server: 94.183.164.119
   port: 24433
   udp: true
@@ -27,6 +54,8 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - li007
   - 🇫🇮 芬兰 (Finland) 02 - li007
+  - 🇫🇮 芬兰 (Finland) 03 - li007
+  - 🇫🇮 芬兰 (Finland) 04 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -34,5 +63,7 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - li007
   - 🇫🇮 芬兰 (Finland) 02 - li007
+  - 🇫🇮 芬兰 (Finland) 03 - li007
+  - 🇫🇮 芬兰 (Finland) 04 - li007
 rules:
 - MATCH,PROXIES

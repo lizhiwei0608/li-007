@@ -15,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -37,12 +37,33 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 03 - li007",
+      "server": "196.245.153.111",
+      "server_port": 443,
+      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
+      "tls": {
+        "enabled": true,
+        "server_name": "76574ct.nl8.h1clayd.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "9zW5lTDbs9svY-lzlPp-pq0j2Sr6g031SY0E-3xSHDc",
+          "short_id": "2ca59bdc5121f921"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇱 以色列 (Israel) 01 - li007",
-        "🇮🇱 以色列 (Israel) 02 - li007"
+        "🇮🇱 以色列 (Israel) 02 - li007",
+        "🇮🇱 以色列 (Israel) 03 - li007"
       ]
     },
     {
@@ -50,7 +71,8 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇱 以色列 (Israel) 01 - li007",
-        "🇮🇱 以色列 (Israel) 02 - li007"
+        "🇮🇱 以色列 (Israel) 02 - li007",
+        "🇮🇱 以色列 (Israel) 03 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

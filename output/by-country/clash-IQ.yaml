@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - li007
-  server: 79.182.70.220
+  server: 164.37.224.51
   port: 443
   udp: true
   type: vless
