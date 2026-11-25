@@ -4,12 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "hysteria2",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - li007",
-      "server": "ww11.levikogjgfdd.ir",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
+      "server": "152.67.115.203",
+      "server_port": 443,
+      "password": "633bc3be486b646190661ac2387c150a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "850a3fb1cd33a28f12d837578ae1a2e7"
+      }
     },
     {
       "type": "hysteria2",
@@ -26,62 +34,6 @@
     {
       "type": "hysteria2",
       "tag": "🇦🇺 澳大利亚 (Australia) 03 - li007",
-      "server": "3.106.35.101",
-      "server_port": 36712,
-      "password": "linlin-2026",
-      "tls": {
-        "enabled": true,
-        "server_name": "3.106.35.101",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - li007",
-      "server": "45.63.30.142",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "45.63.30.142",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 05 - li007",
-      "server": "13.55.52.44",
-      "server_port": 36712,
-      "password": "linlin-2026",
-      "tls": {
-        "enabled": true,
-        "server_name": "13.55.52.44",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 06 - li007",
-      "server": "152.67.115.203",
-      "server_port": 443,
-      "password": "633bc3be486b646190661ac2387c150a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "850a3fb1cd33a28f12d837578ae1a2e7"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 07 - li007",
       "server": "159.13.55.48",
       "server_port": 20000,
       "password": "b42d90fa667942aebc734d60",
@@ -96,6 +48,18 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - li007",
+      "server": "3.106.35.101",
+      "server_port": 36712,
+      "password": "linlin-2026",
+      "tls": {
+        "enabled": true,
+        "server_name": "3.106.35.101",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -103,10 +67,7 @@
         "🇦🇺 澳大利亚 (Australia) 01 - li007",
         "🇦🇺 澳大利亚 (Australia) 02 - li007",
         "🇦🇺 澳大利亚 (Australia) 03 - li007",
-        "🇦🇺 澳大利亚 (Australia) 04 - li007",
-        "🇦🇺 澳大利亚 (Australia) 05 - li007",
-        "🇦🇺 澳大利亚 (Australia) 06 - li007",
-        "🇦🇺 澳大利亚 (Australia) 07 - li007"
+        "🇦🇺 澳大利亚 (Australia) 04 - li007"
       ]
     },
     {
@@ -116,10 +77,7 @@
         "🇦🇺 澳大利亚 (Australia) 01 - li007",
         "🇦🇺 澳大利亚 (Australia) 02 - li007",
         "🇦🇺 澳大利亚 (Australia) 03 - li007",
-        "🇦🇺 澳大利亚 (Australia) 04 - li007",
-        "🇦🇺 澳大利亚 (Australia) 05 - li007",
-        "🇦🇺 澳大利亚 (Australia) 06 - li007",
-        "🇦🇺 澳大利亚 (Australia) 07 - li007"
+        "🇦🇺 澳大利亚 (Australia) 04 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

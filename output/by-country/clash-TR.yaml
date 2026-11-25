@@ -1,0 +1,77 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇹🇷 土耳其 (Turkey) 01 - li007
+  server: 143.246.136.128
+  port: 50738
+  udp: true
+  type: vless
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
+  tls: true
+  servername: turkey-ip1.mmdaqaorg.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 02 - li007
+  server: 194.135.34.118
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 020f7f86-a559-4366-8d2d-c6f81d6bbe5f
+  tls: true
+  servername: web.hosttcp.fun
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/v4/media/session
+- name: 🇹🇷 土耳其 (Turkey) 03 - li007
+  server: 90.156.226.200
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9df9ee1a-0671-4c6c-93c7-65598fb946f7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: aMjyAtCkIs-W68PK2esrcs0eXgtxabf3TXE20o1Ed2c
+    short-id: e7befbb8bdc05025
+  servername: ruturkey1.gangtype.com
+  client-fingerprint: qq
+- name: 🇹🇷 土耳其 (Turkey) 04 - li007
+  server: 172.64.155.209
+  port: 443
+  udp: true
+  type: vless
+  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
+  tls: true
+  servername: sinavm3.soft10.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    headers:
+      Host: sinavm3.soft10.ir
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇹🇷 土耳其 (Turkey) 01 - li007
+  - 🇹🇷 土耳其 (Turkey) 02 - li007
+  - 🇹🇷 土耳其 (Turkey) 03 - li007
+  - 🇹🇷 土耳其 (Turkey) 04 - li007
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇹🇷 土耳其 (Turkey) 01 - li007
+  - 🇹🇷 土耳其 (Turkey) 02 - li007
+  - 🇹🇷 土耳其 (Turkey) 03 - li007
+  - 🇹🇷 土耳其 (Turkey) 04 - li007
+rules:
+- MATCH,PROXIES

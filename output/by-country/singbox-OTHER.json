@@ -4,18 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - li007",
-      "server": "47.250.84.25",
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 01 - li007",
+      "server": "fr-free.fastestrelay.com",
       "server_port": 443,
-      "password": "5931134d1cde66bf83a54acdfebe7ab2",
+      "uuid": "364D2D52-E61E-4E52-80EC-2BC6BDF15349",
       "tls": {
         "enabled": true,
-        "server_name": "moltbot.doctoroyy.net",
-        "insecure": true,
+        "server_name": "fr-free.fastestrelay.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/700gvl",
+        "headers": {
+          "Host": "fr-free.fastestrelay.com"
         }
       }
     },
@@ -24,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01 - li007"
+        "🌐 其他地区 (Other) 01 - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01 - li007"
+        "🌐 其他地区 (Other) 01 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
