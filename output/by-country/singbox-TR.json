@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - li007",
-      "server": "turkey-ip1.mmdaqaorg.xyz",
+      "server": "143.246.136.128",
       "server_port": 50738,
       "uuid": "56665684-5ac0-4ba9-9d49-8b258fb57974",
       "tls": {
@@ -24,18 +24,79 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - li007",
+      "server": "tr.subscriptionservice.ir",
+      "server_port": 2089,
+      "method": "chacha20-ietf-poly1305",
+      "password": "lZZzfo1mqH7PqnloAogdi2XBhlgiofMy"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - li007",
+      "server": "172.64.155.209",
+      "server_port": 443,
+      "uuid": "14eccb4f-ca88-4732-b191-d8daacf63448",
+      "tls": {
+        "enabled": true,
+        "server_name": "sinavm3.soft10.ir",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/SiNAVM-SiNAVM-SiNAVM-SiNAVM",
+        "headers": {
+          "Host": "sinavm3.soft10.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - li007",
+      "server": "185.71.216.94",
+      "server_port": 2195,
+      "uuid": "9654f1a9-8dbc-4897-85ea-c077a52b3857",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OKksVHWL5JepTv7if7Ta_L_7vn8OxW0INwV71HJM1jI",
+          "short_id": "3869d49a9a79e06a"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - li007"
+        "🇹🇷 土耳其 (Turkey) 01 - li007",
+        "🇹🇷 土耳其 (Turkey) 02 - li007",
+        "🇹🇷 土耳其 (Turkey) 03 - li007",
+        "🇹🇷 土耳其 (Turkey) 04 - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - li007"
+        "🇹🇷 土耳其 (Turkey) 01 - li007",
+        "🇹🇷 土耳其 (Turkey) 02 - li007",
+        "🇹🇷 土耳其 (Turkey) 03 - li007",
+        "🇹🇷 土耳其 (Turkey) 04 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,24 +6,32 @@
     {
       "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - li007",
-      "server": "103.115.109.49",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https://t.me/wangcai2",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - li007",
       "server": "160.187.100.109",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "127.0.0.1",
+        "server_name": "160.187.100.109",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - li007",
+      "server": "dog-tw.kunlun01dns.com",
+      "server_port": 21036,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - li007",
+      "server": "103.115.109.49",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "103.115.109.49",
         "insecure": true
       }
     },
@@ -33,7 +41,8 @@
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - li007",
-        "🇹🇼 中国台湾 (Taiwan) 02 - li007"
+        "🇹🇼 中国台湾 (Taiwan) 02 - li007",
+        "🇹🇼 中国台湾 (Taiwan) 03 - li007"
       ]
     },
     {
@@ -41,7 +50,8 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - li007",
-        "🇹🇼 中国台湾 (Taiwan) 02 - li007"
+        "🇹🇼 中国台湾 (Taiwan) 02 - li007",
+        "🇹🇼 中国台湾 (Taiwan) 03 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
