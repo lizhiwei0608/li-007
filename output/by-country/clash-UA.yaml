@@ -4,31 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇩 印尼 (Indonesia) 01 - li007
-  server: kozel.cc.cd
+- name: 🇺🇦 乌克兰 (Ukraine) 01 - li007
+  server: 172.67.199.12
   port: 443
   udp: true
-  type: vless
-  uuid: 3b01a777-55e7-49f6-8637-d94ee69607c6
-  tls: true
-  servername: kozel.cc.cd
+  type: trojan
+  password: 963A4918-A630-29DA-A873-093CDF8AD784
+  sni: bitter-math-4364.vpnetwork3567.workers.dev
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /118.151.222.66=17317fp=chrome
-    headers:
-      Host: kozel.cc.cd
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇩 印尼 (Indonesia) 01 - li007
+  - 🇺🇦 乌克兰 (Ukraine) 01 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇩 印尼 (Indonesia) 01 - li007
+  - 🇺🇦 乌克兰 (Ukraine) 01 - li007
 rules:
 - MATCH,PROXIES

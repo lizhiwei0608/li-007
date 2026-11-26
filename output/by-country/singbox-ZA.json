@@ -36,13 +36,31 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇿🇦 南非 (South Africa) 04 - li007",
+      "server": "16.28.28.15",
+      "server_port": 443,
+      "uuid": "8ce18eab-fcc0-4757-b552-dbda5047ea11",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "za-a-zzy.glnyhlgc.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/7788/about"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇿🇦 南非 (South Africa) 01 - li007",
         "🇿🇦 南非 (South Africa) 02 - li007",
-        "🇿🇦 南非 (South Africa) 03 - li007"
+        "🇿🇦 南非 (South Africa) 03 - li007",
+        "🇿🇦 南非 (South Africa) 04 - li007"
       ]
     },
     {
@@ -51,7 +69,8 @@
       "outbounds": [
         "🇿🇦 南非 (South Africa) 01 - li007",
         "🇿🇦 南非 (South Africa) 02 - li007",
-        "🇿🇦 南非 (South Africa) 03 - li007"
+        "🇿🇦 南非 (South Africa) 03 - li007",
+        "🇿🇦 南非 (South Africa) 04 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
