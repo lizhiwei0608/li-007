@@ -5,21 +5,18 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - li007",
-      "server": "209.9.200.147",
-      "server_port": 443,
-      "uuid": "ed94398f-893f-40c6-b14c-bf02b5f6be16",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - li007",
+      "server": "165.231.157.150",
+      "server_port": 8443,
+      "uuid": "0173d52e-8e1b-4681-831e-11529677b72f",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "navi.bankrate.com",
+        "server_name": "api-6b04608f.adhil.uk",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc",
-          "short_id": "2da72ce6"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -28,14 +25,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - li007"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - li007"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

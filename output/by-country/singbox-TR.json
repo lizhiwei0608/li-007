@@ -4,22 +4,46 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - li007",
-      "server": "143.246.136.128",
-      "server_port": 50738,
-      "uuid": "56665684-5ac0-4ba9-9d49-8b258fb57974",
+      "server": "tr.subscriptionservice.ir",
+      "server_port": 2089,
+      "method": "chacha20-ietf-poly1305",
+      "password": "lZZzfo1mqH7PqnloAogdi2XBhlgiofMy"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - li007",
+      "server": "18.172.170.42",
+      "server_port": 443,
+      "uuid": "963A4918-A630-29DA-A873-093CDF8AD784",
       "tls": {
         "enabled": true,
-        "server_name": "turkey-ip1.mmdaqaorg.xyz",
+        "server_name": "deldgy5xz81zm.cloudfront.net",
         "insecure": false,
         "alpn": [
-          "h2",
           "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "deldgy5xz81zm.cloudfront.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - li007",
+      "server": "v2new.nimbaha9.ir",
+      "server_port": 8080,
+      "uuid": "f279c19a-b324-40cf-af57-049f9b1b68f2",
+      "transport": {
+        "type": "ws",
+        "path": "/XDS45",
+        "headers": {
+          "Host": "v2new.nimbaha9.ir"
         }
       }
     },
@@ -28,14 +52,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - li007"
+        "🇹🇷 土耳其 (Turkey) 01 - li007",
+        "🇹🇷 土耳其 (Turkey) 02 - li007",
+        "🇹🇷 土耳其 (Turkey) 03 - li007"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - li007"
+        "🇹🇷 土耳其 (Turkey) 01 - li007",
+        "🇹🇷 土耳其 (Turkey) 02 - li007",
+        "🇹🇷 土耳其 (Turkey) 03 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

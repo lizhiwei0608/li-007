@@ -6,6 +6,27 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - li007",
+      "server": "2.27.203.38",
+      "server_port": 443,
+      "uuid": "e894c08a-fecc-46f5-bf03-c95d0274c79d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Xuy5y3WGJjkxyUtkhiY87dwndv4fuD45gO64TWnlThI",
+          "short_id": "fd0cc2b3ac52deb8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - li007",
       "server": "31.76.77.231",
       "server_port": 443,
       "uuid": "e894c08a-fecc-46f5-bf03-c95d0274c79d",
@@ -26,7 +47,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - li007",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - li007",
       "server": "94.183.164.119",
       "server_port": 24433,
       "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
@@ -37,12 +58,35 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - li007",
+      "server": "mail1.besttotaldns.com",
+      "server_port": 443,
+      "uuid": "da14e323-6af7-406f-a5c2-1eb7975ada8b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "mail1.besttotaldns.com",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - li007",
-        "🇫🇮 芬兰 (Finland) 02 - li007"
+        "🇫🇮 芬兰 (Finland) 02 - li007",
+        "🇫🇮 芬兰 (Finland) 03 - li007",
+        "🇫🇮 芬兰 (Finland) 04 - li007"
       ]
     },
     {
@@ -50,7 +94,9 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - li007",
-        "🇫🇮 芬兰 (Finland) 02 - li007"
+        "🇫🇮 芬兰 (Finland) 02 - li007",
+        "🇫🇮 芬兰 (Finland) 03 - li007",
+        "🇫🇮 芬兰 (Finland) 04 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
