@@ -7,37 +7,29 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - li007",
       "server": "185.135.86.175",
-      "server_port": 9068,
+      "server_port": 9033,
       "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
+      "password": "UTJA57ypk2XKQpnm"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - li007",
-      "server": "185.135.86.175",
-      "server_port": 9036,
-      "method": "aes-256-cfb",
-      "password": "hbtvgUz5uNYyB3Rf"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - li007",
-      "server": "185.135.86.175",
-      "server_port": 9082,
-      "method": "aes-256-cfb",
-      "password": "45xgMgm386pjWjTx"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - li007",
       "server": "185.135.86.175",
       "server_port": 9007,
       "method": "aes-256-cfb",
       "password": "kSPmvwdFzGMMW5pY"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - li007",
+      "server": "185.135.86.175",
+      "server_port": 9036,
+      "method": "aes-256-cfb",
+      "password": "hbtvgUz5uNYyB3Rf"
+    },
+    {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - li007",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - li007",
       "server": "195.123.213.28",
       "server_port": 443,
       "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
@@ -57,6 +49,22 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - li007",
+      "server": "185.135.86.175",
+      "server_port": 9082,
+      "method": "aes-256-cfb",
+      "password": "45xgMgm386pjWjTx"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - li007",
+      "server": "185.135.86.175",
+      "server_port": 9094,
+      "method": "aes-256-cfb",
+      "password": "rpgbNnU9rDDU4aWZ"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -65,7 +73,8 @@
         "🇱🇻 拉脱维亚 (Latvia) 02 - li007",
         "🇱🇻 拉脱维亚 (Latvia) 03 - li007",
         "🇱🇻 拉脱维亚 (Latvia) 04 - li007",
-        "🇱🇻 拉脱维亚 (Latvia) 05 - li007"
+        "🇱🇻 拉脱维亚 (Latvia) 05 - li007",
+        "🇱🇻 拉脱维亚 (Latvia) 06 - li007"
       ]
     },
     {
@@ -76,7 +85,8 @@
         "🇱🇻 拉脱维亚 (Latvia) 02 - li007",
         "🇱🇻 拉脱维亚 (Latvia) 03 - li007",
         "🇱🇻 拉脱维亚 (Latvia) 04 - li007",
-        "🇱🇻 拉脱维亚 (Latvia) 05 - li007"
+        "🇱🇻 拉脱维亚 (Latvia) 05 - li007",
+        "🇱🇻 拉脱维亚 (Latvia) 06 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

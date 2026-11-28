@@ -22,15 +22,15 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 03 - li007",
-      "server": "8.209.221.183",
-      "server_port": 5555,
-      "method": "aes-256-gcm",
-      "password": "123456"
+      "server": "149.22.87.240",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
     },
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 04 - li007",
-      "server": "47.74.18.249",
+      "server": "8.216.8.135",
       "server_port": 5555,
       "method": "aes-256-gcm",
       "password": "123456"
@@ -38,7 +38,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 05 - li007",
-      "server": "8.216.9.151",
+      "server": "8.209.249.205",
       "server_port": 5555,
       "method": "aes-256-gcm",
       "password": "123456"
@@ -46,7 +46,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 06 - li007",
-      "server": "8.216.4.158",
+      "server": "8.216.18.167",
       "server_port": 5555,
       "method": "aes-256-gcm",
       "password": "123456"
@@ -54,7 +54,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 07 - li007",
-      "server": "47.91.2.13",
+      "server": "8.209.222.150",
       "server_port": 5555,
       "method": "aes-256-gcm",
       "password": "123456"
@@ -62,14 +62,192 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 08 - li007",
-      "server": "149.22.87.240",
-      "server_port": 443,
+      "server": "8.216.16.102",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 09 - li007",
+      "server": "47.245.42.226",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 10 - li007",
+      "server": "8.216.14.94",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 11 - li007",
+      "server": "8.209.236.164",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 12 - li007",
+      "server": "8.209.249.190",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 13 - li007",
+      "server": "8.211.130.59",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 14 - li007",
+      "server": "8.209.245.25",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 15 - li007",
+      "server": "8.216.10.204",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 16 - li007",
+      "server": "47.91.18.202",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 17 - li007",
+      "server": "8.216.18.189",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 18 - li007",
+      "server": "168.138.205.100",
+      "server_port": 53758,
       "method": "aes-128-gcm",
-      "password": "shadowsocks"
+      "password": "Bwlqh7GcFB"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 19 - li007",
+      "server": "8.216.3.160",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 20 - li007",
+      "server": "47.74.40.77",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 21 - li007",
+      "server": "47.91.15.111",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 22 - li007",
+      "server": "47.91.29.60",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 23 - li007",
+      "server": "47.74.41.139",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 09 - li007",
+      "tag": "🇯🇵 日本 (Japan) 24 - li007",
+      "server": "129.153.71.28",
+      "server_port": 28863,
+      "uuid": "3e956106-7f92-4cbf-bf77-715d3890fa84",
+      "tls": {
+        "enabled": true,
+        "server_name": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 25 - li007",
+      "server": "57.129.130.10",
+      "server_port": 52014,
+      "uuid": "bca740c6-6704-48ba-99da-7d7a31768d73",
+      "tls": {
+        "enabled": true,
+        "server_name": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇯🇵 日本 (Japan) 26 - li007",
+      "server": "193.123.160.109",
+      "server_port": 8443,
+      "password": "F3NzMNuYnG7akU2mSlBY",
+      "tls": {
+        "enabled": true,
+        "server_name": "193.123.160.109",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 27 - li007",
       "server": "158.101.151.157",
       "server_port": 443,
       "uuid": "66171cbe-0b4b-4b24-99f6-d5a822f4dc9a",
@@ -89,8 +267,134 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇯🇵 日本 (Japan) 28 - li007",
+      "server": "8.209.247.109",
+      "server_port": 443,
+      "password": "usqmqUKJFIlCmvkCNSY64L3k",
+      "tls": {
+        "enabled": true,
+        "server_name": "bing.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 10 - li007",
+      "tag": "🇯🇵 日本 (Japan) 29 - li007",
+      "server": "57.129.130.63",
+      "server_port": 52014,
+      "uuid": "d731cf09-79a6-4647-aabe-8e0fda4fe3be",
+      "tls": {
+        "enabled": true,
+        "server_name": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇯🇵 日本 (Japan) 30 - li007",
+      "server": "43.130.234.128",
+      "server_port": 8443,
+      "password": "Yuike2026cat",
+      "tls": {
+        "enabled": true,
+        "server_name": "43-130-234-128.sslip.io",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 31 - li007",
+      "server": "161.33.20.255",
+      "server_port": 8880,
+      "uuid": "e0856508-d693-450a-a099-455091dc4f25",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/e0856508-d693-450a-a099-455091dc4f25-vm"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 32 - li007",
+      "server": "57.129.130.200",
+      "server_port": 52014,
+      "uuid": "c8b0617e-010f-43a8-b3d0-d5358febf0c9",
+      "tls": {
+        "enabled": true,
+        "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 33 - li007",
+      "server": "46.101.46.169",
+      "server_port": 486,
+      "uuid": "16bf3359-e7d8-4de6-86a0-6d65cf793b56",
+      "tls": {
+        "enabled": true,
+        "server_name": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 34 - li007",
+      "server": "liqzf4z-g05.jp05-h6-vm0.entry.fr0528.art",
+      "server_port": 46486,
+      "uuid": "8ba17b4b-600f-34d1-b082-548a7bc05d1e",
+      "security": "auto",
+      "alter_id": 1
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇯🇵 日本 (Japan) 35 - li007",
+      "server": "129.225.181.46",
+      "server_port": 8443,
+      "password": "oracle_hy2_pass_2026",
+      "tls": {
+        "enabled": true,
+        "server_name": "bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 36 - li007",
       "server": "50.7.159.242",
       "server_port": 443,
       "uuid": "8840fac2-5361-4cb6-b887-cd1b95092394",
@@ -105,31 +409,77 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 11 - li007",
-      "server": "168.138.43.75",
-      "server_port": 80,
-      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
-      "security": "auto",
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 37 - li007",
+      "server": "80.240.18.227",
+      "server_port": 10051,
+      "uuid": "d161dcf1-fde2-44cc-b08d-d8944895e842",
+      "tls": {
+        "enabled": true,
+        "server_name": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/cctv13.m3u8",
+        "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "none"
+          "Host": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev"
         }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 12 - li007",
-      "server": "jpa.123069.xyz",
-      "server_port": 53758,
-      "method": "aes-128-gcm",
-      "password": "Bwlqh7GcFB"
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 38 - li007",
+      "server": "57.129.130.57",
+      "server_port": 52014,
+      "uuid": "47ba5dc6-8961-48a0-8b54-f57ec524627a",
+      "tls": {
+        "enabled": true,
+        "server_name": "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 13 - li007",
+      "tag": "🇯🇵 日本 (Japan) 39 - li007",
+      "server": "37.120.222.70",
+      "server_port": 8082,
+      "uuid": "59c3c1c7-62d0-4707-9d67-5ff9c008591c",
+      "tls": {
+        "enabled": true,
+        "server_name": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 40 - li007",
       "server": "198.13.53.39",
       "server_port": 443,
       "uuid": "8f21c635-ef0a-4b05-8356-f44d463b6e34",
@@ -155,8 +505,16 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 41 - li007",
+      "server": "8.216.18.170",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
+    },
+    {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 14 - li007",
+      "tag": "🇯🇵 日本 (Japan) 42 - li007",
       "server": "149.28.29.156",
       "server_port": 443,
       "uuid": "aa1a9052-720f-4bb0-92be-21b6baf9f386",
@@ -182,11 +540,149 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 43 - li007",
+      "server": "188.34.142.174",
+      "server_port": 444,
+      "uuid": "da46ec1f-84ad-4470-866f-010b58357b19",
+      "tls": {
+        "enabled": true,
+        "server_name": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 44 - li007",
+      "server": "147.45.42.73",
+      "server_port": 20443,
+      "uuid": "f293db4d-7ab1-4faf-bb15-89540d8709cb",
+      "tls": {
+        "enabled": true,
+        "server_name": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 45 - li007",
+      "server": "5.75.195.83",
+      "server_port": 56879,
+      "uuid": "f8847ac2-e586-400f-841b-00081ea4592e",
+      "tls": {
+        "enabled": true,
+        "server_name": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 46 - li007",
+      "server": "107.191.53.86",
+      "server_port": 4798,
+      "uuid": "16a5e4f6-246f-406d-9787-1b5686a97cbc",
+      "tls": {
+        "enabled": true,
+        "server_name": "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 47 - li007",
+      "server": "5.9.117.252",
+      "server_port": 4433,
+      "uuid": "ef286b0e-21ed-4e2b-9110-e2ddc7627892",
+      "tls": {
+        "enabled": true,
+        "server_name": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 48 - li007",
+      "server": "203.137.165.164",
+      "server_port": 57554,
+      "uuid": "e5b2a063-a114-4bd0-802d-b2da1fe1d1da",
+      "tls": {
+        "enabled": true,
+        "server_name": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
+        }
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 15 - li007",
-      "server": "129.225.181.46",
+      "tag": "🇯🇵 日本 (Japan) 49 - li007",
+      "server": "8.211.175.236",
       "server_port": 8443,
-      "password": "oracle_hy2_pass_2026",
+      "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
       "tls": {
         "enabled": true,
         "server_name": "bing.com",
@@ -194,30 +690,115 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 16 - li007",
-      "server": "8.211.175.236",
-      "server_port": 8443,
-      "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 50 - li007",
+      "server": "89.22.224.146",
+      "server_port": 43788,
+      "uuid": "6fbd9bd1-ccd4-4e2f-a918-a0f871965763",
       "tls": {
         "enabled": true,
-        "server_name": "8.211.175.236",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇯🇵 日本 (Japan) 17 - li007",
-      "server": "193.123.160.109",
-      "server_port": 8443,
-      "password": "F3NzMNuYnG7akU2mSlBY",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "insecure": true,
+        "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 51 - li007",
+      "server": "8.216.1.127",
+      "server_port": 5555,
+      "method": "aes-256-gcm",
+      "password": "123456"
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 52 - li007",
+      "server": "84.22.150.39",
+      "server_port": 7443,
+      "uuid": "9d5cbb90-876b-448d-9874-27ab35bae6e7",
+      "tls": {
+        "enabled": true,
+        "server_name": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 53 - li007",
+      "server": "109.120.155.155",
+      "server_port": 444,
+      "uuid": "99ab6748-3d57-4562-9451-843c15960b9b",
+      "tls": {
+        "enabled": true,
+        "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 54 - li007",
+      "server": "168.138.43.75",
+      "server_port": 80,
+      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/cctv13.m3u8",
+        "headers": {
+          "Host": "none"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 55 - li007",
+      "server": "116.213.43.43",
+      "server_port": 11101,
+      "uuid": "ca69a29d-60ef-433a-91bc-27537be993c8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "2eUT-b2e2lghUKWM3qf8uI3_Dphg9whKrQ08o4S-bzw",
+          "short_id": "82f99830e7b834e2"
         }
       }
     },
@@ -242,7 +823,45 @@
         "🇯🇵 日本 (Japan) 14 - li007",
         "🇯🇵 日本 (Japan) 15 - li007",
         "🇯🇵 日本 (Japan) 16 - li007",
-        "🇯🇵 日本 (Japan) 17 - li007"
+        "🇯🇵 日本 (Japan) 17 - li007",
+        "🇯🇵 日本 (Japan) 18 - li007",
+        "🇯🇵 日本 (Japan) 19 - li007",
+        "🇯🇵 日本 (Japan) 20 - li007",
+        "🇯🇵 日本 (Japan) 21 - li007",
+        "🇯🇵 日本 (Japan) 22 - li007",
+        "🇯🇵 日本 (Japan) 23 - li007",
+        "🇯🇵 日本 (Japan) 24 - li007",
+        "🇯🇵 日本 (Japan) 25 - li007",
+        "🇯🇵 日本 (Japan) 26 - li007",
+        "🇯🇵 日本 (Japan) 27 - li007",
+        "🇯🇵 日本 (Japan) 28 - li007",
+        "🇯🇵 日本 (Japan) 29 - li007",
+        "🇯🇵 日本 (Japan) 30 - li007",
+        "🇯🇵 日本 (Japan) 31 - li007",
+        "🇯🇵 日本 (Japan) 32 - li007",
+        "🇯🇵 日本 (Japan) 33 - li007",
+        "🇯🇵 日本 (Japan) 34 - li007",
+        "🇯🇵 日本 (Japan) 35 - li007",
+        "🇯🇵 日本 (Japan) 36 - li007",
+        "🇯🇵 日本 (Japan) 37 - li007",
+        "🇯🇵 日本 (Japan) 38 - li007",
+        "🇯🇵 日本 (Japan) 39 - li007",
+        "🇯🇵 日本 (Japan) 40 - li007",
+        "🇯🇵 日本 (Japan) 41 - li007",
+        "🇯🇵 日本 (Japan) 42 - li007",
+        "🇯🇵 日本 (Japan) 43 - li007",
+        "🇯🇵 日本 (Japan) 44 - li007",
+        "🇯🇵 日本 (Japan) 45 - li007",
+        "🇯🇵 日本 (Japan) 46 - li007",
+        "🇯🇵 日本 (Japan) 47 - li007",
+        "🇯🇵 日本 (Japan) 48 - li007",
+        "🇯🇵 日本 (Japan) 49 - li007",
+        "🇯🇵 日本 (Japan) 50 - li007",
+        "🇯🇵 日本 (Japan) 51 - li007",
+        "🇯🇵 日本 (Japan) 52 - li007",
+        "🇯🇵 日本 (Japan) 53 - li007",
+        "🇯🇵 日本 (Japan) 54 - li007",
+        "🇯🇵 日本 (Japan) 55 - li007"
       ]
     },
     {
@@ -265,7 +884,45 @@
         "🇯🇵 日本 (Japan) 14 - li007",
         "🇯🇵 日本 (Japan) 15 - li007",
         "🇯🇵 日本 (Japan) 16 - li007",
-        "🇯🇵 日本 (Japan) 17 - li007"
+        "🇯🇵 日本 (Japan) 17 - li007",
+        "🇯🇵 日本 (Japan) 18 - li007",
+        "🇯🇵 日本 (Japan) 19 - li007",
+        "🇯🇵 日本 (Japan) 20 - li007",
+        "🇯🇵 日本 (Japan) 21 - li007",
+        "🇯🇵 日本 (Japan) 22 - li007",
+        "🇯🇵 日本 (Japan) 23 - li007",
+        "🇯🇵 日本 (Japan) 24 - li007",
+        "🇯🇵 日本 (Japan) 25 - li007",
+        "🇯🇵 日本 (Japan) 26 - li007",
+        "🇯🇵 日本 (Japan) 27 - li007",
+        "🇯🇵 日本 (Japan) 28 - li007",
+        "🇯🇵 日本 (Japan) 29 - li007",
+        "🇯🇵 日本 (Japan) 30 - li007",
+        "🇯🇵 日本 (Japan) 31 - li007",
+        "🇯🇵 日本 (Japan) 32 - li007",
+        "🇯🇵 日本 (Japan) 33 - li007",
+        "🇯🇵 日本 (Japan) 34 - li007",
+        "🇯🇵 日本 (Japan) 35 - li007",
+        "🇯🇵 日本 (Japan) 36 - li007",
+        "🇯🇵 日本 (Japan) 37 - li007",
+        "🇯🇵 日本 (Japan) 38 - li007",
+        "🇯🇵 日本 (Japan) 39 - li007",
+        "🇯🇵 日本 (Japan) 40 - li007",
+        "🇯🇵 日本 (Japan) 41 - li007",
+        "🇯🇵 日本 (Japan) 42 - li007",
+        "🇯🇵 日本 (Japan) 43 - li007",
+        "🇯🇵 日本 (Japan) 44 - li007",
+        "🇯🇵 日本 (Japan) 45 - li007",
+        "🇯🇵 日本 (Japan) 46 - li007",
+        "🇯🇵 日本 (Japan) 47 - li007",
+        "🇯🇵 日本 (Japan) 48 - li007",
+        "🇯🇵 日本 (Japan) 49 - li007",
+        "🇯🇵 日本 (Japan) 50 - li007",
+        "🇯🇵 日本 (Japan) 51 - li007",
+        "🇯🇵 日本 (Japan) 52 - li007",
+        "🇯🇵 日本 (Japan) 53 - li007",
+        "🇯🇵 日本 (Japan) 54 - li007",
+        "🇯🇵 日本 (Japan) 55 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,55 +6,72 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - li007
   server: 217.30.10.44
-  port: 9076
+  port: 9062
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: S2zDyyPcmZN2h8EC
+  password: tkhHVxxfM2QErBWe
 - name: 🇵🇱 波兰 (Poland) 02 - li007
+  server: 217.30.10.44
+  port: 9071
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mENfxTFQpRKKh4As
+- name: 🇵🇱 波兰 (Poland) 03 - li007
   server: 217.30.10.44
   port: 9006
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: FAdUvMJUq5vDgKEq
-- name: 🇵🇱 波兰 (Poland) 03 - li007
-  server: 217.30.10.44
-  port: 9042
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: S7KwUu7yBy58S3Ga
 - name: 🇵🇱 波兰 (Poland) 04 - li007
-  server: 217.30.10.44
-  port: 9063
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aQqJbtwFGcCCaeL3
-- name: 🇵🇱 波兰 (Poland) 05 - li007
   server: 217.30.10.44
   port: 9052
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: jt2ekBNc9HuVtm2a
+- name: 🇵🇱 波兰 (Poland) 05 - li007
+  server: 217.30.10.44
+  port: 9042
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: S7KwUu7yBy58S3Ga
 - name: 🇵🇱 波兰 (Poland) 06 - li007
-  server: 188.225.56.100
+  server: 217.30.10.44
+  port: 9063
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aQqJbtwFGcCCaeL3
+- name: 🇵🇱 波兰 (Poland) 07 - li007
+  server: 217.30.10.44
+  port: 9099
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 7heRqkPG3hg4UnRm
+- name: 🇵🇱 波兰 (Poland) 08 - li007
+  server: 217.30.10.44
+  port: 9095
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: N7j3pdTYkKmsy8CR
+- name: 🇵🇱 波兰 (Poland) 09 - li007
+  server: 45.194.66.177
   port: 443
   udp: true
   type: vless
-  uuid: b432a23a-acff-425c-bf69-70480cd6ed09
+  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
+  flow: xtls-rprx-vision
   tls: true
-  servername: e2.cdnwh.icu
+  servername: 31tawwo0.virtual-network.lol
   skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /stream/segment/3078a41dd7eb/
-    headers:
-      Host: e2.cdnwh.icu
-- name: 🇵🇱 波兰 (Poland) 07 - li007
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 10 - li007
   server: 82.118.22.161
   port: 443
   udp: true
@@ -79,6 +96,9 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - li007
   - 🇵🇱 波兰 (Poland) 06 - li007
   - 🇵🇱 波兰 (Poland) 07 - li007
+  - 🇵🇱 波兰 (Poland) 08 - li007
+  - 🇵🇱 波兰 (Poland) 09 - li007
+  - 🇵🇱 波兰 (Poland) 10 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -91,5 +111,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - li007
   - 🇵🇱 波兰 (Poland) 06 - li007
   - 🇵🇱 波兰 (Poland) 07 - li007
+  - 🇵🇱 波兰 (Poland) 08 - li007
+  - 🇵🇱 波兰 (Poland) 09 - li007
+  - 🇵🇱 波兰 (Poland) 10 - li007
 rules:
 - MATCH,PROXIES

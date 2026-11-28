@@ -6,33 +6,26 @@ log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - li007
   server: 185.135.86.175
-  port: 9068
+  port: 9033
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
+  password: UTJA57ypk2XKQpnm
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - li007
-  server: 185.135.86.175
-  port: 9036
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: hbtvgUz5uNYyB3Rf
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - li007
-  server: 185.135.86.175
-  port: 9082
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 45xgMgm386pjWjTx
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - li007
   server: 185.135.86.175
   port: 9007
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: kSPmvwdFzGMMW5pY
-- name: 🇱🇻 拉脱维亚 (Latvia) 05 - li007
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - li007
+  server: 185.135.86.175
+  port: 9036
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: hbtvgUz5uNYyB3Rf
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - li007
   server: 195.123.213.28
   port: 443
   udp: true
@@ -45,6 +38,20 @@ proxies:
     short-id: 5c256336e3b673fa
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 05 - li007
+  server: 185.135.86.175
+  port: 9082
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 45xgMgm386pjWjTx
+- name: 🇱🇻 拉脱维亚 (Latvia) 06 - li007
+  server: 185.135.86.175
+  port: 9094
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: rpgbNnU9rDDU4aWZ
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,6 +62,7 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 03 - li007
   - 🇱🇻 拉脱维亚 (Latvia) 04 - li007
   - 🇱🇻 拉脱维亚 (Latvia) 05 - li007
+  - 🇱🇻 拉脱维亚 (Latvia) 06 - li007
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -65,5 +73,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 03 - li007
   - 🇱🇻 拉脱维亚 (Latvia) 04 - li007
   - 🇱🇻 拉脱维亚 (Latvia) 05 - li007
+  - 🇱🇻 拉脱维亚 (Latvia) 06 - li007
 rules:
 - MATCH,PROXIES
