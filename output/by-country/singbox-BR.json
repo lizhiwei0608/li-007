@@ -4,8 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇧🇷 巴西 (Brazil) 01 - li007",
+      "server": "172.233.27.145",
+      "server_port": 64552,
+      "uuid": "504b7143-71e0-4cf0-909b-5ff271bd03d6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "U7t4RFE9MSMtC-o1DoJ8pYzKMfgVpTg6ZhTTknBrVkU",
+          "short_id": "1f2519bb96e5589c"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇧🇷 巴西 (Brazil) 02 - li007",
       "server": "103.88.232.55",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -14,22 +35,6 @@
         "enabled": true,
         "server_name": "xmfhlpy.com",
         "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇧🇷 巴西 (Brazil) 02 - li007",
-      "server": "150.230.229.100",
-      "server_port": 20000,
-      "password": "CyG0RFxMjzs41uQD4OLuHQ==",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2-br2.whuiy.xyz",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "CyG0RFxMjzs41uQD4OLuHQ=="
       }
     },
     {
@@ -46,13 +51,30 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇧🇷 巴西 (Brazil) 04 - li007",
+      "server": "150.230.229.100",
+      "server_port": 20000,
+      "password": "CyG0RFxMjzs41uQD4OLuHQ==",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2-br2.whuiy.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "CyG0RFxMjzs41uQD4OLuHQ=="
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇧🇷 巴西 (Brazil) 01 - li007",
         "🇧🇷 巴西 (Brazil) 02 - li007",
-        "🇧🇷 巴西 (Brazil) 03 - li007"
+        "🇧🇷 巴西 (Brazil) 03 - li007",
+        "🇧🇷 巴西 (Brazil) 04 - li007"
       ]
     },
     {
@@ -61,7 +83,8 @@
       "outbounds": [
         "🇧🇷 巴西 (Brazil) 01 - li007",
         "🇧🇷 巴西 (Brazil) 02 - li007",
-        "🇧🇷 巴西 (Brazil) 03 - li007"
+        "🇧🇷 巴西 (Brazil) 03 - li007",
+        "🇧🇷 巴西 (Brazil) 04 - li007"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
